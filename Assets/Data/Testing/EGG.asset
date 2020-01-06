@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03921f2ab8bb5a14db76624093560f07, type: 3}
-  m_Name: TestJob
+  m_Script: {fileID: 11500000, guid: fbd1cbfbf2cdc204dbbb65171a25f4d6, type: 3}
+  m_Name: EGG
   m_EditorClassIdentifier: 
-  JobPriority: 1
-  JobDisplayName: 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Condition : SingletonScriptableObject<Condition>
+public abstract class Condition : ScriptableObject
 {
     public abstract byte CheckStatement(Pawn pawn);
 }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 
 [CreateAssetMenu(menuName = "JobSystem/Create New Job")]
 public class Job : ScriptableObject
@@ -28,6 +28,13 @@ public class Job : ScriptableObject
     public string DisplayText{get =>JobDisplayName;}
 
     public bool HasTickAction{get => !(InProgressAction is null);}
+
+    private void Awake()
+    {
+        if (!CheckCondition) throw new Exception("Error! Job" +this+ " Has no end condition!");
+        
+        CheckCondition = ScriptableObject.Instantiate(CheckCondition); //make an instance of the condition object to allow for it to store instanced variables
+    }
 
 
     public ConditionDelegate CheckConditionFunc{get => CheckCondition.CheckStatement;}
