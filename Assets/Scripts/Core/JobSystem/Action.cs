@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class  Action : SingletonScriptableObject<Action>
+public abstract class  Action : ScriptableObject
 {
     public abstract void ActionFunction(Pawn pawn);
 }

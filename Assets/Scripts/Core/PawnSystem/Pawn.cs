@@ -8,6 +8,10 @@ using UnityEngine;
 public class Pawn : ScriptableObject
 {
     private Job CurrentJob;
+    private GameObject PawnObject;
+
+    [SerializeField] 
+    private PawnManager linkedPawnManager;
 
     public Job Job{get => CurrentJob;}
 
@@ -19,17 +23,14 @@ public class Pawn : ScriptableObject
         return true;
     }    
 
-    public void cancelCurrentJob()
+    public void CancelCurrentJob()
     {
-        //if (!CurrentJob) return;
         CurrentJob.CancelActionFunc(this);
         CurrentJob = null; //TODO: add manual cleanup for old jobs
-        
     }
 
-    private void completeCurrentJob()
+    private void CompleteCurrentJob()
     {
-        //if (!CurrentJob) return;
         CurrentJob.CompleteActionFunc(this);
         CurrentJob = null;
     }
@@ -40,12 +41,12 @@ public class Pawn : ScriptableObject
         {
             case 1: 
             { 
-                cancelCurrentJob();
+                CancelCurrentJob();
                 break;
             };
             case 2:
             {
-                completeCurrentJob();
+                CompleteCurrentJob();
                 break;
             }
         }

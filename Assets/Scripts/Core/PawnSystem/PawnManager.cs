@@ -4,36 +4,16 @@ using UnityEngine;
 
 
 [CreateAssetMenu(menuName = "Core/Systems/PawnSystem/Create Pawn Manager")]
-public class PawnManager : SingletonScriptableObject<PawnManager>
+public class PawnManager : ScriptableObject
 {
+    [SerializeField] private JobManager linkedJobList;
+
     private List<Pawn> activePawns = new List<Pawn>();
-
-    [SerializeField] private List<Job> PossibleJobs;
-
 
     private List<Pawn> inActivePawns = new List<Pawn>();
 
     private List<Pawn> pawnList = new List<Pawn>();
-
-    private SortedDictionary<int,Queue<Job>> ActiveJobs = new SortedDictionary<int,Queue<Job>>();
-
-    public void AddJob(Job jobToAdd)
-    {
-        ActiveJobs[jobToAdd.Priority].Enqueue(jobToAdd);
-    }
-    
-    public void AddJob(int priority, Job jobToAdd)
-    {
-        ActiveJobs[priority].Enqueue(jobToAdd);
-    }
-
-    public void RemoveJob(Job jobToRemove)
-    {
-        if (!ActiveJobs[jobToRemove.Priority].Contains(jobToRemove)) return; //exit if the job is not present
-        List<Job> tempList =  new List<Job>(ActiveJobs[jobToRemove.Priority]);
-        tempList.Remove(jobToRemove);
-        ActiveJobs[jobToRemove.Priority] = new Queue<Job>(tempList);
-    }
+  
 
     public void AddPawn(Pawn newPawn)
     {
@@ -54,7 +34,7 @@ public class PawnManager : SingletonScriptableObject<PawnManager>
     {
         foreach (Pawn _pawn in inActivePawns)
         {
-            foreach (var jobList in ActiveJobs)
+            foreach (var jobList in linkedJobList.Jobs)
             {
                 if (jobList.Value.Count > 0)
                 {
@@ -68,19 +48,19 @@ public class PawnManager : SingletonScriptableObject<PawnManager>
     public void FreePawn(Pawn targetPawn)
     {
         
-        targetPawn.cancelCurrentJob();
-        AddJob(targetPawn.Job);
+        targetPawn.CancelCurrentJob();
+        linkedJobList.AddJob(targetPawn.Job);
         activePawns.Remove(targetPawn);
         inActivePawns.Add(targetPawn);
     }
 
     private void initalize()
     {
-        foreach (Job job in PossibleJobs) //initalize job prioritylist
+        foreach (Job job in linkedJobList.PossibleJobs) //initalize job prioritylist
         {
-            if (!ActiveJobs.ContainsKey(job.Priority))
+            if (!linkedJobList.Jobs.ContainsKey(job.Priority))
             {
-                ActiveJobs.Add(job.Priority,new Queue<Job>());
+                linkedJobList.Jobs.Add(job.Priority,new Queue<Job>());
             }
         }
     }
