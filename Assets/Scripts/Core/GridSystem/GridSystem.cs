@@ -6,7 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName= "Core/GridSystem/GridController")]
 public class GridSystem : ScriptableObject
 {
-    
+    [SerializeField] private GameManager gameManager;
+
     [SerializeField] private Vector3 CenterPos;
     [SerializeField] private float CellSize = 1;
     [SerializeField] private int GridXSize = 10;

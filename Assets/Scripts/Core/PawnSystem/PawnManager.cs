@@ -6,6 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Core/Systems/PawnSystem/Create Pawn Manager")]
 public class PawnManager : ScriptableObject
 {
+    [SerializeField] private GameManager gameManager;
+
     [SerializeField] private JobManager linkedJobList;
 
     private List<Pawn> activePawns = new List<Pawn>();

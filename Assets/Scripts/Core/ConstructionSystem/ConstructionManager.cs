@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class ConstructionManager : ScriptableObject
 {
+    [SerializeField] private GameManager gameManager;
+
     [SerializeField] private GridSystem linkedGrid;
     public GridSystem Grid {get => linkedGrid;}
 
