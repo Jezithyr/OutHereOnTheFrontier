@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class JobManager : ScriptableObject
 {
+    [SerializeField] private GameManager gameManager;
+
     [SerializeField] 
     // There needs to be a list of possible jobs that the pawn can part-take in. 
     public List<Job> PossibleJobs;
