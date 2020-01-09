@@ -19,6 +19,8 @@ public class GameManager : ScriptableObject
     private void MainLoopInit()
     {
         PlayerLoopSystem unityMainLoop = PlayerLoop.GetDefaultPlayerLoop();
+        PlayerLoopSystem[] unityCoreSubSystems = unityMainLoop.subSystemList;
+        PlayerLoopSystem[] unityCoreUpdate = unityCoreSubSystems[4].subSystemList;
 
         PlayerLoopSystem ScriptModuleUpdate = new PlayerLoopSystem()
         {
@@ -29,13 +31,12 @@ public class GameManager : ScriptableObject
 
 
 
-        PlayerLoopSystem[] tempArray = new PlayerLoopSystem[(unityMainLoop.subSystemList.Length)];
-        tempArray = unityMainLoop.subSystemList;
-        tempArray[(unityMainLoop.subSystemList.Length-1)] = ScriptModuleUpdate;
-
+        PlayerLoopSystem[] newCoreUpdate = new PlayerLoopSystem[(unityCoreUpdate.Length)];
+        newCoreUpdate[(newCoreUpdate.Length-1)] = ScriptModuleUpdate;
+        unityCoreSubSystems[4].subSystemList = newCoreUpdate;
 
         PlayerLoopSystem systemRoot = new PlayerLoopSystem();
-        systemRoot.subSystemList = tempArray;
+        systemRoot.subSystemList = unityCoreSubSystems;
         PlayerLoop.SetPlayerLoop(systemRoot);
     }
 
@@ -48,10 +49,7 @@ public class GameManager : ScriptableObject
 
         foreach (Module module in tickingModules)
         {
-            if (tickTime%module.TickTime == 0)
-            {
-                module.Update();
-            }
+            module.Update();
         }
     }
 
@@ -74,10 +72,6 @@ public class GameManager : ScriptableObject
             if (module.RunUpdate)
             {
                 tickingModules.Add(module);
-                if (module.TickTime <= 0)
-                {
-                    module.TickTime = 1;
-                }
                 Debug.Log("" + module.GetType() + " Added to update thread");
             }
             Debug.Log("Complete\n");

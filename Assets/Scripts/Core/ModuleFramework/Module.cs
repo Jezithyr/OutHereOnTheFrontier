@@ -8,8 +8,7 @@ public abstract class Module: ScriptableObject
     private GameManager gameManager;
     [SerializeField]
     public bool RunUpdate = false;
-    [SerializeField]
-    public long TickTime = 1;
+    
     public virtual void Initialize()
     {
 
