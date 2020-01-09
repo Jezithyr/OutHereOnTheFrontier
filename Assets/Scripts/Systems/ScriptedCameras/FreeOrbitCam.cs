@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+
+[CreateAssetMenu(menuName = "ScriptedCameras/Create Orbit Camera")]
+public class FreeOrbitCam : ScriptedCamera
 {
+    [SerializeField] private GameObject prefab;
+
     [SerializeField] private float CameraAngle = 30;
     [SerializeField] private float CameraDistance = 50;
     [SerializeField] private float MaxPanX = 100;
@@ -24,18 +28,15 @@ public class CameraController : MonoBehaviour
 
     private Camera cameraComponent;
     
-    public void Initalize()
-    {
-        cameraComponent = gameObject.GetComponentInChildren<Camera>();
-        UpdateCamera();
-    }
+    private GameObject cameraGameObject;
 
-    public void UpdateCamera()
+    public override void Initalize()
     {
-        cameraComponent.transform.localPosition = ComputeCameraPos(CameraAngle,CameraDistance);
-        cameraComponent.transform.localRotation = ComputeCameraRotation(CameraAngle);
+        
+        cameraGameObject = GameObject.Instantiate(prefab);
+        cameraComponent = cameraGameObject.GetComponentInChildren<Camera>();
+        cameraGameObject.GetComponentInChildren<ScriptedCameraComponent>().LinkedScriptObject = this;
     }
-
 
     private Quaternion ComputeCameraRotation (float camAngle)
     {
@@ -53,43 +54,29 @@ public class CameraController : MonoBehaviour
 
     }
 
-
     private void PanCamera(float XPanInput,float ZPanInput)
     {
-        float oldX = gameObject.transform.position.x;
-        float oldZ = gameObject.transform.position.z;
-        gameObject.transform.position = new Vector3((XPanInput*CameraPanSpeed)+oldX,gameObject.transform.position.y,(ZPanInput*CameraPanSpeed)+oldZ);
+        float oldX = cameraGameObject.transform.position.x;
+        float oldZ = cameraGameObject.transform.position.z;
+        cameraGameObject.transform.position = new Vector3((XPanInput*CameraPanSpeed)+oldX,cameraGameObject.transform.position.y,(ZPanInput*CameraPanSpeed)+oldZ);
     }
-
 
     private void RotateCamera(float roationInput)
     {
-        float oldRotation = gameObject.transform.rotation.eulerAngles.y;
+        float oldRotation = cameraGameObject.transform.rotation.eulerAngles.y;
         _targetRotation = oldRotation+(roationInput*CameraRotationSpeed);
-        gameObject.transform.rotation = Quaternion.Euler(0,_targetRotation,0);
+        cameraGameObject.transform.rotation = Quaternion.Euler(0,_targetRotation,0);
 
 
     }
 
-
-
-
-    private void Update()
+    public override void CameraUpdate()
     {
+        Debug.Log("Update cam");
         PanCamera(Input.GetAxis(_moveZInput),-Input.GetAxis(_moveXInput));
         RotateCamera(Input.GetAxis(_rotateAxis));
 
-
-
-        UpdateCamera();
+        cameraComponent.transform.localPosition = ComputeCameraPos(CameraAngle,CameraDistance);
+        cameraComponent.transform.localRotation = ComputeCameraRotation(CameraAngle);
     }
-
-    private void OnEnable()
-    {
-        Initalize();
-    }
-
-
-
-
 }

@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f5992f7e2ae8d541ab9c31f8aa12393, type: 3}
-  m_Name: ConstructionManager
+  m_Name: ConstructionSystem
   m_EditorClassIdentifier: 
-  linkedGrid: {fileID: 0}
-  EnabledBuildings: []
+  gameManager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
+  linkedGrid: {fileID: 11400000, guid: 42348951e7f090446beda2c293f1a6d4, type: 2}
+  EnabledBuildings:
+  - {fileID: 11400000, guid: 32cdd1481ee17074cb099dd3ee3203ee, type: 2}

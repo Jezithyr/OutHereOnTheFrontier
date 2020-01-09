@@ -13,6 +13,8 @@ public class ConstructionManager : ScriptableObject
     public GridSystem Grid {get => linkedGrid;}
 
     [SerializeField] private List<Building> EnabledBuildings = new List<Building>();
+    public List<Building> enabledBuildings {get => EnabledBuildings;}
+
 
     [SerializeField] private Dictionary<GameObject,Building> ActiveBuildings = new Dictionary<GameObject,Building>() ;
     public Dictionary<GameObject,Building> Buildings{get => ActiveBuildings;}
@@ -44,13 +46,13 @@ public class ConstructionManager : ScriptableObject
     }
 
 
-    public void CreateBuildingAt(Vector2Int gridPos, Quaternion rotation, Building buildingData)
+    public void CreateBuildingAtGridPos(Vector2Int gridPos, Quaternion rotation, Building buildingData)
     {
-        CreateBuildingAt(linkedGrid.ConvertGridToWorldPos(gridPos),rotation,buildingData);
+        CreateBuildingAtWorldPos(linkedGrid.ConvertGridToWorldPos(gridPos),rotation,buildingData);
     }
 
 
-    public void CreateBuildingAt(Vector3 position,Quaternion rotation, Building buildingData)
+    public void CreateBuildingAtWorldPos(Vector3 position,Quaternion rotation, Building buildingData)
     {
         if (!EnabledBuildings.Contains(buildingData)) return; //don't create the building if it isn't enabled
 

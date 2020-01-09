@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb223a8ae6cbb5a46b09a8feea1ff87c, type: 3}
-  m_Name: JobSystem
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: TestBuilding
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
-  PossibleJobs: []
+  prefab: {fileID: 8689446358967596884, guid: 55ab970db3d64a14e9d2d8e29656c4b0, type: 3}
