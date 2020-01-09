@@ -72,7 +72,6 @@ public class FreeOrbitCam : ScriptedCamera
 
     public override void CameraUpdate()
     {
-        Debug.Log("Update cam");
         PanCamera(Input.GetAxis(_moveZInput),-Input.GetAxis(_moveXInput));
         RotateCamera(Input.GetAxis(_rotateAxis));
 

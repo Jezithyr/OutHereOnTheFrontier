@@ -5,19 +5,39 @@ using UnityEngine;
 
 public class GameManager : ScriptableObject
 {
+    [SerializeField]
+    private List<Module> ActiveModules;
+    private Dictionary<System.Type,Module> ModuleList = new Dictionary<System.Type,Module>();
+    
+    private void OnEnable()
+    {
+        ModuleList.Clear();
 
-    [SerializeField] private ConstructionManager ConstructionController ;
-    public ConstructionManager ConstructionSubSystem{get => ConstructionController;}
+        Debug.Log("=Building Module List=\n");
+        foreach (var module in ActiveModules)
+        {
+            ModuleList.Add(module.GetType(),module);
+        }
+        Debug.Log("-Module List built successfully-");
 
-    [SerializeField] private JobManager JobController;
-    public JobManager JobSubSystem{get => JobController;}
 
-    [SerializeField] private PawnManager pawnManager;
-    public PawnManager PawnSubSystem{get => pawnManager;}
 
-    [SerializeField] private CameraManager cameraManager;
-    public CameraManager CameraSubSystem{get => cameraManager;}
+        Debug.Log("--==Initializing Modules==-");
+        foreach (Module module in ActiveModules)
+        {
+            Debug.Log("Loading: " + module.GetType());
+            module.Initialize();
+            Debug.Log("Complete\n");
+        }
+        Debug.Log("-Module initalization Complete-");
+    }
 
-    [SerializeField] private GridSystem ActiveGrid;
-    public GridSystem Grid{get => ActiveGrid;}
+    public T GetModule<T>() where T : Module
+    {
+        foreach (var item in ModuleList)
+        {
+            if (item.Key == typeof(T)) return (T)item.Value;
+        }
+        return default(T);
+    }
 }
