@@ -11,6 +11,10 @@ public class CameraTest : MonoBehaviour
     {
         ScriptedCamera newCam = cameraManager.AddScriptedCamera(customCamera);
         cameraManager.ActivateCamera(newCam);
+    }
 
+    private void Update()
+    {
+        cameraManager.Update();
     }
 }

@@ -16,13 +16,6 @@ public class PawnManager : Module
     private List<Pawn> pawnList = new List<Pawn>();
 
 
-    public override void Initialize()
-    {
-        
-    }
-
-
-
     public void AddPawn(Pawn newPawn)
     {
         if (pawnList.Contains(newPawn)) return; //stop the possibility of duplicates

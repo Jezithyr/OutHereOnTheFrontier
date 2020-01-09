@@ -9,13 +9,20 @@ public class CameraManager : Module
     [SerializeField] private ScriptedCamera activeCamera;
     public ScriptedCamera ActiveCamera{get => activeCamera;}
 
-    private List<ScriptedCamera> ScriptedCameras;
-
     public override void Initialize()
     {
         
     }
 
+    private List<ScriptedCamera> ScriptedCameras;
+
+    public override void Update()
+    {
+        if (activeCamera)
+        {
+            activeCamera.CameraUpdate();
+        }
+    }
 
     public ScriptedCamera AddScriptedCameraInstance(ScriptedCamera newCamera)
     {

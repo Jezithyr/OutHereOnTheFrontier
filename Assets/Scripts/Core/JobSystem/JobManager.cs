@@ -15,11 +15,6 @@ public class JobManager : Module
     // The list will need to pull from the list of jobs available.
     public SortedDictionary<int,Queue<Job>> Jobs {get => ActiveJobs;}
 
-    public override void Initialize()
-    {
-        
-    }
-
 
     // The player has to be able to add jobs to our pawns, allowing them to take on certain actions.
     public void AddJob(Job jobToAdd)
