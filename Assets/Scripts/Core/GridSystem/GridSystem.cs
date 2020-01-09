@@ -59,7 +59,7 @@ public class GridSystem : ScriptableObject
 
        float outX =  _originPos.x + (gridPos.x*CellSize) + (0.5f*CellSize);
        float outY =  _originPos.y + (gridPos.y*CellSize) + (0.5f*CellSize);
-        return new Vector3(outX,outY,_zOffset);
+        return new Vector3(outX,_zOffset,outY);
     }
 
 

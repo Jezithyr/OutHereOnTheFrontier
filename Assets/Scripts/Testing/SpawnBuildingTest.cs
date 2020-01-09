@@ -9,6 +9,6 @@ public class SpawnBuildingTest : MonoBehaviour
     private void Start()
     {
         ConstructionManager buildingSys = gameManager.ConstructionSubSystem;
-        buildingSys.CreateBuildingAt(new Vector2Int(0,0),new Quaternion(),buildingSys.enabledBuildings[0]);
+        buildingSys.CreateBuildingAtGridPos(new Vector2Int(25,25),new Quaternion(),buildingSys.enabledBuildings[0]);
     }
 }

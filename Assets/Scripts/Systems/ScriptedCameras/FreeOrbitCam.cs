@@ -32,8 +32,10 @@ public class FreeOrbitCam : ScriptedCamera
 
     public override void Initalize()
     {
+        
         cameraGameObject = GameObject.Instantiate(prefab);
         cameraComponent = cameraGameObject.GetComponentInChildren<Camera>();
+        cameraGameObject.GetComponentInChildren<ScriptedCameraComponent>().LinkedScriptObject = this;
     }
 
     private Quaternion ComputeCameraRotation (float camAngle)
@@ -70,6 +72,7 @@ public class FreeOrbitCam : ScriptedCamera
 
     public override void CameraUpdate()
     {
+        Debug.Log("Update cam");
         PanCamera(Input.GetAxis(_moveZInput),-Input.GetAxis(_moveXInput));
         RotateCamera(Input.GetAxis(_rotateAxis));
 

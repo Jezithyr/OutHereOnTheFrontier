@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScriptedCameraComponent : MonoBehaviour
 {
-    [SerializeField] private ScriptedCamera LinkedScriptObject;
+    [SerializeField] public ScriptedCamera LinkedScriptObject;
     private bool hasValidScript = false;
 
     private void Start()
@@ -14,7 +14,7 @@ public class ScriptedCameraComponent : MonoBehaviour
 
     private void Update()
     {
-        if (!hasValidScript) return;
+        if (!hasValidScript || !LinkedScriptObject.Active) return;
         LinkedScriptObject.CameraUpdate();
     }
     

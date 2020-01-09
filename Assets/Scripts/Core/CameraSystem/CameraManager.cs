@@ -11,19 +11,25 @@ public class CameraManager : ScriptableObject
     public ScriptedCamera ActiveCamera{get => activeCamera;}
 
     private List<ScriptedCamera> ScriptedCameras;
+ 
+
+    public ScriptedCamera AddScriptedCameraInstance(ScriptedCamera newCamera)
+    {
+        return AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
+    }
+
 
     public ScriptedCamera AddScriptedCamera(ScriptedCamera newCamera)
     {
-        Debug.Log("Creating new Camera");
-        ScriptedCamera tempCam = ScriptableObject.Instantiate(newCamera);
+        ScriptedCamera tempCam = newCamera;
         tempCam.Initalize();
+        tempCam.Active = true;
         ScriptedCameras.Add(tempCam);
         return ScriptedCameras[ScriptedCameras.Count-1];
     }
 
     public void ActivateCamera(ScriptedCamera newCamera)
     {
-        Debug.Log("Activating Camera");
         if (newCamera == activeCamera) return;
 
         foreach (var scriptCam in ScriptedCameras)
@@ -32,14 +38,6 @@ public class CameraManager : ScriptableObject
             {
                 activeCamera = newCamera;
             }
-        }
-    }
-
-    private void Update()
-    {
-        if (ActiveCamera)
-        {
-            ActiveCamera.Active = true;
         }
     }
 
