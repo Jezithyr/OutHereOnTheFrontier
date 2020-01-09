@@ -5,19 +5,23 @@ using UnityEngine;
 
 
 
-public class ConstructionManager : ScriptableObject
+public class ConstructionManager : Module
 {
-    [SerializeField] private GameManager gameManager;
-
     [SerializeField] private GridSystem linkedGrid;
     public GridSystem Grid {get => linkedGrid;}
 
     [SerializeField] private List<Building> EnabledBuildings = new List<Building>();
     public List<Building> enabledBuildings {get => EnabledBuildings;}
 
-
     [SerializeField] private Dictionary<GameObject,Building> ActiveBuildings = new Dictionary<GameObject,Building>() ;
     public Dictionary<GameObject,Building> Buildings{get => ActiveBuildings;}
+
+
+    public override void Initialize()
+    {
+        
+    }
+
 
 
     public Building GetDataForPrefab(GameObject prefab)

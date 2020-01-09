@@ -8,7 +8,7 @@ public class SpawnBuildingTest : MonoBehaviour
 
     private void Start()
     {
-        ConstructionManager buildingSys = gameManager.ConstructionSubSystem;
+        ConstructionManager buildingSys = gameManager.GetModule<ConstructionManager>();
         buildingSys.CreateBuildingAtGridPos(new Vector2Int(25,25),new Quaternion(),buildingSys.enabledBuildings[0]);
     }
 }

@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class CameraManager : ScriptableObject
+public class CameraManager : Module
 {
-    [SerializeField] private GameManager gameManager;
 
     [SerializeField] private ScriptedCamera activeCamera;
     public ScriptedCamera ActiveCamera{get => activeCamera;}
 
     private List<ScriptedCamera> ScriptedCameras;
- 
+
+    public override void Initialize()
+    {
+        
+    }
+
 
     public ScriptedCamera AddScriptedCameraInstance(ScriptedCamera newCamera)
     {

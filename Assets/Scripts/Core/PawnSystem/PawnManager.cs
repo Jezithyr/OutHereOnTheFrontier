@@ -4,9 +4,8 @@ using UnityEngine;
 
 
 [CreateAssetMenu(menuName = "Core/Systems/PawnSystem/Create Pawn Manager")]
-public class PawnManager : ScriptableObject
+public class PawnManager : Module
 {
-    [SerializeField] private GameManager gameManager;
 
     [SerializeField] private JobManager linkedJobList;
 
@@ -15,7 +14,14 @@ public class PawnManager : ScriptableObject
     private List<Pawn> inActivePawns = new List<Pawn>();
 
     private List<Pawn> pawnList = new List<Pawn>();
-  
+
+
+    public override void Initialize()
+    {
+        
+    }
+
+
 
     public void AddPawn(Pawn newPawn)
     {
