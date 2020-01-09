@@ -379,7 +379,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5216682585155610964}
-  - component: {fileID: 5338640226076565121}
   m_Layer: 0
   m_Name: MetalConsumer
   m_TagString: Untagged
@@ -406,22 +405,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5338640226076565121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8689446358967596884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cb3e25d7a2d8644b3a87edf07aecfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeepLoaded: 0
-  ResourceTypes:
-  - {fileID: 11400000, guid: 8e74abd336607694d9a0070b98e1fbca, type: 2}
-  ConsumptionAmounts: 0a000000
 --- !u!1 &8972241268458839987
 GameObject:
   m_ObjectHideFlags: 0

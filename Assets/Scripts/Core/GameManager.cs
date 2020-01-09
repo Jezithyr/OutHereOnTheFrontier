@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameManager : ScriptableObject
 {
+
     [SerializeField] private ConstructionManager ConstructionController ;
     public ConstructionManager ConstructionSubSystem{get => ConstructionController;}
 
@@ -13,6 +14,9 @@ public class GameManager : ScriptableObject
 
     [SerializeField] private PawnManager pawnManager;
     public PawnManager PawnSubSystem{get => pawnManager;}
+
+    [SerializeField] private CameraManager cameraManager;
+    public CameraManager CameraSubSystem{get => cameraManager;}
 
     [SerializeField] private GridSystem ActiveGrid;
     public GridSystem Grid{get => ActiveGrid;}

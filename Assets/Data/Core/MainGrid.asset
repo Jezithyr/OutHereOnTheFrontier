@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48c07905e5470344f9397b1699016839, type: 3}
   m_Name: MainGrid
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
   CenterPos: {x: 0, y: 0, z: 0}
   CellSize: 1
-  GridXSize: 10
-  GridYSize: 10
+  GridXSize: 50
+  GridYSize: 50

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb223a8ae6cbb5a46b09a8feea1ff87c, type: 3}
-  m_Name: JobSystem
+  m_Script: {fileID: 11500000, guid: 5c168bcec50f74543b61b125a9b691b4, type: 3}
+  m_Name: CameraSystem
   m_EditorClassIdentifier: 
   gameManager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
-  PossibleJobs: []
+  activeCamera: {fileID: 0}
