@@ -12,8 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df97ab6517fa6346920e41013c5e8ee, type: 3}
   m_Name: GameManager
   m_EditorClassIdentifier: 
-  ActiveModules:
-  - {fileID: 11400000, guid: 634a62bd3f8f25946b0abaaebe190350, type: 2}
-  - {fileID: 11400000, guid: 3bdcf21f0b5b97742ba9384044a9a23f, type: 2}
-  - {fileID: 11400000, guid: 9892709af585fba4db3cca7724df7dc5, type: 2}
-  - {fileID: 11400000, guid: 183993f6c8a51794cac76a97558a48bb, type: 2}
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}

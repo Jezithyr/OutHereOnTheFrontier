@@ -75,12 +75,9 @@ public class FreeOrbitCam : ScriptedCamera
         float moveZInput = Input.GetAxis(_moveZInput);
         float moveXInput = -Input.GetAxis(_moveXInput);
         float rotateInput = Input.GetAxis(_rotateAxis);
-        Debug.Log(rotateInput);
+        
         PanCamera(moveZInput, moveXInput);
         RotateCamera(rotateInput);
-
-
-
         cameraComponent.transform.localPosition = ComputeCameraPos(CameraAngle, CameraDistance);
         cameraComponent.transform.localRotation = ComputeCameraRotation(CameraAngle);
     }

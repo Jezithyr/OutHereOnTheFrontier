@@ -5,10 +5,10 @@ using UnityEngine;
 public abstract class Module: ScriptableObject
 {
     [SerializeField]
-    private GameManager gameManager;
+    private ModuleManager moduleManager;
     [SerializeField]
     public bool RunUpdate = false;
-    
+
     public virtual void Initialize()
     {
 

@@ -15,11 +15,11 @@ MonoBehaviour:
   cameraManager: {fileID: 11400000, guid: 634a62bd3f8f25946b0abaaebe190350, type: 2}
   Active: 1
   prefab: {fileID: 7667485208149112055, guid: 3b86617b579150a469ae230a7e0c51be, type: 3}
-  CameraAngle: 28.4
-  CameraDistance: 4.4
+  CameraAngle: 30
+  CameraDistance: 10
   MaxPanX: 100
   MaxPanZ: 100
-  CameraPanSpeed: 5
+  CameraPanSpeed: 2
   CameraRotationSpeed: 1
   minZoom: 1
   maxZoom: 10

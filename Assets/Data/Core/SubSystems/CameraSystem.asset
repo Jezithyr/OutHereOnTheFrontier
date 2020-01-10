@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c168bcec50f74543b61b125a9b691b4, type: 3}
   m_Name: CameraSystem
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
-  RunUpdate: 0
-  TickTime: 1
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
+  RunUpdate: 1
   activeCamera: {fileID: 11400000, guid: a816746abf2b99041b39c7e37f93ad4d, type: 2}

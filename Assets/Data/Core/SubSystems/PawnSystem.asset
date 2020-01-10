@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f0f220306374842ac844a626913f65, type: 3}
   m_Name: PawnSystem
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
   RunUpdate: 0
-  TickTime: 0
   linkedJobList: {fileID: 11400000, guid: 183993f6c8a51794cac76a97558a48bb, type: 2}
