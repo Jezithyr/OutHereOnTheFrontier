@@ -14,4 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
   RunUpdate: 1
-  activeCamera: {fileID: 11400000, guid: a816746abf2b99041b39c7e37f93ad4d, type: 2}
