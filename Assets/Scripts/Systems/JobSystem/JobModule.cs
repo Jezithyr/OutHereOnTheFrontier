@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
-public class JobManager : Module
+[CreateAssetMenu(menuName = "GameFramework/SubSystems/JobModule")]
+public class JobModule : Module
 {
 
     [SerializeField] 

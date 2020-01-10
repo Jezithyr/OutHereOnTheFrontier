@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5992f7e2ae8d541ab9c31f8aa12393, type: 3}
-  m_Name: ConstructionSystem
+  m_Script: {fileID: 11500000, guid: 5c168bcec50f74543b61b125a9b691b4, type: 3}
+  m_Name: CameraModule
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
-  RunUpdate: 0
-  linkedGrid: {fileID: 11400000, guid: 42348951e7f090446beda2c293f1a6d4, type: 2}
-  EnabledBuildings:
-  - {fileID: 11400000, guid: 32cdd1481ee17074cb099dd3ee3203ee, type: 2}
+  RunUpdate: 1

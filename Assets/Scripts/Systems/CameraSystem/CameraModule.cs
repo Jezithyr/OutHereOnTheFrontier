@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class CameraManager : Module
+[CreateAssetMenu(menuName = "GameFramework/SubSystems/CameraModule")]
+public class CameraModule : Module
 {
-
     private ScriptedCamera activeCamera;
     public ScriptedCamera ActiveCamera{get => activeCamera;}
 
@@ -26,16 +26,17 @@ public class CameraManager : Module
 
     public ScriptedCamera AddScriptedCameraInstance(ScriptedCamera newCamera)
     {
-        return AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
+        activeCamera = AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
+        return activeCamera;
     }
 
 
     public ScriptedCamera AddScriptedCamera(ScriptedCamera newCamera)
     {
-        ScriptedCamera tempCam = newCamera;
-        tempCam.Initalize();
-        tempCam.Active = true;
-        ScriptedCameras.Add(tempCam);
+        Debug.Log("NewCamera = " + newCamera);
+        newCamera.Initalize();
+        newCamera.Active = true;
+        ScriptedCameras.Add(newCamera);
         return ScriptedCameras[ScriptedCameras.Count-1];
     }
 

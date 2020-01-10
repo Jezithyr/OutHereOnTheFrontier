@@ -5,7 +5,7 @@ using UnityEngine.Experimental.LowLevel;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Debug/GameManager")]
+[CreateAssetMenu(menuName = "GameFramework/Core/GameManager")]
 public class GameManager : ScriptableObject
 {   
     [SerializeField] 
@@ -80,9 +80,21 @@ public class GameManager : ScriptableObject
 
     private void OnEnable()
     {
-        if (!moduleManager) return; //skip initalization if module manager is not defined
+        if (!Application.isEditor) return;
+         Initalize();
+         Debug.Log("Running GameManager in Editor");
+    }
 
-        moduleManager.LoadModules();
+    private void Awake()
+    {
+        if (Application.isEditor) return;
+         Initalize();
+         Debug.Log("Running GameManager in Build");
+    }
+
+    private void Initalize()
+    {
+        moduleManager.Initialize();
 
         Debug.Log("----------------------------------\n");
         Debug.Log("Loading Gamestates\n");

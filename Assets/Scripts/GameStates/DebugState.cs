@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName= "temp")]
+
 public class DebugState : GameState
 { 
     
@@ -11,10 +11,10 @@ public class DebugState : GameState
     {
         Debug.Log("Entered Debug State");
         
-        CameraManager camModule = Manager.GetModule<CameraManager>();
-        Debug.Log("Cam Module = " + camModule);
-        ScriptedCamera newCam = camModule.AddScriptedCamera(customCamera);
-        camModule.ActivateCamera(newCam);
+        //CameraModule camModule = Manager.GetModule<CameraModule>();
+        // ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
+        // camModule.ActivateCamera(newCam);
+        
 
     }
     public override void OnDeactivate(GameState newState)
@@ -24,7 +24,7 @@ public class DebugState : GameState
 
     public override void OnUpdate()
     {
-        
+        Debug.Log("GameStateTick");
     }
 
 }

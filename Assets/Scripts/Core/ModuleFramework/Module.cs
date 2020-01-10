@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Module: ScriptableObject
+public class Module: ScriptableObject
 {
     [SerializeField]
-    private ModuleManager moduleManager;
+    protected ModuleManager moduleManager;
+
     [SerializeField]
     public bool RunUpdate = false;
 
@@ -13,8 +14,6 @@ public abstract class Module: ScriptableObject
     {
 
     }
-
-    
 
     public virtual void Update()
     {

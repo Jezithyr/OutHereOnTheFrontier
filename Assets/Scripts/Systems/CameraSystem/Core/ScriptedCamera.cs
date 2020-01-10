@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class ScriptedCamera : ScriptableObject
 {
-    [SerializeField] protected CameraManager cameraManager;
+    [SerializeField] protected CameraModule cameraManager;
     
     public abstract void CameraUpdate();
 

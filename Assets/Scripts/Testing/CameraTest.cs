@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraTest : MonoBehaviour
 {
-    [SerializeField] protected CameraManager cameraManager;
+    [SerializeField] protected CameraModule cameraManager;
     [SerializeField] private ScriptedCamera customCamera;
     // Start is called before the first frame update
     void Start()

@@ -9,6 +9,6 @@ public class Building : ScriptableObject
     [SerializeField] private GameObject prefab;
     public GameObject Prefab{get => prefab;}
     
-    private ConstructionManager constructionManager; 
+    private ConstructionModule constructionManager; 
 
 }
