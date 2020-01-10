@@ -12,8 +12,10 @@ public class DebugState : GameState
         Debug.Log("Entered Debug State");
         
         CameraManager camModule = Manager.GetModule<CameraManager>();
+        Debug.Log("Cam Module = " + camModule);
         ScriptedCamera newCam = camModule.AddScriptedCamera(customCamera);
         camModule.ActivateCamera(newCam);
+
     }
     public override void OnDeactivate(GameState newState)
     {

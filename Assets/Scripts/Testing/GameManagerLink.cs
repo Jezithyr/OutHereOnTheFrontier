@@ -9,10 +9,9 @@ public class GameManagerLink : MonoBehaviour
 
     private void Start()
     {
+
+        Debug.Log("Starting GameManager "+gameManager + "\n");
         gameManager.Start();
-        {
-            
-        }
     }
 
 }

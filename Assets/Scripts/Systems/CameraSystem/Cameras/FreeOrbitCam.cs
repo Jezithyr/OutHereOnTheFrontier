@@ -34,6 +34,7 @@ public class FreeOrbitCam : ScriptedCamera
     {
         cameraGameObject = GameObject.Instantiate(prefab);
         cameraComponent = cameraGameObject.GetComponentInChildren<Camera>();
+        Debug.Log("Creating OrbitCam"+cameraGameObject + "\n");
         cameraGameObject.GetComponentInChildren<ScriptedCameraComponent>().LinkedScriptObject = this;
     }
 
