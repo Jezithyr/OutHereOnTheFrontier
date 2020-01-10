@@ -14,7 +14,6 @@ public class ModuleManager : ScriptableObject
     private Dictionary<System.Type,Module> moduleList = new Dictionary<System.Type,Module>();
     public Dictionary<System.Type,Module> List {get => moduleList;}
 
-    delegate void UpdateDelegate();
     private List<Module> tickingModules = new List<Module> ();
 
     public void ModuleUpdateTick()

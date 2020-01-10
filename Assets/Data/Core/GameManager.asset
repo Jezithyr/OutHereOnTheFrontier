@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: GameManager
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
+  gameState: []
+  stateCondition: []
