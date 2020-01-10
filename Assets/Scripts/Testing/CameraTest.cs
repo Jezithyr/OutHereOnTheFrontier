@@ -9,8 +9,8 @@ public class CameraTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScriptedCamera newCam = cameraManager.AddScriptedCamera(customCamera);
-        cameraManager.ActivateCamera(newCam);
+        //ScriptedCamera newCam = cameraManager.AddScriptedCamera(customCamera);
+       // cameraManager.ActivateCamera(newCam);
     }
 
     

@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraManager : Module
 {
 
-    [SerializeField] private ScriptedCamera activeCamera;
+    private ScriptedCamera activeCamera;
     public ScriptedCamera ActiveCamera{get => activeCamera;}
 
     public override void Initialize()

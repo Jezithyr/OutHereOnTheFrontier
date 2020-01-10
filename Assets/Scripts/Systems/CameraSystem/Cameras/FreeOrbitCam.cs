@@ -32,7 +32,6 @@ public class FreeOrbitCam : ScriptedCamera
 
     public override void Initalize()
     {
-
         cameraGameObject = GameObject.Instantiate(prefab);
         cameraComponent = cameraGameObject.GetComponentInChildren<Camera>();
         cameraGameObject.GetComponentInChildren<ScriptedCameraComponent>().LinkedScriptObject = this;

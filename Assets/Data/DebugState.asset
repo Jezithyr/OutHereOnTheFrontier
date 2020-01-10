@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df97ab6517fa6346920e41013c5e8ee, type: 3}
-  m_Name: GameManager
+  m_Script: {fileID: 11500000, guid: 675f855877918f74e9e7e94c21745957, type: 3}
+  m_Name: DebugState
   m_EditorClassIdentifier: 
-  moduleManager: {fileID: 0}
-  gameStates: []
-  stateCondition: []
-  InitialGameState: {fileID: 0}
+  Manager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
+  CanTick: 0
+  tickRate: 0
+  customCamera: {fileID: 11400000, guid: a816746abf2b99041b39c7e37f93ad4d, type: 2}

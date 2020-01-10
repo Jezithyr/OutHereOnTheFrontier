@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class GameState : ScriptableObject
 {
+    public GameManager Manager;
+
     [SerializeField] public bool CanTick;
     [SerializeField] public long tickRate;
 
