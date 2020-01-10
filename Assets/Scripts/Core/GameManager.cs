@@ -16,7 +16,8 @@ public class GameManager : ScriptableObject
     [SerializeField]
     private List<GameStateCondition> stateCondition = new  List<GameStateCondition>();
 
-    GameState ActiveState;
+    [SerializeField]
+    private GameState ActiveState;
     void GameStateUpdate()
     {
         if (ActiveState && ActiveState.CanTick) 
@@ -75,7 +76,7 @@ public class GameManager : ScriptableObject
         
         if (stateCondition.Count != gameStates.Count) 
         {
-            Debug.LogError("Error: mismatching gamestates and conditions");
+            Debug.LogError("Error: mismatching gamestates and conditions\n");
             hasValidStates = false;
         }
         
@@ -85,12 +86,16 @@ public class GameManager : ScriptableObject
 
             if (stateCondition[index] == null || gameStates[index] == null)
             {
-                Debug.LogError("Error: A gamestate or condition is undefined!");
+                Debug.LogError("Error: A gamestate or condition is undefined!\n");
                 hasValidStates = false;
             }
             index++;
         }
         Debug.Log("Finsihed Loading Gamestates\n");
+
+        Debug.Log("Adding Delegates to UnityUpdate\n");
+        MainLoopInit();
+        Debug.Log("Done\n");
 
         Debug.Log("===============================\n");
         Debug.Log("======Initializion Complete======\n");

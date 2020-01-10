@@ -13,8 +13,5 @@ public class CameraTest : MonoBehaviour
         cameraManager.ActivateCamera(newCam);
     }
 
-    private void Update()
-    {
-        cameraManager.Update();
-    }
+    
 }
