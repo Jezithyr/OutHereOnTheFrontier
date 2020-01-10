@@ -27,55 +27,58 @@ public class FreeOrbitCam : ScriptedCamera
     private float _targetRotation;
 
     private Camera cameraComponent;
-    
+
     private GameObject cameraGameObject;
 
     public override void Initalize()
     {
-        
+
         cameraGameObject = GameObject.Instantiate(prefab);
         cameraComponent = cameraGameObject.GetComponentInChildren<Camera>();
         cameraGameObject.GetComponentInChildren<ScriptedCameraComponent>().LinkedScriptObject = this;
     }
 
-    private Quaternion ComputeCameraRotation (float camAngle)
+    private Quaternion ComputeCameraRotation(float camAngle)
     {
-       // camAngle; //adjust the angle from the input value
+        // camAngle; //adjust the angle from the input value
         float newAngle = camAngle;
 
-        return  Quaternion.Euler(newAngle,180,0);
+        return Quaternion.Euler(newAngle, 180, 0);
     }
 
-    private Vector3 ComputeCameraPos(float camAngle,float distance)
+    private Vector3 ComputeCameraPos(float camAngle, float distance)
     {
 
-        camAngle = -(camAngle-90)*Mathf.PI/180;
-        return new Vector3(0,Mathf.Cos(camAngle)*distance,Mathf.Sin(camAngle)*distance);
+        camAngle = -(camAngle - 90) * Mathf.PI / 180;
+        return new Vector3(0, Mathf.Cos(camAngle) * distance, Mathf.Sin(camAngle) * distance);
 
     }
 
-    private void PanCamera(float XPanInput,float ZPanInput)
+    private void PanCamera(float XPanInput, float ZPanInput)
     {
         float oldX = cameraGameObject.transform.position.x;
         float oldZ = cameraGameObject.transform.position.z;
-        cameraGameObject.transform.position = new Vector3((XPanInput*CameraPanSpeed)+oldX,cameraGameObject.transform.position.y,(ZPanInput*CameraPanSpeed)+oldZ);
+        cameraGameObject.transform.position = new Vector3((XPanInput * CameraPanSpeed) + oldX, cameraGameObject.transform.position.y, (ZPanInput * CameraPanSpeed) + oldZ);
     }
 
     private void RotateCamera(float roationInput)
     {
         float oldRotation = cameraGameObject.transform.rotation.eulerAngles.y;
-        _targetRotation = oldRotation+(roationInput*CameraRotationSpeed);
-        cameraGameObject.transform.rotation = Quaternion.Euler(0,_targetRotation,0);
+        _targetRotation = oldRotation + (roationInput * CameraRotationSpeed);
+        cameraGameObject.transform.rotation = Quaternion.Euler(0, _targetRotation, 0);
 
 
     }
 
     public override void CameraUpdate()
     {
-        PanCamera(Input.GetAxis(_moveZInput),-Input.GetAxis(_moveXInput));
-        RotateCamera(Input.GetAxis(_rotateAxis));
-
-        cameraComponent.transform.localPosition = ComputeCameraPos(CameraAngle,CameraDistance);
+        float moveZInput = Input.GetAxis(_moveZInput);
+        float moveXInput = -Input.GetAxis(_moveXInput);
+        float rotateInput = Input.GetAxis(_rotateAxis);
+        
+        PanCamera(moveZInput, moveXInput);
+        RotateCamera(rotateInput);
+        cameraComponent.transform.localPosition = ComputeCameraPos(CameraAngle, CameraDistance);
         cameraComponent.transform.localRotation = ComputeCameraRotation(CameraAngle);
     }
 }

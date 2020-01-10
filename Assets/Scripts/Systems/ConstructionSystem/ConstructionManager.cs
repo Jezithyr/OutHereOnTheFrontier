@@ -17,13 +17,6 @@ public class ConstructionManager : Module
     public Dictionary<GameObject,Building> Buildings{get => ActiveBuildings;}
 
 
-    public override void Initialize()
-    {
-        
-    }
-
-
-
     public Building GetDataForPrefab(GameObject prefab)
     {
         foreach (var entry in Buildings)
