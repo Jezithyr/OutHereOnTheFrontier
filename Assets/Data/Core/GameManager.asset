@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df97ab6517fa6346920e41013c5e8ee, type: 3}
   m_Name: GameManager
   m_EditorClassIdentifier: 
-  ConstructionController: {fileID: 11400000, guid: 3bdcf21f0b5b97742ba9384044a9a23f,
+  LinkedModuleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1,
     type: 2}
-  JobController: {fileID: 11400000, guid: 183993f6c8a51794cac76a97558a48bb, type: 2}
-  pawnManager: {fileID: 11400000, guid: 9892709af585fba4db3cca7724df7dc5, type: 2}
-  cameraManager: {fileID: 0}
-  ActiveGrid: {fileID: 11400000, guid: 42348951e7f090446beda2c293f1a6d4, type: 2}
+  gameStates: []
+  stateCondition: []
+  systemGameStates:
+  - {fileID: 11400000, guid: 8dabb22faca10ef498bcb7fb1cf92635, type: 2}
+  InitialGameState: {fileID: 11400000, guid: 8dabb22faca10ef498bcb7fb1cf92635, type: 2}

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: PlayerCamera
   m_EditorClassIdentifier: 
   cameraManager: {fileID: 11400000, guid: 634a62bd3f8f25946b0abaaebe190350, type: 2}
-  Active: 0
+  Active: 1
   prefab: {fileID: 7667485208149112055, guid: 3b86617b579150a469ae230a7e0c51be, type: 3}
   CameraAngle: 30
-  CameraDistance: 50
+  CameraDistance: 10
   MaxPanX: 100
   MaxPanZ: 100
-  CameraPanSpeed: 5
-  CameraRotationSpeed: 1
+  CameraPanSpeed: 0.3
+  CameraRotationSpeed: 0.3
   minZoom: 1
   maxZoom: 10
   _moveXInput: Horizontal
