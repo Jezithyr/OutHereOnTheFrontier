@@ -3,24 +3,33 @@ using System.Collections.Generic;
 using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.Experimental.LowLevel;
 using UnityEngine.SceneManagement;
+using UnityEngine.Scripting;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "GameFramework/Core/GameManager")]
 public class GameManager : ScriptableObject
 {   
     [SerializeField] 
-    private ModuleManager moduleManager;
-    
+    private ModuleManager LinkedModuleManager;
+    public ModuleManager moduleManager{get =>LinkedModuleManager;}
+
+    [Header("Game State System")]
     [SerializeField]
     private List<GameState> gameStates = new  List<GameState>();
 
     [SerializeField]
     private List<GameStateCondition> stateCondition;
 
+    [SerializeField]
+    private List<GameState> systemGameStates = new  List<GameState>();
+
     [SerializeField] public GameState InitialGameState;
 
     private GameState ActiveState;
     private Scene ActiveScene;
+
+
+    delegate void OnSceneLoadedDelegate();
 
     
     void GameStateUpdate()
@@ -54,7 +63,7 @@ public class GameManager : ScriptableObject
         PlayerLoopSystem[] unityCoreUpdate = unityCoreSubSystems[4].subSystemList;
         PlayerLoopSystem ScriptModuleUpdate = new PlayerLoopSystem()
         {
-            updateDelegate = moduleManager.ModuleUpdateTick,
+            updateDelegate = LinkedModuleManager.ModuleUpdateTick,
             type = typeof(PlayerLoop)
         };
 
@@ -94,7 +103,10 @@ public class GameManager : ScriptableObject
 
     private void Initalize()
     {
-        moduleManager.Initialize();
+
+        SceneManager.sceneLoaded +=  OnSceneLoad;
+
+        LinkedModuleManager.Initialize();
 
         Debug.Log("----------------------------------\n");
         Debug.Log("Loading Gamestates\n");
@@ -128,14 +140,22 @@ public class GameManager : ScriptableObject
         Debug.Log("===============================\n");
     }
 
+
+    public void OnSceneLoad(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("SceneLoaded");
+        Start();
+    }
+
+
     public void Start()
     {
-        InitialGameState.OnActivate(null);
         ActiveState = InitialGameState;
+        ActiveState.OnActivate(null);
     }
 
     public T GetModule<T>() where T : Module
     {
-        return moduleManager.GetModule<T>();
+        return LinkedModuleManager.GetModule<T>();
     }
 }

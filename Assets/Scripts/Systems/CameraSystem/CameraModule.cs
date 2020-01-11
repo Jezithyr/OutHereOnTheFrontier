@@ -14,7 +14,7 @@ public class CameraModule : Module
         
     }
 
-    private List<ScriptedCamera> ScriptedCameras;
+    private List<ScriptedCamera> ScriptedCameras = new List<ScriptedCamera>();
 
     public override void Update()
     {
@@ -26,7 +26,9 @@ public class CameraModule : Module
 
     public ScriptedCamera AddScriptedCameraInstance(ScriptedCamera newCamera)
     {
+        Debug.LogWarning("Creating: "+ newCamera);
         activeCamera = AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
+        activeCamera.Active = true;
         return activeCamera;
     }
 
@@ -35,13 +37,13 @@ public class CameraModule : Module
     {
         Debug.Log("NewCamera = " + newCamera);
         newCamera.Initalize();
-        newCamera.Active = true;
         ScriptedCameras.Add(newCamera);
         return ScriptedCameras[ScriptedCameras.Count-1];
     }
 
     public void ActivateCamera(ScriptedCamera newCamera)
     {
+        
         if (newCamera == activeCamera) return;
 
         foreach (var scriptCam in ScriptedCameras)
@@ -49,6 +51,7 @@ public class CameraModule : Module
             if (scriptCam == newCamera)
             {
                 activeCamera = newCamera;
+                newCamera.Active = true;
             }
         }
     }

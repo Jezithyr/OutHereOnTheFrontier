@@ -5,17 +5,16 @@ using UnityEngine;
 
 public class DebugState : GameState
 { 
+    [SerializeField]
+    private CameraModule camModule;
     
-    [SerializeField] private ScriptedCamera customCamera ;
+    [SerializeField]
+    private ScriptedCamera customCamera ;
     public override void OnActivate(GameState lastState)
     {
         Debug.Log("Entered Debug State");
         
-        //CameraModule camModule = Manager.GetModule<CameraModule>();
-        // ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
-        // camModule.ActivateCamera(newCam);
-        
-
+        ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
     }
     public override void OnDeactivate(GameState newState)
     {
