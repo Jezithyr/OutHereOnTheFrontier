@@ -11,7 +11,7 @@ public class Pawn : ScriptableObject
     private GameObject PawnObject;
 
     [SerializeField] 
-    private PawnManager linkedPawnManager;
+    private PawnModule linkedPawnManager;
 
     public Job Job{get => CurrentJob;}
 

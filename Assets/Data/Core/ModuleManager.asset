@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
   ActiveModules:
-  - {fileID: 11400000, guid: 634a62bd3f8f25946b0abaaebe190350, type: 2}
-  - {fileID: 11400000, guid: 3bdcf21f0b5b97742ba9384044a9a23f, type: 2}
-  - {fileID: 11400000, guid: 183993f6c8a51794cac76a97558a48bb, type: 2}
-  - {fileID: 11400000, guid: 9892709af585fba4db3cca7724df7dc5, type: 2}
+  - {fileID: 11400000, guid: 99fa0cb526ca2024da0f7a38c14bd797, type: 2}
+  - {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59, type: 2}
+  - {fileID: 11400000, guid: 2f9799a72a332ca4db9ce5fca6e6109b, type: 2}
+  - {fileID: 11400000, guid: 3d5894f715fccfb448cad780268b5402, type: 2}

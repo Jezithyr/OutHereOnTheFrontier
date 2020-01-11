@@ -3,35 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
+[CreateAssetMenu(menuName = "GameFramework/Core/ModuleManager")]
 public class ModuleManager : ScriptableObject
 {
     [SerializeField] 
     private GameManager gameManager;
+
+    delegate void TickModuleUpdateDelegate();
+
 
     [SerializeField]
     private List<Module> ActiveModules;
     private Dictionary<System.Type,Module> moduleList = new Dictionary<System.Type,Module>();
     public Dictionary<System.Type,Module> List {get => moduleList;}
 
-    delegate void UpdateDelegate();
-    private List<Module> tickingModules = new List<Module> ();
+    private List<TickModuleUpdateDelegate> tickingModules = new List<TickModuleUpdateDelegate>();
 
     public void ModuleUpdateTick()
     {
         if (!Application.isPlaying) return;
-
-        foreach (Module module in tickingModules)
+        foreach (TickModuleUpdateDelegate moduleTickFunc in tickingModules)
         {
-            module.Update();
+            moduleTickFunc();
         }
     }
 
 
     public void Initialize()
     {
+        Debug.Log("-= Loading Game framework modules =-\n");
         LoadModules();
-        Debug.Log("Module Load Complete\n");
+        Debug.Log("-Module initalization Complete-\n");
     }
 
 
@@ -40,10 +42,16 @@ public class ModuleManager : ScriptableObject
         moduleList.Clear();
 
         Debug.Log("=Building Module List=\n");
+        string debugModuleList = "";
+        
         foreach (var module in ActiveModules)
         {
             moduleList.Add(module.GetType(),module);
+            debugModuleList = debugModuleList + "" + module+",";
         }
+        Debug.Log(debugModuleList+"\n");
+
+
         Debug.Log("-Module List built successfully-\n");
 
         Debug.Log("--==Initializing Modules==-\n");
@@ -53,12 +61,12 @@ public class ModuleManager : ScriptableObject
             module.Initialize();
             if (module.RunUpdate)
             {
-                tickingModules.Add(module);
-                Debug.Log("" + module.GetType() + " Added to update thread\n");
+                tickingModules.Add(module.Update);
+                Debug.Log("" + module + " Added to update thread\n");
             }
             Debug.Log(module.GetType() +" Load Complete\n");
         }
-        Debug.Log("-Module initalization Complete-\n");
+        
     }
 
 

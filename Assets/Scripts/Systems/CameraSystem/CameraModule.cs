@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class CameraManager : Module
+[CreateAssetMenu(menuName = "GameFramework/SubSystems/CameraModule")]
+public class CameraModule : Module
 {
-
-    [SerializeField] private ScriptedCamera activeCamera;
+    private ScriptedCamera activeCamera;
     public ScriptedCamera ActiveCamera{get => activeCamera;}
 
     public override void Initialize()
@@ -14,7 +14,7 @@ public class CameraManager : Module
         
     }
 
-    private List<ScriptedCamera> ScriptedCameras;
+    private List<ScriptedCamera> ScriptedCameras = new List<ScriptedCamera>();
 
     public override void Update()
     {
@@ -26,21 +26,24 @@ public class CameraManager : Module
 
     public ScriptedCamera AddScriptedCameraInstance(ScriptedCamera newCamera)
     {
-        return AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
+        Debug.LogWarning("Creating: "+ newCamera);
+        activeCamera = AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
+        activeCamera.Active = true;
+        return activeCamera;
     }
 
 
     public ScriptedCamera AddScriptedCamera(ScriptedCamera newCamera)
     {
-        ScriptedCamera tempCam = newCamera;
-        tempCam.Initalize();
-        tempCam.Active = true;
-        ScriptedCameras.Add(tempCam);
+        Debug.Log("NewCamera = " + newCamera);
+        newCamera.Initalize();
+        ScriptedCameras.Add(newCamera);
         return ScriptedCameras[ScriptedCameras.Count-1];
     }
 
     public void ActivateCamera(ScriptedCamera newCamera)
     {
+        
         if (newCamera == activeCamera) return;
 
         foreach (var scriptCam in ScriptedCameras)
@@ -48,6 +51,7 @@ public class CameraManager : Module
             if (scriptCam == newCamera)
             {
                 activeCamera = newCamera;
+                newCamera.Active = true;
             }
         }
     }

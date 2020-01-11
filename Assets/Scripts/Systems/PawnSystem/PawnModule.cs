@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "Core/Systems/PawnSystem/Create Pawn Manager")]
-public class PawnManager : Module
+[CreateAssetMenu(menuName = "GameFramework/SubSystems/PawnModule")]
+public class PawnModule : Module
 {
 
-    [SerializeField] private JobManager linkedJobList;
+    [SerializeField] private JobModule linkedJobModule;
 
     private List<Pawn> activePawns = new List<Pawn>();
 
@@ -35,7 +35,7 @@ public class PawnManager : Module
     {
         foreach (Pawn _pawn in inActivePawns)
         {
-            foreach (var jobList in linkedJobList.Jobs)
+            foreach (var jobList in linkedJobModule.Jobs)
             {
                 if (jobList.Value.Count > 0)
                 {
@@ -50,18 +50,18 @@ public class PawnManager : Module
     {
         
         targetPawn.CancelCurrentJob();
-        linkedJobList.AddJob(targetPawn.Job);
+        linkedJobModule.AddJob(targetPawn.Job);
         activePawns.Remove(targetPawn);
         inActivePawns.Add(targetPawn);
     }
 
     private void initalize()
     {
-        foreach (Job job in linkedJobList.PossibleJobs) //initalize job prioritylist
+        foreach (Job job in linkedJobModule.PossibleJobs) //initalize job prioritylist
         {
-            if (!linkedJobList.Jobs.ContainsKey(job.Priority))
+            if (!linkedJobModule.Jobs.ContainsKey(job.Priority))
             {
-                linkedJobList.Jobs.Add(job.Priority,new Queue<Job>());
+                linkedJobModule.Jobs.Add(job.Priority,new Queue<Job>());
             }
         }
     }

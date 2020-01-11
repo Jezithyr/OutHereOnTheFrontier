@@ -19,8 +19,8 @@ MonoBehaviour:
   CameraDistance: 10
   MaxPanX: 100
   MaxPanZ: 100
-  CameraPanSpeed: 2
-  CameraRotationSpeed: 1
+  CameraPanSpeed: 0.3
+  CameraRotationSpeed: 0.3
   minZoom: 1
   maxZoom: 10
   _moveXInput: Horizontal

@@ -4,8 +4,8 @@ using UnityEngine;
 
 
 
-
-public class ConstructionManager : Module
+[CreateAssetMenu(menuName = "GameFramework/SubSystems/ConstructionModule")]
+public class ConstructionModule : Module
 {
     [SerializeField] private GridSystem linkedGrid;
     public GridSystem Grid {get => linkedGrid;}

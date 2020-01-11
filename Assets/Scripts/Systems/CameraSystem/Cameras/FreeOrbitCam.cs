@@ -32,10 +32,10 @@ public class FreeOrbitCam : ScriptedCamera
 
     public override void Initalize()
     {
-
         cameraGameObject = GameObject.Instantiate(prefab);
         cameraComponent = cameraGameObject.GetComponentInChildren<Camera>();
-        cameraGameObject.GetComponentInChildren<ScriptedCameraComponent>().LinkedScriptObject = this;
+        Debug.Log("Creating OrbitCam"+cameraGameObject + "\n");
+        cameraComponent.enabled = true;
     }
 
     private Quaternion ComputeCameraRotation(float camAngle)
