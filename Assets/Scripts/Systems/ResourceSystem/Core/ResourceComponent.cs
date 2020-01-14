@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//resource component base class
+
 public class ResourceComponent : ScriptableObject
 {
     [Header("Links")]
-    [SerializeField] private ResourceModule resourceController;
+    [SerializeField] public ResourceModule resourceController;
 
     [Header("Resource System")]
     [SerializeField] protected List<Resource> activeResources = new List<Resource>();
@@ -20,6 +22,6 @@ public class ResourceComponent : ScriptableObject
 
     public virtual void Run()
     {
-        
+
     }
 }

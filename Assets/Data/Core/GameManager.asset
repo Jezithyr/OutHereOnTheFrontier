@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d0fde32a216ae4288ca5ba253bad5a, type: 3}
   m_Name: GameManager
   m_EditorClassIdentifier: 
-  LinkedModuleManager: {fileID: 0}
+  LinkedModuleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1,
+    type: 2}
   gameStates: []
   stateCondition: []
-  systemGameStates: []
-  InitialGameState: {fileID: 0}
+  systemGameStates:
+  - {fileID: 11400000, guid: 8dabb22faca10ef498bcb7fb1cf92635, type: 2}
+  InitialGameState: {fileID: 11400000, guid: 8dabb22faca10ef498bcb7fb1cf92635, type: 2}

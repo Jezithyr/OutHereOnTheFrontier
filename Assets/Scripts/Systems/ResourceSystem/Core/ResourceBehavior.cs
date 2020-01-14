@@ -29,33 +29,103 @@ public class ResourceBehavior : MonoBehaviour
     public bool isActive = false;
 
 
+    private bool emptydelegate(GameObject ownerObject, MonoBehaviour script)
+    {
+        return true;
+    }
+
     private void OnEnable()
     {
         //initalize the delegates
-        foreach (BehaviorDelegate newDel in activate)
+        InitalizeDelegates();
+ 
+        resourceComponent.resourceController.resourceNodes.Add(this);
+        
+    }
+
+
+    private void InitalizeDelegates()
+    {
+        
+        if (activate.Count != 0)
         {
-            activateDeligate += newDel.runDelegate;
+            foreach (BehaviorDelegate newDel in activate)
+            {
+                activateDeligate += newDel.runDelegate;
+            }
         }
-        foreach (BehaviorDelegate newDel in activeLoop)
+        else
         {
-            activeLoopDelegate += newDel.runDelegate;
+            activateDeligate +=emptydelegate;
         }
-        foreach (BehaviorDelegate newDel in deActivate)
+
+
+        if (activeLoop.Count != 0)
         {
-            deActivateDelegate += newDel.runDelegate;
+            foreach (BehaviorDelegate newDel in activeLoop)
+            {
+                activeLoopDelegate += newDel.runDelegate;
+            }
         }
-        foreach (BehaviorDelegate newDel in deActivatedLoop)
+        else
         {
-            deActivatedLoopDelegate += newDel.runDelegate;
+            activeLoopDelegate +=emptydelegate;
         }
-        foreach (BehaviorDelegate newDel in onStart)
+
+
+        if (deActivate.Count != 0)
         {
-            onStartDelegate += newDel.runDelegate;
+            foreach (BehaviorDelegate newDel in deActivate)
+            {
+                deActivateDelegate += newDel.runDelegate;
+            }
         }
-        foreach (BehaviorDelegate newDel in onDestroy)
+        else
         {
-            onDestroyDelegate += newDel.runDelegate;
+            deActivateDelegate +=emptydelegate;
         }
+
+
+
+        if (deActivatedLoop.Count != 0)
+        {
+            foreach (BehaviorDelegate newDel in deActivatedLoop)
+            {
+                deActivatedLoopDelegate += newDel.runDelegate;
+            }
+        }
+        else
+        {
+            deActivatedLoopDelegate +=emptydelegate;
+        }
+
+
+        if (onStart.Count != 0)
+        {
+            foreach (BehaviorDelegate newDel in onStart)
+            {
+                onStartDelegate += newDel.runDelegate;
+            }
+        }
+        else
+        {
+            onStartDelegate +=emptydelegate;
+        }
+
+
+        if (onDestroy.Count != 0)
+        {
+            foreach (BehaviorDelegate newDel in onDestroy)
+            {
+                onDestroyDelegate += newDel.runDelegate;
+            }
+        }
+        else
+        {
+            onDestroyDelegate +=emptydelegate;
+        }
+
+
     }
 
     private void Start()
