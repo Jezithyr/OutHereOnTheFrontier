@@ -379,6 +379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5216682585155610964}
+  - component: {fileID: -2860042311032521487}
   m_Layer: 0
   m_Name: MetalConsumer
   m_TagString: Untagged
@@ -395,7 +396,7 @@ Transform:
   m_GameObject: {fileID: 8689446358967596884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 5869990094727543770}
   - {fileID: 7886968139588730028}
@@ -405,6 +406,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2860042311032521487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8689446358967596884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fb16d546780ba4cb824dc1c286d83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceComponent: {fileID: 11400000, guid: 4264c2c8696f7af44bb39ecfc15ec355, type: 2}
+  activate: []
+  activeLoop: []
+  deActivate: []
+  deActivatedLoop: []
+  onStart: []
+  onDestroy: []
+  isActive: 1
 --- !u!1 &8972241268458839987
 GameObject:
   m_ObjectHideFlags: 0

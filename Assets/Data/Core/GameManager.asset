@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df97ab6517fa6346920e41013c5e8ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 56d0fde32a216ae4288ca5ba253bad5a, type: 3}
   m_Name: GameManager
   m_EditorClassIdentifier: 
   LinkedModuleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1,

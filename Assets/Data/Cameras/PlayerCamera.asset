@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b642b20d730f5c2479b9f4b0b7fb1828, type: 3}
   m_Name: PlayerCamera
   m_EditorClassIdentifier: 
-  cameraManager: {fileID: 11400000, guid: 634a62bd3f8f25946b0abaaebe190350, type: 2}
+  cameraManager: {fileID: 0}
   Active: 1
   prefab: {fileID: 7667485208149112055, guid: 3b86617b579150a469ae230a7e0c51be, type: 3}
   CameraAngle: 30
-  CameraDistance: 10
+  CameraDistance: 40
   MaxPanX: 100
   MaxPanZ: 100
   CameraPanSpeed: 0.3
