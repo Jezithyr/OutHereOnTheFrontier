@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04f0f220306374842ac844a626913f65, type: 3}
-  m_Name: PawnModule
+  m_Script: {fileID: 11500000, guid: 26a9d17bb5238154a92d55dcc58e4248, type: 3}
+  m_Name: UIModule
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
   RunUpdate: 0
-  linkedJobModule: {fileID: 11400000, guid: 3d5894f715fccfb448cad780268b5402, type: 2}
+  userInterfaces:
+  - {fileID: 9037771107179944610, guid: 5dfade4768f78fe4484990a6ec7d6fbd, type: 3}
