@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 59379721}
+  - component: {fileID: 59379722}
   m_Layer: 0
   m_Name: DebugHudOBJ
   m_TagString: Untagged
@@ -148,8 +149,40 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59379722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59379720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf513736c050044ca952358cf125757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hudOBJ: {fileID: 283693786}
+  metaldisplay: {fileID: 2082732403}
+  wooddisplay: {fileID: 565922685}
+  alloyDisplay: {fileID: 208601297}
+  metal: {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  wood: {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  alloy: {fileID: 0}
+  resourcecontroller: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+--- !u!1 &208601297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1569056028289927661, guid: 5dfade4768f78fe4484990a6ec7d6fbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 307331164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &283693786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9037771107179944610, guid: 5dfade4768f78fe4484990a6ec7d6fbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 307331164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &307331164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280,7 +313,7 @@ PrefabInstance:
     - target: {fileID: 8248756924331105521, guid: 5dfade4768f78fe4484990a6ec7d6fbd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8248756924331105521, guid: 5dfade4768f78fe4484990a6ec7d6fbd,
         type: 3}
@@ -354,6 +387,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfade4768f78fe4484990a6ec7d6fbd, type: 3}
+--- !u!1 &565922685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3101867997208028590, guid: 5dfade4768f78fe4484990a6ec7d6fbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 307331164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &902966304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -365,6 +404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MetalExtractor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240391779318390795, guid: 1fa739c716507c94483b64235f572294,
+        type: 3}
+      propertyPath: isActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2839015589853828805, guid: 1fa739c716507c94483b64235f572294,
         type: 3}
@@ -612,6 +656,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082732403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2029103928504801077, guid: 5dfade4768f78fe4484990a6ec7d6fbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 307331164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2125235094
 GameObject:
   m_ObjectHideFlags: 0
