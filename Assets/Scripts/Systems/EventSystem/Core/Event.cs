@@ -9,7 +9,7 @@ public class Event : ScriptableObject
     [SerializeField] public string EventInternalName = "";
     [SerializeField] public bool isActive;
     [SerializeField] public ConditionScript triggerCondition;
-    [SerializeField] private List<EventDecision> choices = new List<EventDecision>();
+    [SerializeField] public List<EventDecision> choices = new List<EventDecision>();
 
     [SerializeField] public string eventTitle = "";
     [TextArea] public string flavorText = "";

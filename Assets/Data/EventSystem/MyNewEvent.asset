@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
   m_Name: MyNewEvent
   m_EditorClassIdentifier: 
-  EventInternalName: StorageMishap
-  isActive: 0
-  triggerCondition: {fileID: 0}
+  EventInternalName: TestEvent
+  isActive: 1
+  triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
   choices:
-  - {fileID: 0}
-  - {fileID: 0}
-  eventTitle: 
-  flavorText: 
+  - {fileID: 11400000, guid: f58ec897b43c228468952fa259f6f31c, type: 2}
+  - {fileID: 11400000, guid: aade6b37fa88ea84a85da781bf4314a0, type: 2}
+  eventTitle: Storage Mishap
+  flavorText: 'omg someone did a stupid and now you need to fix it!
+
+'

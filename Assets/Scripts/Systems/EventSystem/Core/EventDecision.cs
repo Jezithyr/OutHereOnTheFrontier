@@ -13,7 +13,7 @@ public class EventDecision : ScriptableObject
     [SerializeField] protected List<EventEffect> effects = new List<EventEffect>();
 
     [SerializeField] protected string optionTitle = "";
-    [TextArea] protected string flavorText = "";
+    [SerializeField] public string flavorText = "";
 
     public Event owner;
     delegate void EventEffectDelegate(ScriptableObject callingObject);
