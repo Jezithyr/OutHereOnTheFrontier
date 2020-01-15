@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6850209054946655886}
   - component: {fileID: 5421857591648810702}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Choice4Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1045708789960193185}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
+        m_MethodName: ButtonClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3772214424265811105
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +398,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 222.3}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1243804128347020582
 CanvasRenderer:
@@ -624,7 +635,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6435058425250319103}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
+        m_MethodName: ButtonClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5884628392904316295
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +764,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7524616333304766484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
+        m_MethodName: ButtonClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5937803854090534573
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +788,7 @@ GameObject:
   - component: {fileID: 8637517104668414}
   - component: {fileID: 6993162546095157645}
   - component: {fileID: 4432834810050026150}
+  - component: {fileID: 5778930809597187049}
   m_Layer: 5
   m_Name: EventPopup
   m_TagString: Untagged
@@ -842,6 +876,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5778930809597187049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5937803854090534573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f7e7be4e12515d48b599588abbd12a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: {fileID: 8852882412558965830}
+  Flavor: {fileID: 5954780289644172689}
+  C1Button: {fileID: 3887371413589807988}
+  C2Button: {fileID: 5547531629154759909}
+  C3Button: {fileID: 4578261154740772011}
+  C4Button: {fileID: 5421857591648810702}
 --- !u!1 &6059125826832963417
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +906,7 @@ GameObject:
   - component: {fileID: 6321012469658093096}
   - component: {fileID: 4578261154740772011}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Choice3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1009,7 +1061,7 @@ GameObject:
   - component: {fileID: 5889739235250478160}
   - component: {fileID: 5547531629154759909}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Choice2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1319,7 +1371,7 @@ GameObject:
   - component: {fileID: 8148994870819667404}
   - component: {fileID: 3887371413589807988}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Choice1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1579,4 +1631,15 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 436788314316617978}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
+        m_MethodName: ButtonClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

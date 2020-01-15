@@ -18,6 +18,8 @@ public class FreeOrbitCam : ScriptedCamera
     [SerializeField] private float minZoom = 1;
     [SerializeField] private float maxZoom = 10;
 
+    [SerializeField] public Vector3 targetPosition;
+
     [SerializeField] private string _moveXInput = "Horizontal";  // movement input string
     [SerializeField] private string _moveZInput = "Vertical";  // movement input string
     [SerializeField] private string _zoomAxis = "Zoom";  // movement input string
@@ -26,14 +28,18 @@ public class FreeOrbitCam : ScriptedCamera
     private Quaternion _cameraRotation;
     private float _targetRotation;
 
+    
+
     private Camera cameraComponent;
 
     private GameObject cameraGameObject;
 
+   
     public override void Initalize()
     {
         cameraGameObject = GameObject.Instantiate(prefab);
         cameraComponent = cameraGameObject.GetComponentInChildren<Camera>();
+        cameraObj = cameraComponent;
         Debug.Log("Creating OrbitCam"+cameraGameObject + "\n");
         cameraComponent.enabled = true;
     }
@@ -54,11 +60,19 @@ public class FreeOrbitCam : ScriptedCamera
 
     }
 
+    public void SetCameraPos(Vector3 worldPos)
+    {
+        targetPosition = worldPos;
+        cameraGameObject.transform.position = worldPos;
+    }
+
+
     private void PanCamera(float XPanInput, float ZPanInput)
     {
         float oldX = cameraGameObject.transform.position.x;
         float oldZ = cameraGameObject.transform.position.z;
         cameraGameObject.transform.position = new Vector3((XPanInput * CameraPanSpeed) + oldX, cameraGameObject.transform.position.y, (ZPanInput * CameraPanSpeed) + oldZ);
+        targetPosition = cameraGameObject.transform.position;
     }
 
     private void RotateCamera(float roationInput)
@@ -79,6 +93,7 @@ public class FreeOrbitCam : ScriptedCamera
         PanCamera(moveZInput, moveXInput);
         RotateCamera(rotateInput);
         cameraComponent.transform.localPosition = ComputeCameraPos(CameraAngle, CameraDistance);
+    
         cameraComponent.transform.localRotation = ComputeCameraRotation(CameraAngle);
     }
 }

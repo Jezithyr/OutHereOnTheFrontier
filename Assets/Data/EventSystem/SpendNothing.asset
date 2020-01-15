@@ -16,5 +16,5 @@ MonoBehaviour:
   condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
   effects: []
   optionTitle: Spend Nothing
-  flavorText: 
+  flavorText: No effect
   owner: {fileID: 11400000, guid: d1dcd98e81e2dcb45aaa24bd6a4aaf52, type: 2}

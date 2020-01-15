@@ -5,6 +5,9 @@ using UnityEngine;
 public abstract class ScriptedCamera : ScriptableObject
 {
     [SerializeField] protected CameraModule cameraManager;
+
+    [SerializeField] protected Camera cameraObj;
+    public Camera CreatedCamera{get => cameraObj;}
     
     public abstract void CameraUpdate();
 

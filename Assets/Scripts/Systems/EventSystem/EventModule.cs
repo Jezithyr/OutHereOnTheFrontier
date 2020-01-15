@@ -10,44 +10,83 @@ public class EventModule : Module
 {   
     [SerializeField] private List<Event> activeEvents = new List<Event>() ;
 
-    [SerializeField] private GameObject linkedEventUI;
-    [SerializeField] private TextMeshProUGUI eventUITitle;
-    [SerializeField] private TextMeshProUGUI eventUIFlavor;
-
-    [SerializeField] private List<Button> buttonList = new List<Button>();
+    [SerializeField] private GameObject linkedEventPrefab;
 
     Event activeEvent;
 
 
+    EventPopupLinks EventUI;
+    GameObject EventUIObject;
 
 
     public void ButtonClick(int choiceIndex)
     {
-        activeEvent.choices[choiceIndex].TriggerDecision();
+
+        if (activeEvent.choices.Count > choiceIndex)
+        {
+            activeEvent.choices[choiceIndex].TriggerDecision();
+            HideUI();
+        }
+        
     }
 
 
 
+    public void ShowUI()
+    {
+        EventUIObject.SetActive(true);
+    }
 
-
+    public void HideUI()
+    {
+        EventUIObject.SetActive(false);
+    }
 
     public void UpdateUI()
     {
-        eventUITitle.text = activeEvent.eventTitle;
-        eventUIFlavor.text = activeEvent.flavorText;
-        
-        int index = 0;
-        foreach (EventDecision choice in activeEvent.choices)
+        EventUIObject = GameObject.Instantiate(linkedEventPrefab);
+        EventUI = EventUIObject.GetComponent<EventPopupLinks>();
+
+        EventUI.Title.text = activeEvent.eventTitle;
+        EventUI.Flavor.text = activeEvent.flavorText;
+        if (activeEvent.choices.Count > 0) 
         {
-            if (!choice.condition.ConditionCheck(this))
-            {
-                buttonList[index].gameObject.SetActive(false);
-            }
-            else
-            {
-                buttonList[index].GetComponent<TextMeshProUGUI>().text = choice.flavorText;
-            }
-            index++;
+            EventUI.C1Button.gameObject.SetActive(true);
+            EventUI.C1Button.text = "  "+ activeEvent.choices[0].flavorText;
+        }
+        else 
+        {
+            EventUI.C1Button.gameObject.SetActive(false);
+        }
+
+        if (activeEvent.choices.Count > 1) 
+        {
+            EventUI.C2Button.gameObject.SetActive(true);
+            EventUI.C2Button.text = "  "+ activeEvent.choices[1].flavorText;
+        }
+        else 
+        {
+            EventUI.C2Button.gameObject.SetActive(false);
+        }
+
+        if (activeEvent.choices.Count > 2) 
+        {
+            EventUI.C3Button.gameObject.SetActive(true);
+            EventUI.C3Button.text = "  "+ activeEvent.choices[2].flavorText;
+        }
+        else 
+        {
+            EventUI.C3Button.gameObject.SetActive(false);
+        }
+        
+        if (activeEvent.choices.Count > 3) 
+        {
+            EventUI.C4Button.gameObject.SetActive(true);
+            EventUI.C4Button.text = "  "+ activeEvent.choices[3].flavorText;
+        }
+        else 
+        {
+            EventUI.C4Button.gameObject.SetActive(false);
         }
     }
 
@@ -55,10 +94,11 @@ public class EventModule : Module
 
 
 
-    public override void Initialize()
+    public override void Start()
     {
         activeEvent = activeEvents[0];
-
+        UpdateUI();
+        HideUI();
     }
     
     public override void Update()

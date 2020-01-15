@@ -144,6 +144,8 @@ public class GameManager : ScriptableObject
     public void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("SceneLoaded");
+        
+        moduleManager.ModuleStartOnLoad();
         Start();
     }
 

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
-  m_Name: TestBuilding
+  m_Name: MetalStorage
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8689446358967596884, guid: 55ab970db3d64a14e9d2d8e29656c4b0, type: 3}
+  prefab: {fileID: 7410120834222916081, guid: 7a477295b61fa3b4cb6625527b03f3d7, type: 3}
