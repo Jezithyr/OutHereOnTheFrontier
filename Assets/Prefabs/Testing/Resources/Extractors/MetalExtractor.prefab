@@ -51,7 +51,7 @@ MonoBehaviour:
   deActivatedLoop: []
   onStart: []
   onDestroy: []
-  isActive: 0
+  isActive: 1
 --- !u!1 &2238131521523416662
 GameObject:
   m_ObjectHideFlags: 0

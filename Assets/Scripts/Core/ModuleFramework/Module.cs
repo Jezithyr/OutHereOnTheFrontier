@@ -9,6 +9,14 @@ public class Module: ScriptableObject
 
     [SerializeField]
     public bool RunUpdate = false;
+    [SerializeField] 
+    public bool StartOnSceneLoad = false;
+
+    public virtual void Start()
+    {
+
+    }
+
 
     public virtual void Initialize()
     {

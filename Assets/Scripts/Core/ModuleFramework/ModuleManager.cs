@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 
@@ -10,14 +11,22 @@ public class ModuleManager : ScriptableObject
     private GameManager gameManager;
 
     delegate void TickModuleUpdateDelegate();
-
+    delegate void OnSceneLoadedDelegate();
 
     [SerializeField]
     private List<Module> ActiveModules;
     private Dictionary<System.Type,Module> moduleList = new Dictionary<System.Type,Module>();
     public Dictionary<System.Type,Module> List {get => moduleList;}
+    
 
     private List<TickModuleUpdateDelegate> tickingModules = new List<TickModuleUpdateDelegate>();
+    private OnSceneLoadedDelegate sceneLoadedDelegate;
+
+
+    private void emptyDelegate()
+    {
+        
+    }
 
     public void ModuleUpdateTick()
     {
@@ -26,6 +35,11 @@ public class ModuleManager : ScriptableObject
         {
             moduleTickFunc();
         }
+    }
+
+    public void ModuleStartOnLoad()
+    {
+        sceneLoadedDelegate();
     }
 
 
@@ -64,9 +78,13 @@ public class ModuleManager : ScriptableObject
                 tickingModules.Add(module.Update);
                 Debug.Log("" + module + " Added to update thread\n");
             }
+            if (module.StartOnSceneLoad)
+            {
+                sceneLoadedDelegate += module.Start;
+            }
             Debug.Log(module.GetType() +" Load Complete\n");
         }
-        
+        sceneLoadedDelegate += emptyDelegate;//to prevent null pointer
     }
 
 

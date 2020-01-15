@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
   RunUpdate: 1
+  StartOnSceneLoad: 1
+  activeEvents:
+  - {fileID: 11400000, guid: d1dcd98e81e2dcb45aaa24bd6a4aaf52, type: 2}
+  linkedEventPrefab: {fileID: 5937803854090534573, guid: d85d297db28fb254cae444baa1516221,
+    type: 3}

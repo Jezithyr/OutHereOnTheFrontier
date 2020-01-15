@@ -17,5 +17,5 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: bc68168450dc7d9468eb17e42e840b0f, type: 2}
   optionTitle: Spend Nothing
-  flavorText: spend metal
+  flavorText: Spend 75 metal
   owner: {fileID: 11400000, guid: d1dcd98e81e2dcb45aaa24bd6a4aaf52, type: 2}

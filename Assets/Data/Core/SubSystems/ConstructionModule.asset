@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
   RunUpdate: 0
+  StartOnSceneLoad: 0
   linkedGrid: {fileID: 11400000, guid: 42348951e7f090446beda2c293f1a6d4, type: 2}
   EnabledBuildings:
-  - {fileID: 11400000, guid: 32cdd1481ee17074cb099dd3ee3203ee, type: 2}
+  - {fileID: 11400000, guid: db4d089e09507a4459ce5033c284e58f, type: 2}
+  - {fileID: 11400000, guid: 34b90dd7cd0bc8f4b8853f77bef6e750, type: 2}
