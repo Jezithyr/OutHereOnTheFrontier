@@ -32,6 +32,8 @@ public class PawnMovementTest : MonoBehaviour
 
     private void Update()
     {
+        if(Time.frameCount%30 == 0)//every second
+        {
         if(Vector3.Distance(waypoint1.position,gameObject.transform.position) < 5.0)
         {
             hasArrivedAtFirstWay = true;
@@ -50,6 +52,7 @@ public class PawnMovementTest : MonoBehaviour
             destination = waypoint1;
             SetDestination();
             }
+        }
         }
     }
 } 

@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26a9d17bb5238154a92d55dcc58e4248, type: 3}
-  m_Name: UIModule
+  m_Script: {fileID: 11500000, guid: bbf513736c050044ca952358cf125757, type: 3}
+  m_Name: DebugHud
   m_EditorClassIdentifier: 
-  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
-  RunUpdate: 0
-  StartOnSceneLoad: 0
-  ActiveInterfaces:
-  - {fileID: 0}
+  uiController: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
+  CanTick: 1
+  UiPrefab: {fileID: 0}
