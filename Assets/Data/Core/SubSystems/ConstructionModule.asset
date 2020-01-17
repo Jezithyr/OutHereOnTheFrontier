@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ConstructionModule
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
-  RunUpdate: 0
+  RunUpdate: 1
   StartOnSceneLoad: 0
   linkedGrid: {fileID: 11400000, guid: 42348951e7f090446beda2c293f1a6d4, type: 2}
   EnabledBuildings:

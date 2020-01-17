@@ -15,4 +15,6 @@ public abstract class GameState : ScriptableObject
 
     public virtual void OnUpdate(){}
 
+    public virtual void Initalize(){}
+
 }

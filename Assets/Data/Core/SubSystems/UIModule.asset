@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: UIModule
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
-  RunUpdate: 0
-  userInterfaces:
-  - {fileID: 9037771107179944610, guid: 5dfade4768f78fe4484990a6ec7d6fbd, type: 3}
+  RunUpdate: 1
+  StartOnSceneLoad: 1
+  ActiveInterfaces:
+  - {fileID: 11400000, guid: 0f130f47b1fd6cc4b9a771feaa038fcb, type: 2}

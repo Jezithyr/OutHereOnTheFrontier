@@ -123,6 +123,7 @@ public class GameManager : ScriptableObject
         while (hasValidStates && index < gameStates.Count)
         {
             gameStates[index].Manager = this;
+            gameStates[index].Initalize();
             if (stateCondition[index] == null || gameStates[index] == null)
             {
                 Debug.LogError("Error: A gamestate or condition is undefined!\n");
