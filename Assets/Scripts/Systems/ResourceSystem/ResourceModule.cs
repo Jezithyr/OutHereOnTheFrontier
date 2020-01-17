@@ -43,6 +43,10 @@ public class ResourceModule : Module
         if(Time.frameCount%60 == 0)//every second
         {
             Debug.Log("Resource Network Update");
+            foreach (var item in resourceStorage)
+            {
+                Debug.Log("Resource: "+ item.Key.name + " "+ item.Value);
+            }
             foreach (ResourceBehavior resourceNode in resourceNodes)
             {
                 Debug.Log("Running: "+ resourceNode);

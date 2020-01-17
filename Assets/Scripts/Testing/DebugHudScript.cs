@@ -3,35 +3,30 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class DebugHudScript : MonoBehaviour
-{
-    [SerializeField] private GameObject hudOBJ;
-    [SerializeField] private GameObject metaldisplay;
-    [SerializeField] private GameObject wooddisplay;
-    [SerializeField] private GameObject alloyDisplay ;
 
+[CreateAssetMenu(menuName = "UISystem/HUD/Create New Debug Hud")]
+public class DebugHudScript : ScriptedUI
+{  
+    [SerializeField] private ResourceModule resourceSystem;
+    [SerializeField] private Resource WoodResource;
+    [SerializeField] private Resource MetalResource;
+    [SerializeField] private Resource AlloyResource;
 
-    [SerializeField] private Resource metal;
-    [SerializeField] private Resource wood;
-    [SerializeField] private Resource alloy;
+    private TextMeshProUGUI metalDisplay;
+    private TextMeshProUGUI woodDisplay;
+    private TextMeshProUGUI alloyDisplay;
 
-    [SerializeField] private ResourceModule resourcecontroller ;
-
-    private void Start()
+    public override void Update()
     {
-       
-    }
+        Debug.Log("HUD UPDATE " + resourceSystem.GetResourceStorage(MetalResource));
+        metalDisplay = linkedBehaviorScripts[0].GetElementByName("MetalDisplay").GetComponent<TextMeshProUGUI>();
+        woodDisplay = linkedBehaviorScripts[0].GetElementByName("WoodDisplay").GetComponent<TextMeshProUGUI>();
+        alloyDisplay = linkedBehaviorScripts[0].GetElementByName("AlloyDisplay").GetComponent<TextMeshProUGUI>();
 
-    private void Update()
-    {
-        metaldisplay.GetComponent<TMPro.TextMeshProUGUI>().text =  resourcecontroller.GetStorage[metal] + "/" + resourcecontroller.GetResourceLimit(metal);
-       wooddisplay.GetComponent<TMPro.TextMeshProUGUI>().text =  resourcecontroller.GetStorage[wood] + "/" + resourcecontroller.GetResourceLimit(wood);
-        //alloyDisplay.GetComponent<TextMesh>().text =  resourcecontroller.GetStorage[alloy] + "/" + resourcecontroller.GetResourceLimit(alloy);
-
+        metalDisplay.SetText((resourceSystem.GetResourceStorage(MetalResource)+ "/"+ resourceSystem.GetResourceLimit(MetalResource)));
+        woodDisplay.SetText((resourceSystem.GetResourceStorage(WoodResource)+ "/"+ resourceSystem.GetResourceLimit(WoodResource)));
+        //metalDisplay.text = resourceSystem.GetResourceStorage(AlloyResource)+ "/"+ resourceSystem.GetResourceLimit(AlloyResource);
 
 
     }
-
-
-
 }
