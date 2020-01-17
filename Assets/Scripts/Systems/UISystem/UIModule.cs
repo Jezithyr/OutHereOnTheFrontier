@@ -66,7 +66,6 @@ public class UIModule : Module
         return ActiveInterfaces[index].CreateUIInstance();
     }
 
-
     public void DestroyInstance(ScriptedUI uiToDestroy, int instanceId)
     {
         if (!ActiveInterfaces.Contains(uiToDestroy)) return;
@@ -93,4 +92,15 @@ public class UIModule : Module
         Toggle(ui,instanceId, false);
     }
 
+    public Vector3 CursorToWorld(Camera thisCamera,int layermask)
+    {
+        Ray ray = thisCamera.ScreenPointToRay(Input.mousePosition);
+        
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layermask))
+        {
+            return hit.point;
+        }
+        return new Vector3(0,0,0);
+    }
 }
