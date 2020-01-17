@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675f855877918f74e9e7e94c21745957, type: 3}
   m_Name: DebugState
   m_EditorClassIdentifier: 
-  Manager: {fileID: 11400000, guid: 5d72f78f2d9409843b3f27b354ca64dc, type: 2}
-  CanTick: 0
+  Manager: {fileID: 0}
+  CanTick: 1
   tickRate: 0
   camModule: {fileID: 11400000, guid: 99fa0cb526ca2024da0f7a38c14bd797, type: 2}
+  uiModule: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
+  playerHUD: {fileID: 11400000, guid: 0f130f47b1fd6cc4b9a771feaa038fcb, type: 2}
   customCamera: {fileID: 11400000, guid: a816746abf2b99041b39c7e37f93ad4d, type: 2}
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
+  eventModule: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
+  buildingModule: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59, type: 2}
+  Producer: {fileID: 11400000, guid: 34b90dd7cd0bc8f4b8853f77bef6e750, type: 2}
+  Consumer: {fileID: 11400000, guid: db4d089e09507a4459ce5033c284e58f, type: 2}

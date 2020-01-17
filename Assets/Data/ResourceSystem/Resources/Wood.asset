@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418beb2356660ee48bd15d9883e0814a, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  resourceName: 
+  resourceName: Wood
   volume: 0
   mass: 0
   value: 0
