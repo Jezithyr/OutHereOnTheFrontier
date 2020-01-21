@@ -72,13 +72,10 @@ public class DebugState : GameState
         }
         
         debugCoords =  uiModule.CursorToWorld(activeCam.CreatedCamera,layerMask);
-
         //Math.Round(value / 5.0) * 5;
 
         debugCoords = new Vector3(Mathf.Round(debugCoords.x/1f)*1f+0.5f,debugCoords.y,Mathf.Round(debugCoords.z/1f)*1f+0.5f);
         testOBJ.transform.position = debugCoords;
-        Debug.Log(debugCoords);
-
     }
 
 }

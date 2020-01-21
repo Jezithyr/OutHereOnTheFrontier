@@ -17,12 +17,15 @@ public class ScriptedUI : ScriptableObject
 
     protected List<ScriptedUIBehavior> linkedBehaviorScripts = new List<ScriptedUIBehavior>();
 
-    protected ScriptedUIBehavior linkedUI;
+
+    //gets the linked ui IF there is only 1 instance of the ui, and that ui is initalized
+    protected ScriptedUIBehavior linkedUI{get => linkedBehaviorScripts[0];} 
 
     private void OnEnable()
     {
         
     }
+
 
     public virtual void Start(){}
 
