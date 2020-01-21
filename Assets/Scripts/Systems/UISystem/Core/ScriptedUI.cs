@@ -17,6 +17,7 @@ public class ScriptedUI : ScriptableObject
 
     protected List<ScriptedUIBehavior> linkedBehaviorScripts = new List<ScriptedUIBehavior>();
 
+    protected ScriptedUIBehavior linkedUI;
 
     private void OnEnable()
     {
@@ -33,7 +34,7 @@ public class ScriptedUI : ScriptableObject
         linkedBehaviorScripts.Clear();
     }
 
-    public int CreateUIInstance()
+    public virtual int CreateUIInstance()
     {
         if (UiPrefab == null) return -1;
 
@@ -48,7 +49,7 @@ public class ScriptedUI : ScriptableObject
         return linkedBehaviorScripts.Count - 1;
     }
 
-    public void DestroyInstance(int instanceId)
+    public virtual void DestroyInstance(int instanceId)
     {
         if (instanceId >= linkedBehaviorScripts.Count) return;
 
@@ -57,7 +58,7 @@ public class ScriptedUI : ScriptableObject
         Destroy(temp);
     }
 
-    public void ToggleUI(int instanceId, bool newState)
+    public  void ToggleUI(int instanceId, bool newState)
     {
         if (instanceId >= linkedBehaviorScripts.Count) return;
         linkedBehaviorScripts[instanceId].gameObject.SetActive(newState);
