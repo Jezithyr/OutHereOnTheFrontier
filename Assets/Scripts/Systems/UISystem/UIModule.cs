@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 [CreateAssetMenu(menuName = "GameFramework/SubSystems/UIModule")]
 public class UIModule : Module
 {
     [SerializeField] 
     public List<ScriptedUI> ActiveInterfaces = new List<ScriptedUI>();
     
+    public GameObject LinkedEventSystem;
+
     delegate void functionDelegate();
     
     functionDelegate tickDelegate;
@@ -14,6 +18,7 @@ public class UIModule : Module
 
     public override void Start()
     {
+        CreateUnityEventSystem();
         startDelegate();
     }
     
@@ -90,6 +95,11 @@ public class UIModule : Module
     public void Hide(ScriptedUI ui, int instanceId) 
     {
         Toggle(ui,instanceId, false);
+    }
+
+    private void CreateUnityEventSystem()
+    {
+        LinkedEventSystem = new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
     }
 
     public Vector3 CursorToWorld(Camera thisCamera,int layermask)
