@@ -66,12 +66,14 @@ public class FreeOrbitCam : ScriptedCamera
         cameraGameObject.transform.position = worldPos;
     }
 
-
     private void PanCamera(float XPanInput, float ZPanInput)
     {
-        float oldX = cameraGameObject.transform.position.x;
-        float oldZ = cameraGameObject.transform.position.z;
-        cameraGameObject.transform.position = new Vector3((XPanInput * CameraPanSpeed) + oldX, cameraGameObject.transform.position.y, (ZPanInput * CameraPanSpeed) + oldZ);
+        
+
+
+
+        cameraGameObject.transform.position = (cameraGameObject.transform.forward * -XPanInput *CameraPanSpeed) + (cameraGameObject.transform.right * ZPanInput *CameraPanSpeed) + cameraGameObject.transform.position;
+
         targetPosition = cameraGameObject.transform.position;
     }
 

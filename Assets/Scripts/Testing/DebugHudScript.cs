@@ -18,7 +18,7 @@ public class DebugHudScript : ScriptedUI
 
     public override void Update()
     {
-        Debug.Log("HUD UPDATE " + resourceSystem.GetResourceStorage(MetalResource));
+        //Debug.Log("HUD UPDATE " + resourceSystem.GetResourceStorage(MetalResource));
         metalDisplay = linkedBehaviorScripts[0].GetElementByName("MetalDisplay").GetComponent<TextMeshProUGUI>();
         woodDisplay = linkedBehaviorScripts[0].GetElementByName("WoodDisplay").GetComponent<TextMeshProUGUI>();
         alloyDisplay = linkedBehaviorScripts[0].GetElementByName("AlloyDisplay").GetComponent<TextMeshProUGUI>();
