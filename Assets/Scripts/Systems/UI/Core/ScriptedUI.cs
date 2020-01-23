@@ -10,6 +10,11 @@ public class ScriptedUI : ScriptableObject
     [SerializeField] public bool CanTick = false;
     [SerializeField] public bool RunOnSceneLoad = false;
 
+    [SerializeField] protected bool isActive = false;
+
+    public bool IsActive{get =>isActive;}
+
+
     [SerializeField] 
     protected GameObject UiPrefab;
 
