@@ -7,9 +7,13 @@ using UnityEngine.EventSystems;
 public class UIModule : Module
 {
     [SerializeField] 
-    public List<ScriptedUI> ActiveInterfaces = new List<ScriptedUI>();
-    
-    public GameObject LinkedEventSystem;
+    public List<ScriptedUI> ActiveInterfaces = new List<ScriptedUI>(); //interfaces that are created and active in the game
+    public List<ScriptedUI> EnabledInterfaces = new List<ScriptedUI>(); //list of interfaces that can be referenced
+
+
+    private GameObject linkedEventSystem;
+
+    public GameObject LinkedEventSystem{get => linkedEventSystem;}
 
     delegate void functionDelegate();
     
@@ -29,38 +33,24 @@ public class UIModule : Module
 
     private void dummyFunc(){}
 
+
+    private void AddUpdateDelegate(functionDelegate newdelegate)
+    {
+        tickDelegate += newdelegate;
+    }
+
+    private void DeleteUpdateDelegate(functionDelegate newdelegate)
+    {
+        tickDelegate -= newdelegate;
+    }
+
+
+
+
     private void OnEnable()
     {
-        bool hasTickDelegates = false;
-        bool hasStartDelegates = false;
-        foreach (ScriptedUI userInterface in ActiveInterfaces)
-        {
-            if (userInterface != null)
-            {
-            if (userInterface.CanTick)
-                {
-                    tickDelegate += userInterface.Update;
-                    hasTickDelegates = true;
-                }  
-            }
-
-            if (userInterface.RunOnSceneLoad)
-            {
-                startDelegate += userInterface.Start;
-                hasStartDelegates = true;
-            }  
-            userInterface.ClearBehaviors();
-            
-        }
-        if (!hasStartDelegates)
-        {
-            startDelegate = dummyFunc;
-        }
-
-        if (!hasTickDelegates)
-            {
-                tickDelegate = dummyFunc;
-            }
+        startDelegate = dummyFunc;
+        tickDelegate = dummyFunc;
             
     }
 
@@ -68,6 +58,17 @@ public class UIModule : Module
     {
         int index = ActiveInterfaces.IndexOf(newUI);
         if (index < 0) return -1;
+
+        if (newUI.CanTick)
+            {
+                tickDelegate += newUI.Update;
+            }  
+
+        if (newUI.RunOnSceneLoad)
+            {
+                startDelegate += newUI.Start;
+            }  
+
         return ActiveInterfaces[index].CreateUIInstance();
     }
 
@@ -76,6 +77,16 @@ public class UIModule : Module
         if (!ActiveInterfaces.Contains(uiToDestroy)) return;
         int index = ActiveInterfaces.IndexOf(uiToDestroy);
         if (index < 0) return;
+
+         if (uiToDestroy.CanTick)
+            {
+                tickDelegate -= uiToDestroy.Update;
+            }  
+
+        if (uiToDestroy.RunOnSceneLoad)
+            {
+                startDelegate -= uiToDestroy.Start;
+            }  
         ActiveInterfaces[index].DestroyInstance(instanceId);
     }
 
@@ -86,6 +97,10 @@ public class UIModule : Module
         ActiveInterfaces[index].ToggleUI(instanceId,state);
 
     }
+
+
+
+
 
     public void Show(ScriptedUI ui, int instanceId) 
     {
@@ -99,7 +114,7 @@ public class UIModule : Module
 
     private void CreateUnityEventSystem()
     {
-        LinkedEventSystem = new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
+        linkedEventSystem = new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
     }
 
     public Vector3 CursorToWorld(Camera thisCamera,int layermask)

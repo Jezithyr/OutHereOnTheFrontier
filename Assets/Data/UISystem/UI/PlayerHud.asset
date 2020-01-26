@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ea392648f769aa4a831a8d1355a8a8b, type: 3}
-  m_Name: New MY Ui
+  m_Name: PlayerHud
   m_EditorClassIdentifier: 
   uiController: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
   CanTick: 0
-  RunOnSceneLoad: 0
-  UiPrefab: {fileID: 0}
+  RunOnSceneLoad: 1
+  UiPrefab: {fileID: 7778897328453722129, guid: ba25d028bf2219445a45f00c455694ed,
+    type: 3}

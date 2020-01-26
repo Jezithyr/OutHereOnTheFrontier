@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+[CreateAssetMenu(menuName = "GameFramework/Gamestate/Debug")]
 public class DebugState : GameState
 { 
     [SerializeField]
