@@ -28,7 +28,7 @@ public class ScriptedUI : ScriptableObject
 
     private void OnEnable()
     {
-        
+        ClearBehaviors();
     }
 
 
@@ -54,6 +54,7 @@ public class ScriptedUI : ScriptableObject
         if (!temp) return -1;
         
         linkedBehaviorScripts.Add(temp);
+        Start();
         return linkedBehaviorScripts.Count - 1;
     }
 

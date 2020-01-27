@@ -7,8 +7,7 @@ using UnityEngine.EventSystems;
 public class UIModule : Module
 {
     [SerializeField] 
-    public List<ScriptedUI> ActiveInterfaces = new List<ScriptedUI>(); //interfaces that are created and active in the game
-    public List<ScriptedUI> EnabledInterfaces = new List<ScriptedUI>(); //list of interfaces that can be referenced
+    public List<ScriptedUI> ActiveInterfaces = new List<ScriptedUI>(); //list of interfaces that can be referenced
 
 
     private GameObject linkedEventSystem;
@@ -45,12 +44,23 @@ public class UIModule : Module
     }
 
 
+    private void AddStartDelegate(functionDelegate newdelegate)
+    {
+        startDelegate += newdelegate;
+    }
+
+    private void DeleteStartDelegate(functionDelegate newdelegate)
+    {
+        startDelegate -= newdelegate;
+    }
+
+
 
 
     private void OnEnable()
     {
-        startDelegate = dummyFunc;
-        tickDelegate = dummyFunc;
+        startDelegate += dummyFunc;
+        tickDelegate += dummyFunc;
             
     }
 
