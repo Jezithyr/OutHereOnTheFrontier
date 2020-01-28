@@ -53,13 +53,12 @@ public class ConstructionModule : Module
     {
         if (!EnabledBuildings.Contains(buildingData)) return; //don't create the building if it isn't enabled
 
-        Building tempBuildData = ScriptableObject.Instantiate(buildingData);
-        GameObject prefab = GameObject.Instantiate(tempBuildData.Prefab);
+        GameObject prefab = buildingData.CreateInstance();
         
         prefab.transform.position = position;
         prefab.transform.rotation = rotation;
         
-        ActiveBuildings.Add(prefab,tempBuildData);
+        ActiveBuildings.Add(prefab,buildingData);
     }
 
 
@@ -74,7 +73,6 @@ public class ConstructionModule : Module
             {                
                 Buildings.Remove(prefabObj); //this can be optimized
                 Destroy(prefabObj);
-                Destroy(buildingDataObj);
             }
         }
     }

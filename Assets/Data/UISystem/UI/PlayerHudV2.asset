@@ -19,9 +19,9 @@ MonoBehaviour:
   UiPrefab: {fileID: 2167248041551249296, guid: 249cd41be4aef6049bf475611fb77a1f,
     type: 3}
   resourceSystem: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
-  buildingSystem: {fileID: 0}
-  cameraModule: {fileID: 0}
-  uiModule: {fileID: 0}
+  buildingSystem: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59, type: 2}
+  cameraModule: {fileID: 11400000, guid: 99fa0cb526ca2024da0f7a38c14bd797, type: 2}
+  uiModule: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
   ResourceList:
   - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
   - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}

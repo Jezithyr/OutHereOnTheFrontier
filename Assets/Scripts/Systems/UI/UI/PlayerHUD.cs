@@ -105,6 +105,8 @@ public class PlayerHUD : ScriptedUI
     public void CreateBuildingFromPreview()
     {
         if (!showingPreview) return;
+
+        if (!buildings[previewBuildingIndex].CheckPlacement(previewBuilding)) return;
         buildingSystem.CreateBuildingAtWorldPos(uiModule.CursorToWorld(cameraModule.ActiveCameraObject, LayerMask.GetMask("BuildingPlacement")),new Quaternion(),buildings[previewBuildingIndex]);
         DestroyPreview();
     }
