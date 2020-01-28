@@ -347,6 +347,7 @@ GameObject:
   - component: {fileID: 7130001755269580698}
   - component: {fileID: 2194837452801182138}
   - component: {fileID: 3287737710444878782}
+  - component: {fileID: 8089901181689181093}
   m_Layer: 5
   m_Name: BuildingMenu
   m_TagString: Untagged
@@ -434,6 +435,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8089901181689181093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3323443818271532715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b5e71f544dbfc4a9cb7b816ac769bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScriptedUI: {fileID: 11400000, guid: 55df94fa8b26d424396a73375669c498, type: 2}
+  hudObjects: []
 --- !u!1 &3426830320172999016
 GameObject:
   m_ObjectHideFlags: 0

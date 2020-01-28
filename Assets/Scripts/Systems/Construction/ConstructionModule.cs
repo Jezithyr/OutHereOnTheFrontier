@@ -95,4 +95,14 @@ public class ConstructionModule : Module
             }
         }
     }
+
+    public GameObject CreatePreviewAtPos(Building buildingObj, Vector3 position)
+    {
+        return GameObject.Instantiate(buildingObj.Preview,position,new Quaternion());
+    }
+
+    public GameObject CreatePreviewWithTransform(Building buildingObj, Transform transform)
+    {
+        return GameObject.Instantiate(buildingObj.Preview,transform);
+    }
 }

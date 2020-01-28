@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
   m_Name: MetalMine
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9025178194825985572, guid: 3ca7ca0910364b6419c0f1210e5f6501, type: 3}
+  prefab: {fileID: 4614207867291596782, guid: 3cc403c5162194347ad2567d30d19b4d, type: 3}
+  previewprefab: {fileID: 3179961777605916555, guid: afaefbda5745d3341bd8a633c7e12598,
+    type: 3}

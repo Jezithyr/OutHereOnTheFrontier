@@ -67,7 +67,7 @@ public class ScriptedUI : ScriptableObject
         Destroy(temp);
     }
 
-    public  void ToggleUI(int instanceId, bool newState)
+    public void ToggleUI(int instanceId, bool newState)
     {
         if (instanceId >= linkedBehaviorScripts.Count) return;
         linkedBehaviorScripts[instanceId].gameObject.SetActive(newState);

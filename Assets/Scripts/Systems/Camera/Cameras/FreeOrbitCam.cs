@@ -42,6 +42,7 @@ public class FreeOrbitCam : ScriptedCamera
         cameraObj = cameraComponent;
         Debug.Log("Creating OrbitCam"+cameraGameObject + "\n");
         cameraComponent.enabled = true;
+        cameraObj = cameraComponent;
     }
 
     private Quaternion ComputeCameraRotation(float camAngle)

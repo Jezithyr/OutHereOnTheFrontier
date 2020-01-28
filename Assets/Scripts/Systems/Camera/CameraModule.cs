@@ -9,6 +9,9 @@ public class CameraModule : Module
     private ScriptedCamera activeCamera;
     public ScriptedCamera ActiveCamera{get => activeCamera;}
 
+    private Camera activeCameraObj;
+    public Camera ActiveCameraObject{get => activeCameraObj;}
+
     public override void Initialize()
     {
         
@@ -29,6 +32,7 @@ public class CameraModule : Module
         Debug.LogWarning("Creating: "+ newCamera);
         activeCamera = AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
         activeCamera.Active = true;
+        activeCameraObj = activeCamera.CreatedCamera;
         return activeCamera;
     }
 
@@ -52,8 +56,10 @@ public class CameraModule : Module
             {
                 activeCamera = newCamera;
                 newCamera.Active = true;
+                activeCameraObj = newCamera.CreatedCamera;
             }
         }
+
     }
 
 }

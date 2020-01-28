@@ -16,5 +16,6 @@ MonoBehaviour:
   RunUpdate: 1
   StartOnSceneLoad: 1
   ActiveInterfaces:
+  - {fileID: 11400000, guid: 55df94fa8b26d424396a73375669c498, type: 2}
+  - {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
   - {fileID: 11400000, guid: 0f130f47b1fd6cc4b9a771feaa038fcb, type: 2}
-  - {fileID: 11400000, guid: 34e690038b09ff24e916234ebb5ec536, type: 2}
