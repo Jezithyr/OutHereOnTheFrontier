@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
   m_Name: FuelFactory
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  previewprefab: {fileID: 0}
-  placementConditions: []
+  prefab: {fileID: 8380000628696991760, guid: 861429b769a3c8042b1e04c610e368e3, type: 3}
+  previewprefab: {fileID: 8722788101610981958, guid: dea164baea888a64e8b8e64ddf0cc8c0,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   buildingRadiusMultiplier: 1

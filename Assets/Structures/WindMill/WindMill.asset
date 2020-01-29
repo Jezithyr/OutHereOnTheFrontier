@@ -15,5 +15,6 @@ MonoBehaviour:
   prefab: {fileID: 125712601835628761, guid: f3cbf4206b9e4374b96b91fa2041c3c8, type: 3}
   previewprefab: {fileID: 8052373676971530459, guid: 62d57ce42b6a85147bfb1019a11b54fd,
     type: 3}
-  placementConditions: []
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   buildingRadiusMultiplier: 1

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
   m_Name: Storage
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  previewprefab: {fileID: 0}
-  placementConditions: []
+  prefab: {fileID: 7257777879149414888, guid: a6f3dc8b332428d4091da1303c1beace, type: 3}
+  previewprefab: {fileID: 7124679970476465095, guid: b38e07b01a587f34da75e339fed5ae56,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   buildingRadiusMultiplier: 1

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
   m_Name: AlloyFactory
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  previewprefab: {fileID: 0}
-  placementConditions: []
+  prefab: {fileID: 3481642213078388096, guid: 84ee72c582e430c40b4c42762aa07e42, type: 3}
+  previewprefab: {fileID: 5187964276349947028, guid: 76ca0f1bdc5a23a4399c1321cc48f972,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   buildingRadiusMultiplier: 1
