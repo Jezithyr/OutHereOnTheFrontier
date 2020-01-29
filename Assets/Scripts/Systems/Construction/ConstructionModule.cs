@@ -51,15 +51,18 @@ public class ConstructionModule : Module
 
     public void CreateBuildingAtWorldPos(Vector3 position,Quaternion rotation, Building buildingData)
     {
-        if (!EnabledBuildings.Contains(buildingData)) return; //don't create the building if it isn't enabled
+        if (!EnabledBuildings.Contains(buildingData)) 
+        {
+            Debug.LogError("WARNING: Building"+ buildingData +" Not found in active building list!");
+            return; //don't create the building if it isn't enabled
+        }
 
-        Building tempBuildData = ScriptableObject.Instantiate(buildingData);
-        GameObject prefab = GameObject.Instantiate(tempBuildData.Prefab);
+        GameObject prefab = buildingData.CreateInstance();
         
         prefab.transform.position = position;
         prefab.transform.rotation = rotation;
         
-        ActiveBuildings.Add(prefab,tempBuildData);
+        ActiveBuildings.Add(prefab,buildingData);
     }
 
 
@@ -74,7 +77,6 @@ public class ConstructionModule : Module
             {                
                 Buildings.Remove(prefabObj); //this can be optimized
                 Destroy(prefabObj);
-                Destroy(buildingDataObj);
             }
         }
     }
@@ -94,5 +96,15 @@ public class ConstructionModule : Module
                 Destroy(buildingData);
             }
         }
+    }
+
+    public GameObject CreatePreviewAtPos(Building buildingObj, Vector3 position)
+    {
+        return GameObject.Instantiate(buildingObj.Preview,position,new Quaternion());
+    }
+
+    public GameObject CreatePreviewWithTransform(Building buildingObj, Transform transform)
+    {
+        return GameObject.Instantiate(buildingObj.Preview,transform);
     }
 }

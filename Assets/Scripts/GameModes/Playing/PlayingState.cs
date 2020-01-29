@@ -11,7 +11,8 @@ public class PlayingState : GameState
     private CameraModule camModule;
     
     [SerializeField] private UIModule uiModule;
-    [SerializeField] private ScriptedUI playerHUD;
+    [SerializeField] private PlayerHUD playerHUD;
+    [SerializeField] private ScriptedUI buildMenu;
     
     [SerializeField]
     private ScriptedCamera customCamera ;
@@ -22,20 +23,24 @@ public class PlayingState : GameState
     [SerializeField] private ConstructionModule buildingModule;
     [SerializeField] private Building Producer;
     [SerializeField] private Building Consumer;
+
+    [SerializeField] private string BuildingHotkey = "OpenBuildMenu";
+
     private Vector3 targetTranslation;
 
     private Camera cam;
     private FreeOrbitCam activeCam;
+    public bool BuildMode = false;
 
     private int playerHudId;
+    private int buildingMenuId;
 
     public override void OnActivate(GameState lastState)
     {
-         Debug.Log("Entered Debug State");
+         Debug.Log("Entered Playing State");
         
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
-
 
         playerHudId = uiModule.CreateInstance(playerHUD);
         Debug.Log("PlayerHUD UI id: "+ playerHudId);
@@ -43,17 +48,25 @@ public class PlayingState : GameState
     }
     public override void OnDeactivate(GameState newState)
     {
+
+
     }
 
     public override void OnUpdate()
     {
-        
-        
+
+        BuildMode = playerHUD.BuildMode;
+        if (BuildMode)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                playerHUD.CreateBuildingFromPreview();
+            }
 
 
 
-
-
+            
+        }
 
 
     }

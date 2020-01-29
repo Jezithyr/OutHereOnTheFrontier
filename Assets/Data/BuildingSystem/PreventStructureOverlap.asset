@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
-  m_Name: MetalStorage
+  m_Script: {fileID: 11500000, guid: dd901b4f02a743f45a28ea4a56ade514, type: 3}
+  m_Name: PreventStructureOverlap
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7410120834222916081, guid: 7a477295b61fa3b4cb6625527b03f3d7, type: 3}
+  Layer:
+    serializedVersion: 2
+    m_Bits: 0

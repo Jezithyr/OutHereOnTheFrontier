@@ -78,7 +78,6 @@ public class UIModule : Module
             {
                 startDelegate += newUI.Start;
             }  
-
         return ActiveInterfaces[index].CreateUIInstance();
     }
 
