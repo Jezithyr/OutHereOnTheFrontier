@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44864ffa964928e40ae9eccbadc2bcab, type: 3}
-  m_Name: BunkhouseResourceComponent
+  m_Name: AlloyFactoryComponent
   m_EditorClassIdentifier: 
   instances: []
   resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
   activeResources:
-  - {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
+  - {fileID: 11400000, guid: f17fa8b2279e00a47966794e9b031dc2, type: 2}
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
   production:
-  - 0.05
+  - 5
+  - 0
   consumption:
   - 0
-  storage:
-  - 10
+  - 20
+  storage: []

@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
   - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
   - {fileID: 11400000, guid: f17fa8b2279e00a47966794e9b031dc2, type: 2}
+  - {fileID: 11400000, guid: f44d4ff5c902fc248988a4de903a5654, type: 2}
   - {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
   ResourceLimits:
   - 5000
@@ -29,8 +30,23 @@ MonoBehaviour:
   - 5000
   - 5000
   - 5000
-  - 5000
+  - 500
+  - 500
   - 50
+  ResourceStarts:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 5
   resourceNodes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   linkedResourceNodes: []

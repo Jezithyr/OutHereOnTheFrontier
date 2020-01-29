@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6218626627477951438}
   - component: {fileID: 6067095132398228322}
   m_Layer: 10
-  m_Name: WoodFarm
+  m_Name: FoodFarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72fb16d546780ba4cb824dc1c286d83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceComponent: {fileID: 11400000, guid: 40398ba1bd541934f929cbf85aab614a, type: 2}
+  resourceComponent: {fileID: 11400000, guid: afdf11cd6feaf1b4f97ffbb0a5de555e, type: 2}
   isActive: 1
 --- !u!135 &6067095132398228322
 SphereCollider:

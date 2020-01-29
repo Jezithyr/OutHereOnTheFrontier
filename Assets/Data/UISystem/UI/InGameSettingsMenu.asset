@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c802ce849d619a24da881798e8b20040, type: 3}
+  m_Name: InGameSettingsMenu
+  m_EditorClassIdentifier: 
+  uiController: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
+  CanTick: 0
+  RunOnSceneLoad: 0
+  isActive: 0
+  UiPrefab: {fileID: 6593951818688103373, guid: 81ff3c8ab8e924149b996efee97d854e,
+    type: 3}
+  game: {fileID: 11400000, guid: 8d40168e67f6320429590e3a9036bb96, type: 2}
+  uiModule: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
+  pauseMenu: {fileID: 11400000, guid: 22c900dd6814ab540ba2bf38a213c5ac, type: 2}
+  mainMenu: {fileID: 11400000, guid: 7a2d985bb5d2fba468b052dc41a31342, type: 2}

@@ -67,7 +67,10 @@ public class UIModule : Module
     public int CreateInstance(ScriptedUI newUI)
     {
         int index = ActiveInterfaces.IndexOf(newUI);
-        if (index < 0) return -1;
+        if (index < 0){
+            Debug.LogError("Interface "+newUI +" Not in active List");
+            return -1;
+        } 
 
         if (newUI.CanTick)
             {

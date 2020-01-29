@@ -18,9 +18,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
   - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
   production:
-  - 0
+  - 10
   - 0
   consumption:
   - 0
-  - 0
+  - 5
   storage: []

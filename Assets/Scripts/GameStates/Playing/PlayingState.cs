@@ -12,7 +12,8 @@ public class PlayingState : GameState
     
     [SerializeField] private UIModule uiModule;
     [SerializeField] private PlayerHUD playerHUD;
-    [SerializeField] private ScriptedUI buildMenu;
+    [SerializeField] private PauseMenu pauseMenu;
+    [SerializeField] private SettingsMenu settingsMenu;
     [SerializeField] private GameState pauseState;
     
     [SerializeField]
@@ -23,10 +24,8 @@ public class PlayingState : GameState
     [SerializeField] private EventModule eventModule ;
     [SerializeField] private ConstructionModule buildingModule;
 
-    [SerializeField] private string BuildingHotkey = "OpenBuildMenu";
-
     private Vector3 targetTranslation;
-
+    
     private GameManager Game;
 
     private Camera cam;
@@ -34,19 +33,33 @@ public class PlayingState : GameState
     public bool BuildMode = false;
 
     private int playerHudId;
+    private int pauseMenuid;
+    private int settingsMenuId;
     private int buildingMenuId;
     public int GameTimer;
 
+
+    private void OnEnable()
+    {
+        Game = Manager;
+    }
     public override void OnActivate(GameState lastState)
     {
-
         Debug.Log("Entered Playing State");
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
 
         playerHudId = uiModule.CreateInstance(playerHUD);
+        pauseMenuid = uiModule.CreateInstance(pauseMenu);
+        settingsMenuId = uiModule.CreateInstance(settingsMenu);
+
         Debug.Log("PlayerHUD UI id: "+ playerHudId);
+        Debug.Log("PauseMenu UI id: "+ pauseMenuid);
+        Debug.Log("settingsMenuId UI id: "+ settingsMenuId);
         uiModule.Show(playerHUD,playerHudId);
+        uiModule.Hide(pauseMenu,pauseMenuid);
+        uiModule.Hide(settingsMenu,settingsMenuId);
+
         GameTimer = 8*60;
     }
     public override void OnDeactivate(GameState newState)
@@ -75,8 +88,21 @@ public class PlayingState : GameState
             {
                 playerHUD.CreateBuildingFromPreview();
             }
+        } 
+        else 
+        {
+            if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+            {
+                Pause();
+            }
         }
-
-
     }
+
+    private void Pause()
+    {
+        uiModule.Hide(playerHUD,playerHudId);
+        uiModule.Show(pauseMenu,pauseMenuid);
+        Game.Pause();
+    }
+
 }

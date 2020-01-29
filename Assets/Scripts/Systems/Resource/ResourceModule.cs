@@ -8,9 +8,11 @@ public class ResourceModule : Module
     [SerializeField] 
     private List<Resource> ActiveResources = new List<Resource>();
     [SerializeField] private List<float> ResourceLimits = new List<float>();
+    [SerializeField] private List<float> ResourceStarts = new List<float>();
 
     private Dictionary<Resource,float> resourceStorage = new Dictionary<Resource,float>();
     private Dictionary<Resource,float> storageLimits = new Dictionary<Resource,float>();
+    
 
     public Dictionary<Resource,float> GetStorage{get =>resourceStorage;}
     public List<Resource> Resources{get =>ActiveResources;}
@@ -33,7 +35,7 @@ public class ResourceModule : Module
 
         for (int i = 0; i < ActiveResources.Count; i++)
         {
-            resourceStorage.Add(ActiveResources[i],0);
+            resourceStorage.Add(ActiveResources[i],ResourceStarts[i]);
             storageLimits.Add(ActiveResources[i],ResourceLimits[i]);
         }
     }
