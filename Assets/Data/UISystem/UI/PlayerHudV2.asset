@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea392648f769aa4a831a8d1355a8a8b, type: 3}
+  m_Name: PlayerHudV2
+  m_EditorClassIdentifier: 
+  uiController: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
+  CanTick: 1
+  RunOnSceneLoad: 1
+  isActive: 1
+  UiPrefab: {fileID: 2167248041551249296, guid: 249cd41be4aef6049bf475611fb77a1f,
+    type: 3}
+  resourceSystem: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+  buildingSystem: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59, type: 2}
+  playingState: {fileID: 11400000, guid: 007c39cc34dd206408a577a68f80ab82, type: 2}
+  cameraModule: {fileID: 11400000, guid: 99fa0cb526ca2024da0f7a38c14bd797, type: 2}
+  uiModule: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
+  ResourceList:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
+  - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
+  - {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
+  ResourceDisplayNames:
+  - MetalDisplay
+  - WoodDisplay
+  - WaterDisplay
+  - FoodDisplay
+  - PopDisplay
+  buildings:
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: ae473ba48232edd499631598b473d4c0, type: 2}
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: 06307b111781b7a40ae42d8a899b7e72, type: 2}
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: b7b5fefdbc4eb8f42a2992d174e42e06, type: 2}

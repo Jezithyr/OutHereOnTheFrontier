@@ -28,8 +28,28 @@ public class GameManager : ScriptableObject
     private GameState ActiveState;
     private Scene ActiveScene;
 
+    private float lastTimescale = 1;
+
+    private bool Paused = false;
+    public bool isPaused{get => Paused;}
+
 
     delegate void OnSceneLoadedDelegate();
+
+    public void Pause()
+    {
+        lastTimescale = Time.timeScale;
+        Time.timeScale = 0;
+        moduleManager.StopTicking = true;
+        Paused = true;
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = lastTimescale;
+        moduleManager.StopTicking = false;
+        Paused = false;
+    }
 
     
     void GameStateUpdate()
