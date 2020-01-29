@@ -14,7 +14,8 @@ public class PlayingState : GameState
     [SerializeField] private PlayerHUD playerHUD;
     [SerializeField] private PauseMenu pauseMenu;
     [SerializeField] private SettingsMenu settingsMenu;
-    [SerializeField] private EventPopup eventMenu;
+    //[SerializeField] private EventPopup eventMenu;
+    [SerializeField] private DebugMenu debugMenu ;
     [SerializeField] private GameState pauseState;
     
     [SerializeField]
@@ -44,7 +45,8 @@ public class PlayingState : GameState
     private int pauseMenuid;
     private int settingsMenuId;
     private int buildingMenuId;
-    private int eventMenuId;
+    //private int eventMenuId;
+    private int debugMenuid;
     public int GameTimer;
 
 
@@ -61,14 +63,19 @@ public class PlayingState : GameState
         playerHudId = uiModule.CreateInstance(playerHUD);
         pauseMenuid = uiModule.CreateInstance(pauseMenu);
         settingsMenuId = uiModule.CreateInstance(settingsMenu);
-        eventMenuId = uiModule.CreateInstance(eventMenu);
+        //eventMenuId = uiModule.CreateInstance(eventMenu);
+        debugMenuid = uiModule.CreateInstance(debugMenu);
 
         Debug.Log("PlayerHUD UI id: "+ playerHudId);
         Debug.Log("PauseMenu UI id: "+ pauseMenuid);
         Debug.Log("settingsMenuId UI id: "+ settingsMenuId);
         uiModule.Show(playerHUD,playerHudId);
+        
+        //uiModule.Hide(eventMenu,debugMenuid);
+        
+        eventModule.InitializePrefab();
         uiModule.Hide(pauseMenu,pauseMenuid);
-        uiModule.Hide(eventMenu,eventMenuId);
+        //uiModule.Hide(eventMenu,eventMenuId);
         uiModule.Hide(settingsMenu,settingsMenuId);
 
         GameTimer = 8*60;

@@ -91,8 +91,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -892,10 +892,10 @@ MonoBehaviour:
   hudObjects:
   - {fileID: 3772214424265811105}
   - {fileID: 8227878425490721438}
-  - {fileID: 8587262473644279360}
-  - {fileID: 7555917560816575730}
-  - {fileID: 6059125826832963417}
-  - {fileID: 542644210443944426}
+  - {fileID: 2963019689376887137}
+  - {fileID: 5884628392904316295}
+  - {fileID: 4999749559224572023}
+  - {fileID: 8826964357371524324}
 --- !u!1 &6059125826832963417
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,8 +987,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1142,8 +1142,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1452,8 +1452,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

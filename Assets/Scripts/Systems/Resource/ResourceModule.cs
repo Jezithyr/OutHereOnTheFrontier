@@ -131,6 +131,12 @@ public class ResourceModule : Module
     }
 
 
+    public void SetResource(Resource resourceToSet, float amount)
+    {
+        resourceStorage[resourceToSet] = amount;
+    }
+
+
 
     
 }

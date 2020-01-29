@@ -16,9 +16,12 @@ MonoBehaviour:
   RunUpdate: 1
   StartOnSceneLoad: 1
   activeEvents:
-  - {fileID: 11400000, guid: 3f41bf95c01912e4a9909f2843946fd2, type: 2}
-  - {fileID: 11400000, guid: 55619dcbf61d7e242869c4abd65e0057, type: 2}
-  - {fileID: 11400000, guid: 633c0a2b10c47e142a54a665ebea279d, type: 2}
-  - {fileID: 11400000, guid: acc39132dabf26c45861c2ee58a4eb5b, type: 2}
+  - {fileID: 11400000, guid: a1c76a4910f8cee46bb5e4ef33b1ab0c, type: 2}
+  - {fileID: 11400000, guid: ec421705ff90cec45a414f9883f63833, type: 2}
+  - {fileID: 11400000, guid: 3c08e8d9a0f3f574688cb14b2ceb5e24, type: 2}
+  - {fileID: 11400000, guid: 4fe67b3288bbab943a758e2d52371156, type: 2}
+  - {fileID: 11400000, guid: 8d1ce4dd3f2f3804a889ea98768979de, type: 2}
   linkedEventPrefab: {fileID: 5937803854090534573, guid: d85d297db28fb254cae444baa1516221,
     type: 3}
+  gameplayScene:
+    m_Handle: 1

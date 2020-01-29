@@ -17,7 +17,7 @@ public class EventModule : Module
     Event activeEvent;
 
 
-    EventPopupLinks EventUI;
+    ScriptedUIBehavior EventUI;
     GameObject EventUIObject;
 
 
@@ -32,7 +32,12 @@ public class EventModule : Module
         
     }
 
-
+    public void InitializePrefab()
+    {
+        EventUIObject = GameObject.Instantiate(linkedEventPrefab);
+        EventUI = EventUIObject.GetComponent<ScriptedUIBehavior>();
+        HideUI();
+    }
 
     public void ShowUI()
     {
@@ -46,61 +51,69 @@ public class EventModule : Module
 
     public void UpdateUI()
     {
-        EventUIObject = GameObject.Instantiate(linkedEventPrefab);
-        EventUI = EventUIObject.GetComponent<EventPopupLinks>();
-
-        EventUI.Title.text = activeEvent.eventTitle;
-        EventUI.Flavor.text = activeEvent.flavorText;
+        if (activeEvent == null) return;
+        EventUI.GetElementByName("EventTitle").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.eventTitle);
+        EventUI.GetElementByName("FlavorText").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.eventTitle);
         if (activeEvent.choices.Count > 0) 
         {
-            EventUI.C1Button.gameObject.SetActive(true);
-            EventUI.C1Button.text = "  "+ activeEvent.choices[0].flavorText;
+            EventUI.GetElementByName("Choice1").gameObject.SetActive(true);
+            EventUI.GetElementByName("Choice1").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[0].flavorText);
         }
         else 
         {
-            EventUI.C1Button.gameObject.SetActive(false);
+            EventUI.GetElementByName("Choice1").gameObject.SetActive(false);
         }
 
         if (activeEvent.choices.Count > 1) 
         {
-            EventUI.C2Button.gameObject.SetActive(true);
-            EventUI.C2Button.text = "  "+ activeEvent.choices[1].flavorText;
+            EventUI.GetElementByName("Choice2").gameObject.SetActive(true);
+            EventUI.GetElementByName("Choice2").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[1].flavorText);
         }
         else 
         {
-            EventUI.C2Button.gameObject.SetActive(false);
+            EventUI.GetElementByName("Choice2").gameObject.SetActive(false);
         }
 
         if (activeEvent.choices.Count > 2) 
         {
-            EventUI.C3Button.gameObject.SetActive(true);
-            EventUI.C3Button.text = "  "+ activeEvent.choices[2].flavorText;
+            EventUI.GetElementByName("Choice3").gameObject.SetActive(true);
+            EventUI.GetElementByName("Choice3").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[2].flavorText);
         }
         else 
         {
-            EventUI.C3Button.gameObject.SetActive(false);
+            EventUI.GetElementByName("Choice3").gameObject.SetActive(false);
         }
         
         if (activeEvent.choices.Count > 3) 
         {
-            EventUI.C4Button.gameObject.SetActive(true);
-            EventUI.C4Button.text = "  "+ activeEvent.choices[3].flavorText;
+            EventUI.GetElementByName("Choice4").gameObject.SetActive(true);
+            EventUI.GetElementByName("Choice4").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[3].flavorText);
         }
         else 
         {
-            EventUI.C4Button.gameObject.SetActive(false);
+            EventUI.GetElementByName("Choice4").gameObject.SetActive(false);
         }
     }
 
 
+    public void showEvent(int eventIndex)
+    {
+        setActiveEvent(eventIndex);
+        UpdateUI();
+        ShowUI();
+    }
 
 
+    public void setActiveEvent(int eventIndex)
+    {
+        activeEvent = activeEvents[eventIndex]; 
+    }
 
     public override void Start()
     {
 
         if (SceneManager.GetActiveScene() != gameplayScene) return;
-        activeEvent = activeEvents[0];
+        //activeEvent = activeEvents[0];
         UpdateUI();
         HideUI();
     }

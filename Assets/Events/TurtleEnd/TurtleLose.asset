@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
   m_Name: TurtleLose
   m_EditorClassIdentifier: 
-  EventInternalName: 
+  EventInternalName: TurtleLoss
   isActive: 0
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: f69eb093bf626e24f912dc8199740605, type: 2}
-  - {fileID: 11400000, guid: f69eb093bf626e24f912dc8199740605, type: 2}
+  - {fileID: 11400000, guid: e6fdf6491d7c0fd408c376ae66a9a76f, type: 2}
   eventTitle: 
   flavorText: "Howdy for the last time, partner. Looks like you\u2019ve relied on
     your guts more than these politely-worded warnings up until this point so here\u2019s

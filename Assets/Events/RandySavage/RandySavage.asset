@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
   m_Name: RandySavage
   m_EditorClassIdentifier: 
-  EventInternalName: 
+  EventInternalName: RandySavage
   isActive: 0
   triggerCondition: {fileID: 0}
   choices:
