@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
-  m_Name: Farm
+  m_Name: WaterTower
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7819567662714847191, guid: d7e9c8b2811e44d4287248a82189a5e8, type: 3}
-  previewprefab: {fileID: 1817494536347110948, guid: 9dde8710c05a9a14f97987afb5ae8b88,
+  prefab: {fileID: 8639823020669408969, guid: 08aceb56093c9564b89e0d9eafeca1ea, type: 3}
+  previewprefab: {fileID: 3392162174720643068, guid: 49a5b669a2d573c458a4afd2b99675a0,
     type: 3}
   placementConditions:
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
-  - {fileID: 11400000, guid: c31a6eb079bc3e64c910d3d9f0f46280, type: 2}
   buildingRadiusMultiplier: 1

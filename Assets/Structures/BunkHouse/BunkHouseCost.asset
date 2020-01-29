@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 082be85a848f05b46afc91aad95c2eba, type: 3}
-  m_Name: MetalMine
+  m_Script: {fileID: 11500000, guid: d453fe5b31c07f14f8c133d138fc8854, type: 3}
+  m_Name: BunkHouseCost
   m_EditorClassIdentifier: 
   resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
-  activeResources:
+  ResourceForCost:
   - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
-  production: 0a00
-  consumption: 
-  storage: 
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 320000000f000000

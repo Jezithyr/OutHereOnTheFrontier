@@ -25,15 +25,18 @@ MonoBehaviour:
   ResourceList:
   - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
   - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
   ResourceDisplayNames:
   - MetalDisplay
   - WoodDisplay
+  - WaterDisplay
   buildings:
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: ae473ba48232edd499631598b473d4c0, type: 2}
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: 06307b111781b7a40ae42d8a899b7e72, type: 2}
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
-  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
-  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: b7b5fefdbc4eb8f42a2992d174e42e06, type: 2}

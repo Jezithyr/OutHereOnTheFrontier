@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ddd89f10d8b62e439adc938377060f6, type: 3}
-  m_Name: Factory
+  m_Script: {fileID: 11500000, guid: 44864ffa964928e40ae9eccbadc2bcab, type: 3}
+  m_Name: WaterTowerResourceComp
   m_EditorClassIdentifier: 
+  instances: []
   resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
   activeResources:
-  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
-  production: 
-  consumption: 0f00
-  storage: 
+  - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
+  production:
+  - 0
+  consumption: []
+  storage:
+  - 0

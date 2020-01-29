@@ -18,3 +18,6 @@ MonoBehaviour:
   linkedGrid: {fileID: 11400000, guid: 42348951e7f090446beda2c293f1a6d4, type: 2}
   EnabledBuildings:
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: 06307b111781b7a40ae42d8a899b7e72, type: 2}
+  - {fileID: 11400000, guid: b7b5fefdbc4eb8f42a2992d174e42e06, type: 2}
+  - {fileID: 11400000, guid: ae473ba48232edd499631598b473d4c0, type: 2}

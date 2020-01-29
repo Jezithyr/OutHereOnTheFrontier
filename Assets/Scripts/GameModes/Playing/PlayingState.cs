@@ -34,6 +34,7 @@ public class PlayingState : GameState
 
     private int playerHudId;
     private int buildingMenuId;
+    public int GameTimer;
 
     public override void OnActivate(GameState lastState)
     {
@@ -45,6 +46,7 @@ public class PlayingState : GameState
         playerHudId = uiModule.CreateInstance(playerHUD);
         Debug.Log("PlayerHUD UI id: "+ playerHudId);
         uiModule.Show(playerHUD,playerHudId);
+        GameTimer = 8*60;
     }
     public override void OnDeactivate(GameState newState)
     {
@@ -54,6 +56,10 @@ public class PlayingState : GameState
 
     public override void OnUpdate()
     {
+        if(Time.frameCount%60 == 0)//every second
+        {
+            GameTimer = GameTimer-1;
+        }
 
         BuildMode = playerHUD.BuildMode;
         if (BuildMode)
@@ -62,10 +68,6 @@ public class PlayingState : GameState
             {
                 playerHUD.CreateBuildingFromPreview();
             }
-
-
-
-            
         }
 
 

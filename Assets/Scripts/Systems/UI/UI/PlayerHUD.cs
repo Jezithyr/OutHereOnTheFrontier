@@ -14,6 +14,8 @@ public class PlayerHUD : ScriptedUI
 
     [SerializeField] private ConstructionModule buildingSystem ;
 
+    [SerializeField] private PlayingState playingState;
+
     [SerializeField] private CameraModule cameraModule;
 
     [SerializeField] private UIModule uiModule ;
@@ -29,6 +31,7 @@ public class PlayerHUD : ScriptedUI
     private GameObject buildingMenuObj = null;
 
     private GameObject previewBuilding  = null;
+    private TextMeshProUGUI timerDisplay;
 
     private int previewBuildingIndex = -1;
 
@@ -52,6 +55,7 @@ public class PlayerHUD : ScriptedUI
             linkedResourceDisplays.Add(linkedUI.GetElementByName(ResourceDisplayNames[i]).GetComponentInChildren<TextMeshProUGUI>());
         }
         buildingMenuObj = linkedUI.GetElementByName("BuildingMenu");
+        timerDisplay = linkedUI.GetElementByName("TimerDisplay").GetComponentInChildren<TextMeshProUGUI>();
         buildingMenuObj.SetActive(false);
     }
 
@@ -60,13 +64,13 @@ public class PlayerHUD : ScriptedUI
         
         for (int i = 0; i < linkedResourceDisplays.Count; i++)
         {
-            linkedResourceDisplays[i].SetText(resourceSystem.GetResourceStorage(ResourceList[i])+ "/"+ resourceSystem.GetResourceLimit(ResourceList[i]));
+            linkedResourceDisplays[i].SetText(Mathf.FloorToInt(resourceSystem.GetResourceStorage(ResourceList[i]))+ "/"+ Mathf.FloorToInt(resourceSystem.GetResourceLimit(ResourceList[i])));
         }
         if (showingPreview)
         {
             previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, LayerMask.GetMask("BuildingPlacement"));
         }
-
+        timerDisplay.SetText(playingState.GameTimer/60 + ":"+ playingState.GameTimer%60);
     }
 
     public void ShowBuildingMenu()
