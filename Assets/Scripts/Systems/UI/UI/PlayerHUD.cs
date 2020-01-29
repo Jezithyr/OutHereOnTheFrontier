@@ -80,6 +80,7 @@ public class PlayerHUD : ScriptedUI
 
     public void  HideBuildingMenu()
     {
+        DestroyPreview();
         buildingMenuObj.SetActive(false);
     }
 
@@ -101,6 +102,7 @@ public class PlayerHUD : ScriptedUI
 
     public void DestroyPreview()
     {
+        if (previewBuilding == null) return;
         Destroy(previewBuilding);
         previewBuilding = null;
         showingPreview = false;

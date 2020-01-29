@@ -84,6 +84,11 @@ public class PlayingState : GameState
         BuildMode = playerHUD.BuildMode;
         if (BuildMode)
         {
+            if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+            {
+                playerHUD.HideBuildingMenu();
+            }
+            
             if (Input.GetMouseButtonDown(0))
             {
                 playerHUD.CreateBuildingFromPreview();
