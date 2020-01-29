@@ -53,7 +53,7 @@ public class EventModule : Module
     {
         if (activeEvent == null) return;
         EventUI.GetElementByName("EventTitle").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.eventTitle);
-        EventUI.GetElementByName("FlavorText").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.eventTitle);
+        EventUI.GetElementByName("FlavorText").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.flavorText);
         if (activeEvent.choices.Count > 0) 
         {
             EventUI.GetElementByName("Choice1").gameObject.SetActive(true);

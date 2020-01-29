@@ -18,5 +18,16 @@ MonoBehaviour:
   isActive: 1
   UiPrefab: {fileID: 6766900283637825799, guid: 9bd72c62287925944a70e75611428daa,
     type: 3}
-  resourceList: []
-  resourceManager: {fileID: 0}
+  resourceList:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
+  - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
+  - {fileID: 11400000, guid: f44d4ff5c902fc248988a4de903a5654, type: 2}
+  - {fileID: 11400000, guid: f17fa8b2279e00a47966794e9b031dc2, type: 2}
+  - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
+  - {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
+  resourceManager: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+  playstate: {fileID: 11400000, guid: 007c39cc34dd206408a577a68f80ab82, type: 2}
+  eventManager: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
+  popResourceID: 7

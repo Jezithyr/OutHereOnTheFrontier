@@ -18,7 +18,7 @@ MonoBehaviour:
   choices:
   - {fileID: 11400000, guid: d98a1867fc80a354394177914b37cc4e, type: 2}
   - {fileID: 11400000, guid: 03a876ec677bf5449bd6401b7a9fbd32, type: 2}
-  eventTitle: 
+  eventTitle: ET POST HOME
   flavorText: "Looks like one of the local aliens wants to make a Spacebook account
     so it can contact it can \u201Cpost home\u201D. It wants our WiFi password to
     do this."

@@ -16,6 +16,7 @@ public class PlayingState : GameState
     [SerializeField] private SettingsMenu settingsMenu;
     //[SerializeField] private EventPopup eventMenu;
     [SerializeField] private DebugMenu debugMenu ;
+    [SerializeField] private GameOver gameOverMenu ;
     [SerializeField] private GameState pauseState;
     
     [SerializeField]
@@ -45,6 +46,7 @@ public class PlayingState : GameState
     private int pauseMenuid;
     private int settingsMenuId;
     private int buildingMenuId;
+    private int gameOverMenuid;
     //private int eventMenuId;
     private int debugMenuid;
     public int GameTimer;
@@ -63,6 +65,9 @@ public class PlayingState : GameState
         playerHudId = uiModule.CreateInstance(playerHUD);
         pauseMenuid = uiModule.CreateInstance(pauseMenu);
         settingsMenuId = uiModule.CreateInstance(settingsMenu);
+
+        gameOverMenuid = uiModule.CreateInstance(gameOverMenu);
+
         //eventMenuId = uiModule.CreateInstance(eventMenu);
         debugMenuid = uiModule.CreateInstance(debugMenu);
 
@@ -74,6 +79,8 @@ public class PlayingState : GameState
         //uiModule.Hide(eventMenu,debugMenuid);
         
         eventModule.InitializePrefab();
+
+        uiModule.Hide(gameOverMenu,gameOverMenuid);
         uiModule.Hide(pauseMenu,pauseMenuid);
         //uiModule.Hide(eventMenu,eventMenuId);
         uiModule.Hide(settingsMenu,settingsMenuId);
@@ -96,6 +103,10 @@ public class PlayingState : GameState
         {
             GameTimer = GameTimer-1;
         }
+        if (GameTimer <= 0)
+            {
+                GameOver();
+            }
 
 
         
@@ -152,6 +163,14 @@ public class PlayingState : GameState
     }
 
 
+
+    private void GameOver()
+    {
+        Game.Pause();
+        uiModule.Hide(debugMenu,debugMenuid);
+        uiModule.Hide(playerHUD,playerHudId);
+        uiModule.Show(gameOverMenu,gameOverMenuid);
+    }
 
     public void SetDestroyMode(bool newMode)
     {

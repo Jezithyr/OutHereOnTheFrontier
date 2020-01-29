@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: Airlock_C2
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 4118678e1c2570142a6aecc3aea9ac5c, type: 2}
   optionTitle: (Pay 60 Metal, Lose 100 air)
   flavorText: Immediately send the station repair tech to fix the airlock.
   owner: {fileID: 0}
