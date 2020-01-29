@@ -17,5 +17,8 @@ MonoBehaviour:
   StartOnSceneLoad: 1
   activeEvents:
   - {fileID: 11400000, guid: 3f41bf95c01912e4a9909f2843946fd2, type: 2}
+  - {fileID: 11400000, guid: 55619dcbf61d7e242869c4abd65e0057, type: 2}
+  - {fileID: 11400000, guid: 633c0a2b10c47e142a54a665ebea279d, type: 2}
+  - {fileID: 11400000, guid: acc39132dabf26c45861c2ee58a4eb5b, type: 2}
   linkedEventPrefab: {fileID: 5937803854090534573, guid: d85d297db28fb254cae444baa1516221,
     type: 3}

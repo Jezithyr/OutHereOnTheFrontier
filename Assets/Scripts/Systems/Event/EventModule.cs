@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "GameFramework/SubSystems/EventModule")]
 public class EventModule : Module
@@ -11,6 +11,8 @@ public class EventModule : Module
     [SerializeField] private List<Event> activeEvents = new List<Event>() ;
 
     [SerializeField] private GameObject linkedEventPrefab;
+
+    [SerializeField] private Scene gameplayScene;
 
     Event activeEvent;
 
@@ -96,6 +98,8 @@ public class EventModule : Module
 
     public override void Start()
     {
+
+        if (SceneManager.GetActiveScene() != gameplayScene) return;
         activeEvent = activeEvents[0];
         UpdateUI();
         HideUI();
