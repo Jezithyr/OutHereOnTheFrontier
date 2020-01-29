@@ -22,6 +22,7 @@ public class Building : ScriptableObject
     [SerializeField]
     private float buildingRadiusMultiplier = 1f;
 
+    [SerializeField] public bool Removable = true;
 
     private float checkRadius;
     public float Radius{get=>checkRadius;}

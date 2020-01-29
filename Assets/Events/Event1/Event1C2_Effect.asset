@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6987c30c14013c45a7f7c5adb29999a, type: 3}
-  m_Name: EventModule
+  m_Script: {fileID: 11500000, guid: e9e2e69883cd7b44e912d2587388c6a2, type: 3}
+  m_Name: Event1C2_Effect
   m_EditorClassIdentifier: 
+  resourceList:
+  - {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
+  resourceCosts: 02000000
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
-  RunUpdate: 1
-  StartOnSceneLoad: 1
-  activeEvents:
-  - {fileID: 11400000, guid: 3f41bf95c01912e4a9909f2843946fd2, type: 2}
-  linkedEventPrefab: {fileID: 5937803854090534573, guid: d85d297db28fb254cae444baa1516221,
-    type: 3}
