@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d453fe5b31c07f14f8c133d138fc8854, type: 3}
   m_Name: FoodFarmCost
   m_EditorClassIdentifier: 
-  resourceController: {fileID: 0}
-  ResourceForCost: []
-  AmountForCost: 
+  resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  AmountForCost: 0f000000

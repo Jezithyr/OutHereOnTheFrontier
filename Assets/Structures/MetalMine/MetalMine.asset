@@ -17,4 +17,5 @@ MonoBehaviour:
     type: 3}
   placementConditions:
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: 3cc355cc9840b4c4ea8c5e4a8df9a19c, type: 2}
   buildingRadiusMultiplier: 1

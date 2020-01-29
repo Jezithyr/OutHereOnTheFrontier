@@ -29,12 +29,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
   - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
   - {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
+  - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
+  - {fileID: 11400000, guid: f17fa8b2279e00a47966794e9b031dc2, type: 2}
+  - {fileID: 11400000, guid: f44d4ff5c902fc248988a4de903a5654, type: 2}
   ResourceDisplayNames:
   - MetalDisplay
   - WoodDisplay
   - WaterDisplay
   - FoodDisplay
   - PopDisplay
+  - AirDisplay
+  - AlloyDisplay
+  - FuelDisplay
   buildings:
   - {fileID: 11400000, guid: 7678d5279346fed439a69187878054b2, type: 2}
   - {fileID: 11400000, guid: 3fce0e4fd47dfa045ad928beae95e46a, type: 2}

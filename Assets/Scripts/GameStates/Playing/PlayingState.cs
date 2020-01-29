@@ -24,6 +24,12 @@ public class PlayingState : GameState
     [SerializeField] private EventModule eventModule ;
     [SerializeField] private ConstructionModule buildingModule;
 
+
+
+    [SerializeField] private List<Event> eventList = new List<Event>();//only use 4 or everything breaks
+
+
+
     private Vector3 targetTranslation;
     
     private GameManager Game;
@@ -31,6 +37,7 @@ public class PlayingState : GameState
     private Camera cam;
     private FreeOrbitCam activeCam;
     public bool BuildMode = false;
+    public bool DestroyMode = false;
 
     private int playerHudId;
     private int pauseMenuid;
@@ -72,14 +79,43 @@ public class PlayingState : GameState
         SceneManager.LoadScene("Main");
     }
 
-
-
     public override void OnUpdate()
     {
         if(Time.frameCount%60 == 0)//every second
         {
             GameTimer = GameTimer-1;
         }
+
+
+        
+
+        // if (DestroyMode)
+        // {
+        //     if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+        //     {
+        //         BuildMode = false;
+        //         playerHUD.HideBuildingMenu();
+        //         DestroyMode = false;
+        //     }
+        //     if (Input.GetMouseButtonDown(0))
+        //     {
+        //          RaycastHit  hit;
+        //          Ray ray = camModule.ActiveCameraObject.ScreenPointToRay(Input.mousePosition);
+                  
+        //         if (Physics.Raycast(ray, out hit)) {
+
+        //             Building buildData = buildingModule.GetDataForPrefab(hit.transform.gameObject);
+        //             if (buildData.Removable)
+        //             {
+        //                 buildingModule.RemoveBuilding(hit.transform.gameObject);
+        //             }
+        //         }
+        //     }
+
+        // }
+
+
+
 
         BuildMode = playerHUD.BuildMode;
         if (BuildMode)
@@ -102,6 +138,15 @@ public class PlayingState : GameState
             }
         }
     }
+
+
+
+    public void SetDestroyMode(bool newMode)
+    {
+        DestroyMode = newMode;
+    }
+
+
 
     private void Pause()
     {

@@ -312,7 +312,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1437735434}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 18f6586eced9eef42bbb06b2da3b3fae, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 0516755a8cd88d3499bfe4d802c7ca94, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1437735436
 Terrain:
@@ -338,7 +338,7 @@ Terrain:
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 4fb926c255917d44da1fd6c7458ee867, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
