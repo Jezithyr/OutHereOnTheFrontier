@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "GameFramework/Gamestate/Playing")]
 public class PlayingState : GameState
@@ -13,6 +13,7 @@ public class PlayingState : GameState
     [SerializeField] private UIModule uiModule;
     [SerializeField] private PlayerHUD playerHUD;
     [SerializeField] private ScriptedUI buildMenu;
+    [SerializeField] private GameState pauseState;
     
     [SerializeField]
     private ScriptedCamera customCamera ;
@@ -28,6 +29,8 @@ public class PlayingState : GameState
 
     private Vector3 targetTranslation;
 
+    private GameManager Game;
+
     private Camera cam;
     private FreeOrbitCam activeCam;
     public bool BuildMode = false;
@@ -39,7 +42,6 @@ public class PlayingState : GameState
     public override void OnActivate(GameState lastState)
     {
          Debug.Log("Entered Playing State");
-        
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
 
@@ -50,9 +52,19 @@ public class PlayingState : GameState
     }
     public override void OnDeactivate(GameState newState)
     {
-
+        if (newState == pauseState)
+        {
+            
+        }
 
     }
+
+    public void LoadMainScene()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+
 
     public override void OnUpdate()
     {

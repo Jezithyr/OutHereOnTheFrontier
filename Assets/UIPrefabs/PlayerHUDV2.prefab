@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b5e71f544dbfc4a9cb7b816ac769bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentScriptedUI: {fileID: 11400000, guid: 34e690038b09ff24e916234ebb5ec536, type: 2}
+  parentScriptedUI: {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
   hudObjects:
   - {fileID: 3490304291694724604}
   - {fileID: 3276135833583366956}
