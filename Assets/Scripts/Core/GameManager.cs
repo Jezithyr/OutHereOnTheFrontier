@@ -171,6 +171,14 @@ public class GameManager : ScriptableObject
     }
 
 
+    public void SwitchSystemGameState(int index)
+    {
+        GameState lastState = ActiveState;
+        ActiveState.OnDeactivate(ActiveState);
+        ActiveState = systemGameStates[index];
+        ActiveState.OnActivate(lastState);
+    }
+
     public void Start()
     {
         ActiveState = InitialGameState;

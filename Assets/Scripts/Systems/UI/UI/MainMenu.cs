@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UISystem/UI/Create New Main Menu")]
 public class MainMenu : ScriptedUI
 {
+    [SerializeField]
+    GameManager Game;
+
     private void OnEnable()
     {
         ClearBehaviors(); //this needs to be present in every ui otherwise unity serialization breaks everything
@@ -18,6 +21,13 @@ public class MainMenu : ScriptedUI
 
     public override void Update()
     {
-        Debug.Log("TestTick");
+
+    }
+
+
+    public void StartGame()
+    {
+        //Game.SwitchSystemGameState(1);
+        Debug.Log("GAME STARTED");
     }
 }

@@ -19,11 +19,13 @@ MonoBehaviour:
   uiModule: {fileID: 11400000, guid: 7b6e3ab180fb8fb44a095ded55fed01a, type: 2}
   playerHUD: {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
   buildMenu: {fileID: 11400000, guid: 55df94fa8b26d424396a73375669c498, type: 2}
+  pauseState: {fileID: 0}
   customCamera: {fileID: 11400000, guid: a816746abf2b99041b39c7e37f93ad4d, type: 2}
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
   eventModule: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
   buildingModule: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59, type: 2}
   Producer: {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
-  Consumer: {fileID: 11400000, guid: db4d089e09507a4459ce5033c284e58f, type: 2}
+  Consumer: {fileID: 0}
   BuildingHotkey: OpenBuildMenu
   BuildMode: 0
+  GameTimer: 0
