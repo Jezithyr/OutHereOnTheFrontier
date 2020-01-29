@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
-  m_Name: Farm
+  m_Name: FoodFarm
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7819567662714847191, guid: d7e9c8b2811e44d4287248a82189a5e8, type: 3}
-  previewprefab: {fileID: 1817494536347110948, guid: 9dde8710c05a9a14f97987afb5ae8b88,
+  prefab: {fileID: 8336924948725581331, guid: 2a617c24795cdc84897d50a26ca8897d, type: 3}
+  previewprefab: {fileID: 2111336216167786351, guid: beef5a16a233660418e3db8da2512463,
     type: 3}
-  placementConditions:
-  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
-  - {fileID: 11400000, guid: c31a6eb079bc3e64c910d3d9f0f46280, type: 2}
+  placementConditions: []
   buildingRadiusMultiplier: 1

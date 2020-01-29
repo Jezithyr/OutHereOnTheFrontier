@@ -22,8 +22,6 @@ public class PlayingState : GameState
     [SerializeField] private ModuleManager moduleManager;
     [SerializeField] private EventModule eventModule ;
     [SerializeField] private ConstructionModule buildingModule;
-    [SerializeField] private Building Producer;
-    [SerializeField] private Building Consumer;
 
     [SerializeField] private string BuildingHotkey = "OpenBuildMenu";
 
@@ -53,10 +51,6 @@ public class PlayingState : GameState
     }
     public override void OnDeactivate(GameState newState)
     {
-        if (newState == pauseState)
-        {
-            
-        }
 
     }
 

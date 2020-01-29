@@ -32,6 +32,7 @@ public class CameraModule : Module
         Debug.LogWarning("Creating: "+ newCamera);
         activeCamera = AddScriptedCamera(ScriptableObject.Instantiate(newCamera));
         activeCamera.Active = true;
+        
         activeCameraObj = activeCamera.CreatedCamera;
         return activeCamera;
     }

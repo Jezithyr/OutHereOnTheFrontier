@@ -30,6 +30,7 @@ public class Building : ScriptableObject
     private void OnEnable()
     {
         checkRadius = buildingRadiusMultiplier*previewprefab.GetComponent<SphereCollider>().radius;
+        instances.Clear();
     }
 
     public GameObject CreateInstance()
@@ -37,6 +38,11 @@ public class Building : ScriptableObject
         GameObject temp = GameObject.Instantiate(prefab);
         instances.Add(temp);
         return temp;
+    }
+
+    public int GetInstanceCount()
+    {
+        return instances.Count;
     }
 
     public void DestroyInstance(GameObject instance)
