@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72fb16d546780ba4cb824dc1c286d83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceComponent: {fileID: 11400000, guid: bbd6dc77f0c938243b3b381184d109a3, type: 2}
+  resourceComponent: {fileID: 11400000, guid: 40398ba1bd541934f929cbf85aab614a, type: 2}
   activate: []
   activeLoop: []
   deActivate: []

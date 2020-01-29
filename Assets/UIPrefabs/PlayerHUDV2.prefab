@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 7899638363670766489}
   - component: {fileID: 1014444265802968427}
   m_Layer: 0
-  m_Name: TimeDisplay
+  m_Name: TimerDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,7 +579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 71.4, y: -11}
+  m_AnchoredPosition: {x: 71.4, y: -6}
   m_SizeDelta: {x: 100, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7899638363670766489
@@ -817,7 +817,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3013294418332818293}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
+        m_MethodName: selectBuilding
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1741956428860435221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,7 +1373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b5e71f544dbfc4a9cb7b816ac769bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentScriptedUI: {fileID: 11400000, guid: 34e690038b09ff24e916234ebb5ec536, type: 2}
+  parentScriptedUI: {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
   hudObjects:
   - {fileID: 3490304291694724604}
   - {fileID: 3276135833583366956}
@@ -4016,9 +4027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'None
-
-'
+  m_text: BunkHouse
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4087,9 +4096,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 310628208894916346}
-    characterCount: 5
+    characterCount: 9
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 0
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -5087,7 +5096,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3187035951463747852}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
+        m_MethodName: selectBuilding
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7987583028255619104
 GameObject:
   m_ObjectHideFlags: 0

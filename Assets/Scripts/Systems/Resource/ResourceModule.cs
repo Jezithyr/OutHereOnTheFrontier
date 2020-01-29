@@ -7,12 +7,12 @@ public class ResourceModule : Module
 {
     [SerializeField] 
     private List<Resource> ActiveResources = new List<Resource>();
-    [SerializeField] private List<int> ResourceLimits = new List<int>();
+    [SerializeField] private List<float> ResourceLimits = new List<float>();
 
-    private Dictionary<Resource,int> resourceStorage = new Dictionary<Resource,int>();
-    private Dictionary<Resource,int> storageLimits = new Dictionary<Resource,int>();
+    private Dictionary<Resource,float> resourceStorage = new Dictionary<Resource,float>();
+    private Dictionary<Resource,float> storageLimits = new Dictionary<Resource,float>();
 
-    public Dictionary<Resource,int> GetStorage{get =>resourceStorage;}
+    public Dictionary<Resource,float> GetStorage{get =>resourceStorage;}
     public List<Resource> Resources{get =>ActiveResources;}
 
     public List<ResourceBehavior> resourceNodes = new List<ResourceBehavior>();
@@ -50,23 +50,39 @@ public class ResourceModule : Module
             foreach (ResourceBehavior resourceNode in resourceNodes)
             {
                 Debug.Log("Running: "+ resourceNode);
-                resourceNode.resourceComponent.Run();
+                if (resourceNode.resourceComponent.checkCondition(null,null))
+                {
+                    resourceNode.resourceComponent.Run();
+                }
             }
         }
     }
 
-    
+    public void RemoveResourceLimit(Resource resource, float amount)
+    {
+        Debug.Log(resource);
+        storageLimits[resource] -= amount;
+        
+    }
+
+    public void AddResourceLimit(Resource resource, float amount)
+    {
+        Debug.Log(resource);
+        storageLimits[resource] += amount;
+    }
 
 
+    public void SetResourceLimit(Resource resource, float newLimit)
+    {
+        storageLimits[resource] = newLimit;
+    }
 
-
-
-    public int GetResourceLimit(Resource resource)
+    public float GetResourceLimit(Resource resource)
     {
         return storageLimits[resource];
     }
 
-    public int GetResourceStorage(Resource resource)
+    public float GetResourceStorage(Resource resource)
     {
         return resourceStorage[resource];
     }
@@ -84,11 +100,11 @@ public class ResourceModule : Module
         }
     }
 
-    public int AddResource(Resource resourceToAdd, int amount)
+    public float AddResource(Resource resourceToAdd, float amount)
     {
         if (amount <= 0) return 0;
 
-        int newStorage = GetStorage[resourceToAdd] + amount;
+        float newStorage = GetStorage[resourceToAdd] + amount;
         if (newStorage > storageLimits[resourceToAdd])
         {
             resourceStorage[resourceToAdd] = storageLimits[resourceToAdd];
@@ -99,7 +115,7 @@ public class ResourceModule : Module
 
     }
 
-    public int RemoveResource(Resource resourceToRemove, int amount)
+    public float RemoveResource(Resource resourceToRemove, float amount)
     {
         if (amount <= 0) return amount;
         if (GetStorage[resourceToRemove] >= amount){

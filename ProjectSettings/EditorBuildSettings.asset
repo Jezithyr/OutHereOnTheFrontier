@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/gym.unity
     guid: 0732943cc830a394e8865974ad7d58ca
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 740259d38bc31e342a5795928d42f77f
+  - enabled: 1
     path: Assets/Scenes/Jesse.unity
     guid: 2cdd57e819dcfd24bb17f16c4cabd735
   m_configObjects: {}
