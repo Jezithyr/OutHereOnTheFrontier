@@ -167,7 +167,15 @@ public class GameManager : ScriptableObject
         Debug.Log("SceneLoaded");
         
         moduleManager.ModuleStartOnLoad();
-        Start();
+        
+        if (scene.name == "MainMenu")
+        {
+            Start();
+        }
+        else
+        {
+            ActiveState.OnActivate(null);
+        }
     }
 
 
@@ -176,7 +184,7 @@ public class GameManager : ScriptableObject
         GameState lastState = ActiveState;
         ActiveState.OnDeactivate(ActiveState);
         ActiveState = systemGameStates[index];
-        ActiveState.OnActivate(lastState);
+        //ActiveState.OnActivate(lastState);
     }
 
     public void Start()

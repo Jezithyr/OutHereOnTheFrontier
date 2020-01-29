@@ -18,4 +18,4 @@ MonoBehaviour:
   isActive: 0
   UiPrefab: {fileID: 7304158827727021161, guid: 5f5f99dba95ff914084088dcd20c9d30,
     type: 3}
-  Game: {fileID: 0}
+  Game: {fileID: 11400000, guid: 8d40168e67f6320429590e3a9036bb96, type: 2}

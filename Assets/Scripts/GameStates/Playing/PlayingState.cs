@@ -41,7 +41,8 @@ public class PlayingState : GameState
 
     public override void OnActivate(GameState lastState)
     {
-         Debug.Log("Entered Playing State");
+
+        Debug.Log("Entered Playing State");
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
 

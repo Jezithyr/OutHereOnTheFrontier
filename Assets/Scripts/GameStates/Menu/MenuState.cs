@@ -44,13 +44,13 @@ public class MenuState : GameState
 
     public override void OnDeactivate(GameState newState)
     {
-        if (newState == playState)
-        {
-           SceneManager.LoadSceneAsync(sceneName:"Main");
-          SceneManager.UnloadSceneAsync(sceneName:"MainMenu");
-        }
         camModule.RemoveScriptedCamera(MenuCam);
         uiModule.DestroyInstance(mainMenuUi,menuUIid);
+        //if (newState == playState)
+        //{
+            SceneManager.LoadScene(sceneName:"Main");
+          //SceneManager.UnloadSceneAsync(sceneName:"MainMenu");
+        //}
         Game.UnPause();
     }
 }
