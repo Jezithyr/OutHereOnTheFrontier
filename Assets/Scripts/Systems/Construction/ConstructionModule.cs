@@ -51,7 +51,11 @@ public class ConstructionModule : Module
 
     public void CreateBuildingAtWorldPos(Vector3 position,Quaternion rotation, Building buildingData)
     {
-        if (!EnabledBuildings.Contains(buildingData)) return; //don't create the building if it isn't enabled
+        if (!EnabledBuildings.Contains(buildingData)) 
+        {
+            Debug.LogError("WARNING: Building"+ buildingData +" Not found in active building list!");
+            return; //don't create the building if it isn't enabled
+        }
 
         GameObject prefab = buildingData.CreateInstance();
         

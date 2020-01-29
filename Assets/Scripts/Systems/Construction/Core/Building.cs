@@ -22,13 +22,14 @@ public class Building : ScriptableObject
     [SerializeField]
     private float buildingRadiusMultiplier = 1f;
 
+
     private float checkRadius;
     public float Radius{get=>checkRadius;}
 
 
     private void OnEnable()
     {
-        checkRadius = buildingRadiusMultiplier*previewprefab.GetComponentInChildren<SphereCollider>().radius*4;
+        checkRadius = buildingRadiusMultiplier*previewprefab.GetComponent<SphereCollider>().radius;
     }
 
     public GameObject CreateInstance()
@@ -50,6 +51,8 @@ public class Building : ScriptableObject
         bool canPlace = true;
         foreach (var condition in placementConditions)
         {
+
+            
             canPlace = canPlace &  condition.ConditionCheck(preview,this);
         }
         return canPlace;
