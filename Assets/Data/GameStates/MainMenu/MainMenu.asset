@@ -17,5 +17,5 @@ MonoBehaviour:
   tickRate: 0
   Game: {fileID: 11400000, guid: 8d40168e67f6320429590e3a9036bb96, type: 2}
   playState: {fileID: 11400000, guid: 007c39cc34dd206408a577a68f80ab82, type: 2}
-  menuCamData: {fileID: 0}
+  menuCamData: {fileID: 11400000, guid: 2acc8992f700c7048842756bdb4dd4f3, type: 2}
   camModule: {fileID: 11400000, guid: 99fa0cb526ca2024da0f7a38c14bd797, type: 2}

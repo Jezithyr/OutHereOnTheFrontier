@@ -16,7 +16,9 @@ public class MenuState : GameState
 
     [SerializeField] private CameraModule camModule;
 
-    //private ScriptedCamera MenuCam;
+    [SerializeField] private UIModule uiModule;
+
+    private ScriptedCamera MenuCam;
     
     public override void OnActivate(GameState lastState)
     {
@@ -29,7 +31,7 @@ public class MenuState : GameState
         
         Game.Pause();
 
-        //MenuCam = camModule.AddScriptedCameraInstance(menuCamData);
+        MenuCam = camModule.AddScriptedCameraInstance(menuCamData);
     }
 
     public override void OnUpdate()
@@ -44,7 +46,7 @@ public class MenuState : GameState
            SceneManager.LoadSceneAsync(sceneName:"Main");
           SceneManager.UnloadSceneAsync(sceneName:"MainMenu");
         }
-        
+        camModule.RemoveScriptedCamera(MenuCam);
         Game.UnPause();
     }
 }

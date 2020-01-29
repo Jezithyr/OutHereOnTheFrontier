@@ -62,4 +62,9 @@ public class CameraModule : Module
 
     }
 
+    public void RemoveScriptedCamera(ScriptedCamera cam)
+    {
+        ScriptedCameras.Remove(cam);
+    }
+
 }

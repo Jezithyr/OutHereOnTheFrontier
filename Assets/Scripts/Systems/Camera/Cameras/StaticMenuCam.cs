@@ -24,7 +24,6 @@ public class StaticMenuCam : ScriptedCamera
         cameraObj = cameraComponent;
         Debug.Log("Creating MenuCamera" + cameraGameObject + "\n");
         cameraComponent.enabled = true;
-        cameraObj = cameraComponent;
 
         cameraComponent.transform.localPosition = ComputeCameraPos(CameraAngle, CameraDistance);
     }
