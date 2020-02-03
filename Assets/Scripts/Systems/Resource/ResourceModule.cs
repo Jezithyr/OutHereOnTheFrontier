@@ -22,9 +22,6 @@ public class ResourceModule : Module
     public List<ResourceBehavior> linkedResourceNodes = new List<ResourceBehavior>();
 
 
-    //TODO: Optimize ticking system by moving stuff from monobehavior updates to centralized ticking 
-
-
     private void OnEnable()
     {
 
@@ -42,7 +39,7 @@ public class ResourceModule : Module
 
     public override void Update()
     {
-        if(Time.frameCount%60 == 0)//every second
+        if(Time.fixedTime%1 == 0)//every second
         {
             Debug.Log("Resource Network Update");
             // foreach (var item in resourceStorage)

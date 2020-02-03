@@ -99,7 +99,7 @@ public class PlayingState : GameState
 
     public override void OnUpdate()
     {
-        if(Time.frameCount%60 == 0)//every second
+        if(Time.fixedTime%1 == 0)//every second
         {
             GameTimer = GameTimer-1;
         }
