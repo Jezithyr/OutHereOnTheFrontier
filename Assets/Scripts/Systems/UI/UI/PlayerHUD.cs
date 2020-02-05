@@ -4,6 +4,14 @@ using TMPro;
 using UnityEngine.UI;
 
 
+public enum PlayerHudModes
+{
+    None,
+    Building,
+    Demolishing,
+    Events
+}
+
 
 [CreateAssetMenu(menuName = "UISystem/UI/Create New PlayerHud")]
 public class PlayerHUD : ScriptedUI
@@ -30,7 +38,13 @@ public class PlayerHUD : ScriptedUI
 
     private GameObject buildingMenuObj = null;
 
+
+    private PlayerHudModes hudMode = PlayerHudModes.None;
+    public PlayerHudModes Mode{get => hudMode;}
+
+
     private GameObject previewBuilding  = null;
+    private GameObject DemolishExit;
     private TextMeshProUGUI timerDisplay;
 
     private int previewBuildingIndex = -1;
@@ -55,9 +69,61 @@ public class PlayerHUD : ScriptedUI
             linkedResourceDisplays.Add(linkedUI.GetElementByName(ResourceDisplayNames[i]).GetComponentInChildren<TextMeshProUGUI>());
         }
         buildingMenuObj = linkedUI.GetElementByName("BuildingMenu");
+        DemolishExit = linkedUI.GetElementByName("DemolishExit");
         timerDisplay = linkedUI.GetElementByName("TimerDisplay").GetComponentInChildren<TextMeshProUGUI>();
         buildingMenuObj.SetActive(false);
+        DemolishExit.SetActive(false);
     }
+
+    public void SetHudMode(int modeIndex)
+    {
+        SetHudmode((PlayerHudModes)modeIndex);
+    }
+
+    public void SetHudmode(PlayerHudModes newMode)
+    {
+        switch (hudMode)
+        {
+            case PlayerHudModes.Building:
+            {
+                HideBuildingMenu();
+                break;
+            };
+            case PlayerHudModes.Demolishing:
+            {
+                HideDemolishExit();
+                break;
+            };
+            case PlayerHudModes.Events:
+            {
+                Debug.Log("TODO: HIDE event ui here");
+                break;
+            };
+        }
+
+        switch (newMode)
+        {
+            case PlayerHudModes.Building:
+            {
+                ShowBuildingMenu();
+                break;
+            };
+            case PlayerHudModes.Demolishing:
+            {
+                Debug.Log("Entered demolish mode");
+                ShowDemolishExit();
+                break;
+            };
+            case PlayerHudModes.Events:
+            {
+                Debug.Log("TODO: SHOW event ui here");
+                break;
+            };
+        }
+
+        hudMode = newMode;
+    }
+
 
     public override void Update()
     {
@@ -71,6 +137,16 @@ public class PlayerHUD : ScriptedUI
             previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, LayerMask.GetMask("BuildingPlacement"));
         }
         timerDisplay.SetText(playingState.GameTimer/60 + ":"+ playingState.GameTimer%60);
+    }
+
+    public void ShowDemolishExit()
+    {
+        DemolishExit.SetActive(true);
+    }
+
+    public void HideDemolishExit()
+    {
+        DemolishExit.SetActive(false);
     }
 
     public void ShowBuildingMenu()
