@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5701776522574625565}
   - component: {fileID: 408333867602307248}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: AlloyFactoryPreview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3333792021285420142}
+  - {fileID: 6535509423452577946}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -122,6 +122,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 3935444001893410372, guid: 9f0eafadf5ad85f47816db84284a206c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5807595025836854885, guid: 9f0eafadf5ad85f47816db84284a206c,
         type: 3}
       propertyPath: m_Name
@@ -134,9 +139,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f0eafadf5ad85f47816db84284a206c, type: 3}
---- !u!4 &3333792021285420142 stripped
+--- !u!4 &6535509423452577946 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 449812817064077012, guid: 9f0eafadf5ad85f47816db84284a206c,
+  m_CorrespondingSourceObject: {fileID: 8271079793561303584, guid: 9f0eafadf5ad85f47816db84284a206c,
     type: 3}
   m_PrefabInstance: {fileID: 2916657390952258234}
   m_PrefabAsset: {fileID: 0}

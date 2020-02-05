@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd901b4f02a743f45a28ea4a56ade514, type: 3}
-  m_Name: PreventStructureOverlap
+  m_Script: {fileID: 11500000, guid: a9d37ce076c906141900d1aa6b40e90b, type: 3}
+  m_Name: MetalMineRefund
   m_EditorClassIdentifier: 
-  Layer:
-    serializedVersion: 2
-    m_Bits: 2048
+  resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+  Resources:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  amount: 0500

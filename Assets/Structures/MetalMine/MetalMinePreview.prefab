@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6776146471241089079}
   - component: {fileID: 2048823552324944509}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: MetalMinePreview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,17 +55,17 @@ PrefabInstance:
     - target: {fileID: -8052994932809076077, guid: 6cab1bfff5868c048b895ac63cc4fcac,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -6581041025168474491, guid: 6cab1bfff5868c048b895ac63cc4fcac,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -4473984409997532297, guid: 6cab1bfff5868c048b895ac63cc4fcac,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6cab1bfff5868c048b895ac63cc4fcac,
         type: 3}
@@ -145,17 +145,17 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 6cab1bfff5868c048b895ac63cc4fcac,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6292535884062368016, guid: 6cab1bfff5868c048b895ac63cc4fcac,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8229774475834278619, guid: 6cab1bfff5868c048b895ac63cc4fcac,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cab1bfff5868c048b895ac63cc4fcac, type: 3}

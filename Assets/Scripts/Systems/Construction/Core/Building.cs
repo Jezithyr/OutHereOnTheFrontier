@@ -16,7 +16,7 @@ public class Building : ScriptableObject
 
     [SerializeField] private List<DestroyEffect> destroyEffects= new List<DestroyEffect>();
 
-    private ConstructionModule constructionManager; 
+    public ConstructionModule constructionManager; 
 
     private List<GameObject> instances = new List<GameObject>();
 
@@ -50,25 +50,29 @@ public class Building : ScriptableObject
 
     public void Deconstruct(GameObject instance)
     {
-        GameObject temp = instances.Find( x => x==instance);
-        instances.Remove(instance);
+        GameObject temp = RemoveInstance(instance);
         foreach (var effect in destroyEffects)
         {
             effect.BuildingDestroyed(temp,true);
         }
-        Destroy(temp);
+        constructionManager.RemoveBuilding(temp);
     }
 
+    private GameObject RemoveInstance(GameObject instance)
+    {
+        GameObject temp = instances.Find( x => x==instance);
+        instances.Remove(temp);
+        return temp;
+    }
 
     public void DestroyInstance(GameObject instance)
     {
-        GameObject temp = instances.Find( x => x==instance);
-        instances.Remove(instance);
+        GameObject temp = RemoveInstance(instance);
         foreach (var effect in destroyEffects)
         {
             effect.BuildingDestroyed(temp,false);
         }
-        Destroy(temp);
+        constructionManager.RemoveBuilding(temp);
     }
 
     public bool CheckPlacement(GameObject preview)

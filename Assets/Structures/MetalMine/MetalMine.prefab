@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2936706688910365208}
   - component: {fileID: 2136827108284996019}
   - component: {fileID: 8987000670199007238}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: MetalMine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,6 +67,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2936706688910365208}
     m_Modifications:
+    - target: {fileID: 829703237121308776, guid: 6ac0a843c607b444c9b32ccd9841ad31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1085420965954121733, guid: 6ac0a843c607b444c9b32ccd9841ad31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -137,10 +142,35 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2105732291232987663, guid: 6ac0a843c607b444c9b32ccd9841ad31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061275002836654532, guid: 6ac0a843c607b444c9b32ccd9841ad31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4128509236221182486, guid: 6ac0a843c607b444c9b32ccd9841ad31,
         type: 3}
       propertyPath: m_Name
       value: mine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128509236221182486, guid: 6ac0a843c607b444c9b32ccd9841ad31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508976443279124876, guid: 6ac0a843c607b444c9b32ccd9841ad31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980930900686939546, guid: 6ac0a843c607b444c9b32ccd9841ad31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ac0a843c607b444c9b32ccd9841ad31, type: 3}

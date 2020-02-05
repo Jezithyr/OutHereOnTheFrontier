@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7257216128864049843}
   - component: {fileID: 7545936756477275352}
   - component: {fileID: 2989482046843648331}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 9094189895510739421}
   - component: {fileID: 2307374219283347791}
   - component: {fileID: 8523143645737542985}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5214615694755794989}
   - component: {fileID: 3931807146673841201}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Saloon Preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 6628449118324275009}
   - component: {fileID: 1105839727812364858}
   - component: {fileID: 2801049937091607990}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

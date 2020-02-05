@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2181274999475237849}
   - component: {fileID: 6661627567739809028}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sheriff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 5605810902842620364}
   - component: {fileID: 108178673001311845}
   - component: {fileID: 244894717290905483}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5258761137851344882}
   - component: {fileID: 8930872767386618270}
   - component: {fileID: 5536592231105113747}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

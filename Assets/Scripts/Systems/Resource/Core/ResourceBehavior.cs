@@ -27,6 +27,7 @@ public class ResourceBehavior : MonoBehaviour
 
     private void OnDestroy()
     {
+        resourceComponent.resourceController.resourceNodes.Remove(this);
         resourceComponent.instances.Remove(this);
     }
 

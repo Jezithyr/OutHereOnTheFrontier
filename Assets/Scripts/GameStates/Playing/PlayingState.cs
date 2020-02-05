@@ -34,7 +34,7 @@ public class PlayingState : GameState
 
 
     [SerializeField] private List<Event> eventList = new List<Event>();//only use 4 or everything breaks
-
+    [SerializeField] private LayerMask buildingLayer;
 
 
     private Vector3 targetTranslation;
@@ -83,6 +83,7 @@ public class PlayingState : GameState
         uiModule.Show(playerHUD,playerHudId);
         
         //uiModule.Hide(eventMenu,debugMenuid);
+
         
         eventModule.InitializePrefab();
 
@@ -147,7 +148,7 @@ public class PlayingState : GameState
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    playerHUD.CreateBuildingFromPreview();
+                    TryDemolishUnderCursor();
                 }
 
                 break;
@@ -181,7 +182,17 @@ public class PlayingState : GameState
 
     private void TryDemolishUnderCursor()
     {
+        if (activeCam.CreatedCamera == null) return;
+        RaycastHit hit = uiModule.CursorRaycast(activeCam.CreatedCamera,buildingLayer);
+        if (!hit.collider) return;
 
+        Building hitBuilding = buildingModule.GetDataForPrefab(hit.collider.gameObject);
+        if (!hitBuilding) return;
+
+        if (hitBuilding.Removable)
+        {
+            hitBuilding.Deconstruct(hit.collider.gameObject);
+        }
     }
 
 

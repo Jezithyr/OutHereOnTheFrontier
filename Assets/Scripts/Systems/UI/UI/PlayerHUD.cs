@@ -33,6 +33,7 @@ public class PlayerHUD : ScriptedUI
     [SerializeField] private List<string> ResourceDisplayNames = new List<string>();
 
     [SerializeField] private List<Building> buildings = new List<Building>();
+    [SerializeField] private LayerMask BuildingLayerMask;
 
     private List<TextMeshProUGUI> linkedResourceDisplays = new List<TextMeshProUGUI>();
 
@@ -134,7 +135,7 @@ public class PlayerHUD : ScriptedUI
         }
         if (showingPreview)
         {
-            previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, LayerMask.GetMask("BuildingPlacement"));
+            previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask);
         }
         timerDisplay.SetText(playingState.GameTimer/60 + ":"+ playingState.GameTimer%60);
     }
@@ -167,11 +168,10 @@ public class PlayerHUD : ScriptedUI
         CreateBuildingPreview(selectionIndex);
     }
 
-
     public void CreateBuildingPreview(int buildingIndex)
     {
         if (showingPreview) return;
-        previewBuilding = buildingSystem.CreatePreviewAtPos(buildings[buildingIndex],uiModule.CursorToWorld(cameraModule.ActiveCameraObject, LayerMask.GetMask("BuildingPlacement")));
+        previewBuilding = buildingSystem.CreatePreviewAtPos(buildings[buildingIndex],uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask));
         previewBuildingIndex = buildingIndex;
         showingPreview = true;
     }
@@ -189,7 +189,7 @@ public class PlayerHUD : ScriptedUI
         if (!showingPreview) return;
 
         if (!buildings[previewBuildingIndex].CheckPlacement(previewBuilding)) return;
-        buildingSystem.CreateBuildingAtWorldPos(uiModule.CursorToWorld(cameraModule.ActiveCameraObject, LayerMask.GetMask("BuildingPlacement")),new Quaternion(),buildings[previewBuildingIndex]);
+        buildingSystem.CreateBuildingAtWorldPos(uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask),new Quaternion(),buildings[previewBuildingIndex]);
         DestroyPreview();
     }
 }
