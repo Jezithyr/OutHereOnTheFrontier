@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: 4a UvU
+  m_EditorClassIdentifier: 
+  EventInternalName: 4aUvU_Event
+  isActive: 0
+  triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  choices:
+  - {fileID: 11400000, guid: 9e865665c0e530b4599966009b2efd41, type: 2}
+  - {fileID: 11400000, guid: 56e0e728bd6878c4687b3b40f38010ce, type: 2}
+  - {fileID: 11400000, guid: ac6a020002002b149bfc64d640477452, type: 2}
+  - {fileID: 11400000, guid: e0305b5dd20e695428e36593e709d4a5, type: 2}
+  eventTitle: 
+  flavorText: Our engineers are now in a spat over whose methods are superior. Frankly
+    its slowing down all engineering work on the station and needs to be dealt with
+    immediately!

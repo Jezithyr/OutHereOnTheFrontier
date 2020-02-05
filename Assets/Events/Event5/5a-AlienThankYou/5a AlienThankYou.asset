@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: 5a AlienThankYou
+  m_EditorClassIdentifier: 
+  EventInternalName: 5aAlienThankYou_Event
+  isActive: 0
+  triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  choices:
+  - {fileID: 11400000, guid: 6e6cb26732e2ae840a4ef8f48a9af7d6, type: 2}
+  eventTitle: 
+  flavorText: It seems the Alien we lent our WiFi password to earlier has reached
+    his civilization, and sent us a goodie bag for our help! (+500 Alloy, +500 Fuel,
+    +500 Metal, +500 Wood)

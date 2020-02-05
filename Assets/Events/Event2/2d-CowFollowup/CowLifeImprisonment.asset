@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: CowLifeImprisonment
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 2dCowFollowUp_C3
+  condition: {fileID: 0}
+  effects: []
+  optionTitle: 
+  flavorText: Life imprisonment with no parole (-5% food production)
+  owner: {fileID: 0}

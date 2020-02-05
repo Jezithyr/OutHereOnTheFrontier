@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: 2d CowFollowup
+  m_EditorClassIdentifier: 
+  EventInternalName: 2DCowFollowup_Event
+  isActive: 0
+  triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  choices:
+  - {fileID: 11400000, guid: ad4fb495ddf6f854bbe345fbe815bd04, type: 2}
+  - {fileID: 11400000, guid: f06a7f07a5a19fd4aaed2f9641f9ce1d, type: 2}
+  - {fileID: 11400000, guid: af9a107c922f73445aee8ecc47caac5a, type: 2}
+  eventTitle: 
+  flavorText: After extensive interrogation, we have discovered the Cow DID in fact
+    commit the murder! What should we do?

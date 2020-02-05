@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: WeDontNegotiateWithTumbleweeds
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 5dBigTumbleInLittleChina_C3
+  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 68b9cee9f0fda414dad5788a2b25d9c1, type: 2}
+  optionTitle: 
+  flavorText: "We don\u2019t negotiate with Tumbleweeds (-5 population)"
+  owner: {fileID: 0}

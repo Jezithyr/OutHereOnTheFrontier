@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: 8a Wincondition
+  m_EditorClassIdentifier: 
+  EventInternalName: 8aWinCondition_Event
+  isActive: 0
+  triggerCondition: {fileID: 0}
+  choices:
+  - {fileID: 11400000, guid: 432b2f9d2236ba34e9e7207fa945dbc2, type: 2}
+  - {fileID: 11400000, guid: 2e45a89f2dd34ef41b47230e11a26121, type: 2}
+  eventTitle: 
+  flavorText: "Yeehaw! Looks like it\u2019s time for us to git this space horse up
+    into space! I\u2019ll take it on faith you\u2019ve acquired the necessary material
+    for the venture? "
