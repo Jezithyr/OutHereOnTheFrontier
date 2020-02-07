@@ -9,7 +9,7 @@ public class EventDecision : ScriptableObject
 
 
     [SerializeField] public string DecisionInternalName = "";
-    [SerializeField] public ConditionScript condition;
+    [SerializeField] public EventCondition condition;
     [SerializeField] protected List<EventEffect> effects = new List<EventEffect>();
 
     [SerializeField] protected string optionTitle = "";
@@ -53,9 +53,17 @@ public class EventDecision : ScriptableObject
         }
     }
 
+
+
     public bool canSelect()
     {
        return EventConditionDelegate(owner);
+    }
+
+    public bool CheckConditions()
+    {
+
+        return false;
     }
 
     public void TriggerDecision()
