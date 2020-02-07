@@ -49,6 +49,8 @@ public class EventModule : Module
         EventUIObject.SetActive(false);
     }
 
+
+    //todo change this
     public void UpdateUI()
     {
         if (activeEvent == null) return;
