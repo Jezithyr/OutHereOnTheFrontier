@@ -36,6 +36,8 @@ public class PlayingState : GameState
     [SerializeField] private List<Event> eventList = new List<Event>();//only use 4 or everything breaks
     [SerializeField] private LayerMask buildingLayer;
 
+    [SerializeField] private int gameTimer =  8*60;
+
 
     private Vector3 targetTranslation;
     
@@ -53,7 +55,10 @@ public class PlayingState : GameState
     private int gameOverMenuid;
     //private int eventMenuId;
     private int debugMenuid;
+
+    //todo make these not public
     public int GameTimer;
+    public int ElapsedTime = 0;
 
 
     private void OnEnable()
@@ -92,7 +97,7 @@ public class PlayingState : GameState
         //uiModule.Hide(eventMenu,eventMenuId);
         uiModule.Hide(settingsMenu,settingsMenuId);
 
-        GameTimer = 8*60;
+        GameTimer = gameTimer;
     }
     public override void OnDeactivate(GameState newState)
     {
@@ -113,6 +118,7 @@ public class PlayingState : GameState
         if(Time.fixedTime%1 == 0)//every second
         {
             GameTimer = GameTimer-1;
+            ElapsedTime += 1;
         }
         if (GameTimer <= 0)
             {

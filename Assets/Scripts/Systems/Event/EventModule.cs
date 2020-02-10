@@ -12,10 +12,19 @@ public class EventModule : Module
 
     [SerializeField] private GameObject linkedEventPrefab;
 
+    [SerializeField] private PlayingState playState;
+
     [SerializeField] private Scene gameplayScene;
 
-    Event activeEvent;
+    [SerializeField] private EventPool globalEventPool;//these can be triggered any time by conditions
 
+    [SerializeField] private List<EventPool> EventPools = new List<EventPool>(); //this are random event pools
+
+    [SerializeField] private List<int> PoolTimes = new List<int>(); //the times that random events can be triggered
+
+
+
+    Event activeEvent;
 
     ScriptedUIBehavior EventUI;
     GameObject EventUIObject;
@@ -105,6 +114,13 @@ public class EventModule : Module
         ShowUI();
     }
 
+    private void showEvent(Event eventToShow)
+    {
+        activeEvent = eventToShow;
+        UpdateUI();
+        ShowUI();
+    }
+
 
     public void setActiveEvent(int eventIndex)
     {
@@ -122,13 +138,20 @@ public class EventModule : Module
     
     public override void Update()
     {
-      //  foreach (Event newEvent in activeEvents)
-       // {
-        //    if (newEvent.triggerCondition.ConditionCheck(newEvent))
-        //    {
-        //        activeEvent = newEvent;
-        //    }
-       // }
+        Event globalTempEvent = globalEventPool.CheckEventConditions();
+        if (globalTempEvent != null)
+        {
+            showEvent(globalTempEvent);
+            return; //early return
+        }
 
+        for (int i = 0; i < EventPools.Count; i++)
+        {
+           if (playState.ElapsedTime == PoolTimes[i])
+            {
+                showEvent(EventPools[i].GetRandomEvent());
+                return;
+            } 
+        }
     }
 }
