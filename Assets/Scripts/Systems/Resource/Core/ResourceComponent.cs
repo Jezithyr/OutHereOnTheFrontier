@@ -89,7 +89,8 @@ public class ResourceComponent : ScriptableObject
     {
         for (int i = 0; i < activeResources.Count; i++)
         {
-            resourceController.AddResource(activeResources[i],production[i]);
+
+            resourceController.AddResource(activeResources[i],production[i]*(1+resourceController.GetResourceModifier(activeResources[i])));
         }
     }
 
@@ -109,7 +110,7 @@ public class ResourceComponent : ScriptableObject
     {
         for (int i = 0; i < activeResources.Count; i++)
         {
-            resourceController.RemoveResource(activeResources[i],consumption[i]);
+            resourceController.RemoveResource(activeResources[i],consumption[i]*(1+resourceController.GetResourceModifier(activeResources[i])));
         }
     }
 

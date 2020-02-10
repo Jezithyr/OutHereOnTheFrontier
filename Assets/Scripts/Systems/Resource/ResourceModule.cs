@@ -10,9 +10,11 @@ public class ResourceModule : Module
     [SerializeField] private List<float> ResourceLimits = new List<float>();
     [SerializeField] private List<float> ResourceStarts = new List<float>();
 
+
+    //holy crap this is inefficent, I should be using custom structs for the data
     private Dictionary<Resource,float> resourceStorage = new Dictionary<Resource,float>();
     private Dictionary<Resource,float> storageLimits = new Dictionary<Resource,float>();
-    
+    private Dictionary<Resource,float> resourceMultipliers = new Dictionary<Resource, float>();
 
     public Dictionary<Resource,float> GetStorage{get =>resourceStorage;}
     public List<Resource> Resources{get =>ActiveResources;}
@@ -32,6 +34,7 @@ public class ResourceModule : Module
 
         for (int i = 0; i < ActiveResources.Count; i++)
         {
+            resourceMultipliers.Add(ActiveResources[i],0.0f);
             resourceStorage.Add(ActiveResources[i],ResourceStarts[i]);
             storageLimits.Add(ActiveResources[i],ResourceLimits[i]);
         }
@@ -55,6 +58,26 @@ public class ResourceModule : Module
                 }
             }
         }
+    }
+
+    public float GetResourceModifier(Resource resource)
+    {
+        return resourceMultipliers[resource];
+    }
+
+    public void SetResourceMultiplier(Resource resource, float newMultiplier)
+    {
+        resourceMultipliers[resource] = newMultiplier;
+    }
+
+    public void AddResourceMultiplier(Resource resource, float addMultiplier)
+    {   
+        SetResourceMultiplier(resource,resourceMultipliers[resource]+= addMultiplier);
+    }
+
+    public void SubResourceMultiplier(Resource resource, float subMultiplier)
+    {   
+        SetResourceMultiplier(resource,resourceMultipliers[resource]-= subMultiplier);
     }
 
     public void RemoveResourceLimit(Resource resource, float amount)
