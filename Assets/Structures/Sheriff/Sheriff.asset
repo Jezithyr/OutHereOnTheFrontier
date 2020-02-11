@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: Sheriff
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1809039908080295767, guid: 89ee593cf1e0c3c43b0e0bf6b3594be9, type: 3}
+  previewprefab: {fileID: 4851236165057487183, guid: fcb7fd2beb43c684f8f843ef5084149c,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: eb37172b38857a24abed8233a86d29cb, type: 2}
+  - {fileID: 11400000, guid: b59c13cbaba39a344970e7097369f19f, type: 2}
+  buildingRadiusMultiplier: 1

@@ -18,6 +18,8 @@ public class ModuleManager : ScriptableObject
     private Dictionary<System.Type,Module> moduleList = new Dictionary<System.Type,Module>();
     public Dictionary<System.Type,Module> List {get => moduleList;}
     
+    public bool StopTicking = true;//public because it's 10pm and I'm lazy
+
 
     private List<TickModuleUpdateDelegate> tickingModules = new List<TickModuleUpdateDelegate>();
     private OnSceneLoadedDelegate sceneLoadedDelegate;
@@ -31,6 +33,7 @@ public class ModuleManager : ScriptableObject
     public void ModuleUpdateTick()
     {
         if (!Application.isPlaying) return;
+        if (StopTicking) return;
         foreach (TickModuleUpdateDelegate moduleTickFunc in tickingModules)
         {
             moduleTickFunc();

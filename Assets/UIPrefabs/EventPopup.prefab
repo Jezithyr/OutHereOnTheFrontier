@@ -91,8 +91,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 8637517104668414}
   - component: {fileID: 6993162546095157645}
   - component: {fileID: 4432834810050026150}
-  - component: {fileID: 5778930809597187049}
+  - component: {fileID: 6757315641894183795}
   m_Layer: 5
   m_Name: EventPopup
   m_TagString: Untagged
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5778930809597187049
+--- !u!114 &6757315641894183795
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -885,15 +885,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5937803854090534573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f7e7be4e12515d48b599588abbd12a9, type: 3}
+  m_Script: {fileID: 11500000, guid: f5b5e71f544dbfc4a9cb7b816ac769bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: {fileID: 8852882412558965830}
-  Flavor: {fileID: 5954780289644172689}
-  C1Button: {fileID: 3887371413589807988}
-  C2Button: {fileID: 5547531629154759909}
-  C3Button: {fileID: 4578261154740772011}
-  C4Button: {fileID: 5421857591648810702}
+  parentScriptedUI: {fileID: 0}
+  hudObjects:
+  - {fileID: 3772214424265811105}
+  - {fileID: 8227878425490721438}
+  - {fileID: 2963019689376887137}
+  - {fileID: 5884628392904316295}
+  - {fileID: 4999749559224572023}
+  - {fileID: 8826964357371524324}
 --- !u!1 &6059125826832963417
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,8 +987,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1140,8 +1142,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1450,8 +1452,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

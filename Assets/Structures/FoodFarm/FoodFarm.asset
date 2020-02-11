@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: FoodFarm
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8336924948725581331, guid: 2a617c24795cdc84897d50a26ca8897d, type: 3}
+  previewprefab: {fileID: 2111336216167786351, guid: beef5a16a233660418e3db8da2512463,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: 4d5b3de08b93a2a4980855b604fb363e, type: 2}
+  buildingRadiusMultiplier: 1

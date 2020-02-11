@@ -10,6 +10,11 @@ public class DummyModule : Module
         Debug.Log("DUMMYMODULE: Dummy module init");
     }
 
+    public override void Reset()
+    {
+        
+    }
+
     public override void Update()
     {
         Debug.Log("DUMMYMODULE: Dummy module tick");

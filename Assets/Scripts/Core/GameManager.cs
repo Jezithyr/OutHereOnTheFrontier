@@ -28,8 +28,28 @@ public class GameManager : ScriptableObject
     private GameState ActiveState;
     private Scene ActiveScene;
 
+    private float lastTimescale = 1;
+
+    private bool Paused = false;
+    public bool isPaused{get => Paused;}
+
 
     delegate void OnSceneLoadedDelegate();
+
+    public void Pause()
+    {
+        lastTimescale = Time.timeScale;
+        Time.timeScale = 0;
+        moduleManager.StopTicking = true;
+        Paused = true;
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1;
+        moduleManager.StopTicking = false;
+        Paused = false;
+    }
 
     
     void GameStateUpdate()
@@ -147,9 +167,25 @@ public class GameManager : ScriptableObject
         Debug.Log("SceneLoaded");
         
         moduleManager.ModuleStartOnLoad();
-        Start();
+        
+        if (scene.name == "MainMenu")
+        {
+            Start();
+        }
+        else
+        {
+            ActiveState.OnActivate(null);
+        }
     }
 
+
+    public void SwitchSystemGameState(int index)
+    {
+        GameState lastState = ActiveState;
+        ActiveState.OnDeactivate(ActiveState);
+        ActiveState = systemGameStates[index];
+        //ActiveState.OnActivate(lastState);
+    }
 
     public void Start()
     {

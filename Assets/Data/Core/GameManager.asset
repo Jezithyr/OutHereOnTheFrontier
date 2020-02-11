@@ -17,5 +17,6 @@ MonoBehaviour:
   gameStates: []
   stateCondition: []
   systemGameStates:
-  - {fileID: 11400000, guid: 8dabb22faca10ef498bcb7fb1cf92635, type: 2}
-  InitialGameState: {fileID: 11400000, guid: 8dabb22faca10ef498bcb7fb1cf92635, type: 2}
+  - {fileID: 11400000, guid: 6a1195cda6039944eab4de4dc0485273, type: 2}
+  - {fileID: 11400000, guid: 007c39cc34dd206408a577a68f80ab82, type: 2}
+  InitialGameState: {fileID: 11400000, guid: 6a1195cda6039944eab4de4dc0485273, type: 2}

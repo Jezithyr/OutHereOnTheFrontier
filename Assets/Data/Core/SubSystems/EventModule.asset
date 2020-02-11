@@ -16,6 +16,17 @@ MonoBehaviour:
   RunUpdate: 1
   StartOnSceneLoad: 1
   activeEvents:
-  - {fileID: 11400000, guid: d1dcd98e81e2dcb45aaa24bd6a4aaf52, type: 2}
+  - {fileID: 11400000, guid: a1c76a4910f8cee46bb5e4ef33b1ab0c, type: 2}
+  - {fileID: 11400000, guid: ec421705ff90cec45a414f9883f63833, type: 2}
+  - {fileID: 11400000, guid: 3c08e8d9a0f3f574688cb14b2ceb5e24, type: 2}
+  - {fileID: 11400000, guid: 4fe67b3288bbab943a758e2d52371156, type: 2}
+  - {fileID: 11400000, guid: 8d1ce4dd3f2f3804a889ea98768979de, type: 2}
   linkedEventPrefab: {fileID: 5937803854090534573, guid: d85d297db28fb254cae444baa1516221,
     type: 3}
+  playState: {fileID: 11400000, guid: 007c39cc34dd206408a577a68f80ab82, type: 2}
+  gameplayScene:
+    m_Handle: 1
+  globalEventPool: {fileID: 11400000, guid: 30539091e98a12e499b06b38513579c2, type: 2}
+  EventPools:
+  - {fileID: 11400000, guid: f680eb165770e38468f1f995ddaab2c1, type: 2}
+  PoolTimes: 3c000000

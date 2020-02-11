@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: Saloon
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1192344348945674819, guid: e6fb4ed26c17d774fbf41c8f9c1b5014, type: 3}
+  previewprefab: {fileID: 3355417139079289166, guid: d431aa3b9909f534a9f4b80cfb17cb85,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: eb37172b38857a24abed8233a86d29cb, type: 2}
+  - {fileID: 11400000, guid: b2e41beb0f68dea4396107cc6d604f3b, type: 2}
+  buildingRadiusMultiplier: 1

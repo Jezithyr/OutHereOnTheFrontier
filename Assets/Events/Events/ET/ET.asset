@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: ET
+  m_EditorClassIdentifier: 
+  EventInternalName: Et
+  isActive: 0
+  triggerCondition: {fileID: 0}
+  choices:
+  - {fileID: 11400000, guid: d98a1867fc80a354394177914b37cc4e, type: 2}
+  - {fileID: 11400000, guid: 03a876ec677bf5449bd6401b7a9fbd32, type: 2}
+  eventTitle: ET POST HOME
+  flavorText: "Looks like one of the local aliens wants to make a Spacebook account
+    so it can contact it can \u201Cpost home\u201D. It wants our WiFi password to
+    do this."
