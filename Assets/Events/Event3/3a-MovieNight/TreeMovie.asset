@@ -15,6 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 3aMovieNight_C3
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Watch a group of Knights cut down a tree with a herring (+10% wood production)
+  optionTitle: (+10% wood production)
+  flavorText: Watch a group of Knights cut down a tree with a herring. (+10% wood
+    production)
   owner: {fileID: 0}

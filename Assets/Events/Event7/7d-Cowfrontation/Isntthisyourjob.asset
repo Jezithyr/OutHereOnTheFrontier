@@ -15,7 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 7dCowfrontation_C1
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: "Aren\u2019t YOU in charge of security?? (+5% resource production, -1
-    population)"
+  optionTitle: (+5% resource production, -1 population)
+  flavorText: "Aren\u2019t YOU in charge of security?? "
   owner: {fileID: 0}

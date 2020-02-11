@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: TimeforMooMooJail
   m_EditorClassIdentifier: 
   DecisionInternalName: 5cCowPlotThickens_C3
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: How could we have been so blind? Arrest it immediately! (Unlocks event
-    6d)
+  optionTitle: (Unlocks event 6d)
+  flavorText: How could we have been so blind? Arrest it immediately!
   owner: {fileID: 0}

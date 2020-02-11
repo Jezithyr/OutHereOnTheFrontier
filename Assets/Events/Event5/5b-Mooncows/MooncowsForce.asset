@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MooncowsForce
   m_EditorClassIdentifier: 
   DecisionInternalName: MoonCows_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 731246f2e429c1d478e51bcc066ff9f4, type: 2}
-  optionTitle: (Gain 500 food)
+  optionTitle: (Gain 10% food production, 100 food)
   flavorText: Seize the mooncows by force.
   owner: {fileID: 0}

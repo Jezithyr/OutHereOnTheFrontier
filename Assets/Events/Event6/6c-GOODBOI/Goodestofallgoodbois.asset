@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 6cGoodboi_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: "He\u2019s obviously the goodest of all good boys \u2013 let\u2019s
-    make him the station mascot (-1,000 food, +25% resource production)"
+  optionTitle: (-1,000 food, +25% resource production)
+  flavorText: "(1,000 food)He\u2019s obviously the goodest of all good boys \u2013
+    let\u2019s make him the station mascot."
   owner: {fileID: 0}

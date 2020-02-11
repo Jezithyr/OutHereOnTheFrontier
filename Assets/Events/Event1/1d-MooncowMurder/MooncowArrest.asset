@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MooncowArrest
   m_EditorClassIdentifier: 
   DecisionInternalName: 1dMoorderCow_C1
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  condition: {fileID: 0}
   effects: []
-  optionTitle: 
+  optionTitle: ' (-5% food production)'
   flavorText: "Murder rhymes with Moorder. The cow obviously did it \u2013 arrest
-    it. (-5% food production)"
+    it."
   owner: {fileID: 0}

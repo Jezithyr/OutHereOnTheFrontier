@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ChickenCREATEROBOCLUCK
   m_EditorClassIdentifier: 
   DecisionInternalName: 1bRobocock_C1
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 0}
-  optionTitle: 
-  flavorText: (Lose 200 metal, reduce future event costs by 10%) CREATE ROBOCLUCK!
+  optionTitle: (Lose 100 metal, increase production by 5%)
+  flavorText: (100 Metal) CREATE ROBOCLUCK!
   owner: {fileID: 0}

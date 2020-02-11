@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 4aUvU_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
+  optionTitle: (+5% production)
   flavorText: Encourage the Engineers to combine their talents so as to make the station
-    truly remarkable. (+5% production)
+    truly remarkable.
   owner: {fileID: 0}

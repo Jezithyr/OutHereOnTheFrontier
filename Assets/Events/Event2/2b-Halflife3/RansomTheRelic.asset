@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 2bHalflife3_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Ransom this holy relic from its owner (-200 Metal, +5% resource production)
+  optionTitle: (-200 Metal, +5% resource production)
+  flavorText: (150 Metal) Ransom this holy relic from its owner.
   owner: {fileID: 0}

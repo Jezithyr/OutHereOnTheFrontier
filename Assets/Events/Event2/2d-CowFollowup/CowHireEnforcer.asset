@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 2dCowFollowUp_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Hire the cow as your personal enforcer (+5% resource production)
+  optionTitle: (+5% resource production)
+  flavorText: Hire the cow as your personal enforcer.
   owner: {fileID: 0}

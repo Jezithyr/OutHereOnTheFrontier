@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 3aMovieNight_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Watch Moon Souls Pickaxe Speedruns (+10% Metal Production)
+  optionTitle: (+10% Metal Production)
+  flavorText: 'Watch Moon Souls Pickaxe Speedruns. '
   owner: {fileID: 0}

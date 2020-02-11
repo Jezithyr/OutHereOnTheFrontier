@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: AlienYay
   m_EditorClassIdentifier: 
   DecisionInternalName: 5aAlienThankYou_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: de17e2df96a962f47b30f305afa52018, type: 2}
-  optionTitle: 
-  flavorText: It seems the Alien we lent our WiFi password to earlier has reached
-    his civilization, and sent us a goodie bag for our help! (+500 Alloy, +500 Fuel,
-    +500 Metal, +500 Wood)
+  optionTitle: (+200 Alloy, +200 Fuel, +200 Metal, +200 Wood)
+  flavorText: Let's see what's inside!
   owner: {fileID: 0}

@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: WEDUELASWARRIORS
   m_EditorClassIdentifier: 
   DecisionInternalName: 7dCowfrontation_C3
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 8a3dad82661b0944eac67c8738fbdc6b, type: 2}
-  optionTitle: 
-  flavorText: "We duel as warriors \u2013 fetch my sword! (+100 food. +10% resource
-    production)"
+  optionTitle: (+100 food. +10% resource production)
+  flavorText: "We duel as warriors \u2013 fetch my sword! "
   owner: {fileID: 0}

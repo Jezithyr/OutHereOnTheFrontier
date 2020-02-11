@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 7aStopfood_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: No. We can win without starving our people (+5% resource production)
+  optionTitle: ' (+5% resource production)'
+  flavorText: No. We can win without starving our people.
   owner: {fileID: 0}

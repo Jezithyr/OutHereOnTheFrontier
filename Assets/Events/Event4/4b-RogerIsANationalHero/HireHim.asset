@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: HireHim
   m_EditorClassIdentifier: 
   DecisionInternalName: 4bRogerShine_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 1a914e71e99ac764da1d6d9d8094a6af, type: 2}
-  optionTitle: 
-  flavorText: Hire him (-200 food, +1 population)
+  optionTitle: (-200 food, +1 population)
+  flavorText: '(200 Food) Why don''t we hire him? '
   owner: {fileID: 0}

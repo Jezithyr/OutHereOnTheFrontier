@@ -15,7 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 7aStopfood_C1
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Yes, for the good of everyone (-100% food production, +20% other resource
-    production)
+  optionTitle: ' (-100% food production, +20% other resource production)'
+  flavorText: Yes, for the good of everyone.
   owner: {fileID: 0}

@@ -15,7 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 4aUvU_C3
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Unity is clearly superior. Move the Unreal Engineer to QA. (+1 population,
-    -5% production)
+  optionTitle: (+1 population, -5% production)
+  flavorText: Unity is clearly superior. Move the Unreal Engineer to QA.
   owner: {fileID: 0}

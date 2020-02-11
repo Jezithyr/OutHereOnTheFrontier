@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 6cGoodboi_C4
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: "He\u2019s obviously a VERY good boi \u2013 let\u2019s keep him (-400
-    food, +15% resource production)"
+  optionTitle: (-400 food, +15% resource production)
+  flavorText: "(400 food) He\u2019s obviously a VERY good boi \u2013 let\u2019s keep
+    him."
   owner: {fileID: 0}

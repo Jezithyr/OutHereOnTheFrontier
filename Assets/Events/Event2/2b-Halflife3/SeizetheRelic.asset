@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 2bHalflife3_C3
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Seize the holy relic by force (-1 Population, +5% resource production)
+  optionTitle: (-1 Population, +5% resource production)
+  flavorText: Seize the holy relic by force.
   owner: {fileID: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 4aUvU_C1
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Have them fight to the death (-1 population, +10% production, winner
-    undisclosed for reasons of public positivity)
+  optionTitle: (-1 population, +10% production, winner undisclosed for reasons of
+    public positivity)
+  flavorText: Have them fight to the death.
   owner: {fileID: 0}

@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 7bPrioritizeFuel_C1
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: No, leave things as they are (nothing happens)
+  optionTitle: ' (nothing happens)'
+  flavorText: No, leave things as they are.
   owner: {fileID: 0}

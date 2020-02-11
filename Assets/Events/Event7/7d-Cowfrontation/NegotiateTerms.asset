@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 7dCowfrontation_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Perhaps we can make a deal with it (+20% resource production, -500 food)
+  optionTitle: (+20% resource production, -500 food)
+  flavorText: (350 food) Perhaps we can make a deal with it.
   owner: {fileID: 0}

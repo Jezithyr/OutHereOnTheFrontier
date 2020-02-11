@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Tumblekill
   m_EditorClassIdentifier: 
   DecisionInternalName: 1aTumbleweed_C1
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Terminate it with extreme prejudice (Costs 1 metal, Unlocks event 5d)
+  optionTitle: (Costs 1 Metal, Unlocks Event 5d)
+  flavorText: (1 Metal) Terminate it with extreme prejudice.
   owner: {fileID: 0}

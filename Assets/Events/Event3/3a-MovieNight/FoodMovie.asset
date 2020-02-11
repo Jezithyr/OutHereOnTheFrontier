@@ -15,6 +15,6 @@ MonoBehaviour:
   DecisionInternalName: 3aMovieNight_C1
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: A Wildlife Documentary on Moonflix (+10% food production)
+  optionTitle: (+10% food production)
+  flavorText: A Wildlife Documentary on Moonflix.
   owner: {fileID: 0}

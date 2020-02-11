@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Givethemrocketmaterials
   m_EditorClassIdentifier: 
   DecisionInternalName: 5dBigTumbleInLittleChina_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 1299f30ce87fd0046a5769af6d0716d3, type: 2}
   optionTitle: 
-  flavorText: Give in to their demands (-300 fuel, -200 alloy)
+  flavorText: (300 fuel, 200 alloy) Give in to their demands.
   owner: {fileID: 0}
