@@ -16,7 +16,7 @@ public class MainMenu : ScriptedUI
     
     public override void Start()
     {
-        Debug.Log("Test");
+       
     }
 
     public override void Update()

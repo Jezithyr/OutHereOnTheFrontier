@@ -5,28 +5,30 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameFramework/SubSystems/ResourceModule")]
 public class ResourceModule : Module
 {
-    [SerializeField] 
-    private List<Resource> ActiveResources = new List<Resource>();
+    [SerializeField] private List<Resource> ActiveResources = new List<Resource>();
     [SerializeField] private List<float> ResourceLimits = new List<float>();
     [SerializeField] private List<float> ResourceStarts = new List<float>();
-
+    [SerializeField] private List<ResourceSink> ResourceSinks = new List<ResourceSink>();
 
     //holy crap this is inefficent, I should be using custom structs for the data
     private Dictionary<Resource,float> resourceStorage = new Dictionary<Resource,float>();
     private Dictionary<Resource,float> storageLimits = new Dictionary<Resource,float>();
     private Dictionary<Resource,float> resourceMultipliers = new Dictionary<Resource, float>();
 
-    public Dictionary<Resource,float> GetStorage{get =>resourceStorage;}
-    public List<Resource> Resources{get =>ActiveResources;}
-
     public List<ResourceBehavior> resourceNodes = new List<ResourceBehavior>();
-
     public List<ResourceBehavior> linkedResourceNodes = new List<ResourceBehavior>();
 
+    public Dictionary<Resource,float> GetStorage{get =>resourceStorage;}
+    public List<Resource> Resources{get =>ActiveResources;}
+    
 
     private void OnEnable()
     {
         Reset();
+        foreach (var sink in ResourceSinks)
+        {
+            sink.resourceModule = this;
+        }
     }
 
 
@@ -48,6 +50,11 @@ public class ResourceModule : Module
                 {
                     resourceNode.resourceComponent.Run();
                 }
+            }
+
+            foreach (var sink in ResourceSinks)
+            {
+                sink.OnUpdate();
             }
         }
     }
