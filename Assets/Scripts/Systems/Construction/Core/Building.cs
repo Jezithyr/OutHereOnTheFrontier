@@ -25,6 +25,12 @@ public class Building : ScriptableObject
 
     [SerializeField] public bool Removable = true;
 
+    [SerializeField] public List<Resource> ResourceForCost;
+    [SerializeField] public List<int> AmountForCost;
+
+    [SerializeField] public string description;
+
+
     private float checkRadius;
     public float Radius{get=>checkRadius;}
 
