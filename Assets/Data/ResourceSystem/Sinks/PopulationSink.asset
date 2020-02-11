@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1c58a6c569495a4aa67a47ad4e077a0, type: 3}
-  m_Name: PopulationSink 1
+  m_Name: PopulationSink
   m_EditorClassIdentifier: 
   checkConditions: []
   successEffects: []
   failEffect: []
-  resourceModule: {fileID: 0}
+  resourceModule: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
   popGrowthAmount: 0.05
   popGrowthMultiplier: 0
+  popDeath: 0.1
