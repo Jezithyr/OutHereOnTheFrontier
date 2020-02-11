@@ -42,6 +42,6 @@ MonoBehaviour:
   - 0
   - 0
   - 5
-  resourceNodes:
-  - {fileID: 0}
+  ResourceSinks: []
+  resourceNodes: []
   linkedResourceNodes: []
