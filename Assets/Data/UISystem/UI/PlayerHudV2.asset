@@ -53,3 +53,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eee7c95fef9638c44b1b2b8ccfc15219, type: 2}
   - {fileID: 11400000, guid: 18a3d27d602233b419cddb17d349e4dd, type: 2}
   - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  BuildingLayerMask:
+    serializedVersion: 2
+    m_Bits: 512

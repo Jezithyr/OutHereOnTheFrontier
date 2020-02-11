@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2472764811007792533}
   - component: {fileID: 4595376070216026711}
   - component: {fileID: -8630371557992515029}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Windmill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,6 +71,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: windmill
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700343748537585933, guid: c4928f0d471443b4b91e9d097a28420a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7685180538012918558, guid: c4928f0d471443b4b91e9d097a28420a,
         type: 3}

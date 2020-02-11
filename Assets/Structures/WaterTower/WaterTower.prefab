@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7036377520655378631}
   - component: {fileID: 3465094749506648377}
   - component: {fileID: 224383212054288369}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WaterTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,6 +71,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: water_tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758375167439206944, guid: 9080b004186fa6741a0d3cf097914e8b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8381899123994265651, guid: 9080b004186fa6741a0d3cf097914e8b,
         type: 3}

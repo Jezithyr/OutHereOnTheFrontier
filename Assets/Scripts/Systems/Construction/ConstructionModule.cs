@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameFramework/SubSystems/ConstructionModule")]
 public class ConstructionModule : Module
 {
-    [SerializeField] private GridSystem linkedGrid;
+    [SerializeField] private GridSystem linkedGrid; //todo phase out grid system
     public GridSystem Grid {get => linkedGrid;}
 
     [SerializeField] private List<Building> EnabledBuildings = new List<Building>();
@@ -15,6 +15,16 @@ public class ConstructionModule : Module
 
     [SerializeField] private Dictionary<GameObject,Building> ActiveBuildings = new Dictionary<GameObject,Building>() ;
     public Dictionary<GameObject,Building> Buildings{get => ActiveBuildings;}
+
+
+
+    private void OnEnable()
+    {
+        foreach (var building in enabledBuildings)
+        {
+            building.constructionManager = this;
+        }
+    }
 
 
     public Building GetDataForPrefab(GameObject prefab)
@@ -66,7 +76,7 @@ public class ConstructionModule : Module
     }
 
 
-    public void RemoveBuilding(GameObject prefab)
+    public bool RemoveBuilding(GameObject prefab)
     {
         foreach (var entry in Buildings)
         {
@@ -77,10 +87,16 @@ public class ConstructionModule : Module
             {                
                 Buildings.Remove(prefabObj); //this can be optimized
                 Destroy(prefabObj);
+                return true;
             }
         }
+        return false;
     }
 
+    public bool BuildingIsEnabled(Building buildingData)
+    {
+        return enabledBuildings.Contains(buildingData);
+    }
 
     public void RemoveBuilding(Building buildingData)
     {
@@ -106,5 +122,13 @@ public class ConstructionModule : Module
     public GameObject CreatePreviewWithTransform(Building buildingObj, Transform transform)
     {
         return GameObject.Instantiate(buildingObj.Preview,transform);
+    }
+
+    public override void Reset()
+    {
+        foreach (var item in Buildings)
+        {
+            RemoveBuilding(item.Value);
+        }
     }
 }

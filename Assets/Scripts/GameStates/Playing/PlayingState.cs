@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
+
+
 [CreateAssetMenu(menuName = "GameFramework/Gamestate/Playing")]
 public class PlayingState : GameState
 {
@@ -30,7 +34,9 @@ public class PlayingState : GameState
 
 
     [SerializeField] private List<Event> eventList = new List<Event>();//only use 4 or everything breaks
+    [SerializeField] private LayerMask buildingLayer;
 
+    [SerializeField] private int gameTimer =  8*60;
 
 
     private Vector3 targetTranslation;
@@ -39,9 +45,9 @@ public class PlayingState : GameState
 
     private Camera cam;
     private FreeOrbitCam activeCam;
-    public bool BuildMode = false;
-    public bool DestroyMode = false;
 
+
+    private PlayerHudModes hudMode;
     private int playerHudId;
     private int pauseMenuid;
     private int settingsMenuId;
@@ -49,16 +55,23 @@ public class PlayingState : GameState
     private int gameOverMenuid;
     //private int eventMenuId;
     private int debugMenuid;
+
+    //todo make these not public
     public int GameTimer;
+    public int ElapsedTime = 0;
 
 
     private void OnEnable()
     {
         Game = Manager;
     }
+
+
     public override void OnActivate(GameState lastState)
     {
+        
         Debug.Log("Entered Playing State");
+        
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
 
@@ -77,6 +90,7 @@ public class PlayingState : GameState
         uiModule.Show(playerHUD,playerHudId);
         
         //uiModule.Hide(eventMenu,debugMenuid);
+
         
         eventModule.InitializePrefab();
 
@@ -85,11 +99,17 @@ public class PlayingState : GameState
         //uiModule.Hide(eventMenu,eventMenuId);
         uiModule.Hide(settingsMenu,settingsMenuId);
 
-        GameTimer = 8*60;
+        ElapsedTime = 0;
+        GameTimer = gameTimer;
+        Game.UnPause();
     }
     public override void OnDeactivate(GameState newState)
     {
+        Reset();
+            
+        SceneManager.LoadScene(sceneName:"MainMenu");
 
+        //SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainMenu"));
     }
 
     public void LoadMainScene()
@@ -99,70 +119,66 @@ public class PlayingState : GameState
 
     public override void OnUpdate()
     {
-        if(Time.fixedTime%1 == 0)//every second
+        if (Time.timeScale == 0) return; //stop update if timescale is 0
+        hudMode = playerHUD.Mode;
+
+
+        //timer tick
+        if(Time.timeScale > 0 && Time.fixedTime%1 == 0)//every second
         {
             GameTimer = GameTimer-1;
+            ElapsedTime += 1;
         }
         if (GameTimer <= 0)
             {
                 GameOver();
             }
 
-
-        
-        //destroy mode is rip :(
-
-        // if (DestroyMode)
-        // {
-        //     if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
-        //     {
-        //         BuildMode = false;
-        //         playerHUD.HideBuildingMenu();
-        //         DestroyMode = false;
-        //     }
-        //     if (Input.GetMouseButtonDown(0))
-        //     {
-        //          RaycastHit  hit;
-        //          Ray ray = camModule.ActiveCameraObject.ScreenPointToRay(Input.mousePosition);
-                  
-        //         if (Physics.Raycast(ray, out hit)) {
-
-        //             Building buildData = buildingModule.GetDataForPrefab(hit.transform.gameObject);
-        //             if (buildData.Removable)
-        //             {
-        //                 buildingModule.RemoveBuilding(hit.transform.gameObject);
-        //             }
-        //         }
-        //     }
-
-        // }
-
-
-
-
-        BuildMode = playerHUD.BuildMode;
-        if (BuildMode)
+        switch (hudMode)
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+            case PlayerHudModes.Building: 
             {
-                playerHUD.HideBuildingMenu();
-            }
+                 if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+                {
+                    playerHUD.HideBuildingMenu();
+                    playerHUD.SetHudMode(0);
+                }
             
-            if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0))
+                {
+                    playerHUD.CreateBuildingFromPreview();
+                }
+
+                break;
+            };
+
+
+            case PlayerHudModes.Demolishing: 
             {
-                playerHUD.CreateBuildingFromPreview();
-            }
-        } 
-        else 
-        {
-            if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+                 if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+                {
+                    playerHUD.HideDemolishExit();
+                    playerHUD.SetHudMode(0);
+                }
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    TryDemolishUnderCursor();
+                }
+
+                break;
+            };
+
+            default:
             {
-                Pause();
+                if (Input.GetKeyDown(KeyCode.Escape) && !Game.isPaused)
+                {
+                    Pause();
+                }
+                break;
             }
         }
     }
-
-
 
     private void GameOver()
     {
@@ -172,18 +188,53 @@ public class PlayingState : GameState
         uiModule.Show(gameOverMenu,gameOverMenuid);
     }
 
-    public void SetDestroyMode(bool newMode)
+    public void ReturnToMenu()
     {
-        DestroyMode = newMode;
+        Game.SwitchSystemGameState(0);
     }
 
+    public void PauseGame()
+    {
+        Game.Pause();
+    }
 
-
+    public void UnPauseGame()
+    {
+        Game.UnPause();
+    }
     private void Pause()
     {
         uiModule.Hide(playerHUD,playerHudId);
         uiModule.Show(pauseMenu,pauseMenuid);
-        Game.Pause();
+        PauseGame();
     }
 
+    private void TryDemolishUnderCursor()
+    {
+        if (activeCam.CreatedCamera == null) return;
+        RaycastHit hit = uiModule.CursorRaycast(activeCam.CreatedCamera,buildingLayer);
+        if (!hit.collider) return;
+
+        Building hitBuilding = buildingModule.GetDataForPrefab(hit.collider.gameObject);
+        if (!hitBuilding) return;
+
+        if (hitBuilding.Removable)
+        {
+            hitBuilding.Deconstruct(hit.collider.gameObject);
+        }
+    }
+
+    public override void Reset()
+    {
+        uiModule.DestroyInstance(playerHUD,playerHudId);
+        uiModule.DestroyInstance(pauseMenu,pauseMenuid);
+        uiModule.DestroyInstance(settingsMenu,settingsMenuId);
+        uiModule.DestroyInstance(gameOverMenu,gameOverMenuid);
+
+        Game.Pause();
+        camModule.Reset();
+        buildingModule.Reset();
+        Game.GetModule<ResourceModule>().Reset();//reset resource module
+        uiModule.Reset(); //not needed?
+    }
 }

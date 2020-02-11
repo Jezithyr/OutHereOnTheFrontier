@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8477491404793474503}
   - component: {fileID: 8453422158273056822}
   - component: {fileID: -291260077110474631}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Storage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,6 +141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: storage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246516539425406434, guid: dbcc68c5addca944eafc855961defc07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbcc68c5addca944eafc855961defc07, type: 3}

@@ -79,6 +79,11 @@ public class PawnModule : Module
         if (inActivePawns.Count != 0) AssignPawns();
         TickPawns();
     }
+
+    public override void Reset()
+    {
+        
+    }
 }
 
 

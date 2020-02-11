@@ -140,4 +140,18 @@ public class UIModule : Module
         }
         return new Vector3(0,0,0);
     }
+
+    public RaycastHit CursorRaycast(Camera thisCamera,int layermask)
+    {
+        Ray ray = thisCamera.ScreenPointToRay(Input.mousePosition);
+        
+        RaycastHit hit;
+        Physics.Raycast(ray, out hit, Mathf.Infinity, layermask);
+        return hit;
+    }
+
+    public override void Reset()
+    {
+        
+    }
 }

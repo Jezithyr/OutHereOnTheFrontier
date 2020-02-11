@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Module: ScriptableObject
+public abstract class Module: ScriptableObject
 {
     [SerializeField]
     public ModuleManager moduleManager;
@@ -17,6 +17,7 @@ public class Module: ScriptableObject
 
     }
 
+    public abstract void Reset();
 
     public virtual void Initialize()
     {

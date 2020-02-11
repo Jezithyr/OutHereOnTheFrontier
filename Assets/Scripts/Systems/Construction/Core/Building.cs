@@ -14,8 +14,9 @@ public class Building : ScriptableObject
 
     [SerializeField] private List<PlacementCondition> placementConditions= new List<PlacementCondition>();
 
-    private ConstructionModule constructionManager; 
+    [SerializeField] private List<DestroyEffect> destroyEffects= new List<DestroyEffect>();
 
+    public ConstructionModule constructionManager; 
 
     private List<GameObject> instances = new List<GameObject>();
 
@@ -46,11 +47,32 @@ public class Building : ScriptableObject
         return instances.Count;
     }
 
-    public void DestroyInstance(GameObject instance)
+
+    public void Deconstruct(GameObject instance)
+    {
+        GameObject temp = RemoveInstance(instance);
+        foreach (var effect in destroyEffects)
+        {
+            effect.BuildingDestroyed(temp,true);
+        }
+        constructionManager.RemoveBuilding(temp);
+    }
+
+    private GameObject RemoveInstance(GameObject instance)
     {
         GameObject temp = instances.Find( x => x==instance);
-        instances.Remove(instance);
-        Destroy(temp);
+        instances.Remove(temp);
+        return temp;
+    }
+
+    public void DestroyInstance(GameObject instance)
+    {
+        GameObject temp = RemoveInstance(instance);
+        foreach (var effect in destroyEffects)
+        {
+            effect.BuildingDestroyed(temp,false);
+        }
+        constructionManager.RemoveBuilding(temp);
     }
 
     public bool CheckPlacement(GameObject preview)

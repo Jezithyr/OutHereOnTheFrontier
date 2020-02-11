@@ -18,4 +18,8 @@ MonoBehaviour:
   placementConditions:
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   - {fileID: 11400000, guid: def35434ab3e11d4ba777a7f58fb662f, type: 2}
+  destroyEffects: []
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
   buildingRadiusMultiplier: 1
+  Removable: 1

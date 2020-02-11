@@ -28,6 +28,7 @@ MonoBehaviour:
   eventModule: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
   buildingModule: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59, type: 2}
   eventList: []
-  BuildMode: 0
-  DestroyMode: 1
-  GameTimer: 479
+  buildingLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  GameTimer: 424

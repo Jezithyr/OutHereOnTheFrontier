@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6338895235480966234}
   - component: {fileID: 6698162866011039876}
   - component: {fileID: -3497193116687707438}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: TownHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 271830672169732971, guid: b531f6f0d9f558b46a8f81fc909634b5,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3863777690849737080, guid: b531f6f0d9f558b46a8f81fc909634b5,
         type: 3}

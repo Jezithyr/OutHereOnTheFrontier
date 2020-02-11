@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2234499627008392555}
   - component: {fileID: 6218626627477951438}
   - component: {fileID: 6067095132398228322}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: FoodFarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,6 +141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192046418310402375, guid: a6359485897be2545814fa789c339711,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6359485897be2545814fa789c339711, type: 3}

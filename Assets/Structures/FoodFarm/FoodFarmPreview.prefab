@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5318168744651710538}
   - component: {fileID: 2557328324806279152}
-  m_Layer: 10
-  m_Name: WoodFarmPreview
+  m_Layer: 12
+  m_Name: FoodFarmPreview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 89edf7d9207fcb34b9d9f9a3f5271437,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89edf7d9207fcb34b9d9f9a3f5271437, type: 3}

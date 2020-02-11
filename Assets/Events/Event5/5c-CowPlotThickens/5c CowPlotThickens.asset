@@ -19,6 +19,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d9087b37ba916624e8b2033ad09c939f, type: 2}
   - {fileID: 11400000, guid: a330f41f75999b14d99cfe1eaa791924, type: 2}
   - {fileID: 11400000, guid: d9087b37ba916624e8b2033ad09c939f, type: 2}
-  eventTitle: 
+  eventTitle: test
   flavorText: "Another murder! The only suspect we never questioned the first time
     was the cow! You don\u2019t think. . "

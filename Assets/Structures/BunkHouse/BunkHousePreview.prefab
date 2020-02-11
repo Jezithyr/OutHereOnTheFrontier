@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6791018895392665576}
   - component: {fileID: 3220322136801850405}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: BunkHousePreview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 5b0de2e90e34ab54d9c39c0d631ac5c5,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b0de2e90e34ab54d9c39c0d631ac5c5, type: 3}

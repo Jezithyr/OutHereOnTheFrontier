@@ -46,7 +46,7 @@ public class GameManager : ScriptableObject
 
     public void UnPause()
     {
-        Time.timeScale = lastTimescale;
+        Time.timeScale = 1;
         moduleManager.StopTicking = false;
         Paused = false;
     }

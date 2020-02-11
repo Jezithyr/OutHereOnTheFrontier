@@ -36,4 +36,8 @@ public class JobModule : Module
         ActiveJobs[jobToRemove.Priority] = new Queue<Job>(tempList);            // point to the next job to remove within the list. 
     }
 
+    public override void Reset()
+    {
+        
+    }
 }
