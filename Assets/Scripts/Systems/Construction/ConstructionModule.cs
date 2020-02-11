@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameFramework/SubSystems/ConstructionModule")]
 public class ConstructionModule : Module
 {
-    [SerializeField] private GridSystem linkedGrid;
+    [SerializeField] private GridSystem linkedGrid; //todo phase out grid system
     public GridSystem Grid {get => linkedGrid;}
 
     [SerializeField] private List<Building> EnabledBuildings = new List<Building>();
@@ -124,6 +124,11 @@ public class ConstructionModule : Module
         return GameObject.Instantiate(buildingObj.Preview,transform);
     }
 
-
-
+    public override void Reset()
+    {
+        foreach (var item in Buildings)
+        {
+            RemoveBuilding(item.Value);
+        }
+    }
 }

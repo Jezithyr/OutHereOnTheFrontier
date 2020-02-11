@@ -25,4 +25,9 @@ public class GameOverState : GameState
     {
 
     }
+
+    public override void Reset()
+    {
+        
+    }
 }

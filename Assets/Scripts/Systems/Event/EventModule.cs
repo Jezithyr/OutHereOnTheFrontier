@@ -37,6 +37,9 @@ public class EventModule : Module
         {
             activeEvent.choices[choiceIndex].TriggerDecision();
             HideUI();
+            playState.UnPauseGame();
+            playState.ElapsedTime += 1;
+            playState.GameTimer -= 1;
         }
         
     }
@@ -117,6 +120,7 @@ public class EventModule : Module
     private void showEvent(Event eventToShow)
     {
         activeEvent = eventToShow;
+        playState.PauseGame();
         UpdateUI();
         ShowUI();
     }
@@ -153,5 +157,10 @@ public class EventModule : Module
                 return;
             } 
         }
+    }
+
+    public override void Reset()
+    {
+        
     }
 }

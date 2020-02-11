@@ -26,4 +26,9 @@ public class PausedState : GameState
     {
 
     }
+
+    public override void Reset()
+    {
+        
+    }
 }

@@ -68,4 +68,10 @@ public class CameraModule : Module
         ScriptedCameras.Remove(cam);
     }
 
+    public override void Reset() //clear all the cameras
+    {
+        ScriptedCameras.Clear();
+        activeCamera = null;
+        activeCameraObj = null;
+    }
 }

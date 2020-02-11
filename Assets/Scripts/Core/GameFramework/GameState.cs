@@ -13,6 +13,8 @@ public abstract class GameState : ScriptableObject
 
     public abstract void OnDeactivate(GameState newState);
 
+    public abstract void Reset();
+
     public virtual void OnUpdate(){}
 
     public virtual void Initalize(){}

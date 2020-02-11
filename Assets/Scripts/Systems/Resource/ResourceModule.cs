@@ -26,23 +26,15 @@ public class ResourceModule : Module
 
     private void OnEnable()
     {
-
-        resourceStorage.Clear();
-        resourceNodes.Clear();
-        linkedResourceNodes.Clear();
-        storageLimits.Clear();
-
-        for (int i = 0; i < ActiveResources.Count; i++)
-        {
-            resourceMultipliers.Add(ActiveResources[i],0.0f);
-            resourceStorage.Add(ActiveResources[i],ResourceStarts[i]);
-            storageLimits.Add(ActiveResources[i],ResourceLimits[i]);
-        }
+        Reset();
     }
+
+
+
 
     public override void Update()
     {
-        if(Time.fixedTime%1 == 0)//every second
+        if(Time.timeScale != 0 && Time.fixedTime%1 == 0)//every second
         {
             Debug.Log("Resource Network Update");
             // foreach (var item in resourceStorage)
@@ -156,7 +148,19 @@ public class ResourceModule : Module
         resourceStorage[resourceToSet] = amount;
     }
 
+    public override void Reset()
+    {
+        resourceStorage.Clear();
+        resourceNodes.Clear();
+        linkedResourceNodes.Clear();
+        storageLimits.Clear();
+        resourceMultipliers.Clear();
 
-
-    
+        for (int i = 0; i < ActiveResources.Count; i++)
+        {
+            resourceMultipliers.Add(ActiveResources[i],0.0f);
+            resourceStorage.Add(ActiveResources[i],ResourceStarts[i]);
+            storageLimits.Add(ActiveResources[i],ResourceLimits[i]);
+        }
+    }
 }

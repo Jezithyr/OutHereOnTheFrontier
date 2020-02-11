@@ -55,15 +55,14 @@ public class PlayerHUD : ScriptedUI
 
     private void OnEnable()
     {
-        ClearBehaviors(); //this needs to be present in every ui otherwise unity serialization breaks everything
-        linkedResourceDisplays.Clear(); //prevents a bug with hotreloading
+        ClearBehaviors(); //this needs to be present in every ui otherwise unity serialization breaks everything 
         showingPreview = false;
 
     }
 
     public override void Start()
     {
-        
+        if (linkedResourceDisplays.Count > 0)   linkedResourceDisplays.Clear(); //possible fix for hotreloading
         for (int i = 0; i < ResourceDisplayNames.Count; i++)
         {
 

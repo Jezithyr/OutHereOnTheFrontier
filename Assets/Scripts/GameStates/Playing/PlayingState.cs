@@ -69,7 +69,9 @@ public class PlayingState : GameState
 
     public override void OnActivate(GameState lastState)
     {
+        
         Debug.Log("Entered Playing State");
+        
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
 
@@ -97,11 +99,17 @@ public class PlayingState : GameState
         //uiModule.Hide(eventMenu,eventMenuId);
         uiModule.Hide(settingsMenu,settingsMenuId);
 
+        ElapsedTime = 0;
         GameTimer = gameTimer;
+        Game.UnPause();
     }
     public override void OnDeactivate(GameState newState)
     {
+        Reset();
+            
+        SceneManager.LoadScene(sceneName:"MainMenu");
 
+        //SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainMenu"));
     }
 
     public void LoadMainScene()
@@ -111,11 +119,12 @@ public class PlayingState : GameState
 
     public override void OnUpdate()
     {
+        if (Time.timeScale == 0) return; //stop update if timescale is 0
         hudMode = playerHUD.Mode;
 
 
         //timer tick
-        if(Time.fixedTime%1 == 0)//every second
+        if(Time.timeScale > 0 && Time.fixedTime%1 == 0)//every second
         {
             GameTimer = GameTimer-1;
             ElapsedTime += 1;
@@ -179,11 +188,25 @@ public class PlayingState : GameState
         uiModule.Show(gameOverMenu,gameOverMenuid);
     }
 
+    public void ReturnToMenu()
+    {
+        Game.SwitchSystemGameState(0);
+    }
+
+    public void PauseGame()
+    {
+        Game.Pause();
+    }
+
+    public void UnPauseGame()
+    {
+        Game.UnPause();
+    }
     private void Pause()
     {
         uiModule.Hide(playerHUD,playerHudId);
         uiModule.Show(pauseMenu,pauseMenuid);
-        Game.Pause();
+        PauseGame();
     }
 
     private void TryDemolishUnderCursor()
@@ -201,5 +224,17 @@ public class PlayingState : GameState
         }
     }
 
+    public override void Reset()
+    {
+        uiModule.DestroyInstance(playerHUD,playerHudId);
+        uiModule.DestroyInstance(pauseMenu,pauseMenuid);
+        uiModule.DestroyInstance(settingsMenu,settingsMenuId);
+        uiModule.DestroyInstance(gameOverMenu,gameOverMenuid);
 
+        Game.Pause();
+        camModule.Reset();
+        buildingModule.Reset();
+        Game.GetModule<ResourceModule>().Reset();//reset resource module
+        uiModule.Reset(); //not needed?
+    }
 }

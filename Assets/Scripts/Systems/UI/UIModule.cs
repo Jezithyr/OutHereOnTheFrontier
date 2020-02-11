@@ -149,4 +149,9 @@ public class UIModule : Module
         Physics.Raycast(ray, out hit, Mathf.Infinity, layermask);
         return hit;
     }
+
+    public override void Reset()
+    {
+        
+    }
 }

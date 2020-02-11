@@ -79,4 +79,8 @@ public class DebugState : GameState
         testOBJ.transform.position = debugCoords;
     }
 
+    public override void Reset()
+    {
+        
+    }
 }

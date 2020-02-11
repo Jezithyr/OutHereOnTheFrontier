@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30dde460f65d8394e847617c97fe25f0, type: 3}
   m_Name: 1MinuteEvents
   m_EditorClassIdentifier: 
-  selectRandomEvent: 0
-  EventList: []
+  selectRandomEvent: 1
+  EventList:
+  - {fileID: 11400000, guid: ec421705ff90cec45a414f9883f63833, type: 2}
