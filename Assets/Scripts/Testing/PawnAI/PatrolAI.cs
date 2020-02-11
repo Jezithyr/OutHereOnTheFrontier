@@ -10,12 +10,15 @@ public class PatrolAI : MonoBehaviour
     [SerializeField] bool patrolWaitng;
     
     // The time the pawn will wait at the waypoint if patrolWaiting = true
+    [Header("How long do you want it to wait")]
     [SerializeField] private float patrolWaitTime = 3.0f;
 
     // The probability of the pawn switching it's direction
+    [Header("Adjust how random you want the patrol")]
     [SerializeField] private float switchChance = 0.2f;
 
     // The list of potential patrolPoints the pawn will cover
+    [Header("Spawn in waypoints, and drag them all into this list")]
     [SerializeField] List<PawnPatrolWaypoint> patrolPoints;
 
     // ==========================================================
