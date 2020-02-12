@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Chickenputdown
   m_EditorClassIdentifier: 
   DecisionInternalName: 1bRobocock_C3
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 195211e72cc47174a8c79209f371f96f, type: 2}
-  optionTitle: 
-  flavorText: (Gain 5 Food, lose 1 metal) Put the poor creature out of its misery.
+  optionTitle: '(+5 Food, -1 metal) '
+  flavorText: (1 Metal) Put the poor creature out of its misery.
   owner: {fileID: 0}

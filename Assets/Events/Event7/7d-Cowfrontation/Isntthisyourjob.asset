@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 7dCowfrontation_C1
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: "Aren\u2019t YOU in charge of security?? (+5% resource production, -1
-    population)"
+  effects:
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  - {fileID: 11400000, guid: 64af335e7c4788a45abef4eb7f54e3f9, type: 2}
+  optionTitle: (+5% resource production, -1 population)
+  flavorText: "Aren\u2019t YOU in charge of security?? "
   owner: {fileID: 0}

@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Probablywontstealanything
   m_EditorClassIdentifier: 
   DecisionInternalName: 4bRogerShine_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: fbb7181c69ebd2042ad1659c81113904, type: 2}
-  optionTitle: 
-  flavorText: "Let him sit there. He\u2019s obviously not going to steal anything
-    (-200 food, -200 metal, -200 wood)"
+  optionTitle: ' (-200 food, -200 metal, -200 wood)'
+  flavorText: "Let him sit there. He\u2019s obviously not going to steal anything."
   owner: {fileID: 0}

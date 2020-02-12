@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 5d BigTumbleInLittleChina
   m_EditorClassIdentifier: 
   EventInternalName: 5dBigTumbleInLittleChina_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
   choices:
   - {fileID: 11400000, guid: 1dbffa6c530871046871f7835ce4e398, type: 2}

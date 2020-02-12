@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ShootOnSight
   m_EditorClassIdentifier: 
   DecisionInternalName: 5cCowPlotThickens_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: 8271dd8827b25d9449b3c268fb659829, type: 2}
-  optionTitle: 
-  flavorText: Fool me once, shame on you. Fool me twice, we shoot on sight (+100 food)
+  - {fileID: 11400000, guid: 36493e50e0eb86c4a97b90171be758bd, type: 2}
+  optionTitle: (+100 food)
+  flavorText: Fool me once, shame on you. Fool me twice, we shoot on sight.
   owner: {fileID: 0}

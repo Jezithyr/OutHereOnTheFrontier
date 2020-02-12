@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 3cBSP_C3
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: Let nature take its course (-15% resource production)
+  effects:
+  - {fileID: 11400000, guid: c2e5b2f61f24024428b36368c3ae7f68, type: 2}
+  optionTitle: (-15% resource production)
+  flavorText: Let nature take its course.
   owner: {fileID: 0}

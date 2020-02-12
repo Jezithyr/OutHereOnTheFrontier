@@ -16,6 +16,6 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 64c5a4178ddb372428f62da076693eb5, type: 2}
-  optionTitle: (Lose 500 Air)
+  optionTitle: (Lose 150 Air)
   flavorText: Literally do nothing.
   owner: {fileID: 0}

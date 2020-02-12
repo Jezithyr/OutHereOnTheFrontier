@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 8aWinCondition_C2
   condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: "\u2022\t(Pay 1,000 fuel) YEEEEEEEEEHAAAAAAAAAWWWWWWWW (Win Condition
-    met)"
+  optionTitle: (-1000 fuel, -1000 alloy)
+  flavorText: (1000 fuel, 1000 alloy) YEEEEEEEEEHAAAAAAAAAWWWWWWWW (Win Condition
+    met)
   owner: {fileID: 0}
