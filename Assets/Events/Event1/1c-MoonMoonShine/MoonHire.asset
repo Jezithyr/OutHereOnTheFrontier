@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb94950b66c7cb4498f49253fc44124d, type: 2}
   optionTitle: ' (-100 food, +10% food production)'
   flavorText: (100 food) Hire them to produce Station-Branded Moonmoonshine
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: c2c951429914f5c46a00501a6b2a2626, type: 2}

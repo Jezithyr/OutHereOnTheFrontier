@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8cabe108b83d2af45abee816c271f249, type: 2}
   optionTitle: (Costs 1 Metal, Unlocks Event 5d)
   flavorText: (1 Metal) Terminate it with extreme prejudice.
-  owner: {fileID: 0}
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: 030a2d5eb45d63747afecea85b2eb70f, type: 2}

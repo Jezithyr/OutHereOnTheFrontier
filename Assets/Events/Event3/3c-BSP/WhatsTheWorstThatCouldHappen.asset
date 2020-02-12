@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c2e5b2f61f24024428b36368c3ae7f68, type: 2}
   optionTitle: (-15% resource production)
   flavorText: Let nature take its course.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: ca24712fa2e80a049afe10e9035660ad, type: 2}

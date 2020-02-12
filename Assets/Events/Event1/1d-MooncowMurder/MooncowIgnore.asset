@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 1dMoorderCow_C2
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
   optionTitle: (Unlocks event 5c)
   flavorText: "Cows don\u2019t kill people. Asphyxiation does. Let him go."
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 1f438be8d9a6ced459d9a31429b4f2db, type: 2}

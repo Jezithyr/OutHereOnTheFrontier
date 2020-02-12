@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 7d Cowfrontation
   m_EditorClassIdentifier: 
   EventInternalName: 7dCowfrontation_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: f76e396c6110a824ab7d5cbfc2e469f5, type: 2}

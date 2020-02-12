@@ -19,4 +19,5 @@ MonoBehaviour:
   optionTitle: (-2 population, +100 food)
   flavorText: (-2 Population) Arrest them. Permanently. But take their stuff while
     we're at it.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: c2c951429914f5c46a00501a6b2a2626, type: 2}

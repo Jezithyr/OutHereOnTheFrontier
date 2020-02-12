@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
   optionTitle: (nothing happens)
   flavorText: Sounds like gambling to me. Tell them to go away.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: a8f0a3fb1ec2ee946bac081e90c98f81, type: 2}

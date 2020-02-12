@@ -19,4 +19,5 @@ MonoBehaviour:
   optionTitle: ' (-5% food production).'
   flavorText: I want it behind bars for life. Let it serve as an example to other
     bovines learned in the arts of war.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 0cc81bf4e893a324b98159c3018ec575, type: 2}

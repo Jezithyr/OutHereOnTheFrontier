@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2127c0946fd08904cbdf9216a5242ea6, type: 2}
   optionTitle: (+1 population, -5% production)
   flavorText: Unity is clearly superior. Move the Unreal Engineer to QA.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 72966216e0bad09489f73c3740623a08, type: 2}

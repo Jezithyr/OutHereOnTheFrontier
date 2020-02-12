@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 6bEE_C2
   condition: {fileID: 0}
-  effects: []
-  optionTitle: (-25% resource production, +200 all resources)
+  effects:
+  - {fileID: 11400000, guid: bfbb320e5da83434ca482c225de5f072, type: 2}
+  - {fileID: 11400000, guid: 06cd2033917f1d440b8b92eec63150c2, type: 2}
+  optionTitle: (-5% resource production, +200 all resources)
   flavorText: "The odds sound good enough. Let\u2019s do it!"
-  owner: {fileID: 0}
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: a8f0a3fb1ec2ee946bac081e90c98f81, type: 2}

@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: RandySavage_C3
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
   optionTitle: (Unlock Vince McMahon Event)
   flavorText: Do nothing.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 25521006084419847a1d9c8b6c9c1428, type: 2}

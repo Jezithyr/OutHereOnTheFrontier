@@ -15,15 +15,15 @@ MonoBehaviour:
   instances: []
   resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
   activeResources:
-  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
-  - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
   - {fileID: 11400000, guid: f44d4ff5c902fc248988a4de903a5654, type: 2}
+  - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
   production:
+  - 2
   - 0
   - 0
-  - 5
   consumption:
-  - 10
-  - 10
   - 0
+  - 1
+  - 1
   storage: []

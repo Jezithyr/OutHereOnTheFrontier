@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 64af335e7c4788a45abef4eb7f54e3f9, type: 2}
   optionTitle: (+5% resource production, -1 population)
   flavorText: "Aren\u2019t YOU in charge of security?? "
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: f767e5e0880486a41bb3921deaa33136, type: 2}

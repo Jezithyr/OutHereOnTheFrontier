@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fbb7181c69ebd2042ad1659c81113904, type: 2}
   optionTitle: ' (-200 food, -200 metal, -200 wood)'
   flavorText: "Let him sit there. He\u2019s obviously not going to steal anything."
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 4ee79a932edef8e48a234590e92a0948, type: 2}

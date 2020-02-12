@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4d WorkerStrike
   m_EditorClassIdentifier: 
   EventInternalName: 4dWorkerStrike_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: 550215ab8d5e3734690aedb2e0c958bd, type: 2}

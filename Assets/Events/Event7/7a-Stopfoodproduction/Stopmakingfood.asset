@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c9769898dcada8c409dee0ee5c45a409, type: 2}
   optionTitle: ' (-100% food production, +20% other resource production)'
   flavorText: Yes, for the good of everyone.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: dd7f93ea59f60fe43bd1f0cee621abbc, type: 2}

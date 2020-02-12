@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1b Robocluck
   m_EditorClassIdentifier: 
   EventInternalName: 1b_Robocock
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: 5c1d33cde6eaa8641aa6d32e1920b481, type: 2}

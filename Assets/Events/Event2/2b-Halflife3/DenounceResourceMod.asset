@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cf6fdb24e932554eb89c7bf14f5ca62, type: 3}
   m_Name: DenounceResourceMod
   m_EditorClassIdentifier: 
-  resourceModule: {fileID: 0}
+  resourceModule: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
   Resources:
   - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
   - {fileID: 11400000, guid: f17fa8b2279e00a47966794e9b031dc2, type: 2}

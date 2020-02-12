@@ -20,4 +20,5 @@ MonoBehaviour:
   optionTitle: (-150 food, +10% resource production)
   flavorText: "(150 food) He\u2019s obviously a very good boi \u2013 let\u2019s keep
     him."
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: f84fd6ab4f557ae41af1103d04c2b68a, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 7a Stopfood
   m_EditorClassIdentifier: 
   EventInternalName: 7aStopfood_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
   choices:
   - {fileID: 11400000, guid: 3ef10a928c63fde4c90590f213ced6d9, type: 2}

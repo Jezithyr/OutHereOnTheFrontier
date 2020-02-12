@@ -19,4 +19,5 @@ MonoBehaviour:
   optionTitle: (Lose 2 Population)
   flavorText: 'Send the repair tech at his earliest available scheduling (approx.
     wait time: 8 earth weeks)'
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 14748eead5694c84abbb2a3d375face6, type: 2}

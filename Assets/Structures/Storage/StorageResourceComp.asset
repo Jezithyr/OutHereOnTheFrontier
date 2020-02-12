@@ -16,19 +16,17 @@ MonoBehaviour:
   resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
   activeResources:
   - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
-  - {fileID: 11400000, guid: f17fa8b2279e00a47966794e9b031dc2, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
   - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
   - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
   - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
-  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
-  - {fileID: 11400000, guid: f44d4ff5c902fc248988a4de903a5654, type: 2}
   production: []
   consumption: []
   storage:
-  - 500
-  - 500
-  - 500
-  - 500
-  - 500
-  - 500
-  - 500
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200

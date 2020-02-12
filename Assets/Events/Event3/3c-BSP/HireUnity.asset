@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a52d51abfabd0334cb53d2c6f5d97ce2, type: 2}
   optionTitle: (-150 food, +1 population, unlock event 4a)
   flavorText: (150 food) Hire a Unity Engineer to fix the problem.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: ca24712fa2e80a049afe10e9035660ad, type: 2}

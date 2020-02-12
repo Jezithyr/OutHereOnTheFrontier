@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fd20589ef44fd9e43a824ef17742955b, type: 2}
   optionTitle: (-100 Metal, +1 Population)
   flavorText: (100 Metal) Find a Ranger with a Big Iron on his hip.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 60789308fd7369a47b079deec176df5a, type: 2}

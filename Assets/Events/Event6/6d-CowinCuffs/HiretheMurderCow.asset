@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
   optionTitle: (+5% resource production)
   flavorText: This station could use the skills this creature has to offer.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 0cc81bf4e893a324b98159c3018ec575, type: 2}

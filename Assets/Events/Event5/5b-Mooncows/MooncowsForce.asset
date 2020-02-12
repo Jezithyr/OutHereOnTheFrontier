@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 08996795cfa08ed419febc12a1ed4f03, type: 2}
   optionTitle: (Gain 10% food production, 100 food)
   flavorText: Seize the mooncows by force.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 85861d86e5f033d4f9a73d73aedfc0c8, type: 2}

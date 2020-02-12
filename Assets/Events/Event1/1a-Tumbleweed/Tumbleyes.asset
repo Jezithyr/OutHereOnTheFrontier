@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
   optionTitle: (Nothing Happens)
   flavorText: Permit the Tumbleweed to enter our Spaceport.
-  owner: {fileID: 0}
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: 030a2d5eb45d63747afecea85b2eb70f, type: 2}

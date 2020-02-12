@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
   optionTitle: (-150 food, -150 metal, +5% resource production)
   flavorText: Negotiate terms.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: d16cafa3c2475264e83de3fa2c5b9316, type: 2}

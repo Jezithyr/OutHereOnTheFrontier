@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2fa0dea1db34bce44bfc280535f0e84f, type: 2}
   optionTitle: (Lose 100 metal, increase production by 5%)
   flavorText: (100 Metal) CREATE ROBOCLUCK!
-  owner: {fileID: 0}
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: dea8f76b452c0674dae9a18130d01943, type: 2}

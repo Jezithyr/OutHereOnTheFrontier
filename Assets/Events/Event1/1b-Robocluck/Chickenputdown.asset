@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 195211e72cc47174a8c79209f371f96f, type: 2}
   optionTitle: '(+5 Food, -1 metal) '
   flavorText: (1 Metal) Put the poor creature out of its misery.
-  owner: {fileID: 0}
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: dea8f76b452c0674dae9a18130d01943, type: 2}

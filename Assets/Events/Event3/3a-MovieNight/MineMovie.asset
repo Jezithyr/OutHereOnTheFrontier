@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 093b68aef17536e438e8a862b758c356, type: 2}
   optionTitle: (+10% Metal Production)
   flavorText: 'Watch Moon Souls Pickaxe Speedruns. '
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: b250f4a242c1fb44195f23182a7080c3, type: 2}
