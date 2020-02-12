@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "EventSystem/Conditions/Require Event Choice")]
-public class EventChoicePreReq : EventCondition
+public class EventChoicePreReq : ConditionScript
 {
     [SerializeField] private EventDecision choiceToCheck;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(menuName = "EventSystem/Conditions/Require Event Shown")]
-public class EventPrerequisite : EventCondition
+public class EventPrerequisite : ConditionScript
 {
     [SerializeField] private Event PreReqEvent;
     public override bool ConditionCheck(ScriptableObject callingObject)
