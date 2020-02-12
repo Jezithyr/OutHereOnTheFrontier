@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 5cCowPlotThickens_C2
   condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: 36493e50e0eb86c4a97b90171be758bd, type: 2}
+  - {fileID: 11400000, guid: 0be2f84861fd4e24e9fc3286f3e5ad1e, type: 2}
   optionTitle: (+100 food)
   flavorText: Fool me once, shame on you. Fool me twice, we shoot on sight.
   wasChosen: 0

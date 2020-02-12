@@ -16,6 +16,7 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 195211e72cc47174a8c79209f371f96f, type: 2}
+  - {fileID: 11400000, guid: d52a7bd47b1a08b4da209d5d1f41af36, type: 2}
   optionTitle: '(+5 Food, -1 metal) '
   flavorText: (1 Metal) Put the poor creature out of its misery.
   wasChosen: 1

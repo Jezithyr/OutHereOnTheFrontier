@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91d4418babd665a409e99a1fafd05191, type: 3}
-  m_Name: MineDist
+  m_Script: {fileID: 11500000, guid: 945d72198fbd8a94999a70c4b76c1c33, type: 3}
+  m_Name: FarmOverlap
   m_EditorClassIdentifier: 
   Layer:
     serializedVersion: 2
-    m_Bits: 65536
-  distance: 5
+    m_Bits: 16384

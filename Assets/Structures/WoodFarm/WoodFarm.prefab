@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 14799286928491695}
   - component: {fileID: 5405652904768416422}
+  - component: {fileID: -5177487073829215485}
   m_Layer: 12
   m_Name: WoodFarm
   m_TagString: Untagged
@@ -45,6 +46,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-5177487073829215485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7819567662714847191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fb16d546780ba4cb824dc1c286d83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceComponent: {fileID: 11400000, guid: 40398ba1bd541934f929cbf85aab614a, type: 2}
+  isActive: 1
 --- !u!1001 &6186998365899284950
 PrefabInstance:
   m_ObjectHideFlags: 0

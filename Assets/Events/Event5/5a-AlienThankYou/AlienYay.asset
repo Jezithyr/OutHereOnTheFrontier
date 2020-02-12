@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 5aAlienThankYou_C1
   condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: de17e2df96a962f47b30f305afa52018, type: 2}
+  - {fileID: 11400000, guid: a33e4d0f4cbe1694daac7a624172e985, type: 2}
   optionTitle: (+200 Alloy, +200 Fuel, +200 Metal, +200 Wood)
   flavorText: Let's see what's inside!
   wasChosen: 0

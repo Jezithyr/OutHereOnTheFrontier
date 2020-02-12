@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 6dCowinCuffs_C1
   condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: 8271dd8827b25d9449b3c268fb659829, type: 2}
+  - {fileID: 11400000, guid: 0be2f84861fd4e24e9fc3286f3e5ad1e, type: 2}
   optionTitle: (+100 food)
   flavorText: I want it on my dinner plate tonight.
   wasChosen: 0

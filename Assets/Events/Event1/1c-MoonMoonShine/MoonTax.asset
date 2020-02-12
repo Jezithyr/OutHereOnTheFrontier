@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInternalName: 1cMoonshine_C3
   condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: f30bb772db55cbe4fb2488aad5739a84, type: 2}
+  - {fileID: 11400000, guid: d81a9f303100f174faa1be593d557cce, type: 2}
   optionTitle: (+50 Food, +50 Metal)
   flavorText: 'TAX IT! '
   wasChosen: 1
