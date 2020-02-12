@@ -82,11 +82,11 @@ public class PlayerHUD : ScriptedUI
         buildingDesc = linkedUI.GetElementByName("Description").GetComponentInChildren<TextMeshProUGUI>();
         buildingInfoMenu =  linkedUI.GetElementByName("BuildingInfo");
 
-        if (linkedBuildingCosts.Count > 0)   linkedResourceDisplays.Clear();
-        linkedBuildingCosts[0] = (linkedUI.GetElementByName("MetalCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
-        linkedBuildingCosts[1] = (linkedUI.GetElementByName("WoodCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
-        linkedBuildingCosts[2] = (linkedUI.GetElementByName("AlloyCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
-        linkedBuildingCosts[3] = (linkedUI.GetElementByName("WaterCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        linkedBuildingCosts.Clear();
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("MetalCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("WoodCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("AlloyCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("WaterCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
 
 
         buildingMenuObj = linkedUI.GetElementByName("BuildingMenu");
