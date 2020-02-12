@@ -27,6 +27,7 @@ public class MainMenu : ScriptedUI
 
     public void StartGame()
     {
+        // Call the sound here.
         Game.SwitchSystemGameState(1);
         Debug.Log("GAME STARTED");
     }
