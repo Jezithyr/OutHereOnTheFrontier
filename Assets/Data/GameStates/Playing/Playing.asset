@@ -31,4 +31,6 @@ MonoBehaviour:
   buildingLayer:
     serializedVersion: 2
     m_Bits: 2048
-  GameTimer: 424
+  gameTimer: 480
+  GameTimer: 348
+  ElapsedTime: 132

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: HireHim
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 4bRogerShine_C1
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 1a914e71e99ac764da1d6d9d8094a6af, type: 2}
+  optionTitle: (-200 food, +1 population)
+  flavorText: '(200 Food) Why don''t we hire him? '
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 4ee79a932edef8e48a234590e92a0948, type: 2}

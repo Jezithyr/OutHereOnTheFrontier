@@ -29,4 +29,11 @@ MonoBehaviour:
   globalEventPool: {fileID: 11400000, guid: 30539091e98a12e499b06b38513579c2, type: 2}
   EventPools:
   - {fileID: 11400000, guid: f680eb165770e38468f1f995ddaab2c1, type: 2}
-  PoolTimes: 3c000000
+  - {fileID: 11400000, guid: 3067eb6b595a3ff449239bdb5798e328, type: 2}
+  - {fileID: 11400000, guid: cc0a970372a0f7b43b21db5297ffc572, type: 2}
+  - {fileID: 11400000, guid: c54a6fae61070f44ea562be7ae1b96a0, type: 2}
+  - {fileID: 11400000, guid: 9eab0ea56490af14e81593fa0d93bf5c, type: 2}
+  - {fileID: 11400000, guid: 7265aebc0727dc845b7115cd8f823379, type: 2}
+  - {fileID: 11400000, guid: c2f39de032f331a4996d6d2305a9d8c8, type: 2}
+  - {fileID: 11400000, guid: f6f05734e0b67b3448c61ac583d0b31a, type: 2}
+  PoolTimes: 3c00000078000000b4000000f00000002c01000068010000a4010000df010000

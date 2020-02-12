@@ -5,4 +5,5 @@ using UnityEngine;
 public abstract class ConditionScript : ScriptableObject
 {
     public abstract bool ConditionCheck(ScriptableObject callingObject);
+
 }

@@ -11,8 +11,15 @@ public class PreventOverlap : PlacementCondition
     public override bool ConditionCheck(GameObject prefab, Building buildingData)
     {
         Collider[] hitColliders = Physics.OverlapSphere(prefab.transform.position, buildingData.Radius);
+
         Debug.Log("Collision Check = "+hitColliders.Length);
-        if (hitColliders.Length <= 2) return true;
-        return false;
+        foreach (var collider in hitColliders)
+        {
+            if (Layer == (Layer | (1 <<  collider.gameObject.layer)))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

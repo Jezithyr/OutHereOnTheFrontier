@@ -18,8 +18,15 @@ MonoBehaviour:
   placementConditions:
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   - {fileID: 11400000, guid: def35434ab3e11d4ba777a7f58fb662f, type: 2}
+  - {fileID: 11400000, guid: e6e7b86a23e662a40afb0965b134d4fd, type: 2}
+  - {fileID: 11400000, guid: b718f5fe13e1d6044b2651b7a01f7acf, type: 2}
   destroyEffects: []
   constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
     type: 2}
   buildingRadiusMultiplier: 1
   Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 1900000019000000
+  description: The Wood Farm produces wood, which is required to produce every building.

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: Verygoodboi
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 6cGoodboi_C3
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: e4af2e87381007d42b2937d3359250bd, type: 2}
+  - {fileID: 11400000, guid: 0f5b3299c56b06b43a65f7bb42117267, type: 2}
+  optionTitle: (-150 food, +10% resource production)
+  flavorText: "(150 food) He\u2019s obviously a very good boi \u2013 let\u2019s keep
+    him."
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: f84fd6ab4f557ae41af1103d04c2b68a, type: 2}

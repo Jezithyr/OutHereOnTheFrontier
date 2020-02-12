@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: Isntthisyourjob
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 7dCowfrontation_C1
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  - {fileID: 11400000, guid: 64af335e7c4788a45abef4eb7f54e3f9, type: 2}
+  optionTitle: (+5% resource production, -1 population)
+  flavorText: "Aren\u2019t YOU in charge of security?? "
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: f767e5e0880486a41bb3921deaa33136, type: 2}

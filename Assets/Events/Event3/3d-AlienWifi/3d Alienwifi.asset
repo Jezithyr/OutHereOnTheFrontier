@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: 3d Alienwifi
+  m_EditorClassIdentifier: 
+  EventInternalName: 3dAlienWifi_Event
+  isActive: 1
+  triggerCondition: {fileID: 0}
+  choices:
+  - {fileID: 11400000, guid: 78cce1c68018be346b1eefd5ec4dfc4f, type: 2}
+  - {fileID: 11400000, guid: 83df8abedc9d37640b07ff7fb79343f8, type: 2}
+  eventTitle: 
+  flavorText: "Looks like one of the local aliens wants to make a Spacebook account
+    so it can contact it can \u201Cpost home\u201D. It wants our WiFi password to
+    do this."

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: 5b-Mooncows
+  m_EditorClassIdentifier: 
+  EventInternalName: MoonCows
+  isActive: 1
+  triggerCondition: {fileID: 0}
+  choices:
+  - {fileID: 11400000, guid: c1e9ca56ba0115842a1de8e7c1e01049, type: 2}
+  - {fileID: 11400000, guid: 25ab9de6578f7ce47afe60fbccb1d9d1, type: 2}
+  - {fileID: 11400000, guid: 00723865f1fc05442b609d88befe8fbb, type: 2}
+  - {fileID: 11400000, guid: 680af5849e24a70489370012d778e002, type: 2}
+  eventTitle: Moon Cows?!
+  flavorText: Fortune smiles on us! One of the mooncow farmers has offered to work
+    with our establishment! All she asks in return is for us to build her a house
+    within our walls. Surely this is an opportunity we will not pass up?
