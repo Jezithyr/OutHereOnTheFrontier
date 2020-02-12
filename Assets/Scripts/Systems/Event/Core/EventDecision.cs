@@ -15,6 +15,8 @@ public class EventDecision : ScriptableObject
     [SerializeField] protected string optionTitle = "";
     [SerializeField] public string flavorText = "";
 
+    public bool wasChosen = false;
+
     public Event owner;
     delegate void EventEffectDelegate(ScriptableObject callingObject);
     delegate bool ConditionCheckDelegate(ScriptableObject scriptObj);
@@ -68,6 +70,7 @@ public class EventDecision : ScriptableObject
 
     public void TriggerDecision()
     {
+        wasChosen = true;
         effectDelegate(owner);
     }
 
