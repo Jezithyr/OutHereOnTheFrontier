@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "EventSystem/Conditions/Require Building")]
-public class BuildingPrereq : EventCondition
+public class BuildingPrereq : ConditionScript
 {
     [SerializeField] private Building buildingType;
 
