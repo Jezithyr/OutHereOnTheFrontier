@@ -39,7 +39,7 @@ public class Event : ScriptableObject
         {
             foreach (EventDecision decision in choices)
             {
-                menuOptions.Add(decision.DecisionInternalName, decision);
+                menuOptions.Add(decision.name, decision);
             }
         }
     }

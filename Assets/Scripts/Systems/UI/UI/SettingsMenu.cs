@@ -23,7 +23,7 @@ public class SettingsMenu : ScriptedUI
 
     protected override void Initialize()
     {
-        discardChanges();
+        //discardChanges();
     }
 
     public void applyChanges()
@@ -47,7 +47,9 @@ public class SettingsMenu : ScriptedUI
 
     private void SetNewBrightness(float newBrightness)
     {
-        GameObject.FindGameObjectWithTag("MainLight").GetComponent<Light>().color = Color.Lerp(darkestBrightness,lightestBrightness,newBrightness);
+        GameObject mainLight = GameObject.FindGameObjectWithTag("MainLight");
+        if (mainLight == null) return;
+        mainLight.GetComponent<Light>().color = Color.Lerp(darkestBrightness,lightestBrightness,newBrightness);
     }
 
     private void SetNewVolume(float volume)

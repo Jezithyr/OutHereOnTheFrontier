@@ -193,6 +193,11 @@ public class GameManager : ScriptableObject
         ActiveState.OnActivate(null);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public T GetModule<T>() where T : Module
     {
         return LinkedModuleManager.GetModule<T>();
