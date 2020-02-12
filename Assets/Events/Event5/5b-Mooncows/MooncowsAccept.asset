@@ -16,6 +16,7 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: bf7a1b977fc611942abd3e59e8dc49eb, type: 2}
+  - {fileID: 11400000, guid: 80567c7812b968d4fa44209a47cc5870, type: 2}
   optionTitle: (Gain 1 Population, 20% food production, Lose 200 Metal)
   flavorText: (200 Metal) Accept the Mooncow Farmer into our ranks.
   owner: {fileID: 0}

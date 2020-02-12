@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Lootboxesaregambling
   m_EditorClassIdentifier: 
   DecisionInternalName: 6bEE_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
-  optionTitle: 
-  flavorText: Sounds like gambling to me. Tell them to go away (nothing happens)
+  optionTitle: (nothing happens)
+  flavorText: Sounds like gambling to me. Tell them to go away.
   owner: {fileID: 0}

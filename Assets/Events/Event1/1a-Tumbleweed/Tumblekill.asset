@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 1aTumbleweed_C1
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 8cabe108b83d2af45abee816c271f249, type: 2}
   optionTitle: (Costs 1 Metal, Unlocks Event 5d)
   flavorText: (1 Metal) Terminate it with extreme prejudice.
   owner: {fileID: 0}

@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 7dCowfrontation_C2
   condition: {fileID: 0}
-  effects: []
-  optionTitle: (+20% resource production, -500 food)
+  effects:
+  - {fileID: 11400000, guid: 697dd71680129934f9e3a354af2afd59, type: 2}
+  - {fileID: 11400000, guid: 9708c39e2203ace4d8523a153f6c2984, type: 2}
+  optionTitle: (+20% resource production, -350 food)
   flavorText: (350 food) Perhaps we can make a deal with it.
   owner: {fileID: 0}

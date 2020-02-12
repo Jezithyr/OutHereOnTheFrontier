@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 6cGoodboi_C4
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 88fdb220429ab6a4ba7238d343e959b2, type: 2}
+  - {fileID: 11400000, guid: 93a3971ac5839724f8e0e20cecb05251, type: 2}
   optionTitle: (-400 food, +15% resource production)
   flavorText: "(400 food) He\u2019s obviously a VERY good boi \u2013 let\u2019s keep
     him."

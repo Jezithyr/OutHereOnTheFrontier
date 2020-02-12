@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 2bHalflife3_C2
   condition: {fileID: 0}
-  effects: []
-  optionTitle: (-200 Metal, +5% resource production)
+  effects:
+  - {fileID: 11400000, guid: 87acae61000fdfc40982da46dd2d8cd7, type: 2}
+  - {fileID: 11400000, guid: 7369a579c4ff6a44cb5f0315f61465d5, type: 2}
+  optionTitle: (-150Metal, +5% resource production)
   flavorText: (150 Metal) Ransom this holy relic from its owner.
   owner: {fileID: 0}

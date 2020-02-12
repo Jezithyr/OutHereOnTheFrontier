@@ -15,7 +15,8 @@ MonoBehaviour:
   DecisionInternalName: 1bRobocock_C1
   condition: {fileID: 0}
   effects:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f6efb148412a81a4499f0db13141b876, type: 2}
+  - {fileID: 11400000, guid: 2fa0dea1db34bce44bfc280535f0e84f, type: 2}
   optionTitle: (Lose 100 metal, increase production by 5%)
   flavorText: (100 Metal) CREATE ROBOCLUCK!
   owner: {fileID: 0}

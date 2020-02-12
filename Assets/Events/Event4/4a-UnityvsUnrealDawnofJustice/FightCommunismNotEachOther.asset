@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 4aUvU_C2
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
   optionTitle: (+5% production)
   flavorText: Encourage the Engineers to combine their talents so as to make the station
     truly remarkable.

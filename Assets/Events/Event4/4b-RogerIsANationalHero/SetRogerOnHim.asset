@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 4bRogerShine_C3
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
   optionTitle: (+5% resource production)
   flavorText: Set Roger on him.
   owner: {fileID: 0}

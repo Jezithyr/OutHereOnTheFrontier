@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 2dCowFollowUp_C3
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 51536f27cdd835945acc63148908200c, type: 2}
   optionTitle: (-5% food production)
   flavorText: 'Life imprisonment with no parole. '
   owner: {fileID: 0}

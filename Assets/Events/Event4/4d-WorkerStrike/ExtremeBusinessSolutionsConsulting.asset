@@ -16,6 +16,7 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 92ebb5e46be38d642a4a00dc85cacaf4, type: 2}
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
   optionTitle: (-6 Population, +5% resource production)
   flavorText: Consult with Extreme Business Solutions Consulting.
   owner: {fileID: 0}

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectRandomEvent: 1
   EventList:
-  - {fileID: 11400000, guid: ec421705ff90cec45a414f9883f63833, type: 2}
+  - {fileID: 11400000, guid: 60789308fd7369a47b079deec176df5a, type: 2}
+  - {fileID: 11400000, guid: bacbfb509eda05d4195de7758a07a80f, type: 2}
+  - {fileID: 11400000, guid: 14748eead5694c84abbb2a3d375face6, type: 2}
+  - {fileID: 11400000, guid: 928f0d249e62f7244a633226361ac427, type: 2}

@@ -16,6 +16,7 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 8a3dad82661b0944eac67c8738fbdc6b, type: 2}
+  - {fileID: 11400000, guid: c2eecbc5f3e07894b96039e411403262, type: 2}
   optionTitle: (+100 food. +10% resource production)
   flavorText: "We duel as warriors \u2013 fetch my sword! "
   owner: {fileID: 0}

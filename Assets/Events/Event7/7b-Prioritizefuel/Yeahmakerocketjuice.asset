@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 7bPrioritizeFuel_C2
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: a31beb4dcabb74045a00844f25756961, type: 2}
   optionTitle: (-50% resource production, +100% fuel production)
   flavorText: "Yes, we\u2019ll have to if we\u2019re going to get off of this rock."
   owner: {fileID: 0}

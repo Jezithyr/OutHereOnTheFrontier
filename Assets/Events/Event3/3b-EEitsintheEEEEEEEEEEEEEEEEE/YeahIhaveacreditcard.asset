@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: YeahIhaveacreditcard
   m_EditorClassIdentifier: 
   DecisionInternalName: 6bEE_C2
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: "The odds sound good enough. Let\u2019s do it! (-25% resource production,
-    +200 all resources)"
+  optionTitle: (-25% resource production, +200 all resources)
+  flavorText: "The odds sound good enough. Let\u2019s do it!"
   owner: {fileID: 0}

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 6dCowinCuffs_C3
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 514502d0bfc4aa64984d31b8e3d25b4b, type: 2}
   optionTitle: ' (-5% food production).'
   flavorText: I want it behind bars for life. Let it serve as an example to other
     bovines learned in the arts of war.

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: Airlock_C3
   condition: {fileID: 0}
-  effects: []
-  optionTitle: (Lose 5 Population, Lose air)
+  effects:
+  - {fileID: 11400000, guid: 5011e0691459fbb489f1c068d65e6511, type: 2}
+  optionTitle: (Lose 2 Population)
   flavorText: 'Send the repair tech at his earliest available scheduling (approx.
     wait time: 8 earth weeks)'
   owner: {fileID: 0}

@@ -16,6 +16,7 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: a34e6ed91bf867d42b4391f18dd7ff65, type: 2}
-  optionTitle: (-300 food, -300 metal, +10% resource production)
+  - {fileID: 11400000, guid: abe3fab2d9558044499fe67c587403b3, type: 2}
+  optionTitle: (-250 food, -250 metal, +10% resource production)
   flavorText: (250 food, 250 metal) Give into their demands.
   owner: {fileID: 0}
