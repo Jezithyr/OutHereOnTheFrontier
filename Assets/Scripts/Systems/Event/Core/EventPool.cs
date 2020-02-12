@@ -8,8 +8,8 @@ public class EventPool : ScriptableObject
     
     //TODO add checking for event conditions after the event has been selected
 
-    [SerializeField] private bool selectRandomEvent;
-    [SerializeField] private List<Event> EventList;
+    [SerializeField] private bool selectRandomEvent = true;
+    [SerializeField] private List<Event> EventList = new List<Event>();
     public List<Event> ListAll{get=>EventList;}
 
     public Event GetRandomEvent()
