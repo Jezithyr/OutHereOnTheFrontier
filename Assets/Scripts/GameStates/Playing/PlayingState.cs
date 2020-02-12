@@ -122,12 +122,12 @@ public class PlayingState : GameState
         if (Time.timeScale == 0) return; //stop update if timescale is 0
         hudMode = playerHUD.Mode;
 
-
         //timer tick
-        if(Time.timeScale > 0 && Time.fixedTime%1 == 0)//every second
+        if(Time.timeScale > 0 && Time.time - Mathf.Floor(Time.time) <= 0.02f)//every second
         {
             GameTimer = GameTimer-1;
             ElapsedTime += 1;
+            
         }
         if (GameTimer <= 0)
             {
