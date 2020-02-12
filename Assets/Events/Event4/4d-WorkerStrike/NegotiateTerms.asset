@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: NegotiateTerms
   m_EditorClassIdentifier: 
   DecisionInternalName: 4dWorkerStrike_C3
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 2d6910dda1adc3b468c0195fed30e608, type: 2}
-  optionTitle: 
-  flavorText: Negotiate terms (-150 food, -150 metal, +5% resource production)
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  optionTitle: (-150 food, -150 metal, +5% resource production)
+  flavorText: Negotiate terms.
   owner: {fileID: 0}

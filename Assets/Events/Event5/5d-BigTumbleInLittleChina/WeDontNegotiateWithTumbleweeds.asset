@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WeDontNegotiateWithTumbleweeds
   m_EditorClassIdentifier: 
   DecisionInternalName: 5dBigTumbleInLittleChina_C3
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 68b9cee9f0fda414dad5788a2b25d9c1, type: 2}
-  optionTitle: 
-  flavorText: "We don\u2019t negotiate with Tumbleweeds (-5 population)"
+  optionTitle: (-5 population)
+  flavorText: "We don\u2019t negotiate with Tumbleweeds."
   owner: {fileID: 0}

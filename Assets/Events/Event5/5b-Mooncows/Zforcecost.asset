@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceList:
   - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
-  resourceCosts: 0cfeffff
+  resourceCosts: 9cffffff
   moduleManager: {fileID: 0}

@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 4aUvU_C1
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: Have them fight to the death (-1 population, +10% production, winner
-    undisclosed for reasons of public positivity)
+  effects:
+  - {fileID: 11400000, guid: 64af335e7c4788a45abef4eb7f54e3f9, type: 2}
+  - {fileID: 11400000, guid: c79e1451adee408439f2614a57796239, type: 2}
+  optionTitle: (-1 population, +10% production, winner undisclosed for reasons of
+    public positivity)
+  flavorText: Have them fight to the death.
   owner: {fileID: 0}

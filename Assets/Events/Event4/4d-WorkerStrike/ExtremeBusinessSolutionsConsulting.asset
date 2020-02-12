@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: ExtremeBusinessSolutionsConsulting
   m_EditorClassIdentifier: 
   DecisionInternalName: 4dWorkerStrike_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 92ebb5e46be38d642a4a00dc85cacaf4, type: 2}
-  optionTitle: 
-  flavorText: Consult with Extreme Business Solutions Consulting (-6 Population, +5%
-    resource production)
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  optionTitle: (-6 Population, +5% resource production)
+  flavorText: Consult with Extreme Business Solutions Consulting.
   owner: {fileID: 0}

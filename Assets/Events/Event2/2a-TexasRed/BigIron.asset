@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BigIron
   m_EditorClassIdentifier: 
   DecisionInternalName: 2aTexasRed_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: fd20589ef44fd9e43a824ef17742955b, type: 2}
-  optionTitle: 
-  flavorText: Find a Ranger with a Big Iron on his hip (-100 Metal, +1 Population)
+  optionTitle: (-100 Metal, +1 Population)
+  flavorText: (100 Metal) Find a Ranger with a Big Iron on his hip.
   owner: {fileID: 0}

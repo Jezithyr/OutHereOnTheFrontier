@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: MooncowInterrogate
   m_EditorClassIdentifier: 
   DecisionInternalName: 1dMoorderCow_C3
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  condition: {fileID: 0}
   effects: []
-  optionTitle: 
-  flavorText: Question the Cow in-depth before making a decision. (Unlocks event 2D)
+  optionTitle: (Unlocks event 2D)
+  flavorText: 'Question the Cow in-depth before making a decision. '
   owner: {fileID: 0}

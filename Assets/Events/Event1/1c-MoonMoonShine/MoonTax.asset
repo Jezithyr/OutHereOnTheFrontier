@@ -16,6 +16,6 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: f30bb772db55cbe4fb2488aad5739a84, type: 2}
-  optionTitle: 
-  flavorText: TAX IT! (+50 Food, +50 Metal)
+  optionTitle: (+50 Food, +50 Metal)
+  flavorText: 'TAX IT! '
   owner: {fileID: 0}

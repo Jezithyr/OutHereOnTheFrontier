@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: MoonArrest
   m_EditorClassIdentifier: 
   DecisionInternalName: 1cMoonshine_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 8583370925647b649aa8af816647d2c8, type: 2}
-  optionTitle: 
-  flavorText: Arrest them. Permanently (-2 population, +200 food)
+  optionTitle: (-2 population, +100 food)
+  flavorText: (-2 Population) Arrest them. Permanently. But take their stuff while
+    we're at it.
   owner: {fileID: 0}

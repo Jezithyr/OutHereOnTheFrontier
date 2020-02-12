@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Chickenletitgo
   m_EditorClassIdentifier: 
   DecisionInternalName: 1bRobocock_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
-  optionTitle: 
-  flavorText: (Nothing) Let nature take its course.
+  optionTitle: (Nothing Happens)
+  flavorText: Let nature take its course.
   owner: {fileID: 0}

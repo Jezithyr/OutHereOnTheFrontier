@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 2bHalflife3_C3
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: Seize the holy relic by force (-1 Population, +5% resource production)
+  effects:
+  - {fileID: 11400000, guid: d1f4ff9a50eb8f046a27a6f23e597438, type: 2}
+  - {fileID: 11400000, guid: 7369a579c4ff6a44cb5f0315f61465d5, type: 2}
+  optionTitle: (-1 Population, +5% resource production)
+  flavorText: Seize the holy relic by force.
   owner: {fileID: 0}

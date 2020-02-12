@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Sendamessagetotheothers
   m_EditorClassIdentifier: 
   DecisionInternalName: 6dCowinCuffs_C3
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
-  effects: []
-  optionTitle: 
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 514502d0bfc4aa64984d31b8e3d25b4b, type: 2}
+  optionTitle: ' (-5% food production).'
   flavorText: I want it behind bars for life. Let it serve as an example to other
-    bovines learned in the arts of war (-5% food production).
+    bovines learned in the arts of war.
   owner: {fileID: 0}

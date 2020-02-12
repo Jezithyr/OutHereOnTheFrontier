@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30dde460f65d8394e847617c97fe25f0, type: 3}
+  m_Name: 3MinuteEvents
+  m_EditorClassIdentifier: 
+  selectRandomEvent: 1
+  EventList:
+  - {fileID: 11400000, guid: b250f4a242c1fb44195f23182a7080c3, type: 2}
+  - {fileID: 11400000, guid: a8f0a3fb1ec2ee946bac081e90c98f81, type: 2}
+  - {fileID: 11400000, guid: ca24712fa2e80a049afe10e9035660ad, type: 2}
+  - {fileID: 11400000, guid: 90b5ff4c82058554892cde8ffbab155b, type: 2}

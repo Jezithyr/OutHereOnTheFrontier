@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MoveTheBSP
   m_EditorClassIdentifier: 
   DecisionInternalName: 3cBSP_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: dcb4f901051d69343a324c91588f2bc8, type: 2}
-  optionTitle: 
-  flavorText: Move the BSPs to separate sublevels of the plant (-400 metal)
+  optionTitle: (-200 metal)
+  flavorText: (200 Metal) Move the BSPs to separate sublevels of the plant.
   owner: {fileID: 0}
