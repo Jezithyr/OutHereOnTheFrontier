@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd901b4f02a743f45a28ea4a56ade514, type: 3}
-  m_Name: PreventStructureOverlap
+  m_Script: {fileID: 11500000, guid: 945d72198fbd8a94999a70c4b76c1c33, type: 3}
+  m_Name: OnMetalDeposit
   m_EditorClassIdentifier: 
   Layer:
     serializedVersion: 2
-    m_Bits: 68608
+    m_Bits: 8192

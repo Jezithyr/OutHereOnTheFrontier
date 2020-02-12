@@ -56,7 +56,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 70a562d6ad377f643b41d4fe3ddf02f0, type: 2}
   BuildingLayerMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 57856
   buildingInfoResources:
   - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
   - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
