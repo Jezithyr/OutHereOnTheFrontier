@@ -59,7 +59,7 @@ public class PlayingState : GameState
     //todo make these not public
     public int GameTimer;
     public int ElapsedTime = 0;
-
+    protected bool initalized = false;
 
     private void OnEnable()
     {

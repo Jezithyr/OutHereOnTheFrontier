@@ -30,7 +30,7 @@ MonoBehaviour:
   eventList: []
   buildingLayer:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 67584
   gameTimer: 480
-  GameTimer: 348
-  ElapsedTime: 132
+  GameTimer: 372
+  ElapsedTime: 108
