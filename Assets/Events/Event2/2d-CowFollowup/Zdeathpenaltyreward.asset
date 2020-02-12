@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9e2e69883cd7b44e912d2587388c6a2, type: 3}
-  m_Name: Zputdowncost
+  m_Script: {fileID: 11500000, guid: aa023616e3e35a84584fb1393a8e65ee, type: 3}
+  m_Name: Zdeathpenaltyreward
   m_EditorClassIdentifier: 
   resourceList:
-  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
-  resourceCosts: 01000000
+  - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
+  resourceRewards: 64000000
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}

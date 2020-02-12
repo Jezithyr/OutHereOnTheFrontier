@@ -16,6 +16,7 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 8583370925647b649aa8af816647d2c8, type: 2}
+  - {fileID: 11400000, guid: bd4dfb91f45a7c04fabf535a5e90a992, type: 2}
   optionTitle: (-2 population, +100 food)
   flavorText: (-2 Population) Arrest them. Permanently. But take their stuff while
     we're at it.
