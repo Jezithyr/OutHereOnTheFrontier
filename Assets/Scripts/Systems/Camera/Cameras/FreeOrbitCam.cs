@@ -122,7 +122,7 @@ public class FreeOrbitCam : ScriptedCamera
         {
             moveZInput = Mathf.Clamp(moveZInput,-1,0);
         }
-        if(Time.deltaTime <= 0.166666)//
+        if(Time.deltaTime >= 0.166666)//
         {
             PanCamera(moveZInput, moveXInput);
         RotateCamera(rotateInput);
