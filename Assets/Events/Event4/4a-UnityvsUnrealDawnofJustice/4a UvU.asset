@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4a UvU
   m_EditorClassIdentifier: 
   EventInternalName: 4aUvU_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
   choices:
   - {fileID: 11400000, guid: 9e865665c0e530b4599966009b2efd41, type: 2}

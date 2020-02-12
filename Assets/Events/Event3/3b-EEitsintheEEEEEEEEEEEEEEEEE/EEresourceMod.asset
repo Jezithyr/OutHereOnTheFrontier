@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cf6fdb24e932554eb89c7bf14f5ca62, type: 3}
   m_Name: EEresourceMod
   m_EditorClassIdentifier: 
-  resourceModule: {fileID: 0}
+  resourceModule: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
   Resources:
   - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
   - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
@@ -20,8 +20,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
   - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
   modifiers:
-  - -0.25
-  - -0.25
-  - -0.25
-  - -0.25
-  - -0.25
+  - -0.05
+  - -0.05
+  - -0.05
+  - -0.05
+  - -0.05

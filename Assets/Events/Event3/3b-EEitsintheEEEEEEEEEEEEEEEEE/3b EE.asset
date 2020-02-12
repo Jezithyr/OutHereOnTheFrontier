@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3b EE
   m_EditorClassIdentifier: 
   EventInternalName: 6bEE_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: dc6c75f94c9b1524f85c2970d53277ea, type: 2}

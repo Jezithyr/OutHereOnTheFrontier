@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3c BSP
   m_EditorClassIdentifier: 
   EventInternalName: 3cBSP_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: fb107228e5fe0894babf6c3f26337722, type: 2}

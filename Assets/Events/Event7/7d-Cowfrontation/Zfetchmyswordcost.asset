@@ -15,4 +15,4 @@ MonoBehaviour:
   resourceList:
   - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
   resourceCosts: 9cffffff
-  moduleManager: {fileID: 0}
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}

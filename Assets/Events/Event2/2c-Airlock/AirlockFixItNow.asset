@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4118678e1c2570142a6aecc3aea9ac5c, type: 2}
   optionTitle: (Pay 60 Metal)
   flavorText: (60 Metal) Immediately send the station repair tech to fix the airlock.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 14748eead5694c84abbb2a3d375face6, type: 2}

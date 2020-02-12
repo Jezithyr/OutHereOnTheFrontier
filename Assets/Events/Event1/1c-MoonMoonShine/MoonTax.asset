@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f30bb772db55cbe4fb2488aad5739a84, type: 2}
   optionTitle: (+50 Food, +50 Metal)
   flavorText: 'TAX IT! '
-  owner: {fileID: 0}
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: c2c951429914f5c46a00501a6b2a2626, type: 2}

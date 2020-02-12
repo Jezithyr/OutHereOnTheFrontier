@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 994ab95f5975ef74bba6a5363e3fcfec, type: 2}
   optionTitle: (-2 population, -100 metal)
   flavorText: Terminate them with extreme prejudice.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e9e1ef81b6656e84eaf973d3c192c6c6, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3a MovieNight
   m_EditorClassIdentifier: 
   EventInternalName: 3aMovieNight_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
   choices:
   - {fileID: 11400000, guid: a19446ead28ec7a4884d21e922f80929, type: 2}

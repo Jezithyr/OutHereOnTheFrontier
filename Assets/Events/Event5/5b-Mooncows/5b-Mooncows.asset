@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 5b-Mooncows
   m_EditorClassIdentifier: 
   EventInternalName: MoonCows
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: c1e9ca56ba0115842a1de8e7c1e01049, type: 2}

@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 36493e50e0eb86c4a97b90171be758bd, type: 2}
   optionTitle: (+100 food)
   flavorText: Fool me once, shame on you. Fool me twice, we shoot on sight.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e8c71ed10791bd4438566d874955c4d2, type: 2}

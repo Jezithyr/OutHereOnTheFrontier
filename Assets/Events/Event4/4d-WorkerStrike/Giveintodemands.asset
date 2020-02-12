@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: abe3fab2d9558044499fe67c587403b3, type: 2}
   optionTitle: (-250 food, -250 metal, +10% resource production)
   flavorText: (250 food, 250 metal) Give into their demands.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: d16cafa3c2475264e83de3fa2c5b9316, type: 2}

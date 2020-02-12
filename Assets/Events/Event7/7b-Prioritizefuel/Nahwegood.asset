@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
   optionTitle: (nothing happens)
   flavorText: No, leave things as they are.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: f46e710b6c061074882c094aa104d964, type: 2}

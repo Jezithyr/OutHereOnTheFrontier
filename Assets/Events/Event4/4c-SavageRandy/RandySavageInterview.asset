@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: RandySavageInterview
   m_EditorClassIdentifier: 
   DecisionInternalName: RandySavage_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 416531c68cd0cb04f9ec5f8b70e0d566, type: 2}
   optionTitle: (Lose 1 Population)
   flavorText: Bring him in for an "interview".
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 25521006084419847a1d9c8b6c9c1428, type: 2}

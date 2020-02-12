@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d05d94ae045eac2419926651d388455e, type: 2}
   optionTitle: (-1 population, +1 notch)
   flavorText: '(+1 Notch) Send a technician to examine the notches on his pistol '
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 60789308fd7369a47b079deec176df5a, type: 2}

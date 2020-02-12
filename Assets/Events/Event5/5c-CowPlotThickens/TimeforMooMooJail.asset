@@ -17,4 +17,5 @@ MonoBehaviour:
   effects: []
   optionTitle: (Unlocks event 6d)
   flavorText: How could we have been so blind? Arrest it immediately!
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e8c71ed10791bd4438566d874955c4d2, type: 2}

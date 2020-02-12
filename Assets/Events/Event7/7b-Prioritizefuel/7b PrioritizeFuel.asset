@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 7b PrioritizeFuel
   m_EditorClassIdentifier: 
   EventInternalName: 7bPrioritizeFuel_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
   choices:
   - {fileID: 11400000, guid: 15eea0d3dc063f340a97f095af7f9246, type: 2}

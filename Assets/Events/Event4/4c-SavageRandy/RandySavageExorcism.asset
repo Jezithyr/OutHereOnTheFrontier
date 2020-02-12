@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9059d35df1f7e814d9b2ef9b7452d797, type: 2}
   optionTitle: (Lose 150 Metal)
   flavorText: (150 Metal) Perform an exorcism.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 25521006084419847a1d9c8b6c9c1428, type: 2}

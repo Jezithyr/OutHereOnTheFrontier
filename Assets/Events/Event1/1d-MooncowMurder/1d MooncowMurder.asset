@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1d MooncowMurder
   m_EditorClassIdentifier: 
   EventInternalName: 1dMoorderCow_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: b5924f0d83aef0d4b95d22b7d09e3f3a, type: 2}

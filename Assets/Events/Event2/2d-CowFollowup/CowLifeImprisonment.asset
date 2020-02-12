@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 51536f27cdd835945acc63148908200c, type: 2}
   optionTitle: (-5% food production)
   flavorText: 'Life imprisonment with no parole. '
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 928f0d249e62f7244a633226361ac427, type: 2}

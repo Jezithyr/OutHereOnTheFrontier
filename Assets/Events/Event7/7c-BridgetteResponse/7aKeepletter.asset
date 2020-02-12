@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
   optionTitle: (Nothing happens)
   flavorText: Keep the letter -- it might be valuable once we're out of here.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e7dc7d82f01f8f941bd39a7d373fee61, type: 2}

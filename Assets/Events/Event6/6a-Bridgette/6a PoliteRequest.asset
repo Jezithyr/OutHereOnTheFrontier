@@ -15,7 +15,8 @@ MonoBehaviour:
   DecisionInternalName: 
   condition: {fileID: 0}
   effects:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
   optionTitle: (Nothing Happens)
   flavorText: We should politely query the status of our predicament.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 551bb85dcfb32fe4885b65692d9eb270, type: 2}

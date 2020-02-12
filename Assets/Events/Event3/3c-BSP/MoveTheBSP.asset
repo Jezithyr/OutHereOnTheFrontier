@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dcb4f901051d69343a324c91588f2bc8, type: 2}
   optionTitle: (-200 metal)
   flavorText: (200 Metal) Move the BSPs to separate sublevels of the plant.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: ca24712fa2e80a049afe10e9035660ad, type: 2}

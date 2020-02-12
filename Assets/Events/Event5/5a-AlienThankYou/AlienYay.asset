@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: de17e2df96a962f47b30f305afa52018, type: 2}
   optionTitle: (+200 Alloy, +200 Fuel, +200 Metal, +200 Wood)
   flavorText: Let's see what's inside!
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: b0c83db27acf1f542baea1ea662d0724, type: 2}

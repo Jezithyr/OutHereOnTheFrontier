@@ -17,4 +17,5 @@ MonoBehaviour:
   effects: []
   optionTitle: 
   flavorText: Muster our forces. We stand against the darkness!
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 66e17960d274eaa44857af0d1b9d7548, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 6c GOODBOI
   m_EditorClassIdentifier: 
   EventInternalName: 6cGoodboi_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
   choices:
   - {fileID: 11400000, guid: 25a28e24d01a4e74087259cdd9d62e7f, type: 2}

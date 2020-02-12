@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c49dc9cf0fe91ea4e8d8982398664a1f, type: 2}
   optionTitle: (-5% resource production)
   flavorText: Denounce the rumors as false.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: bacbfb509eda05d4195de7758a07a80f, type: 2}

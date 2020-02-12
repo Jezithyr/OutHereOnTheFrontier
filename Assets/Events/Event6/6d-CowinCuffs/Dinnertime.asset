@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8271dd8827b25d9449b3c268fb659829, type: 2}
   optionTitle: (+100 food)
   flavorText: I want it on my dinner plate tonight.
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 0cc81bf4e893a324b98159c3018ec575, type: 2}

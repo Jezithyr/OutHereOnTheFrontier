@@ -19,4 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c2eecbc5f3e07894b96039e411403262, type: 2}
   optionTitle: (+100 food. +10% resource production)
   flavorText: "We duel as warriors \u2013 fetch my sword! "
-  owner: {fileID: 0}
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: f767e5e0880486a41bb3921deaa33136, type: 2}

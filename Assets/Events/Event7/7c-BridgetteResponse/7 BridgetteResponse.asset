@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 7 BridgetteResponse
   m_EditorClassIdentifier: 
   EventInternalName: 
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: d69a09b5c38025a41acf576c694a2926, type: 2}
