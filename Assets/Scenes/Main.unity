@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: oil (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4168607928127943556, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -216,6 +221,7 @@ GameObject:
   - component: {fileID: 86490749}
   - component: {fileID: 86490748}
   - component: {fileID: 86490747}
+  - component: {fileID: 86490750}
   m_Layer: 10
   m_Name: cactus (13)
   m_TagString: Untagged
@@ -286,6 +292,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 92.757, z: 0}
+--- !u!136 &86490750
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86490746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530266
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713262, y: 0.004341073, z: 0.0028805847}
 --- !u!1001 &122006030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,6 +317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: food (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 668887975771178970, guid: 245f6d3dbf5209248a7b9c365e86d60f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4544985008846796233, guid: 245f6d3dbf5209248a7b9c365e86d60f,
         type: 3}
@@ -365,6 +390,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 245f6d3dbf5209248a7b9c365e86d60f, type: 3}
+--- !u!1 &159559797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 468041024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &159559798
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159559797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: 81ec7f1414f42d144b8aff472739945f, type: 3}
 --- !u!1001 &191861647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -376,6 +421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: metal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2757254832486796997, guid: 27a621cb581676a4499d2aca497eb88c,
         type: 3}
@@ -469,6 +519,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a621cb581676a4499d2aca497eb88c, type: 3}
+--- !u!1 &199712701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 668887975771178970, guid: 245f6d3dbf5209248a7b9c365e86d60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 311262826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &199712702
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199712701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: b0bc51ef4517cb04cbacf00fc7f95f43, type: 3}
 --- !u!1001 &274306146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,6 +628,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 099a89dce3a7e254cbb27cf1bfa5d7b1, type: 3}
+--- !u!1 &290765201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3677971638223677269}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &290765202
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290765201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: 81ec7f1414f42d144b8aff472739945f, type: 3}
 --- !u!1001 &311262826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -569,6 +659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: food (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 668887975771178970, guid: 245f6d3dbf5209248a7b9c365e86d60f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4544985008846796233, guid: 245f6d3dbf5209248a7b9c365e86d60f,
         type: 3}
@@ -733,6 +828,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: oil (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4168607928127943556, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -882,6 +982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: oil (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4168607928127943556, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -955,6 +1060,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: oil (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4168607928127943556, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
         type: 3}
@@ -1119,6 +1229,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: metal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2757254832486796997, guid: 27a621cb581676a4499d2aca497eb88c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1206,6 +1321,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a621cb581676a4499d2aca497eb88c, type: 3}
+--- !u!1 &614593827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+    type: 3}
+  m_PrefabInstance: {fileID: 191861647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &614593828
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614593827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: bb4d933e131d70c47b063042bfb97f10, type: 3}
 --- !u!1001 &634934369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1217,6 +1352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: oil (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4168607928127943556, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
         type: 3}
@@ -1280,6 +1420,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2dc4fca3a9f2854ca646dd4c14555fc, type: 3}
+--- !u!1 &639313447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 500821371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &639313448
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639313447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: 81ec7f1414f42d144b8aff472739945f, type: 3}
 --- !u!1 &654492713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1452,7 @@ GameObject:
   - component: {fileID: 654492716}
   - component: {fileID: 654492715}
   - component: {fileID: 654492714}
+  - component: {fileID: 654492717}
   m_Layer: 10
   m_Name: cactus (6)
   m_TagString: Untagged
@@ -1362,6 +1523,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 74.092, z: 0}
+--- !u!136 &654492717
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654492713}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713256, y: 0.004341073, z: 0.0028805844}
 --- !u!1 &835125595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1549,7 @@ GameObject:
   - component: {fileID: 835125598}
   - component: {fileID: 835125597}
   - component: {fileID: 835125596}
+  - component: {fileID: 835125599}
   m_Layer: 10
   m_Name: cactus (5)
   m_TagString: Untagged
@@ -1444,6 +1620,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 38.655003, z: 0}
+--- !u!136 &835125599
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835125595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713238, y: 0.004341073, z: 0.0028805844}
 --- !u!1 &845095868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1646,7 @@ GameObject:
   - component: {fileID: 845095871}
   - component: {fileID: 845095870}
   - component: {fileID: 845095869}
+  - component: {fileID: 845095872}
   m_Layer: 10
   m_Name: cactus (9)
   m_TagString: Untagged
@@ -1526,6 +1717,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 126.059006, z: 0}
+--- !u!136 &845095872
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845095868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713264, y: 0.004341073, z: 0.0028805844}
 --- !u!1 &891893882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,6 +1822,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &901934187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2040848224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &901934188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901934187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: bb4d933e131d70c47b063042bfb97f10, type: 3}
 --- !u!1001 &962126445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1718,6 +1943,7 @@ GameObject:
   - component: {fileID: 1037881824}
   - component: {fileID: 1037881823}
   - component: {fileID: 1037881822}
+  - component: {fileID: 1037881825}
   m_Layer: 10
   m_Name: cactus (8)
   m_TagString: Untagged
@@ -1788,6 +2014,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 126.059006, z: 0}
+--- !u!136 &1037881825
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037881821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713264, y: 0.004341073, z: 0.0028805844}
+--- !u!1 &1098366529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 47557547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1098366530
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098366529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: 81ec7f1414f42d144b8aff472739945f, type: 3}
+--- !u!1 &1114169093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2646166313431655004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1114169094
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114169093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: bb4d933e131d70c47b063042bfb97f10, type: 3}
 --- !u!1001 &1122905079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2160,6 +2440,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 099a89dce3a7e254cbb27cf1bfa5d7b1, type: 3}
+--- !u!1 &1277701156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 668887975771178970, guid: 245f6d3dbf5209248a7b9c365e86d60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 122006030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1277701157
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277701156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: b0bc51ef4517cb04cbacf00fc7f95f43, type: 3}
+--- !u!1 &1278776473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2903265856385418556, guid: 42f62ee2f0101614badc9f1a2751bbb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6971509623626119502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1278776474
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278776473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713264, y: 0.004341073, z: 0.0028805844}
 --- !u!1 &1361978000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,6 +2492,7 @@ GameObject:
   - component: {fileID: 1361978003}
   - component: {fileID: 1361978002}
   - component: {fileID: 1361978001}
+  - component: {fileID: 1361978004}
   m_Layer: 10
   m_Name: cactus (2)
   m_TagString: Untagged
@@ -2242,6 +2563,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -27.279001, z: 0}
+--- !u!136 &1361978004
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361978000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713247, y: 0.004341073, z: 0.0028805844}
 --- !u!1001 &1371769004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2509,6 +2844,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 099a89dce3a7e254cbb27cf1bfa5d7b1, type: 3}
+--- !u!1 &1486156191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 668887975771178970, guid: 245f6d3dbf5209248a7b9c365e86d60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6648610525905206135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1486156192
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486156191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: b0bc51ef4517cb04cbacf00fc7f95f43, type: 3}
 --- !u!1001 &1494925766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2610,6 +2965,7 @@ GameObject:
   - component: {fileID: 1589029628}
   - component: {fileID: 1589029627}
   - component: {fileID: 1589029626}
+  - component: {fileID: 1589029629}
   m_Layer: 10
   m_Name: cactus (4)
   m_TagString: Untagged
@@ -2680,6 +3036,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 83.589005, z: 0}
+--- !u!136 &1589029629
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589029625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530278
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713273, y: 0.004341073, z: 0.0028805854}
+--- !u!1 &1595109083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+    type: 3}
+  m_PrefabInstance: {fileID: 594945183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1595109084
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595109083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: bb4d933e131d70c47b063042bfb97f10, type: 3}
 --- !u!1 &1793424821
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +3082,7 @@ GameObject:
   - component: {fileID: 1793424824}
   - component: {fileID: 1793424823}
   - component: {fileID: 1793424822}
+  - component: {fileID: 1793424825}
   m_Layer: 10
   m_Name: cactus (12)
   m_TagString: Untagged
@@ -2762,6 +3153,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 67.149, z: 0}
+--- !u!136 &1793424825
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793424821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530266
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713253, y: 0.004341073, z: 0.0028805847}
 --- !u!1001 &1800885397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2863,6 +3268,7 @@ GameObject:
   - component: {fileID: 1878697939}
   - component: {fileID: 1878697938}
   - component: {fileID: 1878697937}
+  - component: {fileID: 1878697940}
   m_Layer: 10
   m_Name: cactus (10)
   m_TagString: Untagged
@@ -2933,6 +3339,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 126.059006, z: 0}
+--- !u!136 &1878697940
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878697936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713264, y: 0.004341073, z: 0.0028805844}
 --- !u!1 &1911781706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3116,6 +3536,7 @@ GameObject:
   - component: {fileID: 1942533554}
   - component: {fileID: 1942533553}
   - component: {fileID: 1942533552}
+  - component: {fileID: 1942533555}
   m_Layer: 10
   m_Name: cactus (7)
   m_TagString: Untagged
@@ -3186,6 +3607,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 74.092, z: 0}
+--- !u!136 &1942533555
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942533551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530263
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713256, y: 0.004341073, z: 0.0028805844}
 --- !u!1 &1963622798
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,6 +3633,7 @@ GameObject:
   - component: {fileID: 1963622801}
   - component: {fileID: 1963622800}
   - component: {fileID: 1963622799}
+  - component: {fileID: 1963622802}
   m_Layer: 10
   m_Name: cactus (3)
   m_TagString: Untagged
@@ -3268,6 +3704,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 149.20001, z: 0}
+--- !u!136 &1963622802
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963622798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.04153029
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.0003771328, y: 0.004341073, z: 0.002880586}
+--- !u!1 &1974786830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 634934369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1974786831
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974786830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: 81ec7f1414f42d144b8aff472739945f, type: 3}
+--- !u!1 &2011433317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 530301149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2011433318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011433317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: 81ec7f1414f42d144b8aff472739945f, type: 3}
 --- !u!1 &2023455962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3280,6 +3770,7 @@ GameObject:
   - component: {fileID: 2023455965}
   - component: {fileID: 2023455964}
   - component: {fileID: 2023455963}
+  - component: {fileID: 2023455966}
   m_Layer: 10
   m_Name: cactus (1)
   m_TagString: Untagged
@@ -3350,6 +3841,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 149.20001, z: 0}
+--- !u!136 &2023455966
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023455962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.04153029
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.0003771328, y: 0.004341073, z: 0.002880586}
 --- !u!1001 &2040848224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3357,6 +3862,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2757254832486796997, guid: 27a621cb581676a4499d2aca497eb88c,
         type: 3}
       propertyPath: m_RootOrder
@@ -3446,6 +3956,7 @@ GameObject:
   - component: {fileID: 2088936981}
   - component: {fileID: 2088936980}
   - component: {fileID: 2088936979}
+  - component: {fileID: 2088936982}
   m_Layer: 10
   m_Name: cactus (11)
   m_TagString: Untagged
@@ -3516,6 +4027,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 67.149, z: 0}
+--- !u!136 &2088936982
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088936978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.041530266
+  m_Height: 0.02868215
+  m_Direction: 1
+  m_Center: {x: -0.00037713253, y: 0.004341073, z: 0.0028805847}
 --- !u!1001 &2140322967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3617,6 +4142,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: metal
       objectReference: {fileID: 0}
+    - target: {fileID: 1159929180529114326, guid: 27a621cb581676a4499d2aca497eb88c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2757254832486796997, guid: 27a621cb581676a4499d2aca497eb88c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3685,6 +4215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: oil
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117604142687682967, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4168607928127943556, guid: f2dc4fca3a9f2854ca646dd4c14555fc,
         type: 3}
@@ -3759,6 +4294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: food
+      objectReference: {fileID: 0}
+    - target: {fileID: 668887975771178970, guid: 245f6d3dbf5209248a7b9c365e86d60f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4544985008846796233, guid: 245f6d3dbf5209248a7b9c365e86d60f,
         type: 3}

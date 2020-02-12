@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd901b4f02a743f45a28ea4a56ade514, type: 3}
-  m_Name: PreventStructureOverlap
+  m_Name: MinePreventOverlap
   m_EditorClassIdentifier: 
   Layer:
     serializedVersion: 2
