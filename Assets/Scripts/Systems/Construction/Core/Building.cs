@@ -48,6 +48,11 @@ public class Building : ScriptableObject
         return temp;
     }
 
+    public bool IsPlaced()
+    {
+        return GetInstanceCount() > 0;
+    }
+
     public int GetInstanceCount()
     {
         return instances.Count;
