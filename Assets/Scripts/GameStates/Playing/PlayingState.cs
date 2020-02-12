@@ -123,7 +123,7 @@ public class PlayingState : GameState
         hudMode = playerHUD.Mode;
 
         //timer tick
-        if(Time.timeScale > 0 && Time.time - Mathf.Floor(Time.time) <= 0.02f)//every second
+        if(Time.frameCount%60 <= 0)//every second
         {
             GameTimer = GameTimer-1;
             ElapsedTime += 1;

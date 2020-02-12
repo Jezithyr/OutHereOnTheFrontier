@@ -36,7 +36,7 @@ public class ResourceModule : Module
 
     public override void Update()
     {
-        if(Time.timeScale > 0 && Time.time - Mathf.Floor(Time.time) <= 0.02f)//every second
+        if(Time.frameCount%60 <= 0)//every second
         {
             Debug.Log("Resource Network Update");
             // foreach (var item in resourceStorage)
