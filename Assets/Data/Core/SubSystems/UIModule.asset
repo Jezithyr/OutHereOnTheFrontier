@@ -25,3 +25,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e69113e232c31ac4289e5f59089ffbef, type: 2}
   - {fileID: 11400000, guid: d94f98f7f06623b4589daed4dea4e9e0, type: 2}
   - {fileID: 11400000, guid: 4554fb03f2cb3a541a72e611a4d83482, type: 2}
+  clickSound: {fileID: 8300000, guid: 0a6f966651bf1f140a215dced0f7469f, type: 3}
+  failSound: {fileID: 8300000, guid: 1ed7b47ffe0438940815a784599c0d79, type: 3}
+  alertSound: {fileID: 8300000, guid: 373a7aabb2d4a18429c0c8cf4f3dcea4, type: 3}
