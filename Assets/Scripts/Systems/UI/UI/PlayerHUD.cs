@@ -161,6 +161,8 @@ public class PlayerHUD : ScriptedUI
         timerDisplay.SetText(playingState.GameTimer/60 + ":"+ playingState.GameTimer%60);
     }
 
+
+    
     public void ShowDemolishExit()
     {
         DemolishExit.SetActive(true);
@@ -242,8 +244,15 @@ public class PlayerHUD : ScriptedUI
     {
         if (!showingPreview) return;
         if (EventSystem.current.IsPointerOverGameObject()) return;
-
         if (!buildings[previewBuildingIndex].CheckPlacement(previewBuilding)) return;
+
+
+        AudioClip placementClip = buildings[previewBuildingIndex].PlacementSound;
+        if (placementClip)
+        {
+            playingState.AudioSource2D.PlayOneShot(placementClip);
+        }
+        
         buildingSystem.CreateBuildingAtWorldPos(uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask),new Quaternion(),buildings[previewBuildingIndex]);
         DestroyPreview();
     }
