@@ -94,13 +94,13 @@ public class Building : ScriptableObject
 
     public bool CheckPlacement(GameObject preview)
     {
-        bool canPlace = true;
         foreach (var condition in placementConditions)
-        {
-
-            
-            canPlace = canPlace &  condition.ConditionCheck(preview,this);
+        {            
+            if (!condition.ConditionCheck(preview,this))
+            {
+                return false;
+            }
         }
-        return canPlace;
+        return true;
     }
 }

@@ -17,9 +17,9 @@ MonoBehaviour:
     type: 3}
   placementConditions:
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
-  - {fileID: 11400000, guid: 4d5b3de08b93a2a4980855b604fb363e, type: 2}
-  - {fileID: 11400000, guid: e6e7b86a23e662a40afb0965b134d4fd, type: 2}
   - {fileID: 11400000, guid: b718f5fe13e1d6044b2651b7a01f7acf, type: 2}
+  - {fileID: 11400000, guid: e6e7b86a23e662a40afb0965b134d4fd, type: 2}
+  - {fileID: 11400000, guid: 4d5b3de08b93a2a4980855b604fb363e, type: 2}
   destroyEffects: []
   constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
     type: 2}
