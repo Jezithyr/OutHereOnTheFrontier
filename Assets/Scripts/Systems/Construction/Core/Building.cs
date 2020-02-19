@@ -28,6 +28,10 @@ public class Building : ScriptableObject
     [SerializeField] public List<Resource> ResourceForCost;
     [SerializeField] public List<int> AmountForCost;
 
+    [SerializeField] private AudioClip placementSound;
+    public AudioClip PlacementSound{get => placementSound;}
+
+
     [SerializeField] public string description;
 
 
@@ -44,6 +48,8 @@ public class Building : ScriptableObject
     public GameObject CreateInstance()
     {
         GameObject temp = GameObject.Instantiate(prefab);
+
+
         instances.Add(temp);
         return temp;
     }

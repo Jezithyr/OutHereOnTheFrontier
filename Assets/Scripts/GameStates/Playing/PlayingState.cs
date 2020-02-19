@@ -31,8 +31,6 @@ public class PlayingState : GameState
     [SerializeField] private EventModule eventModule ;
     [SerializeField] private ConstructionModule buildingModule;
 
-
-
     [SerializeField] private List<Event> eventList = new List<Event>();//only use 4 or everything breaks
     [SerializeField] private LayerMask buildingLayer;
 
@@ -53,6 +51,8 @@ public class PlayingState : GameState
     private int settingsMenuId;
     private int buildingMenuId;
     private int gameOverMenuid;
+    private AudioSource audioSource2D;
+    public AudioSource AudioSource2D{get => audioSource2D;}
     //private int eventMenuId;
     private int debugMenuid;
 
@@ -74,6 +74,8 @@ public class PlayingState : GameState
         
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
+        audioSource2D = activeCam.CreatedCamera.gameObject.GetComponentInChildren<AudioSource>();
+
 
         playerHudId = uiModule.CreateInstance(playerHUD);
         pauseMenuid = uiModule.CreateInstance(pauseMenu);
