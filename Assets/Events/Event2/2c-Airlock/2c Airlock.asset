@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f25ff6cf63020644874b992663ac84e, type: 2}
   - {fileID: 11400000, guid: c4c7522ff0ac68140a8037f7fda7ac2a, type: 2}
   - {fileID: 11400000, guid: 98380cd8eae970a47a91fec14e566b65, type: 2}
-  eventTitle: Airlock
+  eventTitle: 6:00 left!
   flavorText: "By the lawd almighty one of this establishment\u2019s primary airlocks
     has malfunctioned! Ser I cannot stress the importance of this irregularity being
     mended!"

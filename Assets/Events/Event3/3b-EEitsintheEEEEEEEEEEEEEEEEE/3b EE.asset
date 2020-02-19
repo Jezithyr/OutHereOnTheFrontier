@@ -18,6 +18,6 @@ MonoBehaviour:
   choices:
   - {fileID: 11400000, guid: dc6c75f94c9b1524f85c2970d53277ea, type: 2}
   - {fileID: 11400000, guid: fd1cc90264a5fde41ba44eccd3792462, type: 2}
-  eventTitle: 
+  eventTitle: 5:00 left!
   flavorText: "A company called \u201CEE\u201D is offering to sponsor our colony with
     their \u201Cindustry-leading surprise mechanics\u201D. Should we accept?"
