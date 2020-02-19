@@ -28,5 +28,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
   - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
   AmountForCost: 1900000019000000
+  placementSound: {fileID: 8300000, guid: 229c3eb1e390b3e47b7c5c7cd2964b8f, type: 3}
   description: The Saloon contributes to the positivity of your population's attitude,
     providing a small bonus to overall production of all resources.

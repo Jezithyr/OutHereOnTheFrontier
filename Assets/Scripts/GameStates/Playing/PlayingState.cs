@@ -74,8 +74,8 @@ public class PlayingState : GameState
         
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
-        audioSource2D = activeCam.CreatedCamera.gameObject.GetComponentInChildren<AudioSource>();
-
+        audioSource2D = newCam.CreatedCamera.transform.parent.gameObject.GetComponentInChildren<AudioSource>();
+        Debug.Log(audioSource2D);
 
         playerHudId = uiModule.CreateInstance(playerHUD);
         pauseMenuid = uiModule.CreateInstance(pauseMenu);

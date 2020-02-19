@@ -23,3 +23,7 @@ MonoBehaviour:
     type: 2}
   buildingRadiusMultiplier: 1
   Removable: 1
+  ResourceForCost: []
+  AmountForCost: 
+  placementSound: {fileID: 8300000, guid: ea490def4bf974546beb9f29725de415, type: 3}
+  description: 

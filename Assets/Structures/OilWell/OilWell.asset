@@ -24,4 +24,5 @@ MonoBehaviour:
   Removable: 1
   ResourceForCost: []
   AmountForCost: 
+  placementSound: {fileID: 8300000, guid: 4efa42dd318f5cf48a10531df89d0fc7, type: 3}
   description: Oil well, creates oil
