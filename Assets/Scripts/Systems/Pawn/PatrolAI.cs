@@ -15,6 +15,7 @@ public class PatrolAI : MonoBehaviour
 
     // The probability of the pawn switching it's direction
     [Header("Adjust how random you want the patrol")]
+    [Range(0.0f, 1f)]
     [SerializeField] private float switchChance = 0.2f;
 
     // The list of potential patrolPoints the pawn will cover
