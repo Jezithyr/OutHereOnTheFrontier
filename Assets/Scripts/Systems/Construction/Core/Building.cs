@@ -31,6 +31,8 @@ public class Building : ScriptableObject
     [SerializeField] private AudioClip placementSound;
     public AudioClip PlacementSound{get => placementSound;}
 
+    [SerializeField] public Material canPlaceMaterial;
+    [SerializeField] public Material invalidMaterial;
 
     [SerializeField] public string description;
 
@@ -94,13 +96,13 @@ public class Building : ScriptableObject
 
     public bool CheckPlacement(GameObject preview)
     {
-        bool canPlace = true;
         foreach (var condition in placementConditions)
-        {
-
-            
-            canPlace = canPlace &  condition.ConditionCheck(preview,this);
+        {            
+            if (!condition.ConditionCheck(preview,this))
+            {
+                return false;
+            }
         }
-        return canPlace;
+        return true;
     }
 }

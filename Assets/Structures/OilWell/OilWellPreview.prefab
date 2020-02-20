@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8186482381645638959}
   - component: {fileID: 2368907461146941156}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: OilWellPreview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: -6581041025168474491, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: -4153513614534889813, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
@@ -140,22 +140,22 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3180332076287212682, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3983365062740493634, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6292535884062368016, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8615777685542569206, guid: 873f6ac6d096e9544976682184fad134,
         type: 3}

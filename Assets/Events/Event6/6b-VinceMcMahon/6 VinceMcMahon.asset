@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: asd2
   isActive: 1
-  triggerCondition: {fileID: 0}
+  triggerCondition: {fileID: 11400000, guid: 0071b78b9030ae248b31f01de0f1ea33, type: 2}
   choices:
   - {fileID: 11400000, guid: b1b25636e2238484bb2d7b9923084009, type: 2}
   - {fileID: 11400000, guid: 02f430a29247ba7438bcc08e2437194f, type: 2}
   - {fileID: 11400000, guid: d85216bc6e349494fb2d68fde4105136, type: 2}
-  eventTitle: 
+  eventTitle: 2:00 left!
   flavorText: Oh no! It seems like with Savage Randy left unchecked, word reached
     Earth and the God Emperor of Mankind, Vince McMahon has caught wind of his presence.
     As we speak the WWE are on their way here! What will we do!

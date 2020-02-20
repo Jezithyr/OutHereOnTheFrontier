@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: ba955163f0a1a8045ad37f5075503ad8, type: 2}
+  - {fileID: 11400000, guid: 8dcfe5cde178ea641b7cb95bc26f317f, type: 2}
   optionTitle: 
   flavorText: We'll create our own Wrestling Universe and invade RAW!
   wasChosen: 0
