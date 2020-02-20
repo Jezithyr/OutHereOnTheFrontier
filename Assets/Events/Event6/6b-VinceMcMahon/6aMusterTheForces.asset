@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 2d5a424bb567adf4e91c9f8d580756ee, type: 2}
+  - {fileID: 11400000, guid: 3339e7cac6b0f1c48b16277f62e68c97, type: 2}
   optionTitle: 
   flavorText: Muster our forces. We stand against the darkness!
   wasChosen: 0

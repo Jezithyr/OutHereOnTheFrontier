@@ -19,6 +19,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e61d3d4cff95d894a9e30cfb36f7f719, type: 2}
   - {fileID: 11400000, guid: 1c5332618431ff544a2818f8e0289f7a, type: 2}
   - {fileID: 11400000, guid: 98d55c4f6d8229542b51c965d225e188, type: 2}
-  eventTitle: 
+  eventTitle: 7:00 left!
   flavorText: "A tumbleweed is requesting entry to our station. It doesn\u2019t have
     any kind of government-issued identification. What should we do?"

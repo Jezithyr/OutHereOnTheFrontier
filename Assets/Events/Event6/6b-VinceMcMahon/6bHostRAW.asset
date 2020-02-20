@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 00719d50961587a4cadfee60cc3a9aeb, type: 2}
   optionTitle: 
   flavorText: We have no choice but to submit -- tell the emperor we'll host RAW.
   wasChosen: 0

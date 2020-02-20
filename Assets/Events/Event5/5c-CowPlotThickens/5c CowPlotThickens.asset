@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 5cCowPlotThickens_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  triggerCondition: {fileID: 11400000, guid: 74c76d441a727b7449bf446a4233b87f, type: 2}
   choices:
   - {fileID: 11400000, guid: d9087b37ba916624e8b2033ad09c939f, type: 2}
   - {fileID: 11400000, guid: a330f41f75999b14d99cfe1eaa791924, type: 2}
   - {fileID: 11400000, guid: 9e0e4263824ce604898cf8c5d0a8dc16, type: 2}
-  eventTitle: test
+  eventTitle: 3:00 left!
   flavorText: "Another murder! The only suspect we never questioned the first time
     was the cow! You don\u2019t think. . "

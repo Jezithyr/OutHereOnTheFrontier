@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: asd1
   isActive: 1
-  triggerCondition: {fileID: 0}
+  triggerCondition: {fileID: 11400000, guid: 4bba3ae99fa000544bdd8f91da02f042, type: 2}
   choices:
   - {fileID: 11400000, guid: d69a09b5c38025a41acf576c694a2926, type: 2}
   - {fileID: 11400000, guid: 9a39433f22fbcd2499d673e110a6257f, type: 2}
-  eventTitle: 
+  eventTitle: 1:00 left!
   flavorText: "It looks like our angry letter provoked a response. . .in name alone.
     Here's what we got:\n\"Dearest Rock Administrator,\n\tDespite it being the year
     2257 government facilities such as ours still use fax machines, surprising though
