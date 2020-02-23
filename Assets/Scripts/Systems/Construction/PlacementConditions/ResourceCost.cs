@@ -21,11 +21,6 @@ public class ResourceCost : PlacementCondition
             enoughResources = enoughResources & resourceController.GetResourceStorage(buildingData.ResourceForCost[i]) >= buildingData.AmountForCost[i];
         }
         if (!enoughResources) return false;
-
-        for (int i = 0; i < buildingData.ResourceForCost.Count; i++)
-        {
-            resourceController.RemoveResource(buildingData.ResourceForCost[i],buildingData.AmountForCost[i]);
-        }
         return true;
     }
 }

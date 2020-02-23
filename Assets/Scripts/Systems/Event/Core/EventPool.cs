@@ -21,7 +21,7 @@ public class EventPool : ScriptableObject
     {
         foreach (Event chkEvent in EventList)
         {
-            if (chkEvent.triggerCondition != null && chkEvent.triggerCondition.ConditionCheck(chkEvent))
+            if (chkEvent.triggerCondition.Count <= 0 && chkEvent.CheckConditions(chkEvent))
             {
                 return chkEvent;
             }

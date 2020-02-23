@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 5aAlienThankYou_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  triggerCondition: {fileID: 11400000, guid: 237e0ece87c158245ac64afad63c3e84, type: 2}
   choices:
   - {fileID: 11400000, guid: 6e6cb26732e2ae840a4ef8f48a9af7d6, type: 2}
-  eventTitle: 
+  eventTitle: 3:00 left!
   flavorText: It seems the Alien we lent our WiFi password to earlier has reached
     his civilization, and sent us a goodie bag for our help!

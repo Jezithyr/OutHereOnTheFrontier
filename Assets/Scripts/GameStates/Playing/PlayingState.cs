@@ -36,6 +36,9 @@ public class PlayingState : GameState
 
     [SerializeField] private int gameTimer =  8*60;
 
+    [SerializeField] private AudioClip ambience;
+    public AudioClip Ambiance{get => ambience;}
+
 
     private Vector3 targetTranslation;
     
@@ -53,6 +56,7 @@ public class PlayingState : GameState
     private int gameOverMenuid;
     private AudioSource audioSource2D;
     public AudioSource AudioSource2D{get => audioSource2D;}
+
     //private int eventMenuId;
     private int debugMenuid;
 
@@ -104,6 +108,9 @@ public class PlayingState : GameState
         ElapsedTime = 0;
         GameTimer = gameTimer;
         Game.UnPause();
+        audioSource2D.clip = ambience;
+        audioSource2D.loop = true;
+        audioSource2D.Play();
     }
     public override void OnDeactivate(GameState newState)
     {

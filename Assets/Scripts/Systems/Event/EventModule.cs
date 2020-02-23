@@ -12,6 +12,8 @@ public class EventModule : Module
 
     [SerializeField] private GameObject linkedEventPrefab;
 
+    [SerializeField] private ScriptedUI eventUI;
+
     [SerializeField] private PlayingState playState;
 
     [SerializeField] private Scene gameplayScene;
@@ -25,9 +27,9 @@ public class EventModule : Module
 
 
     Event activeEvent;
-
-    ScriptedUIBehavior EventUI;
-    GameObject EventUIObject;
+    private int eventUIID;
+    //ScriptedUIBehavior EventUI;
+    //GameObject EventUIObject;
 
 
     public void ButtonClick(int choiceIndex)
@@ -35,84 +37,92 @@ public class EventModule : Module
 
         if (activeEvent.choices.Count > choiceIndex)
         {
+            ((EventPopup)eventUI).PressChoice(choiceIndex);
             activeEvent.choices[choiceIndex].TriggerDecision();
-            HideUI();
-            playState.UnPauseGame();
-            playState.ElapsedTime += 1;
-            playState.GameTimer -= 1;
         }
-        
     }
+
+    public void ClosePopUp()
+    {
+        ((EventPopup)eventUI).Reset();
+        HideUI();
+        playState.UnPauseGame();
+        playState.ElapsedTime += 1;
+        playState.GameTimer -= 1;
+    }
+
 
     public void InitializePrefab()
     {
-        EventUIObject = GameObject.Instantiate(linkedEventPrefab);
-        EventUI = EventUIObject.GetComponent<ScriptedUIBehavior>();
-        HideUI();
+       eventUIID = eventUI.CreateUIInstance();
+       eventUI.ToggleUI(eventUIID, false);
     }
 
     public void ShowUI()
     {
-        EventUIObject.SetActive(true);
+        eventUI.ToggleUI(eventUIID, true);
+        // EventUIObject.SetActive(true);
     }
 
     public void HideUI()
     {
-        EventUIObject.SetActive(false);
+        eventUI.ToggleUI(eventUIID, false);
+        // EventUIObject.SetActive(false);
     }
 
 
     //todo change this
     public void UpdateUI()
     {
-        if (activeEvent == null) return;
-        EventUI.GetElementByName("EventTitle").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.eventTitle);
-        EventUI.GetElementByName("FlavorText").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.flavorText);
-        if (activeEvent.choices.Count > 0) 
-        {
-            EventUI.GetElementByName("Choice1").gameObject.SetActive(true);
-            EventUI.GetElementByName("Choice1").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[0].flavorText);
-        }
-        else 
-        {
-            EventUI.GetElementByName("Choice1").gameObject.SetActive(false);
-        }
 
-        if (activeEvent.choices.Count > 1) 
-        {
-            EventUI.GetElementByName("Choice2").gameObject.SetActive(true);
-            EventUI.GetElementByName("Choice2").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[1].flavorText);
-        }
-        else 
-        {
-            EventUI.GetElementByName("Choice2").gameObject.SetActive(false);
-        }
+        // if (activeEvent == null) return;
+        // EventUI.GetElementByName("EventTitle").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.eventTitle);
+        // EventUI.GetElementByName("FlavorText").GetComponentInChildren<TextMeshProUGUI>().SetText(activeEvent.flavorText);
+        // if (activeEvent.choices.Count > 0) 
+        // {
+        //     EventUI.GetElementByName("Choice1").gameObject.SetActive(true);
+        //     EventUI.GetElementByName("Choice1").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[0].flavorText);
+        // }
+        // else 
+        // {
+        //     EventUI.GetElementByName("Choice1").gameObject.SetActive(false);
+        // }
 
-        if (activeEvent.choices.Count > 2) 
-        {
-            EventUI.GetElementByName("Choice3").gameObject.SetActive(true);
-            EventUI.GetElementByName("Choice3").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[2].flavorText);
-        }
-        else 
-        {
-            EventUI.GetElementByName("Choice3").gameObject.SetActive(false);
-        }
+        // if (activeEvent.choices.Count > 1) 
+        // {
+        //     EventUI.GetElementByName("Choice2").gameObject.SetActive(true);
+        //     EventUI.GetElementByName("Choice2").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[1].flavorText);
+        // }
+        // else 
+        // {
+        //     EventUI.GetElementByName("Choice2").gameObject.SetActive(false);
+        // }
+
+        // if (activeEvent.choices.Count > 2) 
+        // {
+        //     EventUI.GetElementByName("Choice3").gameObject.SetActive(true);
+        //     EventUI.GetElementByName("Choice3").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[2].flavorText);
+        // }
+        // else 
+        // {
+        //     EventUI.GetElementByName("Choice3").gameObject.SetActive(false);
+        // }
         
-        if (activeEvent.choices.Count > 3) 
-        {
-            EventUI.GetElementByName("Choice4").gameObject.SetActive(true);
-            EventUI.GetElementByName("Choice4").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[3].flavorText);
-        }
-        else 
-        {
-            EventUI.GetElementByName("Choice4").gameObject.SetActive(false);
-        }
+        // if (activeEvent.choices.Count > 3) 
+        // {
+        //     EventUI.GetElementByName("Choice4").gameObject.SetActive(true);
+        //     EventUI.GetElementByName("Choice4").GetComponentInChildren<TextMeshProUGUI>().SetText("  "+ activeEvent.choices[3].flavorText);
+        // }
+        // else 
+        // {
+        //     EventUI.GetElementByName("Choice4").gameObject.SetActive(false);
+        // }
     }
 
 
     public void showEvent(int eventIndex)
     {
-        setActiveEvent(eventIndex);
+        setActiveEventFromIndex(eventIndex);
         UpdateUI();
         ShowUI();
     }
@@ -120,15 +130,17 @@ public class EventModule : Module
     private void showEvent(Event eventToShow)
     {
         activeEvent = eventToShow;
+        ((EventPopup)eventUI).LoadEventData(activeEvent);
         playState.PauseGame();
         UpdateUI();
         ShowUI();
     }
 
 
-    public void setActiveEvent(int eventIndex)
+    public void setActiveEventFromIndex(int eventIndex)
     {
         activeEvent = activeEvents[eventIndex]; 
+        ((EventPopup)eventUI).LoadEventData(activeEvent);
     }
 
     public override void Start()

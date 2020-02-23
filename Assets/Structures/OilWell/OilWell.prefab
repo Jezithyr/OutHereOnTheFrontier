@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4240739919505891482}
   - component: {fileID: 7756910428216843089}
+  - component: {fileID: 6940047860750768519}
   m_Layer: 16
   m_Name: OilWell
   m_TagString: Untagged
@@ -45,6 +46,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6940047860750768519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125414847967738082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fb16d546780ba4cb824dc1c286d83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceComponent: {fileID: 11400000, guid: c0e593f2951849546b1cd015d1c8c7f4, type: 2}
+  isActive: 1
 --- !u!1001 &5766175167754589224
 PrefabInstance:
   m_ObjectHideFlags: 0

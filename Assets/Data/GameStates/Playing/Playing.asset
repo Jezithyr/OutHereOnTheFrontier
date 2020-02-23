@@ -32,5 +32,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 67584
   gameTimer: 480
-  GameTimer: 372
-  ElapsedTime: 108
+  ambience: {fileID: 8300000, guid: 4ac38e5d40a779748b50445088de1707, type: 3}
+  GameTimer: 330
+  ElapsedTime: 150

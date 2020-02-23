@@ -51,6 +51,7 @@ public class ScriptedUI : ScriptableObject
         linkedBehaviorScripts.Clear();
     }
 
+
     public virtual int CreateUIInstance()
     {
         if (UiPrefab == null) return -1;

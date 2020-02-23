@@ -16,8 +16,8 @@ MonoBehaviour:
   previewprefab: {fileID: 5187964276349947028, guid: 76ca0f1bdc5a23a4399c1321cc48f972,
     type: 3}
   placementConditions:
-  - {fileID: 11400000, guid: 5ac45f6c8edaa254fb39372ea335411e, type: 2}
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: 5ac45f6c8edaa254fb39372ea335411e, type: 2}
   destroyEffects: []
   constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
     type: 2}
@@ -25,5 +25,7 @@ MonoBehaviour:
   Removable: 1
   ResourceForCost: []
   AmountForCost: 
-  placementSound: {fileID: 8300000, guid: ea490def4bf974546beb9f29725de415, type: 3}
+  placementSound: {fileID: 8300000, guid: b71badcc02abbf94f8ca3d0a107f06f9, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: 02a2b498eece3c946ae29350618c9bf5, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: e237748a99715f64da9c227b31f20dcf, type: 2}
   description: 
