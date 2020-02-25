@@ -16,7 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: To the farm with thee.
+  effectText: 'The Chicken has been released from the mortal coil.
+
+    (No effect on resources.)'
+  effectButtonText: Okay!
   optionTitle: (Nothing Happens)
   flavorText: Let nature take its course.
-  wasChosen: 1
+  wasChosen: 0
   owner: {fileID: 11400000, guid: dea8f76b452c0674dae9a18130d01943, type: 2}

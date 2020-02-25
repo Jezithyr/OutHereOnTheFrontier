@@ -16,6 +16,9 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 416531c68cd0cb04f9ec5f8b70e0d566, type: 2}
+  effectTitle: '"Macho Man" mysteriously disappears! '
+  effectText: "Okay boss he's been uhh. . .\"dealt\" with.\t"
+  effectButtonText: Mind the smell. Onwards and forwards!
   optionTitle: (Lose 1 Population)
   flavorText: Bring him in for an "interview".
   wasChosen: 0

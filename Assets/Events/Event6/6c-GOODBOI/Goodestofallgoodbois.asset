@@ -17,6 +17,12 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: 377f3c5b05c2bfd4491a2d3eb9d2b012, type: 2}
   - {fileID: 11400000, guid: f40ff585b3584b94099eec1f90388947, type: 2}
+  effectTitle: Station adopts THE GOODEST OF ALL GOOD BOIS!
+  effectText: 'We''ve adopted the dog and he is the GOODEST OF ALL GOOD BOIS! His
+    presence will surely improve morale!
+
+    (-1000 food, +25% resource production)'
+  effectButtonText: THE GOODEST OF ALL GOOD BOIS!
   optionTitle: (-1,000 food, +25% resource production)
   flavorText: "(1,000 food)He\u2019s obviously the goodest of all good boys \u2013
     let\u2019s make him the station mascot."

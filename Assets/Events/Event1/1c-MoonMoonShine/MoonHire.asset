@@ -17,7 +17,13 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: f6e6001ffade8a4458ca23cb1c8adcdb, type: 2}
   - {fileID: 11400000, guid: bb94950b66c7cb4498f49253fc44124d, type: 2}
+  effectTitle: 
+  effectText: 'With a bit of coercing we''ve now got those moonshiners working for
+    us!
+
+    (-100 Food, +10% food production)'
+  effectButtonText: Woohoo!
   optionTitle: ' (-100 food, +10% food production)'
   flavorText: (100 food) Hire them to produce Station-Branded Moonmoonshine
-  wasChosen: 0
+  wasChosen: 1
   owner: {fileID: 11400000, guid: c2c951429914f5c46a00501a6b2a2626, type: 2}

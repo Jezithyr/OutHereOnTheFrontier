@@ -16,6 +16,11 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Station chooses humanity over production!
+  effectText: "Despite the grim future that inadequate fuel supply represents, the
+    people are nevertheless heartened to continue working on thier usual fancies.\n(+5%
+    resource production)\t"
+  effectButtonText: We all need to be in top shape to get through this.
   optionTitle: (nothing happens)
   flavorText: No, leave things as they are.
   wasChosen: 0

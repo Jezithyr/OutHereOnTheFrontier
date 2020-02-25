@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 2bHalflife3_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: 9199db732634bff47b9fd4dd126a6fc8, type: 2}
   - {fileID: 11400000, guid: 8eddb5456fda12245b0bebfcf09ac371, type: 2}

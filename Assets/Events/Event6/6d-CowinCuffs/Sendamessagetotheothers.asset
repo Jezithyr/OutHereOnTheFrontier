@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 514502d0bfc4aa64984d31b8e3d25b4b, type: 2}
+  effectTitle: Cow convicted of double homicide publicly executed!
+  effectText: 'It was a little macabre but we publicly executed a cow. . .for double
+    homicide. Where do they come up with this stuff?
+
+    (-5% food production)'
+  effectButtonText: It's better to be feared than loved. By cows.
   optionTitle: ' (-5% food production).'
   flavorText: I want it behind bars for life. Let it serve as an example to other
     bovines learned in the arts of war.

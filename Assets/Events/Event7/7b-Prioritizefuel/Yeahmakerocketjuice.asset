@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: a31beb4dcabb74045a00844f25756961, type: 2}
+  effectTitle: Station commits main workforce to fuel production! Other sectors suffer!
+  effectText: 'Fuel production is skyrocketing, if at the expense of everything else.
+    Let''s hope it was worth it!
+
+    (+100% fuel production, -50% other resource production)'
+  effectButtonText: Yeah. Let's.
   optionTitle: (-50% resource production, +100% fuel production)
   flavorText: "Yes, we\u2019ll have to if we\u2019re going to get off of this rock."
   wasChosen: 0

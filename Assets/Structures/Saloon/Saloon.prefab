@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8014207249590407432}
   - component: {fileID: 4339320144632539776}
+  - component: {fileID: 3212576560186576124}
   m_Layer: 11
   m_Name: Saloon
   m_TagString: Untagged
@@ -45,6 +46,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 4
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3212576560186576124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192344348945674819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fb16d546780ba4cb824dc1c286d83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceComponent: {fileID: 11400000, guid: a9660153cf89aad48998c332374c103c, type: 2}
+  isActive: 0
 --- !u!1001 &2067066548567017490
 PrefabInstance:
   m_ObjectHideFlags: 0

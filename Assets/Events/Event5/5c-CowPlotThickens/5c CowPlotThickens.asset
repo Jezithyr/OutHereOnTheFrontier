@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 5cCowPlotThickens_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: 74c76d441a727b7449bf446a4233b87f, type: 2}
+  triggerCondition:
+  - {fileID: 11400000, guid: 74c76d441a727b7449bf446a4233b87f, type: 2}
   choices:
   - {fileID: 11400000, guid: d9087b37ba916624e8b2033ad09c939f, type: 2}
   - {fileID: 11400000, guid: a330f41f75999b14d99cfe1eaa791924, type: 2}

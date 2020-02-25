@@ -16,6 +16,10 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: '"Macho Man" still at large!'
+  effectText: Well I guess he's not really hurting anybody. . surely leaving him unchecked
+    won't summon the dark eldritch forces of the cosmos?
+  effectButtonText: YEAH!
   optionTitle: (Unlock Vince McMahon Event)
   flavorText: Do nothing.
   wasChosen: 0

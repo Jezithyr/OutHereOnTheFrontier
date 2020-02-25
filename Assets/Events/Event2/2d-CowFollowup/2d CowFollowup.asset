@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 2DCowFollowup_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: 54dde7e9245966144ad886b5a8a9583a, type: 2}
+  triggerCondition:
+  - {fileID: 11400000, guid: 54dde7e9245966144ad886b5a8a9583a, type: 2}
   choices:
   - {fileID: 11400000, guid: ad4fb495ddf6f854bbe345fbe815bd04, type: 2}
   - {fileID: 11400000, guid: f06a7f07a5a19fd4aaed2f9641f9ce1d, type: 2}

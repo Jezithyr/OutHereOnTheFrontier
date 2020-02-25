@@ -17,6 +17,10 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: 0be2f84861fd4e24e9fc3286f3e5ad1e, type: 2}
   - {fileID: 11400000, guid: c2eecbc5f3e07894b96039e411403262, type: 2}
+  effectTitle: Station administrator has really cool sword fight with cow!
+  effectText: "*CLANG* \"MOOO!\" *CLANG* *CLANG*\n*THUD* \"Moooooooo\"\n(+100 food,
+    +10% resource production)\t"
+  effectButtonText: HOW MY BLOOD BOILS!
   optionTitle: (+100 food. +10% resource production)
   flavorText: "We duel as warriors \u2013 fetch my sword! "
   wasChosen: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 3cBSP_Event
   isActive: 1
-  triggerCondition: {fileID: 0}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: fb107228e5fe0894babf6c3f26337722, type: 2}
   - {fileID: 11400000, guid: 9839db049d0e7fb4291c6bab7dc92a59, type: 2}

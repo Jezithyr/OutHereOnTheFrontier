@@ -16,6 +16,10 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 9059d35df1f7e814d9b2ef9b7452d797, type: 2}
+  effectTitle: Local man no longer screaming "YEAH!"
+  effectText: It was an exhausting effort, but we believe the Macho Messenger has
+    been fully banished from this realm.
+  effectButtonText: We protect our people from WWF.
   optionTitle: (Lose 150 Metal)
   flavorText: (150 Metal) Perform an exorcism.
   wasChosen: 0

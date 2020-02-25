@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 5dBigTumbleInLittleChina_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: a91fe9094bbe6b44eac5681f5b1ce4a3, type: 2}
+  triggerCondition:
+  - {fileID: 11400000, guid: a91fe9094bbe6b44eac5681f5b1ce4a3, type: 2}
   choices:
   - {fileID: 11400000, guid: 1dbffa6c530871046871f7835ce4e398, type: 2}
   - {fileID: 11400000, guid: 7d42359d72293a243bc5057859688555, type: 2}

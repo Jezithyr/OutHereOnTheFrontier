@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 2aTexasRed_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: 5735654cebde6de4cb15365721d439b5, type: 2}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: ef185ff667556d5429476837752d106c, type: 2}
   - {fileID: 11400000, guid: 9760c6521f3fd4247b106dcc96b1c8c4, type: 2}

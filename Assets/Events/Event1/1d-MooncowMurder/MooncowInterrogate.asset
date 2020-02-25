@@ -16,7 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: Cow Brought in for Questioning
+  effectText: 'We''ll question the cow in-depth before making any decisions.
+
+    (No effect on resources)'
+  effectButtonText: Let me know when you've found something.
   optionTitle: (Unlocks event 2D)
   flavorText: 'Question the Cow in-depth before making a decision. '
-  wasChosen: 0
+  wasChosen: 1
   owner: {fileID: 11400000, guid: 1f438be8d9a6ced459d9a31429b4f2db, type: 2}

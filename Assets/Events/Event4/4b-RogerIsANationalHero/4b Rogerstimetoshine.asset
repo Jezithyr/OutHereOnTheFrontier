@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 4bRogerShine_Event
   isActive: 1
-  triggerCondition: {fileID: 0}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: fa160aa3afa5c4b4b82e6c1cd0c5233a, type: 2}
   - {fileID: 11400000, guid: 8fbb3ff3c7e6913429e74a8378a1990a, type: 2}

@@ -15,6 +15,12 @@ MonoBehaviour:
   DecisionInternalName: 5cCowPlotThickens_C3
   condition: {fileID: 0}
   effects: []
+  effectTitle: Local Cow arrested for moorder!
+  effectText: 'Good thing we got him this time! Shame about the first one, but I suppose
+    you can''t win them all.
+
+    (No effect on resources)'
+  effectButtonText: Whoever suggested a jail is getting a raise.
   optionTitle: (Unlocks event 6d)
   flavorText: How could we have been so blind? Arrest it immediately!
   wasChosen: 0

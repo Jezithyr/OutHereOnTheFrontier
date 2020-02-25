@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 7dCowfrontation_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: ad6b3872d21c3c24d89f5a9281fdab94, type: 2}
+  triggerCondition:
+  - {fileID: 11400000, guid: ad6b3872d21c3c24d89f5a9281fdab94, type: 2}
   choices:
   - {fileID: 11400000, guid: f76e396c6110a824ab7d5cbfc2e469f5, type: 2}
   - {fileID: 11400000, guid: 5e04c8cbacefd764fbcaa2f6faacc189, type: 2}

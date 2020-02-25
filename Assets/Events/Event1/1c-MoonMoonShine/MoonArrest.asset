@@ -17,8 +17,12 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: 8583370925647b649aa8af816647d2c8, type: 2}
   - {fileID: 11400000, guid: bd4dfb91f45a7c04fabf535a5e90a992, type: 2}
+  effectTitle: MoonMoonshiners behind bars!
+  effectText: "Those dastardly brewers have been put behind bars. We got some stuff
+    from their house though! \n(-2 Population, +100 Food)"
+  effectButtonText: Yeehaw!
   optionTitle: (-2 population, +100 food)
   flavorText: (-2 Population) Arrest them. Permanently. But take their stuff while
     we're at it.
-  wasChosen: 0
+  wasChosen: 1
   owner: {fileID: 11400000, guid: c2c951429914f5c46a00501a6b2a2626, type: 2}
