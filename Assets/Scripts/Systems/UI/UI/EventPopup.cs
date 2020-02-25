@@ -77,7 +77,9 @@ public class EventPopup : ScriptedUI
             
             if (eventData.choices[i].CheckConditions())
             {
-               choiceButtons[i].GetComponentInChildren<Button>().interactable = true; 
+                choiceButtons[i].SetActive(true);
+                choiceButtons[i].GetComponentInChildren<Button>().interactable = true; 
+            
             }
 
            
