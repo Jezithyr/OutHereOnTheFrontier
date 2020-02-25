@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e2e69883cd7b44e912d2587388c6a2, type: 3}
   m_Name: NoCost
   m_EditorClassIdentifier: 
-  resourceList: []
-  resourceCosts: 
-  moduleManager: {fileID: 0}
+  resourceList:
+  - {fileID: 0}
+  resourceCosts: 00000000
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}

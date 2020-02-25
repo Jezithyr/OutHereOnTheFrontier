@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: Okay
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: New Station Administrator!
+  effectText: 'The first thing on ye olde menu here is building a mine. Mines produce
+    metal, which we can use to build all sorts of other contraptions and doohickeys.
+    Give it a try by clicking on the "Buildings" menu on the bottom of your screen,
+    then click on the metal mine and drag the icon onto one of them rocky areas until
+    the mine turns blue. Click again and it''ll place the mine!
+
+    (The clock will start ticking once you close this menu. Don''t worry about it
+    for now -- your handy secretary will check in again before the minute''s up.)'
+  effectButtonText: Okay.
+  optionTitle: I'll give it a try 2
+  flavorText: Sounds good to me.
+  wasChosen: 1
+  owner: {fileID: 0}

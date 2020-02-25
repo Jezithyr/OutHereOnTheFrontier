@@ -14,7 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 7aStopfood_C2
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: No. We can win without starving our people (+5% resource production)
-  owner: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Station decides to continue producing food!
+  effectText: "The people were relieved to hear they were going to continue being
+    allowed to eat, and have worked a little harder to show their appreciation.\n(+5%
+    resource production)\t"
+  effectButtonText: We can win without sacrificing happiness.
+  optionTitle: ' (+5% resource production)'
+  flavorText: No. We can win without starving our people.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: dd7f93ea59f60fe43bd1f0cee621abbc, type: 2}

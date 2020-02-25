@@ -16,6 +16,13 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 4118678e1c2570142a6aecc3aea9ac5c, type: 2}
-  optionTitle: (Pay 60 Metal, Lose 100 air)
-  flavorText: Immediately send the station repair tech to fix the airlock.
-  owner: {fileID: 0}
+  effectTitle: Government Swiftly Responds to Airlock Concerns!
+  effectText: 'We sent the repair technician to fix the airlock immediately. All we
+    lost was what he needed to fix it.
+
+    (-60 Metal)'
+  effectButtonText: Good thing we caught it early.
+  optionTitle: (Pay 60 Metal)
+  flavorText: (60 Metal) Immediately send the station repair tech to fix the airlock.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 14748eead5694c84abbb2a3d375face6, type: 2}

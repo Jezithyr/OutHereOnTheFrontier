@@ -18,4 +18,17 @@ MonoBehaviour:
   placementConditions:
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   - {fileID: 11400000, guid: bb35e760a4e56294bbef00dd33dd5f13, type: 2}
+  destroyEffects: []
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
   buildingRadiusMultiplier: 1
+  Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 3200000032000000
+  placementSound: {fileID: 8300000, guid: b71badcc02abbf94f8ca3d0a107f06f9, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: 02a2b498eece3c946ae29350618c9bf5, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: e237748a99715f64da9c227b31f20dcf, type: 2}
+  description: The Fuel Factory converts Wood and Air into Fuel, which is needed to
+    power the rocket.

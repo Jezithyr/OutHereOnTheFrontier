@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 4b Rogerstimetoshine
   m_EditorClassIdentifier: 
   EventInternalName: 4bRogerShine_Event
-  isActive: 0
-  triggerCondition: {fileID: 0}
+  isActive: 1
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: fa160aa3afa5c4b4b82e6c1cd0c5233a, type: 2}
   - {fileID: 11400000, guid: 8fbb3ff3c7e6913429e74a8378a1990a, type: 2}
   - {fileID: 11400000, guid: aa6fa78b7779c684291dcf8aff93f8f9, type: 2}
-  eventTitle: 
+  eventTitle: 4:00 left!
   flavorText: "Someone who doesn\u2019t actually work for security is sitting at the
     security desk! What should we do?"

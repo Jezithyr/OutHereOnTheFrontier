@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: Payhimoff
   m_EditorClassIdentifier: 
   DecisionInternalName: 2aTexasRed_C3
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: da30959d0cc180b428c99749617dbee3, type: 2}
-  optionTitle: 
-  flavorText: Pay him to leave (-100 food)
-  owner: {fileID: 0}
+  effectTitle: Local Outlaw Bought Out by the Law!
+  effectText: "With appropriate compensation the outlaw has agreed to go antagonize
+    the next town over. Well, not our problem anymore!\n(-100 Food)\t"
+  effectButtonText: Make sure we don't publicize this.
+  optionTitle: (-100 food)
+  flavorText: (100 food) Pay him to leave.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 60789308fd7369a47b079deec176df5a, type: 2}

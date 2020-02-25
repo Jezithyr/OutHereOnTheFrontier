@@ -13,10 +13,15 @@ MonoBehaviour:
   m_Name: WEDUELASWARRIORS
   m_EditorClassIdentifier: 
   DecisionInternalName: 7dCowfrontation_C3
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: 8a3dad82661b0944eac67c8738fbdc6b, type: 2}
-  optionTitle: 
-  flavorText: "We duel as warriors \u2013 fetch my sword! (+100 food. +10% resource
-    production)"
-  owner: {fileID: 0}
+  - {fileID: 11400000, guid: 0be2f84861fd4e24e9fc3286f3e5ad1e, type: 2}
+  - {fileID: 11400000, guid: c2eecbc5f3e07894b96039e411403262, type: 2}
+  effectTitle: Station administrator has really cool sword fight with cow!
+  effectText: "*CLANG* \"MOOO!\" *CLANG* *CLANG*\n*THUD* \"Moooooooo\"\n(+100 food,
+    +10% resource production)\t"
+  effectButtonText: HOW MY BLOOD BOILS!
+  optionTitle: (+100 food. +10% resource production)
+  flavorText: "We duel as warriors \u2013 fetch my sword! "
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: f767e5e0880486a41bb3921deaa33136, type: 2}

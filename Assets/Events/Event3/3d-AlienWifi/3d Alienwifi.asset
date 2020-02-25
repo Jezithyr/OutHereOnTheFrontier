@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 3d Alienwifi
   m_EditorClassIdentifier: 
   EventInternalName: 3dAlienWifi_Event
-  isActive: 0
-  triggerCondition: {fileID: 0}
+  isActive: 1
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: 78cce1c68018be346b1eefd5ec4dfc4f, type: 2}
   - {fileID: 11400000, guid: 83df8abedc9d37640b07ff7fb79343f8, type: 2}
-  eventTitle: 
+  eventTitle: 5:00 left!
   flavorText: "Looks like one of the local aliens wants to make a Spacebook account
     so it can contact it can \u201Cpost home\u201D. It wants our WiFi password to
     do this."

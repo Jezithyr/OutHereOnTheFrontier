@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: HiretheMurderCow
   m_EditorClassIdentifier: 
   DecisionInternalName: 6dCowinCuffs_C2
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
-  effects: []
-  optionTitle: 
-  flavorText: This station could use the skills this creature has to offer (+5% resource
-    production)
-  owner: {fileID: 0}
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Cow convicted of double homicide disappears?
+  effectText: 'I can''t say it''s what I''d''ve done but it never hurts to have someone
+    on the payroll incapable of feeling human emotion. . .
+
+    (+5% resource production)'
+  effectButtonText: The cow works in darkness to preserve the light.
+  optionTitle: (+5% resource production)
+  flavorText: This station could use the skills this creature has to offer.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 0cc81bf4e893a324b98159c3018ec575, type: 2}

@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: ShootOnSight
   m_EditorClassIdentifier: 
   DecisionInternalName: 5cCowPlotThickens_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: 8271dd8827b25d9449b3c268fb659829, type: 2}
-  optionTitle: 
-  flavorText: Fool me once, shame on you. Fool me twice, we shoot on sight (+100 food)
-  owner: {fileID: 0}
+  - {fileID: 11400000, guid: 0be2f84861fd4e24e9fc3286f3e5ad1e, type: 2}
+  effectTitle: Cow executed for double homicide!
+  effectText: "It's a shame we didn't stop it on the first offense, but we got him
+    in the end!\n(+100 food)\t"
+  effectButtonText: Revenge is a dish best served at 450 for 45 minutes.
+  optionTitle: (+100 food)
+  flavorText: Fool me once, shame on you. Fool me twice, we shoot on sight.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e8c71ed10791bd4438566d874955c4d2, type: 2}

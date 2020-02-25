@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 2bHalflife3_C1
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: Denounce the rumors as false (-5% resource production)
-  owner: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: c49dc9cf0fe91ea4e8d8982398664a1f, type: 2}
+  effectTitle: Quarter Life 6 rumors false!
+  effectText: "We have denounced the rumors as false. Our civilians are somewhat demoralized
+    by this. \n(-5% Resource Production)\n\n"
+  effectButtonText: It's for the best. Foward!
+  optionTitle: (-5% resource production)
+  flavorText: Denounce the rumors as false.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: bacbfb509eda05d4195de7758a07a80f, type: 2}

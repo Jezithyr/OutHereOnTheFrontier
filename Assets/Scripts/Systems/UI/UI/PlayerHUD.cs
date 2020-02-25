@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
-
+using UnityEngine.EventSystems;
 
 public enum PlayerHudModes
 {
@@ -35,6 +35,8 @@ public class PlayerHUD : ScriptedUI
     [SerializeField] private List<Building> buildings = new List<Building>();
     [SerializeField] private LayerMask BuildingLayerMask;
 
+    [SerializeField] private List<Resource> buildingInfoResources = new List<Resource>();
+
     private List<TextMeshProUGUI> linkedResourceDisplays = new List<TextMeshProUGUI>();
 
     private GameObject buildingMenuObj = null;
@@ -48,10 +50,19 @@ public class PlayerHUD : ScriptedUI
     private GameObject DemolishExit;
     private TextMeshProUGUI timerDisplay;
 
+
+    private List<TextMeshProUGUI> linkedBuildingCosts = new List<TextMeshProUGUI>();
+    private GameObject buildingInfoMenu;
+    private TextMeshProUGUI buildingName;
+    private TextMeshProUGUI buildingDesc;
+
     private int previewBuildingIndex = -1;
 
+    private bool canBuild = false;
     private bool showingPreview = false;
     public bool BuildMode{get =>showingPreview;}
+
+
 
     private void OnEnable()
     {
@@ -68,10 +79,22 @@ public class PlayerHUD : ScriptedUI
 
             linkedResourceDisplays.Add(linkedUI.GetElementByName(ResourceDisplayNames[i]).GetComponentInChildren<TextMeshProUGUI>());
         }
+        buildingName = linkedUI.GetElementByName("BuildingName").GetComponentInChildren<TextMeshProUGUI>();
+        buildingDesc = linkedUI.GetElementByName("Description").GetComponentInChildren<TextMeshProUGUI>();
+        buildingInfoMenu =  linkedUI.GetElementByName("BuildingInfo");
+
+        linkedBuildingCosts.Clear();
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("MetalCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("WoodCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("AlloyCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        linkedBuildingCosts.Add(linkedUI.GetElementByName("WaterCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+
+
         buildingMenuObj = linkedUI.GetElementByName("BuildingMenu");
         DemolishExit = linkedUI.GetElementByName("DemolishExit");
         timerDisplay = linkedUI.GetElementByName("TimerDisplay").GetComponentInChildren<TextMeshProUGUI>();
         buildingMenuObj.SetActive(false);
+        buildingInfoMenu.SetActive(false);
         DemolishExit.SetActive(false);
     }
 
@@ -132,13 +155,12 @@ public class PlayerHUD : ScriptedUI
         {
             linkedResourceDisplays[i].SetText(Mathf.FloorToInt(resourceSystem.GetResourceStorage(ResourceList[i]))+ "/"+ Mathf.FloorToInt(resourceSystem.GetResourceLimit(ResourceList[i])));
         }
-        if (showingPreview)
-        {
-            previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask);
-        }
+        UpdatePreview();
         timerDisplay.SetText(playingState.GameTimer/60 + ":"+ playingState.GameTimer%60);
     }
 
+
+    
     public void ShowDemolishExit()
     {
         DemolishExit.SetActive(true);
@@ -157,13 +179,63 @@ public class PlayerHUD : ScriptedUI
     public void  HideBuildingMenu()
     {
         DestroyPreview();
+        HideBuildingInfo();
         buildingMenuObj.SetActive(false);
+    }
+
+    public void HideBuildingInfo()
+    {
+        buildingInfoMenu.SetActive(false);
+    }
+
+    public void ShowBuildingInfo(int buildingIndex)
+    {
+        Building building = buildings[buildingIndex];
+        buildingInfoMenu.SetActive(true);
+        buildingName.SetText(building.name);
+        buildingDesc.SetText(building.description);
+        for (int i = 0; i < 4; i++)
+        {
+            if (building.ResourceForCost.Contains(buildingInfoResources[i]))
+            {   
+                linkedBuildingCosts[i].SetText(""+building.AmountForCost[i]);
+            }else
+            {
+                linkedBuildingCosts[i].SetText("0");
+            }
+        }
+
+
+        // linkedBuildingCosts.Add(linkedUI.GetElementByName("MetalCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        // linkedBuildingCosts.Add(linkedUI.GetElementByName("WoodCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        // linkedBuildingCosts.Add(linkedUI.GetElementByName("AlloyCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+        // linkedBuildingCosts.Add(linkedUI.GetElementByName("WaterCostDisplay").GetComponentInChildren<TextMeshProUGUI>());
+
+
+    }
+
+
+    public void UpdatePreview()
+    {
+        if (!showingPreview) return;
+        previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask);
+        if (buildings[previewBuildingIndex].CheckPlacement(previewBuilding))
+        {
+            canBuild = true;
+            previewBuilding.GetComponentInChildren<Renderer>().material =  buildings[previewBuildingIndex].canPlaceMaterial;
+        }
+        else
+        {
+            canBuild = false;
+            previewBuilding.GetComponentInChildren<Renderer>().material =  buildings[previewBuildingIndex].invalidMaterial;
+        }
     }
 
 
     public void selectBuilding(int selectionIndex)
     {
         if (showingPreview) DestroyPreview();
+        ShowBuildingInfo(selectionIndex);
         CreateBuildingPreview(selectionIndex);
     }
 
@@ -179,6 +251,7 @@ public class PlayerHUD : ScriptedUI
     {
         if (previewBuilding == null) return;
         Destroy(previewBuilding);
+        HideBuildingInfo();
         previewBuilding = null;
         showingPreview = false;
     }
@@ -186,8 +259,22 @@ public class PlayerHUD : ScriptedUI
     public void CreateBuildingFromPreview()
     {
         if (!showingPreview) return;
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+        if (!canBuild) return;
 
-        if (!buildings[previewBuildingIndex].CheckPlacement(previewBuilding)) return;
+        for (int i = 0; i < buildings[previewBuildingIndex].ResourceForCost.Count; i++)
+        {
+            resourceSystem.RemoveResource(buildings[previewBuildingIndex].ResourceForCost[i],buildings[previewBuildingIndex].AmountForCost[i]);
+        }
+
+        
+
+        AudioClip placementClip = buildings[previewBuildingIndex].PlacementSound;
+        if (placementClip)
+        {
+            playingState.AudioSource2D.PlayOneShot(placementClip);
+        }
+        
         buildingSystem.CreateBuildingAtWorldPos(uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask),new Quaternion(),buildings[previewBuildingIndex]);
         DestroyPreview();
     }

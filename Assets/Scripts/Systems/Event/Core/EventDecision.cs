@@ -9,11 +9,18 @@ public class EventDecision : ScriptableObject
 
 
     [SerializeField] public string DecisionInternalName = "";
-    [SerializeField] public EventCondition condition;
+    [SerializeField] public ConditionScript condition;
     [SerializeField] protected List<EventEffect> effects = new List<EventEffect>();
+    
+    [SerializeField] public string effectTitle = "";
+    [TextArea] public string effectText = "";
+    [SerializeField] public string effectButtonText = "";
+
 
     [SerializeField] protected string optionTitle = "";
     [SerializeField] public string flavorText = "";
+
+    public bool wasChosen = false;
 
     public Event owner;
     delegate void EventEffectDelegate(ScriptableObject callingObject);
@@ -62,12 +69,12 @@ public class EventDecision : ScriptableObject
 
     public bool CheckConditions()
     {
-
-        return false;
+        return EventConditionDelegate(owner);
     }
 
     public void TriggerDecision()
     {
+        wasChosen = true;
         effectDelegate(owner);
     }
 

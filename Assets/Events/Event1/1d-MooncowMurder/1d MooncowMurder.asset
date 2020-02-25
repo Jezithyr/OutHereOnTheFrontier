@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 1d MooncowMurder
   m_EditorClassIdentifier: 
   EventInternalName: 1dMoorderCow_Event
-  isActive: 0
-  triggerCondition: {fileID: 0}
+  isActive: 1
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: b5924f0d83aef0d4b95d22b7d09e3f3a, type: 2}
   - {fileID: 11400000, guid: 7409d3eae1521fd4f81634a4d1bf384a, type: 2}
   - {fileID: 11400000, guid: 8da0a538740569b44826c0ec95add648, type: 2}
-  eventTitle: 
+  eventTitle: 7:00 left!
   flavorText: 

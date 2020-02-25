@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: NegotiateTerms
   m_EditorClassIdentifier: 
   DecisionInternalName: 4dWorkerStrike_C3
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 2d6910dda1adc3b468c0195fed30e608, type: 2}
-  optionTitle: 
-  flavorText: Negotiate terms (-150 food, -150 metal, +5% resource production)
-  owner: {fileID: 0}
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Administration kind-of helps out!
+  effectText: "We gave them part of what they wanted -- it should keep them happy
+    until next month.\n(-150 food, -150 metal, +5% resource production)\t"
+  effectButtonText: Whatever floats their boat.
+  optionTitle: (-150 food, -150 metal, +5% resource production)
+  flavorText: Negotiate terms.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: d16cafa3c2475264e83de3fa2c5b9316, type: 2}

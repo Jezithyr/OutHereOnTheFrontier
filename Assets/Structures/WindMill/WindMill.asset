@@ -18,4 +18,17 @@ MonoBehaviour:
   placementConditions:
   - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
   - {fileID: 11400000, guid: 3078420ef76bfc74c8336f8783a5e88c, type: 2}
+  destroyEffects: []
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
   buildingRadiusMultiplier: 1
+  Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 1900000019000000
+  placementSound: {fileID: 8300000, guid: c513cc9174ef5a64fa0b048782cf6030, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: 689ce014d865b434e8077b9bfb6f7201, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: ab7b5bb075f21d14188737abf94fc3fd, type: 2}
+  description: The Windmill collects and stores air, which is necessary for growing
+    food. And breathing.

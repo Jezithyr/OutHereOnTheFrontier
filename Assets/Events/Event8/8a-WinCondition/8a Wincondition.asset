@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8a Wincondition
   m_EditorClassIdentifier: 
   EventInternalName: 8aWinCondition_Event
-  isActive: 0
+  isActive: 1
   triggerCondition: {fileID: 0}
   choices:
   - {fileID: 11400000, guid: 432b2f9d2236ba34e9e7207fa945dbc2, type: 2}

@@ -109,6 +109,8 @@ public class GameManager : ScriptableObject
 
     private void OnEnable()
     {
+
+        Application.targetFrameRate = 60;
         if (!Application.isEditor) return;
          Initalize();
          Debug.Log("Running GameManager in Editor");
@@ -191,6 +193,11 @@ public class GameManager : ScriptableObject
     {
         ActiveState = InitialGameState;
         ActiveState.OnActivate(null);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     public T GetModule<T>() where T : Module

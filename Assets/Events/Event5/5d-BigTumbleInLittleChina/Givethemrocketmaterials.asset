@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: Givethemrocketmaterials
   m_EditorClassIdentifier: 
   DecisionInternalName: 5dBigTumbleInLittleChina_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 1299f30ce87fd0046a5769af6d0716d3, type: 2}
-  optionTitle: 
-  flavorText: Give in to their demands (-300 fuel, -200 alloy)
-  owner: {fileID: 0}
+  effectTitle: Station gives tumbleweed rocket parts in exchange for engineer safety.
+  effectText: "I don't even want to fathom why those tumbleweeds would want the parts
+    to build a rocket but. . .we got our people back!\n(-300 fuel, -200 alloy)\t"
+  effectButtonText: Lives are worth more than extremely expensive composite resources.
+  optionTitle: Give in to their demands.
+  flavorText: (300 fuel, 200 alloy) Give in to their demands.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e9e1ef81b6656e84eaf973d3c192c6c6, type: 2}

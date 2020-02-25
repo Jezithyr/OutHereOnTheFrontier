@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 7aStopfood_C1
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: Yes, for the good of everyone (-100% food production, +20% other resource
-    production)
-  owner: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: c9769898dcada8c409dee0ee5c45a409, type: 2}
+  effectTitle: Station stops producing food!
+  effectText: 'Our people may be hungry, but at least they''re alive. They''ll appreciate
+    the decision once we''re out of here, I''m sure.
+
+    (-100% food production, +20% resource production)'
+  effectButtonText: It's for the best.
+  optionTitle: ' (-100% food production, +20% other resource production)'
+  flavorText: Yes, for the good of everyone.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: dd7f93ea59f60fe43bd1f0cee621abbc, type: 2}

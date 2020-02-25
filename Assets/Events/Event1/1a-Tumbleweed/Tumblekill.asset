@@ -13,8 +13,16 @@ MonoBehaviour:
   m_Name: Tumblekill
   m_EditorClassIdentifier: 
   DecisionInternalName: 1aTumbleweed_C1
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
-  effects: []
-  optionTitle: 
-  flavorText: Terminate it with extreme prejudice (Costs 1 metal, Unlocks event 5d)
-  owner: {fileID: 0}
+  condition: {fileID: 11400000, guid: c766cf8a2fa68d44eb17208d0b5c6107, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 8cabe108b83d2af45abee816c271f249, type: 2}
+  effectTitle: Goodnight sweet prince.
+  effectText: 'The Tumbleweed was ruthlessly eliminated without provocation. All it
+    cost us was a single bullet. Surely this will not cause a rumble in the wastes?
+
+    (-1 Metal)'
+  effectButtonText: That tumbleweed had it coming. Let's keep going!
+  optionTitle: (Costs 1 Metal, Unlocks Event 5d)
+  flavorText: (1 Metal) Terminate it with extreme prejudice.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 030a2d5eb45d63747afecea85b2eb70f, type: 2}

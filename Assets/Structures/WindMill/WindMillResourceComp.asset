@@ -17,6 +17,6 @@ MonoBehaviour:
   activeResources:
   - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
   production:
-  - 15
+  - 2
   consumption: []
   storage: []

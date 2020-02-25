@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: 6d CowInCuffs
   m_EditorClassIdentifier: 
   EventInternalName: 6dCowinCuffs_Event
-  isActive: 0
-  triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  isActive: 1
+  triggerCondition:
+  - {fileID: 11400000, guid: 618e41fb881da3b41a3b261b0f2f160c, type: 2}
   choices:
   - {fileID: 11400000, guid: 863cc37a3763bf6449afe1318b191b53, type: 2}
   - {fileID: 11400000, guid: 23725fb69277547439d1421f3f6f3634, type: 2}
   - {fileID: 11400000, guid: 9eb42a554d0525a489cae1b8f8d71680, type: 2}
-  eventTitle: 
+  eventTitle: 2:00 left!
   flavorText: The cow is in handcuffs. What do you want done?

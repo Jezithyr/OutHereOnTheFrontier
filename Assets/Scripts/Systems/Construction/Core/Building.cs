@@ -25,6 +25,18 @@ public class Building : ScriptableObject
 
     [SerializeField] public bool Removable = true;
 
+    [SerializeField] public List<Resource> ResourceForCost;
+    [SerializeField] public List<int> AmountForCost;
+
+    [SerializeField] private AudioClip placementSound;
+    public AudioClip PlacementSound{get => placementSound;}
+
+    [SerializeField] public Material canPlaceMaterial;
+    [SerializeField] public Material invalidMaterial;
+
+    [SerializeField] public string description;
+
+
     private float checkRadius;
     public float Radius{get=>checkRadius;}
 
@@ -38,8 +50,15 @@ public class Building : ScriptableObject
     public GameObject CreateInstance()
     {
         GameObject temp = GameObject.Instantiate(prefab);
+
+
         instances.Add(temp);
         return temp;
+    }
+
+    public bool IsPlaced()
+    {
+        return GetInstanceCount() > 0;
     }
 
     public int GetInstanceCount()
@@ -77,13 +96,13 @@ public class Building : ScriptableObject
 
     public bool CheckPlacement(GameObject preview)
     {
-        bool canPlace = true;
         foreach (var condition in placementConditions)
-        {
-
-            
-            canPlace = canPlace &  condition.ConditionCheck(preview,this);
+        {            
+            if (!condition.ConditionCheck(preview,this))
+            {
+                return false;
+            }
         }
-        return canPlace;
+        return true;
     }
 }

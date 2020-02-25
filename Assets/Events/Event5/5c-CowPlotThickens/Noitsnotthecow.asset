@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: Noitsnotthecow
   m_EditorClassIdentifier: 
   DecisionInternalName: 5cCowPlotThickens_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: af1be54c507b6194480e4d9b2ecdc8c5, type: 2}
-  optionTitle: 
-  flavorText: Of course not. (-1 population, unlock event 7d)
-  owner: {fileID: 0}
+  effectTitle: Cow cleared of charges! Again!
+  effectText: 'I know it sounds outlandish chief, but I REALLY hope you''re right
+    in saying the cow is innocent. . .
+
+    (-1 population)'
+  effectButtonText: COWS DON'T KILL PEOPLE.
+  optionTitle: (-1 population, unlock event 7d)
+  flavorText: Of course not.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e8c71ed10791bd4438566d874955c4d2, type: 2}

@@ -22,13 +22,22 @@ public class ScriptedUI : ScriptableObject
 
     protected List<ScriptedUIBehavior> linkedBehaviorScripts = new List<ScriptedUIBehavior>();
 
+    protected bool started = false;
 
     //gets the linked ui IF there is only 1 instance of the ui, and that ui is initalized
     protected ScriptedUIBehavior linkedUI{get => linkedBehaviorScripts[0];} 
 
+
+    protected virtual void Initialize()
+    {
+
+    }
+
     private void OnEnable()
     {
+        started = false;
         ClearBehaviors();
+        Initialize();
     }
 
 
@@ -41,6 +50,7 @@ public class ScriptedUI : ScriptableObject
     {
         linkedBehaviorScripts.Clear();
     }
+
 
     public virtual int CreateUIInstance()
     {
@@ -55,6 +65,7 @@ public class ScriptedUI : ScriptableObject
         
         linkedBehaviorScripts.Add(temp);
         Start();
+        started = true;
         return linkedBehaviorScripts.Count - 1;
     }
 

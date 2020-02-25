@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 2a Texas Red
   m_EditorClassIdentifier: 
   EventInternalName: 2aTexasRed_Event
-  isActive: 0
-  triggerCondition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  isActive: 1
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: ef185ff667556d5429476837752d106c, type: 2}
   - {fileID: 11400000, guid: 9760c6521f3fd4247b106dcc96b1c8c4, type: 2}
   - {fileID: 11400000, guid: 55e42006070870540ae0b415b21ed473, type: 2}
-  eventTitle: 
+  eventTitle: 6:00 left!
   flavorText: "In this town there lived an outlaw by the name of Texas Red\r\nMany
     men had tried to take him and that many men were dead\r\nHe was vicious and a
     killer, though a youth of twenty four\r\nAnd the notches on his pistol numbered

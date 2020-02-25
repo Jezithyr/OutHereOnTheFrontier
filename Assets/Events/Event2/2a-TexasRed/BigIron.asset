@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: BigIron
   m_EditorClassIdentifier: 
   DecisionInternalName: 2aTexasRed_C2
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 11400000, guid: 5735654cebde6de4cb15365721d439b5, type: 2}
   effects:
   - {fileID: 11400000, guid: fd20589ef44fd9e43a824ef17742955b, type: 2}
-  optionTitle: 
-  flavorText: Find a Ranger with a Big Iron on his hip (-100 Metal, +1 Population)
-  owner: {fileID: 0}
+  effectTitle: To the town of agau fria came a ranger one fine day. . .
+  effectText: "There was twenty feet between them\r\nWhen they stopped to make their
+    play\r\nAnd the swiftness of the Ranger still talked about today\r\nTexas Red
+    had not cleared leather when a bullet fairly ripped\r\nAnd the ranger's aim was
+    deadly, with the big iron on his hip\r\nBig iron on his hip\n(-100 Metal, +1 Population)"
+  effectButtonText: Nicely done!
+  optionTitle: (-100 Metal, +1 Population)
+  flavorText: (100 Metal) Find a Ranger with a Big Iron on his hip.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 60789308fd7369a47b079deec176df5a, type: 2}

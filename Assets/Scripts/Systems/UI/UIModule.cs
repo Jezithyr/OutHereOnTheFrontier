@@ -14,6 +14,11 @@ public class UIModule : Module
 
     public GameObject LinkedEventSystem{get => linkedEventSystem;}
 
+    [SerializeField] private AudioClip clickSound;
+    [SerializeField] private AudioClip failSound;
+    //[SerializeField] private AudioClip successSound;//not implemented
+    [SerializeField] private AudioClip alertSound;
+
     delegate void functionDelegate();
     
     functionDelegate tickDelegate;
@@ -55,6 +60,36 @@ public class UIModule : Module
     }
 
 
+    
+    public void playClickSound(GameObject soundSource2d)
+    {
+        soundSource2d.GetComponentInChildren<AudioSource>().PlayOneShot(clickSound);
+    }
+
+    public void playAlertSound(GameObject soundSource2d)
+    {
+        soundSource2d.GetComponentInChildren<AudioSource>().PlayOneShot(alertSound);
+    }
+
+    public void playFailSound(GameObject soundSource2d)
+    {
+        soundSource2d.GetComponentInChildren<AudioSource>().PlayOneShot(failSound);
+    }
+
+    public void playClickSound(AudioSource soundSource2d)
+    {
+        soundSource2d.PlayOneShot(clickSound);
+    }
+
+    public void playAlertSound(AudioSource soundSource2d)
+    {
+        soundSource2d.PlayOneShot(alertSound);
+    }
+
+    public void playFailSound(AudioSource soundSource2d)
+    {
+        soundSource2d.PlayOneShot(failSound);
+    }
 
 
     private void OnEnable()

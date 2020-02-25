@@ -14,7 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 3aMovieNight_C1
   condition: {fileID: 0}
-  effects: []
-  optionTitle: 
-  flavorText: A Wildlife Documentary on Moonflix (+10% food production)
-  owner: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 5745466bda9e9f64fa718ccc1b097e2c, type: 2}
+  effectTitle: Town watches Nature Documentary on Mayor's instruction!
+  effectText: 'The townsfolk have spent the night watching a wildlife documentary.
+    Maybe they learned something about food while they''re at it?
+
+    (+10% Food Production)'
+  effectButtonText: 
+  optionTitle: (+10% food production)
+  flavorText: A Wildlife Documentary on Moonflix.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: b250f4a242c1fb44195f23182a7080c3, type: 2}

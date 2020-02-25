@@ -31,12 +31,13 @@ public class PlayingState : GameState
     [SerializeField] private EventModule eventModule ;
     [SerializeField] private ConstructionModule buildingModule;
 
-
-
     [SerializeField] private List<Event> eventList = new List<Event>();//only use 4 or everything breaks
     [SerializeField] private LayerMask buildingLayer;
 
     [SerializeField] private int gameTimer =  8*60;
+
+    [SerializeField] private AudioClip ambience;
+    public AudioClip Ambiance{get => ambience;}
 
 
     private Vector3 targetTranslation;
@@ -53,13 +54,16 @@ public class PlayingState : GameState
     private int settingsMenuId;
     private int buildingMenuId;
     private int gameOverMenuid;
+    private AudioSource audioSource2D;
+    public AudioSource AudioSource2D{get => audioSource2D;}
+
     //private int eventMenuId;
     private int debugMenuid;
 
     //todo make these not public
     public int GameTimer;
     public int ElapsedTime = 0;
-
+    protected bool initalized = false;
 
     private void OnEnable()
     {
@@ -74,6 +78,8 @@ public class PlayingState : GameState
         
         ScriptedCamera newCam = camModule.AddScriptedCameraInstance(customCamera);
         activeCam = (FreeOrbitCam)newCam;
+        audioSource2D = newCam.CreatedCamera.transform.parent.gameObject.GetComponentInChildren<AudioSource>();
+        Debug.Log(audioSource2D);
 
         playerHudId = uiModule.CreateInstance(playerHUD);
         pauseMenuid = uiModule.CreateInstance(pauseMenu);
@@ -102,6 +108,9 @@ public class PlayingState : GameState
         ElapsedTime = 0;
         GameTimer = gameTimer;
         Game.UnPause();
+        audioSource2D.clip = ambience;
+        audioSource2D.loop = true;
+        audioSource2D.Play();
     }
     public override void OnDeactivate(GameState newState)
     {
@@ -122,12 +131,12 @@ public class PlayingState : GameState
         if (Time.timeScale == 0) return; //stop update if timescale is 0
         hudMode = playerHUD.Mode;
 
-
         //timer tick
-        if(Time.timeScale > 0 && Time.fixedTime%1 == 0)//every second
+        if(Time.frameCount%60 <= 0)//every second
         {
             GameTimer = GameTimer-1;
             ElapsedTime += 1;
+            
         }
         if (GameTimer <= 0)
             {

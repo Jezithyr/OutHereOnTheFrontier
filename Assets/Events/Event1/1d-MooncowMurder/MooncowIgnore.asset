@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: MooncowIgnore
   m_EditorClassIdentifier: 
   DecisionInternalName: 1dMoorderCow_C2
-  condition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
-  effects: []
-  optionTitle: 
-  flavorText: "Cows don\u2019t kill people. Asphyxiation does. Let him go. (Unlocks
-    event 5c)"
-  owner: {fileID: 0}
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: Cow Accused of Murder not arrested. Why? It's a cow!
+  effectText: "The cow was not arrested, as the Station Administrator found the idea
+    of a cow murdering people a bit too \"out there\".\n(No effect on resources)\t"
+  effectButtonText: Let's go!
+  optionTitle: (Unlocks event 5c)
+  flavorText: "Cows don\u2019t kill people. Asphyxiation does. Let him go."
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: 1f438be8d9a6ced459d9a31429b4f2db, type: 2}

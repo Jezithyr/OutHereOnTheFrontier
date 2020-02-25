@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: RandySavageExorcism
   m_EditorClassIdentifier: 
   DecisionInternalName: RandySavage_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 9059d35df1f7e814d9b2ef9b7452d797, type: 2}
+  effectTitle: Local man no longer screaming "YEAH!"
+  effectText: It was an exhausting effort, but we believe the Macho Messenger has
+    been fully banished from this realm.
+  effectButtonText: We protect our people from WWF.
   optionTitle: (Lose 150 Metal)
-  flavorText: Perform an exorcism.
-  owner: {fileID: 0}
+  flavorText: (150 Metal) Perform an exorcism.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 25521006084419847a1d9c8b6c9c1428, type: 2}

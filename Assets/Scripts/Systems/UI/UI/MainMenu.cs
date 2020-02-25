@@ -16,7 +16,7 @@ public class MainMenu : ScriptedUI
     
     public override void Start()
     {
-        Debug.Log("Test");
+       
     }
 
     public override void Update()
@@ -27,6 +27,7 @@ public class MainMenu : ScriptedUI
 
     public void StartGame()
     {
+        // Call the sound here.
         Game.SwitchSystemGameState(1);
         Debug.Log("GAME STARTED");
     }

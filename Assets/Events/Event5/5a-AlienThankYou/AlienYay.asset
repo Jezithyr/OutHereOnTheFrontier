@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: AlienYay
   m_EditorClassIdentifier: 
   DecisionInternalName: 5aAlienThankYou_C1
-  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
+  condition: {fileID: 0}
   effects:
-  - {fileID: 11400000, guid: de17e2df96a962f47b30f305afa52018, type: 2}
-  optionTitle: 
-  flavorText: It seems the Alien we lent our WiFi password to earlier has reached
-    his civilization, and sent us a goodie bag for our help! (+500 Alloy, +500 Fuel,
-    +500 Metal, +500 Wood)
-  owner: {fileID: 0}
+  - {fileID: 11400000, guid: a33e4d0f4cbe1694daac7a624172e985, type: 2}
+  effectTitle: Alien Care Package!
+  effectText: 'It looks like the Alien from earlier gave us a care package for our
+    help in getting it home! Let''s look what''s inside!
+
+    (+200 Water, +200 Air, +200 Food, +200 Metal, +200 Wood)'
+  effectButtonText: YEEHAW!
+  optionTitle: (+200 Water, +200 Air, +200 food +200 Metal, +200 Wood)
+  flavorText: Let's see what's inside!
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: b0c83db27acf1f542baea1ea662d0724, type: 2}
