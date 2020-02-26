@@ -67,6 +67,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8477491404793474503}
     m_Modifications:
+    - target: {fileID: 3025853345755446620, guid: dbcc68c5addca944eafc855961defc07,
+        type: 3}
+      propertyPath: PawnController
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f9799a72a332ca4db9ce5fca6e6109b,
+        type: 2}
     - target: {fileID: 5966026778700369905, guid: dbcc68c5addca944eafc855961defc07,
         type: 3}
       propertyPath: m_LocalPosition.x

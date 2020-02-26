@@ -147,6 +147,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: factory
       objectReference: {fileID: 0}
+    - target: {fileID: 7714978766772087677, guid: 9f0eafadf5ad85f47816db84284a206c,
+        type: 3}
+      propertyPath: PawnController
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f9799a72a332ca4db9ce5fca6e6109b,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f0eafadf5ad85f47816db84284a206c, type: 3}
 --- !u!4 &8525791752463683016 stripped

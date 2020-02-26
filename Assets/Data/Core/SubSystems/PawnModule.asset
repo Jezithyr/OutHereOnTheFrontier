@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: PawnModule
   m_EditorClassIdentifier: 
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
-  RunUpdate: 0
-  linkedJobModule: {fileID: 11400000, guid: 3d5894f715fccfb448cad780268b5402, type: 2}
+  RunUpdate: 1
+  StartOnSceneLoad: 1
+  patrolWaiting: 1
+  patrolWaitTime: 3
+  switchChance: 0.2
+  startingPatrolPoints: []

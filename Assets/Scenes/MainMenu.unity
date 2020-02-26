@@ -426,6 +426,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: town_hall
       objectReference: {fileID: 0}
+    - target: {fileID: 2180688266439704895, guid: b531f6f0d9f558b46a8f81fc909634b5,
+        type: 3}
+      propertyPath: PawnController
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f9799a72a332ca4db9ce5fca6e6109b,
+        type: 2}
     - target: {fileID: 3863777690849737080, guid: b531f6f0d9f558b46a8f81fc909634b5,
         type: 3}
       propertyPath: m_LocalPosition.x

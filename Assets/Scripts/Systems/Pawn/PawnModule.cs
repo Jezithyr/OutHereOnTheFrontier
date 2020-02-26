@@ -53,7 +53,7 @@ struct NavAgent
 public class PawnModule : Module
 {
     // True False parameter to determine whether the pawn will wait at the current waypoint
-    [SerializeField] bool patrolWaitng = true;
+    [SerializeField] bool patrolWaiting = true;
     
     // The time the pawn will wait at the waypoint if patrolWaiting = true
     [Header("How long do you want it to wait")]
@@ -85,6 +85,24 @@ public class PawnModule : Module
         }        
     }
 
+    public void RegisterNewWaypoint(PawnPatrolWaypoint waypoint)
+    {
+        masterPatrolList.Add(waypoint);
+    }
+
+
+    public void RegisterNewSpawnPosition(GameObject gameObject)
+    {
+        spawnPositions.Add(gameObject.transform.position);
+    }
+    
+    public void RegisterNewPawn(GameObject newPawn)
+    {
+        if (NPCObjs.Contains(newPawn)) return;
+        NPCObjs.Add(newPawn);
+        Agents.Add(new NavAgent(newPawn.GetComponentInChildren<NavMeshAgent>(),0,false,false,false,0));
+    }
+
     private void TickPawns()
     {
         for (int i = 0; i < Agents.Count; i++)
@@ -92,7 +110,7 @@ public class PawnModule : Module
             if (Agents[i].isTravelling && Agents[i].agent.remainingDistance <= 1.0f)
             {
                 Agents[i].SetTraveling(false);
-                if (patrolWaitng)
+                if (patrolWaiting)
                 {
                     Agents[i].SetWaiting(true);
                     Agents[i].SetWait(0f);
@@ -109,7 +127,6 @@ public class PawnModule : Module
                 if (Agents[i].waitTimer >= patrolWaitTime)
                 {
                 Agents[i].SetWaiting(false);
-
                 ChangePatrolPoint( Agents[i]);
                 SetDestination(Agents[i]);
                 }
@@ -132,7 +149,7 @@ public class PawnModule : Module
     {
         if(UnityEngine.Random.Range(0f,1f) <= switchChance)
         {
-           agent.SetPF(! agent.isPatrollingForward);
+           agent.SetPF(!agent.isPatrollingForward);
         }
         if (agent.isPatrollingForward)
         {

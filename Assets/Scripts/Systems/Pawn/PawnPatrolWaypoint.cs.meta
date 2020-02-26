@@ -3,7 +3,8 @@ guid: ecedd9d4176d3904c80428216e112300
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PawnController: {fileID: 11400000, guid: 2f9799a72a332ca4db9ce5fca6e6109b, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -76,6 +76,8 @@ public class PatrolAI : MonoBehaviour
         }
     }
 
+
+
     // TODO: Implement the call for a new destination to patrol to
     private void SetDestination()
     {

@@ -162,6 +162,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 5163328561430625031, guid: 6ac0a843c607b444c9b32ccd9841ad31,
+        type: 3}
+      propertyPath: PawnController
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f9799a72a332ca4db9ce5fca6e6109b,
+        type: 2}
     - target: {fileID: 6508976443279124876, guid: 6ac0a843c607b444c9b32ccd9841ad31,
         type: 3}
       propertyPath: m_Layer
