@@ -121,7 +121,6 @@ public class EventModule : Module
     public void showEvent(int eventIndex)
     {
         setActiveEventFromIndex(eventIndex);
-        UpdateUI();
         ShowUI();
     }
 
@@ -130,7 +129,6 @@ public class EventModule : Module
         activeEvent = eventToShow;
         ((EventPopup)eventUI).LoadEventData(activeEvent);
         playState.PauseGame();
-        UpdateUI();
         ShowUI();
     }
 
@@ -145,13 +143,12 @@ public class EventModule : Module
     {
 
         if (SceneManager.GetActiveScene() != gameplayScene) return;
-        //activeEvent = activeEvents[0];
-        UpdateUI();
         HideUI();
     }
     
     public override void Update()
     {
+
         Event globalTempEvent = globalEventPool.CheckEventConditions();
         if (globalTempEvent != null)
         {

@@ -87,7 +87,9 @@ public class PlayingState : GameState
 
         gameOverMenuid = uiModule.CreateInstance(gameOverMenu);
 
+        
         eventMenuId = uiModule.CreateInstance(eventMenu);
+
         debugMenuid = uiModule.CreateInstance(debugMenu);
 
         Debug.Log("PlayerHUD UI id: "+ playerHudId);
@@ -199,6 +201,7 @@ public class PlayingState : GameState
 
     public void ReturnToMenu()
     {
+        Reset();
         Game.SwitchSystemGameState(0);
     }
 
@@ -240,9 +243,11 @@ public class PlayingState : GameState
         uiModule.DestroyInstance(eventMenu,eventMenuId);
         uiModule.DestroyInstance(settingsMenu,settingsMenuId);
         uiModule.DestroyInstance(gameOverMenu,gameOverMenuid);
+        eventMenu.cleanup();
 
         Game.Pause();
         camModule.Reset();
+        eventModule.Reset();
         buildingModule.Reset();
         Game.GetModule<ResourceModule>().Reset();//reset resource module
         uiModule.Reset(); //not needed?

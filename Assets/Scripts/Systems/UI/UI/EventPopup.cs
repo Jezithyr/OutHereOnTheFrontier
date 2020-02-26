@@ -24,6 +24,8 @@ public class EventPopup : ScriptedUI
         ClearBehaviors(); //this needs to be present in every ui otherwise unity serialization breaks everything    
         choiceButtons.Clear();
     }
+
+
     public override void Start()
     {
         choiceButtons.Add(linkedUI.GetElementByName("Choice1"));
@@ -33,6 +35,7 @@ public class EventPopup : ScriptedUI
 
         foreach (var choiceButton in choiceButtons)
         {
+            Debug.Log(choiceButton.transform.parent);
             choiceButton.GetComponentInChildren<Button>().interactable = false;
         }
 
@@ -100,8 +103,16 @@ public class EventPopup : ScriptedUI
         // effectButtonText.SetText(eventData.effectButtonText);
     }
 
+
+    public void cleanup()
+    {
+        ClearBehaviors(); //this needs to be present in every ui otherwise unity serialization breaks everything    
+        choiceButtons.Clear();
+    }
+
     public void Reset()
     {
+        
         linkedUI.GetElementByName("EventPanel").SetActive(true);
         linkedUI.GetElementByName("EffectPanel").SetActive(false);
     }
