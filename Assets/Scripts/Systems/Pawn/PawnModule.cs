@@ -64,6 +64,9 @@ public class PawnModule : Module
     [Range(0.0f, 1f)]
     [SerializeField] private float switchChance = 0.2f;
 
+    [Header("Number of starting Pawns")]
+    [SerializeField] private int numberStartingOfPawns = 1;
+
     // The list of potential patrolPoints the pawn will cover
     [Header("Spawn in waypoints, and drag them all into this list")]
     [SerializeField] List<PawnPatrolWaypoint> startingPatrolPoints = new List<PawnPatrolWaypoint>();
@@ -74,6 +77,10 @@ public class PawnModule : Module
 
     private List<Vector3> spawnPositions = new List<Vector3>();
 
+    [SerializeField] private GameObject PawnPrefab;
+
+    private int numberOfPawns = 0;
+
     private List<PawnPatrolWaypoint> masterPatrolList = new List<PawnPatrolWaypoint>();
 
     private void initalize()
@@ -83,6 +90,34 @@ public class PawnModule : Module
         {
             masterPatrolList.Add(item);
         }        
+    }
+
+    public GameObject CreateNewPawn()
+    {
+        GameObject newPawn = GameObject.Instantiate(PawnPrefab);
+        newPawn.transform.position = spawnPositions[UnityEngine.Random.Range(0,spawnPositions.Count-1)]; //move to random spawn location
+        NavAgent newAgent = new NavAgent(newPawn.GetComponentInChildren<NavMeshAgent>(),0,false,false,false,0);
+        NPCObjs.Add(newPawn);
+        Agents.Add(newAgent);
+        Debug.Log("Spawned a pawn");
+        return newPawn;
+    }
+
+    public void RemovePawn(GameObject pawn)
+    {
+        int index = NPCObjs.FindIndex((x) => x == pawn);
+        NPCObjs.RemoveAt(index);
+        Agents.RemoveAt(index);
+        NPCObjs.TrimExcess();
+        Agents.TrimExcess();
+    }
+
+    public override void Start()
+    {
+        for (int i = 0; i < numberStartingOfPawns; i++)
+        {
+            CreateNewPawn();
+        }
     }
 
     public void RegisterNewWaypoint(PawnPatrolWaypoint waypoint)
@@ -176,6 +211,7 @@ public class PawnModule : Module
         Agents.Clear();
         spawnPositions.Clear();
         NPCObjs.Clear();
+        numberOfPawns = numberStartingOfPawns;
     }
 }
 
