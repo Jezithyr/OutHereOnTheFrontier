@@ -21,11 +21,14 @@ public class DebugMenu : ScriptedUI
     public void setGameTimer(int newtime)
     {
         playstate.GameTimer = newtime;
+        playstate.ElapsedTime = 8 - newtime;
     }
 
     public void addGameTimer(int newtime)
     {
         playstate.GameTimer -= newtime;
+        playstate.ElapsedTime += newtime;
+
     }
 
 

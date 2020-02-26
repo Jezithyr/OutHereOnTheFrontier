@@ -30,6 +30,9 @@ public class PlayingState : GameState
     [SerializeField] private ModuleManager moduleManager;
     [SerializeField] private EventModule eventModule ;
     [SerializeField] private ConstructionModule buildingModule;
+    [SerializeField] private ResourceModule resourceModule;
+    [SerializeField] private Resource populationResource;
+
 
     [SerializeField] private List<Event> eventList = new List<Event>();//only use 4 or everything breaks
     [SerializeField] private LayerMask buildingLayer;
@@ -54,6 +57,7 @@ public class PlayingState : GameState
     private int settingsMenuId;
     private int buildingMenuId;
     private int gameOverMenuid;
+    private byte gameOverType = 0;
     private AudioSource audioSource2D;
     public AudioSource AudioSource2D{get => audioSource2D;}
 
@@ -119,7 +123,7 @@ public class PlayingState : GameState
         Reset();
             
         SceneManager.LoadScene(sceneName:"MainMenu");
-
+        uiModule.Hide(gameOverMenu,gameOverMenuid);
         //SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainMenu"));
     }
 
@@ -140,10 +144,18 @@ public class PlayingState : GameState
             ElapsedTime += 1;
             
         }
+
+        if (resourceModule.GetResourceStorage(populationResource) <= 0)
+        {
+            gameOverType = 1;
+            GameOver();
+        }
+
         if (GameTimer <= 0)
-            {
-                GameOver();
-            }
+        {
+            gameOverType = 0;
+            GameOver();
+        }
 
         switch (hudMode)
         {
@@ -191,11 +203,40 @@ public class PlayingState : GameState
         }
     }
 
+    public void Win()
+    {
+        uiModule.Hide(debugMenu,debugMenuid);
+        uiModule.Hide(playerHUD,playerHudId);
+        uiModule.Hide(eventMenu,eventMenuId);
+        gameOverMenu.ChangeGameOverReason("You win!");
+        gameOverMenu.HideLoseText();
+        uiModule.Show(gameOverMenu,gameOverMenuid);
+        Game.Pause();
+    }
+
     private void GameOver()
     {
         Game.Pause();
         uiModule.Hide(debugMenu,debugMenuid);
         uiModule.Hide(playerHUD,playerHudId);
+        uiModule.Hide(eventMenu,eventMenuId);
+
+        switch(gameOverType)
+        {
+            case 0: 
+            {
+                gameOverMenu.ChangeGameOverReason("Outta time!");
+                break;
+            }
+            case 1:
+            {
+                gameOverMenu.ChangeGameOverReason("Everyone Died");
+                break;
+            }
+        }
+
+
+
         uiModule.Show(gameOverMenu,gameOverMenuid);
     }
 
