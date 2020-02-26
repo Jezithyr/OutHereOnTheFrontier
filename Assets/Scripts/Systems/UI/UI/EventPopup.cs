@@ -77,9 +77,11 @@ public class EventPopup : ScriptedUI
         for (int i = 0; i < eventCount; i++)
         {
             choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText( eventData.choices[i].flavorText);
-            
+            choiceButtons[i].SetActive(true);
+
             if (eventData.choices[i].CheckConditions())
             {
+               
                choiceButtons[i].GetComponentInChildren<Button>().interactable = true; 
             }
 
