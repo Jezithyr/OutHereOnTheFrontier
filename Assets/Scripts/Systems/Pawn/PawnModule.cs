@@ -1,88 +1,164 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+
+struct NavAgent
+{
+    public NavMeshAgent agent;
+    public int currentPatrolIndex;
+    public bool isTravelling;
+    public bool isWaiting;
+    public bool isPatrollingForward;
+    public float waitTimer;
+
+    public void SetPatrolIndex(int cpi)
+    {
+        currentPatrolIndex = cpi;
+    }
+
+    public void SetTraveling(bool newTraveling)
+    {
+        isTravelling = newTraveling;
+    }
+
+     public void SetWaiting(bool newWait)
+    {
+        isWaiting = newWait;
+    }
+
+     public void SetPF(bool newPf)
+    {
+        isPatrollingForward = newPf;
+    }
+
+     public void SetWait(float newTimer)
+    {
+        waitTimer = newTimer;
+    }
+
+    public NavAgent(NavMeshAgent a, int p, bool t, bool w, bool f,float wt)
+    {
+        agent = a;
+        currentPatrolIndex = p;
+        isTravelling = t;
+        isWaiting = w;
+        isPatrollingForward = f;
+        waitTimer = wt;
+    }
+}
 
 
 [CreateAssetMenu(menuName = "GameFramework/SubSystems/PawnModule")]
 public class PawnModule : Module
 {
+    // True False parameter to determine whether the pawn will wait at the current waypoint
+    [SerializeField] bool patrolWaitng = true;
+    
+    // The time the pawn will wait at the waypoint if patrolWaiting = true
+    [Header("How long do you want it to wait")]
+    [SerializeField] private float patrolWaitTime = 3.0f;
 
-    [SerializeField] private JobModule linkedJobModule;
+    // The probability of the pawn switching it's direction
+    [Header("Adjust how random you want the patrol")]
+    [Range(0.0f, 1f)]
+    [SerializeField] private float switchChance = 0.2f;
 
-    private List<Pawn> activePawns = new List<Pawn>();
+    // The list of potential patrolPoints the pawn will cover
+    [Header("Spawn in waypoints, and drag them all into this list")]
+    [SerializeField] List<PawnPatrolWaypoint> startingPatrolPoints = new List<PawnPatrolWaypoint>();
 
-    private List<Pawn> inActivePawns = new List<Pawn>();
+    private List<NavAgent> Agents = new List<NavAgent>();
 
-    private List<Pawn> pawnList = new List<Pawn>();
+    private List<GameObject> NPCObjs = new List<GameObject>();
 
+    private List<Vector3> spawnPositions = new List<Vector3>();
 
-    public void AddPawn(Pawn newPawn)
+    private List<PawnPatrolWaypoint> masterPatrolList = new List<PawnPatrolWaypoint>();
+
+    private void initalize()
     {
-        if (pawnList.Contains(newPawn)) return; //stop the possibility of duplicates
-        pawnList.Add(newPawn);
-        inActivePawns.Add(newPawn);
-    }
-
-    private void SchedulePawn(Pawn targetPawn, Job newJob) 
-    {
-        if (activePawns.Contains(targetPawn)) return; //prevent scheduling a pawn to multiple tasks
-        if (!targetPawn.startNewJob(newJob)) return; //sets the pawns job, if the pawn already has a job exit without overriding
-        inActivePawns.Remove(targetPawn);
-        activePawns.Add(targetPawn);
-    }
-
-    private void AssignPawns()
-    {
-        foreach (Pawn _pawn in inActivePawns)
+        Reset();
+        foreach (var item in startingPatrolPoints)
         {
-            foreach (var jobList in linkedJobModule.Jobs)
+            masterPatrolList.Add(item);
+        }        
+    }
+
+    private void TickPawns()
+    {
+        for (int i = 0; i < Agents.Count; i++)
+        {
+            if (Agents[i].isTravelling && Agents[i].agent.remainingDistance <= 1.0f)
             {
-                if (jobList.Value.Count > 0)
+                Agents[i].SetTraveling(false);
+                if (patrolWaitng)
                 {
-                    SchedulePawn(_pawn,jobList.Value.Dequeue());
-                    break;
+                    Agents[i].SetWaiting(true);
+                    Agents[i].SetWait(0f);
+                }
+                else
+                {
+                    ChangePatrolPoint( Agents[i]);
+                    SetDestination(Agents[i]);
+                }
+            }   
+            if (Agents[i].isWaiting)
+            {
+                Agents[i].SetWait(Agents[i].waitTimer + Time.deltaTime);
+                if (Agents[i].waitTimer >= patrolWaitTime)
+                {
+                Agents[i].SetWaiting(false);
+
+                ChangePatrolPoint( Agents[i]);
+                SetDestination(Agents[i]);
                 }
             }
         }
     }
 
-    public void FreePawn(Pawn targetPawn)
-    {
-        
-        targetPawn.CancelCurrentJob();
-        linkedJobModule.AddJob(targetPawn.Job);
-        activePawns.Remove(targetPawn);
-        inActivePawns.Add(targetPawn);
-    }
 
-    private void initalize()
+    private void SetDestination(NavAgent agent)
     {
-        foreach (Job job in linkedJobModule.PossibleJobs) //initalize job prioritylist
+        if (masterPatrolList != null)
         {
-            if (!linkedJobModule.Jobs.ContainsKey(job.Priority))
-            {
-                linkedJobModule.Jobs.Add(job.Priority,new Queue<Job>());
-            }
+            Vector3 targetVector = masterPatrolList[agent.currentPatrolIndex].transform.position;
+            agent.agent.SetDestination(targetVector);
+            agent.SetTraveling(true);
         }
     }
 
-    private void TickPawns()
+    private void ChangePatrolPoint(NavAgent agent)
     {
-        foreach (Pawn pawn in pawnList)
+        if(UnityEngine.Random.Range(0f,1f) <= switchChance)
         {
-            pawn.RunUpdate();
+           agent.SetPF(! agent.isPatrollingForward);
+        }
+        if (agent.isPatrollingForward)
+        {
+            agent.SetPatrolIndex((agent.currentPatrolIndex + 1) % masterPatrolList.Count);
+        }
+        else
+        {
+            agent.SetPatrolIndex(agent.currentPatrolIndex - 1);
+            if (agent.currentPatrolIndex < 0)
+            {
+                agent.SetPatrolIndex(masterPatrolList.Count - 1) ;
+            }
         }
     }
 
     private void UpdateTick()
     {
-        if (inActivePawns.Count != 0) AssignPawns();
         TickPawns();
     }
 
     public override void Reset()
     {
-        
+        masterPatrolList.Clear();
+        Agents.Clear();
+        spawnPositions.Clear();
+        NPCObjs.Clear();
     }
 }
 
