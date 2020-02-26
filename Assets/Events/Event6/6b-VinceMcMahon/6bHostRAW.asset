@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: 6bHostRAW
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 00719d50961587a4cadfee60cc3a9aeb, type: 2}
+  effectTitle: Spaceport Hosts RAW!
+  effectText: 'We''ve hosted RAW and the worst I think is over. . .I can''t say the
+    over-the-top action won''t have a lasting effect on our population''s psyche,
+    though.
+
+    (-20% Air Production, -20% Food Production, +30% Metal Production)'
+  effectButtonText: Things have been set in motion that cannot be undone.
+  optionTitle: Spaceport vs RAW
+  flavorText: We have no choice but to submit -- tell the emperor we'll host RAW.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 66e17960d274eaa44857af0d1b9d7548, type: 2}

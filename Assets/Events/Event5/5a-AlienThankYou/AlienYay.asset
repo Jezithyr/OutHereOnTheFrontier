@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: AlienYay
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 5aAlienThankYou_C1
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: a33e4d0f4cbe1694daac7a624172e985, type: 2}
+  effectTitle: Alien Care Package!
+  effectText: 'It looks like the Alien from earlier gave us a care package for our
+    help in getting it home! Let''s look what''s inside!
+
+    (+200 Water, +200 Air, +200 Food, +200 Metal, +200 Wood)'
+  effectButtonText: YEEHAW!
+  optionTitle: (+200 Water, +200 Air, +200 food +200 Metal, +200 Wood)
+  flavorText: Let's see what's inside!
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: b0c83db27acf1f542baea1ea662d0724, type: 2}

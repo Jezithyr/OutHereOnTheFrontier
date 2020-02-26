@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: ChickenCREATEROBOCLUCK
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 1bRobocock_C1
+  condition: {fileID: 11400000, guid: 6f0e326e55fb0c446bc84759a50d055d, type: 2}
+  effects:
+  - {fileID: 11400000, guid: f6efb148412a81a4499f0db13141b876, type: 2}
+  - {fileID: 11400000, guid: 2fa0dea1db34bce44bfc280535f0e84f, type: 2}
+  effectTitle: IT LIVES!
+  effectText: 'MARVEL AT THE TECHNOLOGICAL TERROR WE HAVE CREATED!
+
+    (Used 100 Metal, Gained 5% Resource Production.)'
+  effectButtonText: Our move. Let's keep going.
+  optionTitle: (Lose 100 metal, increase production by 5%)
+  flavorText: (100 Metal) CREATE ROBOCLUCK!
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: dea8f76b452c0674dae9a18130d01943, type: 2}

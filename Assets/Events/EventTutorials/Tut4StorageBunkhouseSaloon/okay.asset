@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: okay
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 
+  condition: {fileID: 0}
+  effects: []
+  effectTitle: 'Tutorial 4: Other OTHER buildings'
+  effectText: "There are still a few buildings we haven't gone over yet: The Bunkhouse,
+    Saloon, and Storage. The bunkhouse provides more space for families, allowing
+    your population to grow (if you ever run out of workers we're done for!) The Saloon
+    keeps the people happy, slightly increasing production of every resource. Finally,
+    Storage expands your resource capacity, making sure no produce ever goes to waste!
+    \nIt's a good idea to make at least one of each building early on to make sure
+    you have good supplies across the board."
+  effectButtonText: I'm on it!
+  optionTitle: 
+  flavorText: Sounds interesting. I'm in!
+  wasChosen: 1
+  owner: {fileID: 0}

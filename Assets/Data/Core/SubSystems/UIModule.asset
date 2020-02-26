@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a9d17bb5238154a92d55dcc58e4248, type: 3}
+  m_Name: UIModule
+  m_EditorClassIdentifier: 
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
+  RunUpdate: 1
+  StartOnSceneLoad: 1
+  ActiveInterfaces:
+  - {fileID: 11400000, guid: 55df94fa8b26d424396a73375669c498, type: 2}
+  - {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
+  - {fileID: 11400000, guid: 22c900dd6814ab540ba2bf38a213c5ac, type: 2}
+  - {fileID: 11400000, guid: 7a2d985bb5d2fba468b052dc41a31342, type: 2}
+  - {fileID: 11400000, guid: 1cfad7bfe08a09e45843424cb81b78d4, type: 2}
+  - {fileID: 11400000, guid: c1ed76968c7dbda44b8271b353b44181, type: 2}
+  - {fileID: 11400000, guid: e69113e232c31ac4289e5f59089ffbef, type: 2}
+  - {fileID: 11400000, guid: d94f98f7f06623b4589daed4dea4e9e0, type: 2}
+  - {fileID: 11400000, guid: 4554fb03f2cb3a541a72e611a4d83482, type: 2}
+  clickSound: {fileID: 8300000, guid: 0a6f966651bf1f140a215dced0f7469f, type: 3}
+  failSound: {fileID: 8300000, guid: 1ed7b47ffe0438940815a784599c0d79, type: 3}
+  alertSound: {fileID: 8300000, guid: 373a7aabb2d4a18429c0c8cf4f3dcea4, type: 3}

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6987c30c14013c45a7f7c5adb29999a, type: 3}
+  m_Name: EventModule
+  m_EditorClassIdentifier: 
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
+  RunUpdate: 1
+  StartOnSceneLoad: 1
+  activeEvents:
+  - {fileID: 11400000, guid: a1c76a4910f8cee46bb5e4ef33b1ab0c, type: 2}
+  - {fileID: 11400000, guid: ec421705ff90cec45a414f9883f63833, type: 2}
+  - {fileID: 11400000, guid: 3c08e8d9a0f3f574688cb14b2ceb5e24, type: 2}
+  - {fileID: 11400000, guid: 4fe67b3288bbab943a758e2d52371156, type: 2}
+  - {fileID: 11400000, guid: 8d1ce4dd3f2f3804a889ea98768979de, type: 2}
+  linkedEventPrefab: {fileID: 5937803854090534573, guid: d85d297db28fb254cae444baa1516221,
+    type: 3}
+  eventUI: {fileID: 11400000, guid: e69113e232c31ac4289e5f59089ffbef, type: 2}
+  playState: {fileID: 11400000, guid: 007c39cc34dd206408a577a68f80ab82, type: 2}
+  gameplayScene:
+    m_Handle: 1
+  globalEventPool: {fileID: 11400000, guid: 30539091e98a12e499b06b38513579c2, type: 2}
+  EventPools:
+  - {fileID: 11400000, guid: f680eb165770e38468f1f995ddaab2c1, type: 2}
+  - {fileID: 11400000, guid: 3067eb6b595a3ff449239bdb5798e328, type: 2}
+  - {fileID: 11400000, guid: cc0a970372a0f7b43b21db5297ffc572, type: 2}
+  - {fileID: 11400000, guid: c54a6fae61070f44ea562be7ae1b96a0, type: 2}
+  - {fileID: 11400000, guid: 9eab0ea56490af14e81593fa0d93bf5c, type: 2}
+  - {fileID: 11400000, guid: 7265aebc0727dc845b7115cd8f823379, type: 2}
+  - {fileID: 11400000, guid: c2f39de032f331a4996d6d2305a9d8c8, type: 2}
+  - {fileID: 11400000, guid: f6f05734e0b67b3448c61ac583d0b31a, type: 2}
+  - {fileID: 11400000, guid: 3594295ccc3e96c489a04b3ff1c8a139, type: 2}
+  - {fileID: 11400000, guid: 37a629cab90061d499dc48944f5ce9a7, type: 2}
+  - {fileID: 11400000, guid: 5c25f161f3beed04cbe7b5690a842907, type: 2}
+  - {fileID: 11400000, guid: 940788de2a045474dbf31d914e35306c, type: 2}
+  - {fileID: 11400000, guid: 2775a9ce4f3aa8a41a93f07bdebf47ff, type: 2}
+  - {fileID: 11400000, guid: 9a66c90a08f8842409b0e21c53c8143d, type: 2}
+  - {fileID: 11400000, guid: ba564749360673d4b8740cb1f1998005, type: 2}
+  - {fileID: 11400000, guid: 74f66723df24026429323bd4eb3e7e54, type: 2}
+  - {fileID: 11400000, guid: aae7231a1497f874f814d976528fb1bd, type: 2}
+  - {fileID: 11400000, guid: fb33b2d771f3d4e43bccfac5c8792e87, type: 2}
+  - {fileID: 11400000, guid: c7334742d8bc89941bc3121fc21b2467, type: 2}
+  - {fileID: 11400000, guid: eadacf53ff3c23f4a82df8b6c74465e8, type: 2}
+  - {fileID: 11400000, guid: 1d93f1e40b0871445aa8350834426fae, type: 2}
+  - {fileID: 11400000, guid: 4124fb6c73689a44fa83e7676df0f175, type: 2}
+  PoolTimes: 3c00000078000000b4000000f00000002c01000068010000a4010000df010000000000000f0000001e0000002d0000003b000000dc0000007c0100005a0000007c0100004a010000900100004001000004010000ae010000

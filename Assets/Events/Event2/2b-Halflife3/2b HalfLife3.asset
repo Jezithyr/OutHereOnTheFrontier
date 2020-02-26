@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: 2b HalfLife3
+  m_EditorClassIdentifier: 
+  EventInternalName: 2bHalflife3_Event
+  isActive: 1
+  triggerCondition: []
+  choices:
+  - {fileID: 11400000, guid: 9199db732634bff47b9fd4dd126a6fc8, type: 2}
+  - {fileID: 11400000, guid: 8eddb5456fda12245b0bebfcf09ac371, type: 2}
+  - {fileID: 11400000, guid: 34ea5bdfd1e5a984c9f431d614b6474c, type: 2}
+  eventTitle: 6:00 left!
+  flavorText: "Rumors abound that one of our locals has come into possession of something
+    thought to be myth \u2013 a copy of Quarter-Life 6! It was believed that Nozzle
+    was never going to release it! What should we do?"

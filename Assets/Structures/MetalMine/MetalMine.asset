@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: MetalMine
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4614207867291596782, guid: 3cc403c5162194347ad2567d30d19b4d, type: 3}
+  previewprefab: {fileID: 3179961777605916555, guid: afaefbda5745d3341bd8a633c7e12598,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: abc1cf8caf43fce4b981cb064fb5d3bc, type: 2}
+  - {fileID: 11400000, guid: f1dc675470085694bbb653fe4048cdb8, type: 2}
+  - {fileID: 11400000, guid: bb72668264a522d48b76bd413056595b, type: 2}
+  - {fileID: 11400000, guid: 3cc355cc9840b4c4ea8c5e4a8df9a19c, type: 2}
+  destroyEffects:
+  - {fileID: 11400000, guid: f378f83a2ed5fac49a0ef4bedf66feb7, type: 2}
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
+  buildingRadiusMultiplier: 1
+  Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 2800000028000000
+  placementSound: {fileID: 8300000, guid: ef6a68e59375fef40b0df7ecc5518201, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: 894f18bfe7e803443b1004e9a9704794, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: 3f2ccf3326a5dca41b62b3680e3a2213, type: 2}
+  description: The Metal Mine extracts metal from mining areas, which is crucial for
+    construction.

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: TimeforMooMooJail
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 5cCowPlotThickens_C3
+  condition: {fileID: 0}
+  effects: []
+  effectTitle: Local Cow arrested for moorder!
+  effectText: 'Good thing we got him this time! Shame about the first one, but I suppose
+    you can''t win them all.
+
+    (No effect on resources)'
+  effectButtonText: Whoever suggested a jail is getting a raise.
+  optionTitle: (Unlocks event 6d)
+  flavorText: How could we have been so blind? Arrest it immediately!
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: e8c71ed10791bd4438566d874955c4d2, type: 2}

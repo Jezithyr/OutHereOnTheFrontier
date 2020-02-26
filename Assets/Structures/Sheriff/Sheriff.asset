@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: Sheriff
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1809039908080295767, guid: 89ee593cf1e0c3c43b0e0bf6b3594be9, type: 3}
+  previewprefab: {fileID: 4851236165057487183, guid: fcb7fd2beb43c684f8f843ef5084149c,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: eb37172b38857a24abed8233a86d29cb, type: 2}
+  - {fileID: 11400000, guid: b59c13cbaba39a344970e7097369f19f, type: 2}
+  destroyEffects: []
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
+  buildingRadiusMultiplier: 1
+  Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  AmountForCost: 1900000019000000
+  placementSound: {fileID: 8300000, guid: c93d3948a46d2714eb808e57a4ce5096, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: f479dbed4e28ee24d8088285b6c3be28, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: 6bacf28b88718254685bbb4941a2fe7f, type: 2}
+  description: The Sheriff's building provides room for lawful solutions to various
+    issues.

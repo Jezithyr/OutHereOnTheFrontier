@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c6343ebe18155408325231a57ad4ee, type: 3}
+  m_Name: ResourceModule
+  m_EditorClassIdentifier: 
+  moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
+  RunUpdate: 1
+  StartOnSceneLoad: 0
+  ActiveResources:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
+  - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
+  - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
+  - {fileID: 11400000, guid: f17fa8b2279e00a47966794e9b031dc2, type: 2}
+  - {fileID: 11400000, guid: f44d4ff5c902fc248988a4de903a5654, type: 2}
+  - {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
+  ResourceLimits:
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 1000
+  - 1000
+  - 50
+  ResourceStarts:
+  - 100
+  - 100
+  - 100
+  - 100
+  - 100
+  - 0
+  - 0
+  - 5
+  ResourceSinks: []
+  resourceNodes: []
+  linkedResourceNodes: []

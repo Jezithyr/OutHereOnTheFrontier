@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MainLight
   layers:
   - Default
   - TransparentFX
@@ -14,15 +15,15 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Terrain
+  - Obstacles
+  - Buildings
+  - Previews
+  - Metal
+  - Farm
+  - Oil
+  - ResourceExtractors
+  - CameraBlocker
   - 
   - 
   - 

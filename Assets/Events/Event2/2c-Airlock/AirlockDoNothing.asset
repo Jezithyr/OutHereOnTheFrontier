@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: AirlockDoNothing
+  m_EditorClassIdentifier: 
+  DecisionInternalName: Airlock_C1
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 64c5a4178ddb372428f62da076693eb5, type: 2}
+  effectTitle: Government Officials say "Not our problem" to airlock concerns!
+  effectText: 'We sectioned off the faulty airlock and put up a few warning signs
+    about opening adjoining seals. Hopefully everyone can read them!
+
+    (-150 Air)'
+  effectButtonText: It'll be fine. TRUST me.
+  optionTitle: (Lose 150 Air)
+  flavorText: Literally do nothing.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 14748eead5694c84abbb2a3d375face6, type: 2}

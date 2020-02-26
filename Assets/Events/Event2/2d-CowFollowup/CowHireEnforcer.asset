@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: CowHireEnforcer
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 2dCowFollowUp_C2
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 7369a579c4ff6a44cb5f0315f61465d5, type: 2}
+  effectTitle: Local Moorder Cow mysteriously disappears after meeting with Administration!
+  effectText: 'With some convincing we''ve brought the cow over to our side. Never
+    hurts to have an enforcer!
+
+    (+5% Resource Production)'
+  effectButtonText: MOO! I mean, uh. . .WOOH!
+  optionTitle: (+5% resource production)
+  flavorText: Hire the cow as your personal enforcer.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 928f0d249e62f7244a633226361ac427, type: 2}

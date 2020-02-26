@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: YeahIhaveacreditcard
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 6bEE_C2
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 09c200e8acb508f468798456dedf1451, type: 2}
+  - {fileID: 11400000, guid: 06cd2033917f1d440b8b92eec63150c2, type: 2}
+  effectTitle: Administration embraces "Surprise Mechanics"!
+  effectText: 'We''ve fully embraced EE''s business philosophy. I had the option to
+    earn the content on disc but I''d rather just spend the $20 and save myself 40
+    hours of grind.
+
+    (-5% Resource Production, +100 to all resources)'
+  effectButtonText: Yeah I swear one more lootbox and I'll get the skin I want. .
+  optionTitle: (-5% resource production, +100 all resources)
+  flavorText: "The odds sound good enough. Let\u2019s do it!"
+  wasChosen: 1
+  owner: {fileID: 11400000, guid: a8f0a3fb1ec2ee946bac081e90c98f81, type: 2}

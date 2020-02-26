@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: WoodFarm
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7819567662714847191, guid: d7e9c8b2811e44d4287248a82189a5e8, type: 3}
+  previewprefab: {fileID: 1817494536347110948, guid: 9dde8710c05a9a14f97987afb5ae8b88,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: b718f5fe13e1d6044b2651b7a01f7acf, type: 2}
+  - {fileID: 11400000, guid: e6e7b86a23e662a40afb0965b134d4fd, type: 2}
+  - {fileID: 11400000, guid: def35434ab3e11d4ba777a7f58fb662f, type: 2}
+  destroyEffects: []
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
+  buildingRadiusMultiplier: 1
+  Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 2800000028000000
+  placementSound: {fileID: 8300000, guid: 5d6842a41736e6648bd33a00d1343025, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: 32b3f589113934846b773628afe83b3d, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: 8e73132ed9791e1408d603046ef30adf, type: 2}
+  description: The Wood Farm produces wood, which is required to produce every building.

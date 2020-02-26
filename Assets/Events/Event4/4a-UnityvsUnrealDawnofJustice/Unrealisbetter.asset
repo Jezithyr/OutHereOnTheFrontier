@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: Unrealisbetter
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 4aUvU_C4
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: ecb9d6d31829b724d9ba558213e2226d, type: 2}
+  - {fileID: 11400000, guid: 2127c0946fd08904cbdf9216a5242ea6, type: 2}
+  effectTitle: Adminstration Publicly Supports Unreal Engine
+  effectText: 'While I''m sure they''ll get over it at length, a large number of people
+    are being very vocal about their. . ."displeasure". . .with our decision.
+
+    (+1 Population, -5% Resource Production)'
+  effectButtonText: Why are you booing me> I'm right!
+  optionTitle: (+1 population, -5% production)
+  flavorText: Unreal is clearly superior. Move the Unity Engineer to QA.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 72966216e0bad09489f73c3740623a08, type: 2}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: 6cCreateyourown
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: ba955163f0a1a8045ad37f5075503ad8, type: 2}
+  - {fileID: 11400000, guid: 8dcfe5cde178ea641b7cb95bc26f317f, type: 2}
+  effectTitle: Spaceport Invades RAW?
+  effectText: 'In a bizarre turn of events we actually defeated the fighters RAW brought
+    to our moon -- do those guys even know how to fight for real?
+
+    (-200 Food, -200 Metal, -20% Food Production, +20% Population Growth)'
+  effectButtonText: We've created a new generation of fighters.
+  optionTitle: Spaceport Creates Fake Wrestling Universe
+  flavorText: We'll create our own Wrestling Universe and invade RAW!
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 66e17960d274eaa44857af0d1b9d7548, type: 2}

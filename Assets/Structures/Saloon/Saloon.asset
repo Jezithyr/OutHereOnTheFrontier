@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: Saloon
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1192344348945674819, guid: e6fb4ed26c17d774fbf41c8f9c1b5014, type: 3}
+  previewprefab: {fileID: 3355417139079289166, guid: d431aa3b9909f534a9f4b80cfb17cb85,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: eb37172b38857a24abed8233a86d29cb, type: 2}
+  - {fileID: 11400000, guid: b2e41beb0f68dea4396107cc6d604f3b, type: 2}
+  destroyEffects: []
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
+  buildingRadiusMultiplier: 1
+  Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 1900000019000000
+  placementSound: {fileID: 8300000, guid: 13f802987196b5440b7db8f54cb386a0, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: 34ae0a9fc866c4449af1996a3eec9768, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: cc2748610763c29499b87b34f9c1a615, type: 2}
+  description: The Saloon contributes to the positivity of your population's attitude,
+    providing a small bonus to overall production of all resources.

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: Tumblekill
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 1aTumbleweed_C1
+  condition: {fileID: 11400000, guid: c766cf8a2fa68d44eb17208d0b5c6107, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 8cabe108b83d2af45abee816c271f249, type: 2}
+  effectTitle: Goodnight sweet prince.
+  effectText: 'The Tumbleweed was ruthlessly eliminated without provocation. All it
+    cost us was a single bullet. Surely this will not cause a rumble in the wastes?
+
+    (-1 Metal)'
+  effectButtonText: That tumbleweed had it coming. Let's keep going!
+  optionTitle: (Costs 1 Metal, Unlocks Event 5d)
+  flavorText: (1 Metal) Terminate it with extreme prejudice.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 030a2d5eb45d63747afecea85b2eb70f, type: 2}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ee263de6d234d44b2287b56ab533b4, type: 3}
+  m_Name: WaterTower
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8639823020669408969, guid: 08aceb56093c9564b89e0d9eafeca1ea, type: 3}
+  previewprefab: {fileID: 3392162174720643068, guid: 49a5b669a2d573c458a4afd2b99675a0,
+    type: 3}
+  placementConditions:
+  - {fileID: 11400000, guid: 2c336e5b122471f4dbe25747fbc2a853, type: 2}
+  - {fileID: 11400000, guid: 6dff1b0b0c3eee54996d27e842395db7, type: 2}
+  destroyEffects: []
+  constructionManager: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59,
+    type: 2}
+  buildingRadiusMultiplier: 1
+  Removable: 1
+  ResourceForCost:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  AmountForCost: 1900000019000000
+  placementSound: {fileID: 8300000, guid: 29fdec32ce6c4a84cabc2bb681194176, type: 3}
+  canPlaceMaterial: {fileID: 2100000, guid: 702d7d47d36864344a85a64dfa700b65, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: 01d0047b1a7ef7e47a0c33b92ed51f72, type: 2}
+  description: The water tower draws clean water from underground springs, which is
+    needed to grow food.

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: AirlockLeisurelyPace
+  m_EditorClassIdentifier: 
+  DecisionInternalName: Airlock_C3
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 5011e0691459fbb489f1c068d65e6511, type: 2}
+  effectTitle: Government claims "We'll fix it when we can!"
+  effectText: "We've sent the repair technician the work order. He says he'll get
+    it done once he's cleared all his previous requests for broken lightbulbs and
+    leaky sinks.\n(-2 Population)\t"
+  effectButtonText: We do the best we can with what we have.
+  optionTitle: (Lose 2 Population)
+  flavorText: 'Send the repair tech at his earliest available scheduling (approx.
+    wait time: 8 earth weeks)'
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: 14748eead5694c84abbb2a3d375face6, type: 2}

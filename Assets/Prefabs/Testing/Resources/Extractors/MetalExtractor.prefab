@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2839015589853828805}
-  - component: {fileID: 3701532702097535746}
+  - component: {fileID: 2240391779318390795}
   m_Layer: 0
   m_Name: MetalExtractor
   m_TagString: Untagged
@@ -26,13 +26,13 @@ Transform:
   m_GameObject: {fileID: 1127645920950124884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.5, y: 0, z: -7.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 3160418050034309752}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3701532702097535746
+--- !u!114 &2240391779318390795
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,13 +41,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1127645920950124884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cbac3c43692de449c721382d787862, type: 3}
+  m_Script: {fileID: 11500000, guid: 72fb16d546780ba4cb824dc1c286d83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LinkedResourceManager: {fileID: 0}
-  KeepLoaded: 0
-  ResourceTypes: []
-  ProductionAmounts: 
+  resourceComponent: {fileID: 11400000, guid: 03e32ff68dba331418957169625b73d3, type: 2}
+  activate: []
+  activeLoop: []
+  deActivate: []
+  deActivatedLoop: []
+  onStart: []
+  onDestroy: []
+  isActive: 1
 --- !u!1 &2238131521523416662
 GameObject:
   m_ObjectHideFlags: 0

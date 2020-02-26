@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: ExtremeBusinessSolutionsConsulting
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 4dWorkerStrike_C1
+  condition: {fileID: 0}
+  effects:
+  - {fileID: 11400000, guid: 92ebb5e46be38d642a4a00dc85cacaf4, type: 2}
+  - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Administration announces partnership with Extreme Business Solutions
+    Consulting!
+  effectText: 'Well I guess they had "Extreme" in the name?
+
+    (-6 Population, +5% resource production)'
+  effectButtonText: I mean they get results, right?
+  optionTitle: (-6 Population, +5% resource production)
+  flavorText: Consult with Extreme Business Solutions Consulting.
+  wasChosen: 0
+  owner: {fileID: 11400000, guid: d16cafa3c2475264e83de3fa2c5b9316, type: 2}
