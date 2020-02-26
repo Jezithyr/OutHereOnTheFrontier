@@ -22,7 +22,7 @@ public class PopulationSink : ResourceSink
         }
         else 
         {
-            resourceModule.RemoveResource(popGrowthCondition.populationResource,popDeath);
+            resourceModule.RemoveResource(popGrowthCondition.populationResource,popDeath*resourceModule.GetResourceStorage(popGrowthCondition.populationResource));
         }
 
     }
@@ -31,8 +31,8 @@ public class PopulationSink : ResourceSink
     {
         for (int i = 0; i < popGrowthCondition.consumedResources.Count; i++)
         {
-            resourceModule.RemoveResource(popGrowthCondition.consumedResources[i],popGrowthCondition.resourcePerPop[i]);
+            resourceModule.RemoveResource(popGrowthCondition.consumedResources[i],popGrowthCondition.resourcePerPop[i]*resourceModule.GetResourceStorage(popGrowthCondition.populationResource));
         }   
-        resourceModule.AddResource(popGrowthCondition.populationResource,popGrowthAmount*(1+popGrowthMultiplier));
+        resourceModule.AddResource(popGrowthCondition.populationResource,popGrowthAmount*(1+popGrowthMultiplier)*resourceModule.GetResourceStorage(popGrowthCondition.populationResource));
     }
 }
