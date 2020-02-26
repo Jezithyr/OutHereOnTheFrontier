@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Cow convicted of double homicide disappears?
+  effectText: 'I can''t say it''s what I''d''ve done but it never hurts to have someone
+    on the payroll incapable of feeling human emotion. . .
+
+    (+5% resource production)'
+  effectButtonText: The cow works in darkness to preserve the light.
   optionTitle: (+5% resource production)
   flavorText: This station could use the skills this creature has to offer.
   wasChosen: 0

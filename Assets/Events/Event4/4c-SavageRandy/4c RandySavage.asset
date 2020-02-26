@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: RandySavage
   isActive: 1
-  triggerCondition: {fileID: 0}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: c5e5d98f15746ba4e9dbed1ac9263c19, type: 2}
   - {fileID: 11400000, guid: 488907e260caca24da1534eb6bcba788, type: 2}
-  - {fileID: 11400000, guid: 43f7931dcaa8c6843a3926e52c8db67f, type: 2}
-  eventTitle: Macho Man
+  - {fileID: 11400000, guid: 617708a0d86fea145bcebdd023e6ec9a, type: 2}
+  eventTitle: 4:00 left!
   flavorText: "One of the locals seems to believe he\u2019s actually \u2018Savage
     Randy\u2019, some sort of folk hero from 20th-century earth. He\u2019s causing
     all sorts of ruckuses, screaming stuff like \u201CMACHO MAN IS COMING FOR YOUUUU\u201D

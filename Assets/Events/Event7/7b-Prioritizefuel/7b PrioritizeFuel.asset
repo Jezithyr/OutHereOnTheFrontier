@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 7bPrioritizeFuel_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: 15eea0d3dc063f340a97f095af7f9246, type: 2}
   - {fileID: 11400000, guid: e2708e1533299c944a21449a2fefab7e, type: 2}
-  eventTitle: 
+  eventTitle: 1:00 left!
   flavorText: We need a vast amount of fuel to meet the production deadline. Should
     we divert our focus on other areas of production to prioritize fuel output?

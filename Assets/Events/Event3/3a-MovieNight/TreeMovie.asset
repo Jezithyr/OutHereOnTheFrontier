@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 18b6e07fc3082fb4aaacd1620c6197bb, type: 2}
+  effectTitle: Public Watches old Earth Comedy!
+  effectText: 'After watching a group of grown men cut down a tree with a fish, the
+    public has reshaped their preconceived notions of what is and is not "IMPOSSIBLE".
+
+    (+10% Wood Production)'
+  effectButtonText: 
   optionTitle: (+10% wood production)
   flavorText: Watch a group of Knights cut down a tree with a herring. (+10% wood
     production)

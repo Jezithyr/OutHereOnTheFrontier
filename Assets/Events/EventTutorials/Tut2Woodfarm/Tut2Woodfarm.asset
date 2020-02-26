@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d264486ab947cd642893fd50704f441f, type: 3}
+  m_Name: Tut2Woodfarm
+  m_EditorClassIdentifier: 
+  EventInternalName: 
+  isActive: 0
+  triggerCondition: []
+  choices:
+  - {fileID: 11400000, guid: e476f085b805cdd48a30e92ff217ece1, type: 2}
+  eventTitle: 'Tutorial: Wood Farms'
+  flavorText: Lahee! How'd the metal mine go? If you're caught up with that already
+    why don't you try building a wood farm too? Wood farms will supply us with material
+    we can use to build more advanced structures!

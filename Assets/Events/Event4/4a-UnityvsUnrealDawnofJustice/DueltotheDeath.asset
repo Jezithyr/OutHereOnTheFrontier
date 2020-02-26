@@ -17,6 +17,12 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: 64af335e7c4788a45abef4eb7f54e3f9, type: 2}
   - {fileID: 11400000, guid: c79e1451adee408439f2614a57796239, type: 2}
+  effectTitle: Unity and Unreal engineers duel to the death! (Winner undisclosed)
+  effectText: 'We set the two engineers on eachother and natural selection decided
+    the superior engine. To keep both sides happy, we have not revealed the winner.
+
+    (-1 Population, +10% Resource Production)'
+  effectButtonText: Some things the world can't know.
   optionTitle: (-1 population, +10% production, winner undisclosed for reasons of
     public positivity)
   flavorText: Have them fight to the death.

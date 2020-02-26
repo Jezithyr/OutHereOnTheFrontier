@@ -17,6 +17,12 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: a34e6ed91bf867d42b4391f18dd7ff65, type: 2}
   - {fileID: 11400000, guid: abe3fab2d9558044499fe67c587403b3, type: 2}
+  effectTitle: Administration gives the people what they want!
+  effectText: 'We''ve surrendered to the people''s demands. Let''s hope they don''t
+    ask for more?
+
+    (-250 food, -250 metal, +10% resource productions)'
+  effectButtonText: Well if they do we don't have anything left to give.
   optionTitle: (-250 food, -250 metal, +10% resource production)
   flavorText: (250 food, 250 metal) Give into their demands.
   wasChosen: 0

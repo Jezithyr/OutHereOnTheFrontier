@@ -16,6 +16,10 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 51536f27cdd835945acc63148908200c, type: 2}
+  effectTitle: Local Cow Imprisoned for Life!
+  effectText: "We've got that cow on two life sentences! How long do cows live anyways?\n(-5%
+    food production)\t"
+  effectButtonText: JUSTICE!
   optionTitle: (-5% food production)
   flavorText: 'Life imprisonment with no parole. '
   wasChosen: 0

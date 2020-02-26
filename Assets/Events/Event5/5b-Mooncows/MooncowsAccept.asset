@@ -17,6 +17,10 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: bf7a1b977fc611942abd3e59e8dc49eb, type: 2}
   - {fileID: 11400000, guid: 80567c7812b968d4fa44209a47cc5870, type: 2}
+  effectTitle: Mooncow Farmer Joins the Station!
+  effectText: "We've brought the Mooncow farmer into the fold and they've been immediately
+    helpful! Great decision chief!\n(+1 Population, -200 Metal, +20% Food Population)\t"
+  effectButtonText: YEEHAW!
   optionTitle: (Gain 1 Population, 20% food production, Lose 200 Metal)
   flavorText: (200 Metal) Accept the Mooncow Farmer into our ranks.
   wasChosen: 0

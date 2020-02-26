@@ -16,6 +16,11 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Unreal and Unity. . .friends?
+  effectText: 'PROGRAMMERS TOGETHER. STRONG.
+
+    (+5% Resource Production)'
+  effectButtonText: We've built a better future.
   optionTitle: (+5% production)
   flavorText: Encourage the Engineers to combine their talents so as to make the station
     truly remarkable.

@@ -58,6 +58,7 @@ public class PlayerHUD : ScriptedUI
 
     private int previewBuildingIndex = -1;
 
+    private bool canBuild = false;
     private bool showingPreview = false;
     public bool BuildMode{get =>showingPreview;}
 
@@ -154,10 +155,7 @@ public class PlayerHUD : ScriptedUI
         {
             linkedResourceDisplays[i].SetText(Mathf.FloorToInt(resourceSystem.GetResourceStorage(ResourceList[i]))+ "/"+ Mathf.FloorToInt(resourceSystem.GetResourceLimit(ResourceList[i])));
         }
-        if (showingPreview)
-        {
-            previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask);
-        }
+        UpdatePreview();
         timerDisplay.SetText(playingState.GameTimer/60 + ":"+ playingState.GameTimer%60);
     }
 
@@ -216,6 +214,24 @@ public class PlayerHUD : ScriptedUI
 
     }
 
+
+    public void UpdatePreview()
+    {
+        if (!showingPreview) return;
+        previewBuilding.transform.position = uiModule.CursorToWorld(cameraModule.ActiveCameraObject, BuildingLayerMask);
+        if (buildings[previewBuildingIndex].CheckPlacement(previewBuilding))
+        {
+            canBuild = true;
+            previewBuilding.GetComponentInChildren<Renderer>().material =  buildings[previewBuildingIndex].canPlaceMaterial;
+        }
+        else
+        {
+            canBuild = false;
+            previewBuilding.GetComponentInChildren<Renderer>().material =  buildings[previewBuildingIndex].invalidMaterial;
+        }
+    }
+
+
     public void selectBuilding(int selectionIndex)
     {
         if (showingPreview) DestroyPreview();
@@ -244,8 +260,14 @@ public class PlayerHUD : ScriptedUI
     {
         if (!showingPreview) return;
         if (EventSystem.current.IsPointerOverGameObject()) return;
-        if (!buildings[previewBuildingIndex].CheckPlacement(previewBuilding)) return;
+        if (!canBuild) return;
 
+        for (int i = 0; i < buildings[previewBuildingIndex].ResourceForCost.Count; i++)
+        {
+            resourceSystem.RemoveResource(buildings[previewBuildingIndex].ResourceForCost[i],buildings[previewBuildingIndex].AmountForCost[i]);
+        }
+
+        
 
         AudioClip placementClip = buildings[previewBuildingIndex].PlacementSound;
         if (placementClip)

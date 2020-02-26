@@ -19,5 +19,4 @@ MonoBehaviour:
   production:
   - 2
   consumption: []
-  storage:
-  - 100
+  storage: []

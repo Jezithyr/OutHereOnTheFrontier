@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 6cGoodboi_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: 25a28e24d01a4e74087259cdd9d62e7f, type: 2}
   - {fileID: 11400000, guid: e80c73ac268a5894ab0d284348d44546, type: 2}
   - {fileID: 11400000, guid: d1ee24a05e1e40649b677f69096cadcb, type: 2}
   - {fileID: 11400000, guid: 66f8f8d65664cb74682d1aa1281231a8, type: 2}
-  eventTitle: 
+  eventTitle: 2:00 left!
   flavorText: Some of our moon scouts found a moon dog out in the woods. What should
     we do?

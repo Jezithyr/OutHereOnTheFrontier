@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 7369a579c4ff6a44cb5f0315f61465d5, type: 2}
+  effectTitle: Local Moorder Cow mysteriously disappears after meeting with Administration!
+  effectText: 'With some convincing we''ve brought the cow over to our side. Never
+    hurts to have an enforcer!
+
+    (+5% Resource Production)'
+  effectButtonText: MOO! I mean, uh. . .WOOH!
   optionTitle: (+5% resource production)
   flavorText: Hire the cow as your personal enforcer.
   wasChosen: 0

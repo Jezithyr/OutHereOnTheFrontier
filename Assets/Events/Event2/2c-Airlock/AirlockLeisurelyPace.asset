@@ -16,6 +16,11 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 5011e0691459fbb489f1c068d65e6511, type: 2}
+  effectTitle: Government claims "We'll fix it when we can!"
+  effectText: "We've sent the repair technician the work order. He says he'll get
+    it done once he's cleared all his previous requests for broken lightbulbs and
+    leaky sinks.\n(-2 Population)\t"
+  effectButtonText: We do the best we can with what we have.
   optionTitle: (Lose 2 Population)
   flavorText: 'Send the repair tech at his earliest available scheduling (approx.
     wait time: 8 earth weeks)'

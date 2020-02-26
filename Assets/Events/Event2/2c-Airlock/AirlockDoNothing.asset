@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 64c5a4178ddb372428f62da076693eb5, type: 2}
+  effectTitle: Government Officials say "Not our problem" to airlock concerns!
+  effectText: 'We sectioned off the faulty airlock and put up a few warning signs
+    about opening adjoining seals. Hopefully everyone can read them!
+
+    (-150 Air)'
+  effectButtonText: It'll be fine. TRUST me.
   optionTitle: (Lose 150 Air)
   flavorText: Literally do nothing.
   wasChosen: 0

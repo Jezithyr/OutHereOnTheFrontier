@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Chickenputdown
   m_EditorClassIdentifier: 
   DecisionInternalName: 1bRobocock_C3
-  condition: {fileID: 0}
+  condition: {fileID: 11400000, guid: a5780cab61f1a2748b2767f92b19a4a3, type: 2}
   effects:
   - {fileID: 11400000, guid: 195211e72cc47174a8c79209f371f96f, type: 2}
   - {fileID: 11400000, guid: d52a7bd47b1a08b4da209d5d1f41af36, type: 2}
+  effectTitle: A favour has been done.
+  effectText: "We helped the chicken along in its time of need.\n(+5 Food, -1 Metal)\t"
+  effectButtonText: It was the humane option. Let's keep going.
   optionTitle: '(+5 Food, -1 metal) '
   flavorText: (1 Metal) Put the poor creature out of its misery.
   wasChosen: 1
