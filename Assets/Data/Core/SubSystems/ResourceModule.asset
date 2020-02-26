@@ -42,6 +42,7 @@ MonoBehaviour:
   - 0
   - 0
   - 5
-  ResourceSinks: []
+  ResourceSinks:
+  - {fileID: 11400000, guid: 1427dec1b0f38e745ba5903f9d35a2e6, type: 2}
   resourceNodes: []
   linkedResourceNodes: []

@@ -17,15 +17,16 @@ MonoBehaviour:
   StartOnSceneLoad: 0
   linkedGrid: {fileID: 11400000, guid: 42348951e7f090446beda2c293f1a6d4, type: 2}
   EnabledBuildings:
-  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
-  - {fileID: 11400000, guid: 06307b111781b7a40ae42d8a899b7e72, type: 2}
-  - {fileID: 11400000, guid: b7b5fefdbc4eb8f42a2992d174e42e06, type: 2}
-  - {fileID: 11400000, guid: ae473ba48232edd499631598b473d4c0, type: 2}
   - {fileID: 11400000, guid: eee7c95fef9638c44b1b2b8ccfc15219, type: 2}
+  - {fileID: 11400000, guid: b7b5fefdbc4eb8f42a2992d174e42e06, type: 2}
   - {fileID: 11400000, guid: 1e325ac9b8335c145858b5466def14db, type: 2}
-  - {fileID: 11400000, guid: 7ea5f39938320234c9cfd2d05f6bc1ad, type: 2}
   - {fileID: 11400000, guid: 18a3d27d602233b419cddb17d349e4dd, type: 2}
-  - {fileID: 11400000, guid: 4d92adbb5afb788469acc881d2549fd2, type: 2}
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
+  - {fileID: 11400000, guid: 18a3d27d602233b419cddb17d349e4dd, type: 2}
+  - {fileID: 11400000, guid: e105c8a41e3304c4ebd8bb64439b34d8, type: 2}
   - {fileID: 11400000, guid: 3fce0e4fd47dfa045ad928beae95e46a, type: 2}
   - {fileID: 11400000, guid: 7678d5279346fed439a69187878054b2, type: 2}
-  - {fileID: 11400000, guid: 70a562d6ad377f643b41d4fe3ddf02f0, type: 2}
+  - {fileID: 11400000, guid: 4d92adbb5afb788469acc881d2549fd2, type: 2}
+  - {fileID: 11400000, guid: ae473ba48232edd499631598b473d4c0, type: 2}
+  - {fileID: 11400000, guid: 7ea5f39938320234c9cfd2d05f6bc1ad, type: 2}
+  - {fileID: 11400000, guid: 06307b111781b7a40ae42d8a899b7e72, type: 2}

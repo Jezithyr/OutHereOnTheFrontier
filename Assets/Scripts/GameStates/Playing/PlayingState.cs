@@ -146,7 +146,7 @@ public class PlayingState : GameState
             
         }
 
-        if (resourceModule.GetResourceStorage(populationResource) <= 0)
+        if (resourceModule.GetResourceStorage(populationResource) < 1)
         {
             gameOverType = 1;
             GameOver();
