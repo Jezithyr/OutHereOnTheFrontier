@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8b374feb6efe24a865d03cd36d4b82, type: 3}
   m_Name: Win
   m_EditorClassIdentifier: 
-  playState: {fileID: 0}
+  playState: {fileID: 11400000, guid: 007c39cc34dd206408a577a68f80ab82, type: 2}

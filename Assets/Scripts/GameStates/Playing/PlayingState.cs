@@ -39,6 +39,7 @@ public class PlayingState : GameState
 
     [SerializeField] private int gameTimer =  8*60;
 
+    [SerializeField] private AudioClip demolishSound;
     [SerializeField] private AudioClip ambience;
     public AudioClip Ambiance{get => ambience;}
 
@@ -187,6 +188,7 @@ public class PlayingState : GameState
                 if (Input.GetMouseButtonDown(0))
                 {
                     TryDemolishUnderCursor();
+                    audioSource2D.PlayOneShot(demolishSound);
                 }
 
                 break;
