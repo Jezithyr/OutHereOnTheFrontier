@@ -102,9 +102,14 @@ public class PlayingState : GameState
         Debug.Log("settingsMenuId UI id: "+ settingsMenuId);
         uiModule.Show(playerHUD,playerHudId);
         
-        uiModule.Hide(eventMenu,debugMenuid);
+        uiModule.Hide(eventMenu,eventMenuId);
 
+        if (Debug.isDebugBuild)
+        {
+            uiModule.Hide(debugMenu,debugMenuid);
+        }
         
+
         eventModule.Start();
 
         uiModule.Hide(gameOverMenu,gameOverMenuid);
