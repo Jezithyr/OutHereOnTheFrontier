@@ -19,6 +19,8 @@ public class UIModule : Module
     //[SerializeField] private AudioClip successSound;//not implemented
     [SerializeField] private AudioClip alertSound;
 
+
+
     delegate void functionDelegate();
     
     functionDelegate tickDelegate;
@@ -58,8 +60,6 @@ public class UIModule : Module
     {
         startDelegate -= newdelegate;
     }
-
-
     
     public void playClickSound(GameObject soundSource2d)
     {

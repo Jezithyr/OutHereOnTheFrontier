@@ -10,8 +10,6 @@ public class EventModule : Module
 {   
     [SerializeField] private List<Event> activeEvents = new List<Event>() ;
 
-    [SerializeField] private GameObject linkedEventPrefab;
-
     [SerializeField] private ScriptedUI eventUI;
 
     [SerializeField] private PlayingState playState;
@@ -52,11 +50,11 @@ public class EventModule : Module
     }
 
 
-    public void InitializePrefab()
-    {
-       eventUIID = eventUI.CreateUIInstance();
-       eventUI.ToggleUI(eventUIID, false);
-    }
+    // public void InitializePrefab()
+    // {
+    //    eventUIID = eventUI.CreateUIInstance();
+    //    eventUI.ToggleUI(eventUIID, false);
+    // }
 
     public void ShowUI()
     {
@@ -123,7 +121,6 @@ public class EventModule : Module
     public void showEvent(int eventIndex)
     {
         setActiveEventFromIndex(eventIndex);
-        UpdateUI();
         ShowUI();
     }
 
@@ -132,7 +129,6 @@ public class EventModule : Module
         activeEvent = eventToShow;
         ((EventPopup)eventUI).LoadEventData(activeEvent);
         playState.PauseGame();
-        UpdateUI();
         ShowUI();
     }
 
@@ -147,13 +143,12 @@ public class EventModule : Module
     {
 
         if (SceneManager.GetActiveScene() != gameplayScene) return;
-        //activeEvent = activeEvents[0];
-        UpdateUI();
         HideUI();
     }
     
     public override void Update()
     {
+
         Event globalTempEvent = globalEventPool.CheckEventConditions();
         if (globalTempEvent != null)
         {

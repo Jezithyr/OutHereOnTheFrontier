@@ -8,6 +8,7 @@ public class MainMenu : ScriptedUI
 {
     [SerializeField]
     GameManager Game;
+    [SerializeField] private UIModule uiModule;
 
     private void OnEnable()
     {
@@ -22,6 +23,17 @@ public class MainMenu : ScriptedUI
     public override void Update()
     {
 
+    }
+
+
+    public void Show()
+    {
+        uiModule.Show(this,0);
+    }
+
+    public void Hide()
+    {
+        uiModule.Hide(this,0);
     }
 
 

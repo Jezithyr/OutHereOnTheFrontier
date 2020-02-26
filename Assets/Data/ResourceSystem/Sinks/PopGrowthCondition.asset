@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36bd0f8ef5d858549aa9c2ccddeec297, type: 3}
   m_Name: PopGrowthCondition
   m_EditorClassIdentifier: 
-  resourceToCheck: {fileID: 0}
+  resourceToCheck: {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
   amount: 0
   RoundToLower: 1
-  resourceModule: {fileID: 0}
-  consumedResources: []
-  resourcePerPop: []
-  populationResource: {fileID: 0}
+  resourceModule: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+  consumedResources:
+  - {fileID: 11400000, guid: 09df92ea61f5d2145b8890ff6057ad48, type: 2}
+  resourcePerPop:
+  - 0.15
+  populationResource: {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}

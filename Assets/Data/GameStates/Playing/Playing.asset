@@ -20,6 +20,7 @@ MonoBehaviour:
   playerHUD: {fileID: 11400000, guid: 0e4e438fab5bc1a4e898da969be7fe88, type: 2}
   pauseMenu: {fileID: 11400000, guid: 22c900dd6814ab540ba2bf38a213c5ac, type: 2}
   settingsMenu: {fileID: 11400000, guid: c1ed76968c7dbda44b8271b353b44181, type: 2}
+  eventMenu: {fileID: 11400000, guid: e69113e232c31ac4289e5f59089ffbef, type: 2}
   debugMenu: {fileID: 11400000, guid: d94f98f7f06623b4589daed4dea4e9e0, type: 2}
   gameOverMenu: {fileID: 11400000, guid: 4554fb03f2cb3a541a72e611a4d83482, type: 2}
   pauseState: {fileID: 0}
@@ -27,11 +28,14 @@ MonoBehaviour:
   moduleManager: {fileID: 11400000, guid: 9d1b28d6a074ee940a23e828fefc63a1, type: 2}
   eventModule: {fileID: 11400000, guid: 65a5f2df720779a46a1bb9eabd90ba90, type: 2}
   buildingModule: {fileID: 11400000, guid: b9f9b66362c7a4f46a78165f1cf97f59, type: 2}
+  resourceModule: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+  populationResource: {fileID: 11400000, guid: 74ae8f955a4f3584f9a1ae1b2481fe30, type: 2}
   eventList: []
   buildingLayer:
     serializedVersion: 2
     m_Bits: 67584
   gameTimer: 480
+  demolishSound: {fileID: 0}
   ambience: {fileID: 8300000, guid: 4ac38e5d40a779748b50445088de1707, type: 3}
-  GameTimer: 330
-  ElapsedTime: 150
+  GameTimer: 476
+  ElapsedTime: 4

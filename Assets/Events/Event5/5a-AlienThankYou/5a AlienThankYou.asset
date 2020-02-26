@@ -18,6 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 237e0ece87c158245ac64afad63c3e84, type: 2}
   choices:
   - {fileID: 11400000, guid: 6e6cb26732e2ae840a4ef8f48a9af7d6, type: 2}
-  eventTitle: 3:00 left!
+  eventTitle: Alien Care Package!
   flavorText: It seems the Alien we lent our WiFi password to earlier has reached
     his civilization, and sent us a goodie bag for our help!

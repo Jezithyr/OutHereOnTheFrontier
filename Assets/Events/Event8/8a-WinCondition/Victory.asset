@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionInternalName: 8aWinCondition_C2
   condition: {fileID: 0}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: d4b805268fa14294ab8349cff3c2d4f2, type: 2}
   effectTitle: VICTORY!
   effectText: "WE MADE IT BOSS! THE ROCKET IS COMPLETE AND ALL OF OUR PEOPLE ARE SHUTTLING
     TO SAFETY! YEEEEEHAAAAWWWWW!\n(Game Won)\t"
@@ -22,5 +23,5 @@ MonoBehaviour:
   optionTitle: (-1000 fuel, -1000 alloy)
   flavorText: (1000 fuel, 1000 alloy) YEEEEEEEEEHAAAAAAAAAWWWWWWWW (Win Condition
     met)
-  wasChosen: 0
+  wasChosen: 1
   owner: {fileID: 0}

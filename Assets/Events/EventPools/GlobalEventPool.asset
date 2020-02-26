@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: GlobalEventPool
   m_EditorClassIdentifier: 
   selectRandomEvent: 0
-  EventList: []
+  EventList:
+  - {fileID: 11400000, guid: 928f0d249e62f7244a633226361ac427, type: 2}
+  - {fileID: 11400000, guid: 0cc81bf4e893a324b98159c3018ec575, type: 2}
+  - {fileID: 11400000, guid: f767e5e0880486a41bb3921deaa33136, type: 2}
+  - {fileID: 11400000, guid: 66e17960d274eaa44857af0d1b9d7548, type: 2}
+  - {fileID: 11400000, guid: e9e1ef81b6656e84eaf973d3c192c6c6, type: 2}
+  - {fileID: 11400000, guid: b0c83db27acf1f542baea1ea662d0724, type: 2}
+  - {fileID: 11400000, guid: 72966216e0bad09489f73c3740623a08, type: 2}

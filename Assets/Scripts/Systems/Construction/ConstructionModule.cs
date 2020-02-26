@@ -29,7 +29,9 @@ public class ConstructionModule : Module
 
     public Building GetDataForPrefab(GameObject prefab)
     {
-        foreach (var entry in Buildings)
+        Dictionary<GameObject,Building> BuildingsTemp = new Dictionary<GameObject,Building>(ActiveBuildings);
+
+        foreach (var entry in BuildingsTemp)
         {
             if (entry.Key == prefab)
             {
@@ -42,7 +44,9 @@ public class ConstructionModule : Module
 
     public GameObject GetPrefabFromBuildingData(Building buildingObject)
     {
-        foreach (var entry in Buildings)
+        Dictionary<GameObject,Building> BuildingsTemp = new Dictionary<GameObject,Building>(ActiveBuildings);
+
+        foreach (var entry in BuildingsTemp)
         {
             if (entry.Value == buildingObject)
             {
@@ -78,7 +82,9 @@ public class ConstructionModule : Module
 
     public bool RemoveBuilding(GameObject prefab)
     {
-        foreach (var entry in Buildings)
+        Dictionary<GameObject,Building> BuildingsTemp = new Dictionary<GameObject,Building>(ActiveBuildings);
+
+        foreach (var entry in BuildingsTemp)
         {
             Building buildingDataObj = entry.Value;
             GameObject prefabObj = entry.Key;
@@ -86,7 +92,7 @@ public class ConstructionModule : Module
             if (prefabObj == prefab)
             {                
                 Buildings.Remove(prefabObj); //this can be optimized
-                Destroy(prefabObj);
+                DestroyImmediate(prefabObj,true);
                 return true;
             }
         }
@@ -100,7 +106,9 @@ public class ConstructionModule : Module
 
     public void RemoveBuilding(Building buildingData)
     {
-        foreach (var entry in Buildings)
+        Dictionary<GameObject,Building> BuildingsTemp = new Dictionary<GameObject,Building>(ActiveBuildings);
+
+        foreach (var entry in BuildingsTemp)
         {
             Building buildingDataObj = entry.Value;
             GameObject prefabObj = entry.Key;
@@ -108,8 +116,7 @@ public class ConstructionModule : Module
             if (entry.Value == buildingData)
             {
                 Buildings.Remove(prefabObj); //this can be optimized
-                Destroy(prefabObj);
-                Destroy(buildingData);
+                DestroyImmediate(prefabObj);
             }
         }
     }
@@ -126,9 +133,11 @@ public class ConstructionModule : Module
 
     public override void Reset()
     {
-        foreach (var item in Buildings)
+        Dictionary<GameObject,Building> BuildingsTemp = new Dictionary<GameObject,Building>(ActiveBuildings);
+
+        foreach (var entry in BuildingsTemp)
         {
-            RemoveBuilding(item.Value);
+            RemoveBuilding(entry.Value);
         }
     }
 }

@@ -20,8 +20,11 @@ public class MenuState : GameState
     [SerializeField] private MainMenu mainMenuUi;
 
 
+    [SerializeField] private SettingsMenu mainSettingsMenu;
+
     private int menuUIid;
     private ScriptedCamera MenuCam;
+    private int settingsUIId;
     
     public override void OnActivate(GameState lastState)
     {
@@ -31,7 +34,9 @@ public class MenuState : GameState
 
         MenuCam = camModule.AddScriptedCameraInstance(menuCamData);
         menuUIid = uiModule.CreateInstance(mainMenuUi);
+        settingsUIId = uiModule.CreateInstance(mainSettingsMenu);
         uiModule.Show(mainMenuUi,menuUIid);
+        uiModule.Hide(mainSettingsMenu,0);
     }
 
     public override void OnUpdate()
@@ -44,6 +49,7 @@ public class MenuState : GameState
 
         camModule.Reset();
         uiModule.DestroyInstance(mainMenuUi,menuUIid);
+        uiModule.DestroyInstance(mainSettingsMenu,settingsUIId);
         //if (newState == playState)
         //{
             
