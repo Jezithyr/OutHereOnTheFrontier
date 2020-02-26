@@ -22,7 +22,7 @@ MonoBehaviour:
     are being very vocal about their. . ."displeasure". . .with our decision.
 
     (+1 Population, -5% Resource Production)'
-  effectButtonText: Why are you booing me> I'm right!
+  effectButtonText: Why are you booing me? I'm right!
   optionTitle: (+1 population, -5% production)
   flavorText: Unreal is clearly superior. Move the Unity Engineer to QA.
   wasChosen: 0

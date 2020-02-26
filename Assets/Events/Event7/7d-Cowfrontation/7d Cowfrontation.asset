@@ -16,10 +16,11 @@ MonoBehaviour:
   isActive: 1
   triggerCondition:
   - {fileID: 11400000, guid: ad6b3872d21c3c24d89f5a9281fdab94, type: 2}
+  - {fileID: 11400000, guid: 2c907ab574075b54a8a0bfcf08cf9562, type: 2}
   choices:
   - {fileID: 11400000, guid: f76e396c6110a824ab7d5cbfc2e469f5, type: 2}
   - {fileID: 11400000, guid: 5e04c8cbacefd764fbcaa2f6faacc189, type: 2}
   - {fileID: 11400000, guid: cc25b9315a62ae344bd8d5e6eaae8d2b, type: 2}
-  eventTitle: 1:00 left!
+  eventTitle: COWFRONTATION!
   flavorText: "The Cow has come for us! All along it was the one murdering all those
     people. It\u2019s right outside the door \u2013 what are we going to do?"
