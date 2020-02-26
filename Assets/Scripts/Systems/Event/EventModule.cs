@@ -10,8 +10,6 @@ public class EventModule : Module
 {   
     [SerializeField] private List<Event> activeEvents = new List<Event>() ;
 
-    [SerializeField] private GameObject linkedEventPrefab;
-
     [SerializeField] private ScriptedUI eventUI;
 
     [SerializeField] private PlayingState playState;
@@ -52,11 +50,11 @@ public class EventModule : Module
     }
 
 
-    public void InitializePrefab()
-    {
-       eventUIID = eventUI.CreateUIInstance();
-       eventUI.ToggleUI(eventUIID, false);
-    }
+    // public void InitializePrefab()
+    // {
+    //    eventUIID = eventUI.CreateUIInstance();
+    //    eventUI.ToggleUI(eventUIID, false);
+    // }
 
     public void ShowUI()
     {
