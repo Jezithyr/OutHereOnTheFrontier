@@ -33,6 +33,16 @@ public class SettingsMenu : ScriptedUI
         SetNewVolume(newVolume);
     }
 
+    public void Show()
+    {
+        uiModule.Show(this,0);
+    }
+
+    public void Hide()
+    {
+        uiModule.Hide(this,0);
+    }
+
     public void discardChanges()
     {
        // SetNewGamma(0.5f);

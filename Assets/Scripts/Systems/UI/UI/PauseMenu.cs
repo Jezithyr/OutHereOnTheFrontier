@@ -28,6 +28,17 @@ public class PauseMenu : ScriptedUI
         uiModule.Show(inGameSettings,0);
     }
 
+    public void Show()
+    {
+        uiModule.Show(this,0);
+    }
+
+    public void Hide()
+    {
+        uiModule.Hide(this,0);
+    }
+
+
     public void ReturnToMenu()
     {
     }

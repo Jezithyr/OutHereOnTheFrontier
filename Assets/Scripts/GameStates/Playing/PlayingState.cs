@@ -18,7 +18,7 @@ public class PlayingState : GameState
     [SerializeField] private PlayerHUD playerHUD;
     [SerializeField] private PauseMenu pauseMenu;
     [SerializeField] private SettingsMenu settingsMenu;
-    //[SerializeField] private EventPopup eventMenu;
+    [SerializeField] private EventPopup eventMenu;
     [SerializeField] private DebugMenu debugMenu ;
     [SerializeField] private GameOver gameOverMenu ;
     [SerializeField] private GameState pauseState;
@@ -57,7 +57,7 @@ public class PlayingState : GameState
     private AudioSource audioSource2D;
     public AudioSource AudioSource2D{get => audioSource2D;}
 
-    //private int eventMenuId;
+    private int eventMenuId;
     private int debugMenuid;
 
     //todo make these not public
@@ -87,7 +87,7 @@ public class PlayingState : GameState
 
         gameOverMenuid = uiModule.CreateInstance(gameOverMenu);
 
-        //eventMenuId = uiModule.CreateInstance(eventMenu);
+        eventMenuId = uiModule.CreateInstance(eventMenu);
         debugMenuid = uiModule.CreateInstance(debugMenu);
 
         Debug.Log("PlayerHUD UI id: "+ playerHudId);
@@ -95,14 +95,14 @@ public class PlayingState : GameState
         Debug.Log("settingsMenuId UI id: "+ settingsMenuId);
         uiModule.Show(playerHUD,playerHudId);
         
-        //uiModule.Hide(eventMenu,debugMenuid);
+        uiModule.Hide(eventMenu,debugMenuid);
 
         
-        eventModule.InitializePrefab();
+        eventModule.Start();
 
         uiModule.Hide(gameOverMenu,gameOverMenuid);
         uiModule.Hide(pauseMenu,pauseMenuid);
-        //uiModule.Hide(eventMenu,eventMenuId);
+        uiModule.Hide(eventMenu,eventMenuId);
         uiModule.Hide(settingsMenu,settingsMenuId);
 
         ElapsedTime = 0;
@@ -237,6 +237,7 @@ public class PlayingState : GameState
     {
         uiModule.DestroyInstance(playerHUD,playerHudId);
         uiModule.DestroyInstance(pauseMenu,pauseMenuid);
+        uiModule.DestroyInstance(eventMenu,eventMenuId);
         uiModule.DestroyInstance(settingsMenu,settingsMenuId);
         uiModule.DestroyInstance(gameOverMenu,gameOverMenuid);
 
