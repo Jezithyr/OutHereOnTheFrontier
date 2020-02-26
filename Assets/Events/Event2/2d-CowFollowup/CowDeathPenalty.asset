@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 2919ec2769f40d844b34cfe00f4dd297, type: 2}
+  effectTitle: Local Cow Executed for Moorder!
+  effectText: 'We meted out the justice of murderers to this. . .cow? Looks like beef''s
+    on the menu tonight!
+
+    (+100 food)'
+  effectButtonText: Sounds good to me!
   optionTitle: (+100 food)
   flavorText: The death penalty extends to cows as well.
   wasChosen: 0

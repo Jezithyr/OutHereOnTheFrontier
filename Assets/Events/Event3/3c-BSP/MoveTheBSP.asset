@@ -16,6 +16,11 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: dcb4f901051d69343a324c91588f2bc8, type: 2}
+  effectTitle: Intersecting BSP removed at great cost!
+  effectText: 'It cost a great deal, but we moved the BSP -- and saved the station.
+
+    (-200 metal)'
+  effectButtonText: Our people are safe, and that's what matters.
   optionTitle: (-200 metal)
   flavorText: (200 Metal) Move the BSPs to separate sublevels of the plant.
   wasChosen: 0

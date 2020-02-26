@@ -16,6 +16,10 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: '"Surprise Mechanics" rejected by Administration!'
+  effectText: "We sent those gambling sharks packing. Can sharks pack?\n(No effect
+    on resources)\t"
+  effectButtonText: Yeah miss me with that. Let's go.
   optionTitle: (nothing happens)
   flavorText: Sounds like gambling to me. Tell them to go away.
   wasChosen: 0

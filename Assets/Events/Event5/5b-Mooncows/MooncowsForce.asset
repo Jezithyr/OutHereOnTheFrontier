@@ -17,6 +17,12 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: cdec44d5319cd074e91cf3f634b937b5, type: 2}
   - {fileID: 11400000, guid: 08996795cfa08ed419febc12a1ed4f03, type: 2}
+  effectTitle: Mooncows acquired by suspicious means!
+  effectText: 'We took the mooncows by force and left the farmer with nothing. I know
+    this was the most pragmatic choice, but. . .are bad people?
+
+    (+100 food, +10% food production)'
+  effectButtonText: No. Let's keep going!
   optionTitle: (Gain 10% food production, 100 food)
   flavorText: Seize the mooncows by force.
   wasChosen: 0

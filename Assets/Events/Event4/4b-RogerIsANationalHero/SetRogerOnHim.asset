@@ -16,6 +16,10 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: bab754ebf0f38e845a4fa6134a829395, type: 2}
+  effectTitle: Local Catalonian Warlord hailed as a Hero!
+  effectText: "Roger made swift work of the invader. Honestly we should make him an
+    admin.\n(+5% resource production)\t"
+  effectButtonText: 'I wanna die. '
   optionTitle: (+5% resource production)
   flavorText: Set Roger on him.
   wasChosen: 0

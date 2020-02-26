@@ -16,7 +16,13 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: a33e4d0f4cbe1694daac7a624172e985, type: 2}
-  optionTitle: (+200 Alloy, +200 Fuel, +200 Metal, +200 Wood)
+  effectTitle: Alien Care Package!
+  effectText: 'It looks like the Alien from earlier gave us a care package for our
+    help in getting it home! Let''s look what''s inside!
+
+    (+200 Water, +200 Air, +200 Food, +200 Metal, +200 Wood)'
+  effectButtonText: YEEHAW!
+  optionTitle: (+200 Water, +200 Air, +200 food +200 Metal, +200 Wood)
   flavorText: Let's see what's inside!
   wasChosen: 0
   owner: {fileID: 11400000, guid: b0c83db27acf1f542baea1ea662d0724, type: 2}

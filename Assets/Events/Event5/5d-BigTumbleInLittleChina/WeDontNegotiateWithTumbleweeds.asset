@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 68b9cee9f0fda414dad5788a2b25d9c1, type: 2}
+  effectTitle: Station refuses to negotiate with Tumbleweeds!
+  effectText: 'Thanks to our efforts the Tumbleweeds now know we won''t budge on policy!
+    They still executed our engineers though. . .
+
+    (-5 population)'
+  effectButtonText: Victory requires sacrifice.
   optionTitle: (-5 population)
   flavorText: "We don\u2019t negotiate with Tumbleweeds."
   wasChosen: 0

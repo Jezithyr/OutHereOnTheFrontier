@@ -13,10 +13,16 @@ MonoBehaviour:
   m_Name: Tumbleno
   m_EditorClassIdentifier: 
   DecisionInternalName: 1aTumbleweed_C2
-  condition: {fileID: 0}
+  condition: {fileID: 11400000, guid: aa65737eb3a06e8439162d59244aa71a, type: 2}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: Maybe another time?
+  effectText: 'The Tumbleweed was turned away. I''m sure it wouldn''t''ve livened
+    the place up anyways.
+
+    (No cost)'
+  effectButtonText: Let's go!
   optionTitle: (Nothing happens)
   flavorText: Turn the tumbleweed away.
-  wasChosen: 1
+  wasChosen: 0
   owner: {fileID: 11400000, guid: 030a2d5eb45d63747afecea85b2eb70f, type: 2}

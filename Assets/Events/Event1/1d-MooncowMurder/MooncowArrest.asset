@@ -16,8 +16,14 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: Moorderer Behind Bars!
+  effectText: 'That dastardly cow is locked up for life. No longer will it harass
+    our populace!
+
+    (-5% Food Production).'
+  effectButtonText: MOO! I mean, uh, WOOOH!
   optionTitle: ' (-5% food production)'
   flavorText: "Murder rhymes with Moorder. The cow obviously did it \u2013 arrest
     it."
-  wasChosen: 0
+  wasChosen: 1
   owner: {fileID: 11400000, guid: 1f438be8d9a6ced459d9a31429b4f2db, type: 2}

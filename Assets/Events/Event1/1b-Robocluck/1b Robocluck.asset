@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 1b_Robocock
   isActive: 1
-  triggerCondition: {fileID: 0}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: 5c1d33cde6eaa8641aa6d32e1920b481, type: 2}
   - {fileID: 11400000, guid: a3209750dc906c847acfa95bf7bb21cd, type: 2}
   - {fileID: 11400000, guid: 3345a9d22dce4084096596b3c987293a, type: 2}
-  eventTitle: 
+  eventTitle: 7:00 left!
   flavorText: It would seem one of our Moon Chickens has been brutally maimed while
     on the job. What should we do with the poor creature?

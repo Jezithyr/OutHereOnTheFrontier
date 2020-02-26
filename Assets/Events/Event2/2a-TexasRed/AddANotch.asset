@@ -16,6 +16,10 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d05d94ae045eac2419926651d388455e, type: 2}
+  effectTitle: Local Outlaw gains another notch!
+  effectText: "The engineer we sent ended up becoming another notch on the outlaw's
+    pistol. Who'd'a thunk?\n(-1 Population)\t"
+  effectButtonText: I'll keep this in mind for next time.
   optionTitle: (-1 population, +1 notch)
   flavorText: '(+1 Notch) Send a technician to examine the notches on his pistol '
   wasChosen: 0

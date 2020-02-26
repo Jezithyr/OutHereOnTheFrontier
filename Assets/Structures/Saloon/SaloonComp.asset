@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44864ffa964928e40ae9eccbadc2bcab, type: 3}
+  m_Name: SaloonComp
+  m_EditorClassIdentifier: 
+  instances: []
+  resourceController: {fileID: 11400000, guid: fdd7741bbd7e7274ab2a284ceca8819d, type: 2}
+  activeResources:
+  - {fileID: 11400000, guid: 4f6edfe275a8d2d4fa0c9e5c8001b1c0, type: 2}
+  - {fileID: 11400000, guid: ef65f4cf302ab2d47977165e74fb8071, type: 2}
+  - {fileID: 11400000, guid: d85bc555eebf5e547ac7445ed7b59fb1, type: 2}
+  - {fileID: 11400000, guid: 4cb834450c546144eb6140804ccaf840, type: 2}
+  production:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  consumption: []
+  storage: []

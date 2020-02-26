@@ -8,7 +8,7 @@ public class Event : ScriptableObject
 {
     [SerializeField] public string EventInternalName = "";
     [SerializeField] public bool isActive;
-    [SerializeField] public ConditionScript triggerCondition;
+    [SerializeField] public List<ConditionScript> triggerCondition = new List<ConditionScript>();
     [SerializeField] public List<EventDecision> choices = new List<EventDecision>();
 
     [SerializeField] public string eventTitle = "";
@@ -18,6 +18,16 @@ public class Event : ScriptableObject
     public bool Completed{get =>IsComplete;}
 
     private Dictionary<string, EventDecision> menuOptions = new Dictionary<string, EventDecision>();
+
+
+    public bool CheckConditions(ScriptableObject callingObject)
+    {
+        foreach (var condition in triggerCondition)
+        {
+            if (!condition.ConditionCheck(callingObject)) return false;
+        }
+        return true;
+    }
 
     bool MakeDecision(int DecisionIndex)
     {

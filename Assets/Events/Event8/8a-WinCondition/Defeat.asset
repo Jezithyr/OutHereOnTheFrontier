@@ -15,7 +15,13 @@ MonoBehaviour:
   DecisionInternalName: 8aWinCondition_C1
   condition: {fileID: 0}
   effects: []
+  effectTitle: SPACEPORT DESTROYED BY METEOR
+  effectText: 'Well, I guess we can''t win them all. It''s been a hell of a ride partner.
+
+    (Game Lost)'
+  effectButtonText: Light a cigarrete
   optionTitle: 
   flavorText: "(Insufficient fuel) Ho there, pardner. . .you mean we aren\u2019t getting
     picked up? What do we tell the others? We\u2019re gone done for!"
+  wasChosen: 0
   owner: {fileID: 0}

@@ -17,6 +17,12 @@ MonoBehaviour:
   effects:
   - {fileID: 11400000, guid: e4af2e87381007d42b2937d3359250bd, type: 2}
   - {fileID: 11400000, guid: 0f5b3299c56b06b43a65f7bb42117267, type: 2}
+  effectTitle: Station adopts a very good boi!
+  effectText: 'We''ve adopted the dog and he is a VERY GOOD BOI! His presence will
+    surely improve morale!
+
+    (-150 food, +10% resource production)'
+  effectButtonText: SUCH A VERY GOOD BOI!
   optionTitle: (-150 food, +10% resource production)
   flavorText: "(150 food) He\u2019s obviously a very good boi \u2013 let\u2019s keep
     him."

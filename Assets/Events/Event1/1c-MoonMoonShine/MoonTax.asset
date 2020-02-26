@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d81a9f303100f174faa1be593d557cce, type: 2}
+  effectTitle: Money money MOONEY!
+  effectText: 'By taxing the MoonMoonshiners we''ve obtained some valuable resources
+    for ourselves!
+
+    (+50 Food, +50 Metal)'
+  effectButtonText: YEEHAW!
   optionTitle: (+50 Food, +50 Metal)
   flavorText: 'TAX IT! '
   wasChosen: 1

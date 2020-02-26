@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventInternalName: 3aMovieNight_Event
   isActive: 1
-  triggerCondition: {fileID: 11400000, guid: 59f2d89edc0bde64db76e4949434c821, type: 2}
+  triggerCondition: []
   choices:
   - {fileID: 11400000, guid: a19446ead28ec7a4884d21e922f80929, type: 2}
   - {fileID: 11400000, guid: 745d300510e0ebf408b38df093de0a31, type: 2}
   - {fileID: 11400000, guid: e0938a64a5876cb4f81c67790fa67886, type: 2}
-  eventTitle: 
+  eventTitle: 5:00 left!
   flavorText: It might be a good idea to host a community movie night to improve morale.
     What should we watch?

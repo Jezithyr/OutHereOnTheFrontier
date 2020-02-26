@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f0a01b9d14cc4ca0bccb2043972a3, type: 3}
+  m_Name: okay
+  m_EditorClassIdentifier: 
+  DecisionInternalName: 
+  condition: {fileID: 0}
+  effects: []
+  effectTitle: 'Tutorial: Fuel and Alloy'
+  effectText: 'We have the means to produce a rocket ship that can carry us and our
+    citizens off the moon and away from danger! The only catch is we need Alloy and
+    Fuel to make it work. You can build factories for each from the build menu. Be
+    warned: The Fuel Factory consumes Wood and Air to make fuel, and the Alloy Factory
+    does the same with Metal and Air. Make sure you''ve got enough production to outpace
+    the consumption before building! To make the rocket we''ll need 1,000 of each
+    resource.'
+  effectButtonText: Let's get to it!
+  optionTitle: 
+  flavorText: Okay. What is it?
+  wasChosen: 1
+  owner: {fileID: 0}

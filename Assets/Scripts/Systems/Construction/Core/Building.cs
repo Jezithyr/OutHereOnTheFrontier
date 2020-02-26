@@ -31,6 +31,8 @@ public class Building : ScriptableObject
     [SerializeField] private AudioClip placementSound;
     public AudioClip PlacementSound{get => placementSound;}
 
+    [SerializeField] public Material canPlaceMaterial;
+    [SerializeField] public Material invalidMaterial;
 
     [SerializeField] public string description;
 

@@ -16,6 +16,11 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 994ab95f5975ef74bba6a5363e3fcfec, type: 2}
+  effectTitle: Station wins impromptu war with Tumbleweed army!
+  effectText: "We sustained a few losses and there were some costs, but we drove the
+    tumbleweeds back into the darkness from which they came.\n(-2 Population, -100
+    Metal)\t"
+  effectButtonText: We don't negotiate with tumbleweeds.
   optionTitle: (-2 population, -100 metal)
   flavorText: Terminate them with extreme prejudice.
   wasChosen: 0

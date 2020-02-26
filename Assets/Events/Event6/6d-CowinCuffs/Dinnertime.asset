@@ -16,6 +16,12 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: 0be2f84861fd4e24e9fc3286f3e5ad1e, type: 2}
+  effectTitle: Station executes mass moorderer and then eats him!
+  effectText: 'I must say we''ve never cooked killer before. . .let''s hope we aren''t
+    what we eat.
+
+    (+100 food)'
+  effectButtonText: SCRUMPTIOUS!
   optionTitle: (+100 food)
   flavorText: I want it on my dinner plate tonight.
   wasChosen: 0

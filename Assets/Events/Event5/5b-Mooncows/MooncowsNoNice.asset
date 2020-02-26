@@ -16,6 +16,10 @@ MonoBehaviour:
   condition: {fileID: 0}
   effects:
   - {fileID: 11400000, guid: d4091fc76f9587f4e8f7298d68eaca1a, type: 2}
+  effectTitle: Mooncow Farmer turned away!
+  effectText: "Well the Mooncow farmer is gone. I'm sure there won't be any long term
+    disadvantages to rejecting them.\n(No effect on resources)\t"
+  effectButtonText: It was for the best.
   optionTitle: (Nothing)
   flavorText: Politely decline the farmer's offer.
   wasChosen: 0
